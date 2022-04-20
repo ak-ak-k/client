@@ -103,6 +103,7 @@ import { ProductsPopupComponent } from './components/products-popup/products-pop
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     BrowserAnimationsModule,
     FormsModule,
 
