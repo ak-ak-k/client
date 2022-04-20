@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+}
+
+.headiing {
+  display: flex;
+  align-items: center;
+}
+
+//
+
+.checked {
+  background: #6c63d0;
+  color: white;
+  border: none;
+}
+
+.refr-cash {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  margin-bottom: 0 !important;
+  margin-left: 5px !important;
+}
+
+.coin {
+  display: flex;
+  border-radius: 8px;
+  background: white;
+
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px !important;
+  color: white;
+  padding-right: 6px;
+  padding-left: 6px;
+  border: 1px solid #ff7250;
+  //   line-height: 100% !important;
+}
+
+.number {
+  margin-left: 5px;
+  color: black;
+}
+
+//
+
+.ent-amount {
+  margin-top: 10px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+//
+
+.pay-now {
+  width: 100%;
+  background: #874bf9;
+  border-radius: 8px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  color: white;
+}

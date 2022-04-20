@@ -1,0 +1,248 @@
+<div class="col col-100">
+
+    <div class="header">
+        <div class="header-img">
+
+            <img src="assets/img/chevron_left_black_24dp.svg" alt="" />
+        </div>
+
+        <div class="header-details">
+            <p class="identity pro-details">Products</p>
+            <span class="divide"></span>
+            <div>
+
+                <button mat-icon-button>
+                    <img class="add" src="assets/img/add_black_24dp.svg" alt="">
+                    Add New
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+<div class="container">
+
+    <div class="main">
+
+        <div class="row">
+
+            <div class="payment col col-100">
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <span class="material-icons-outlined search-field">
+                        search
+                    </span>
+                </div>
+            </div>
+
+            <div class="payment col col-100" (click)="show = !show">
+                <div class="section">
+                    <p class="wallet">Makeup</p>
+                    <mat-icon>
+                        <a class="expand">expand_less</a>
+                    </mat-icon>
+                </div>
+
+                <div *ngIf="show" class="box col col-100 col-sm-100 col-card">
+                    <div class="card-box">
+                        <div class="content">
+
+                            <div class="prod-img">
+                                <img src="../../../assets/img/products/prod-1.png" alt="">
+                            </div>
+                            <div class="prod-name">
+
+                                <p class="prod-text">Face Primer</p>
+                                <p class="prod-desc">Lorem ipsum dolor sit amet</p>
+                                <div class="discounted">
+                                    <p class="prod-price">Rs.500</p>
+                                    <p class="discount-price prod-price">Rs.400</p>
+
+                                </div>
+
+                                <div class="crud">
+                                    <p class="prod-view">view</p>
+                                    <img src="assets/img/edit.png" alt="">
+                                    <img src="assets/img/delete.png" alt="">
+                                    <button class="req-excul" mat-button>Request for exclusive</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="payment col col-100">
+                <img class="line" src="assets/img/Line 102.png" alt="">
+            </div>
+
+            <div class="payment col col-100" (click)="skin=!skin">
+                <div class="section">
+                    <p class="wallet">Skin</p>
+                    <mat-icon>
+                        <a class="expand">expand_less</a>
+                    </mat-icon>
+                </div>
+
+                <div *ngIf="skin" class="col col-100 col-sm-100 col-card">
+                    <div class="card-box">
+                        <div class="content">
+
+                            <div class="prod-img">
+                                <img src="../../../assets/img/products/prod-1.png" alt="">
+                            </div>
+                            <div class="prod-name">
+
+                                <p class="prod-text">Face Wash</p>
+                                <p class="prod-desc">Lorem ipsum dolor sit amet</p>
+                                <div class="discounted">
+                                    <p class="prod-price">Rs.500</p>
+                                    <p class="discount-price prod-price">Rs.400</p>
+
+                                </div>
+
+                                <div class="crud">
+                                    <p class="prod-view">view</p>
+                                    <img src="assets/img/edit.png" alt="">
+                                    <img src="assets/img/delete.png" alt="">
+                                    <button class="req-excul" mat-raised-button>Request for exclusive</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment col col-100">
+                <img class="line" src="assets/img/Line 102.png" alt="">
+            </div>
+
+            <div class="payment col col-100" (click)="hair=!hair">
+                <div class="section">
+                    <p class="wallet">Hair</p>
+                    <mat-icon>
+                        <a class="expand">expand_more</a>
+                    </mat-icon>
+                </div>
+                <div *ngIf="hair" class="col col-100 col-sm-100 col-card">
+                    <div class="card-box">
+                        <div class="content">
+
+                            <div class="prod-img">
+                                <img src="../../../assets/img/products/prod-1.png" alt="">
+                            </div>
+                            <div class="prod-name">
+
+                                <p class="prod-text">Face Wash</p>
+                                <p class="prod-desc">Lorem ipsum dolor sit amet</p>
+                                <div class="discounted">
+                                    <p class="prod-price">Rs.500</p>
+                                    <p class="discount-price prod-price">Rs.400</p>
+
+                                </div>
+
+                                <div class="crud">
+                                    <p class="prod-view">view</p>
+                                    <img src="assets/img/edit.png" alt="">
+                                    <img src="assets/img/delete.png" alt="">
+                                    <button class="req-excul" mat-raised-button>Request for exclusive</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment col col-100">
+                <img class="line" src="assets/img/Line 102.png" alt="">
+            </div>
+
+            <div class="payment col col-100" (click)="fragrance=!fragrance">
+                <div class="section">
+                    <p class="wallet">Fragrance</p>
+                    <mat-icon>
+                        <a class="expand">expand_more</a>
+                    </mat-icon>
+                </div>
+
+                <div *ngIf="fragrance" class="col col-100 col-sm-100 col-card">
+                    <div class="card-box">
+                        <div class="content">
+
+                            <div class="prod-img">
+                                <img src="../../../assets/img/products/prod-1.png" alt="">
+                            </div>
+                            <div class="prod-name">
+
+                                <p class="prod-text">Face Wash</p>
+                                <p class="prod-desc">Lorem ipsum dolor sit amet</p>
+                                <div class="discounted">
+                                    <p class="prod-price">Rs.500</p>
+                                    <p class="discount-price prod-price">Rs.400</p>
+
+                                </div>
+
+                                <div class="crud">
+                                    <p class="prod-view">view</p>
+                                    <img src="assets/img/edit.png" alt="">
+                                    <img src="assets/img/delete.png" alt="">
+                                    <button class="req-excul" mat-raised-button>Request for exclusive</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="payment col col-100">
+                <img class="line" src="assets/img/Line 102.png" alt="">
+            </div>
+
+            <!-- <div class="payment col col-100">
+                <div class="section">
+                    <p class="wallet">Skin</p>
+                    <mat-icon>
+                        <a class="expand" (click)="skin">expand_more</a>
+                    </mat-icon>
+                </div>
+
+                <div *ngIf="fragrance" class="col col-100 col-sm-100 col-card">
+                    <div class="card-box">
+                        <div class="content">
+
+                            <div class="prod-img">
+                                <img src="../../../assets/img/products/prod-1.png" alt="">
+                            </div>
+                            <div class="prod-name">
+
+                                <p class="prod-text">Face Wash</p>
+                                <p class="prod-desc">Lorem ipsum dolor sit amet</p>
+                                <p class="prod-price">Rs.700</p>
+
+                                <div class="crud">
+                                    <p class="prod-view">view</p>
+                                    <img src="assets/img/edit.png" alt="">
+                                    <img src="assets/img/delete.png" alt="">
+                                    <button class="req-excul" mat-raised-button>Request for exclusive</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="payment col col-100">
+                <img class="line" src="assets/img/Line 102.png" alt="">
+            </div> -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,409 @@
+.header {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-details {
+  display: flex;
+  justify-content: center;
+  // text-align: center;
+  width: 100%;
+  margin-right: 10%;
+}
+
+.header-img {
+  margin-left: 7%;
+}
+
+.pro-details {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  margin-bottom: 0px !important;
+  color: #000000;
+}
+//
+
+.ord-detail {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-left: 94px;
+}
+
+.od {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px !important;
+  line-height: 26px !important;
+  margin-bottom: 0 !important;
+
+  color: #000000;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+//
+
+.order-detail {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px !important;
+  line-height: 26px !important;
+
+  color: #000000;
+}
+
+//
+
+.main {
+  background: #fff;
+  margin-top: 2px;
+  //   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+//
+
+.order-summary {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-date {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 17px !important;
+  text-transform: uppercase;
+  color: #6d7075;
+  margin-bottom: 0 !important;
+}
+
+.date {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 20px !important;
+
+  color: #000000;
+}
+
+.pricing {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+
+  color: #000000;
+}
+
+.order-id {
+  margin-top: 20px;
+}
+
+//
+
+.space {
+  width: 100%;
+  height: 25px;
+
+  background: #f3f4f6;
+}
+
+.space-bet {
+  width: 100%;
+  height: 5px;
+  background-color: #f3f4f6;
+}
+
+//
+
+.top {
+  margin-top: 20px;
+}
+
+.last {
+  margin-bottom: 20px;
+}
+
+.orders-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.checked {
+  background: #6c63d0;
+  color: #2eff3f;
+  border: none;
+}
+
+.unchecked {
+  // width: 50px;
+  // height: 50xp;
+}
+
+.order-confirm {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px !important;
+  line-height: 23px !important;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.vl {
+  border-left: 2px solid #6c63d0;
+  text-align: center;
+  height: 50px;
+  position: relative;
+  left: 156px;
+  transform: translate(0px, -2px);
+  width: 0%;
+}
+.vl-2 {
+  border-left: 2px solid #6c63d0;
+  text-align: center;
+  height: 50px;
+  position: relative;
+  top: 60%;
+  left: 156px;
+  transform: translate(0px, -2px);
+  width: 0%;
+}
+
+.vl-3 {
+  border-left: 2px dotted #6d7075;
+  text-align: center;
+  height: 50px;
+  position: relative;
+  top: 60%;
+  left: 156px;
+  transform: translate(0px, -2px);
+  width: 0%;
+}
+
+//
+
+.pay-info {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px !important;
+  line-height: 20px !important;
+
+  color: #000000;
+}
+
+.pay-method {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px !important;
+  line-height: 17px !important;
+
+  color: #6d7075;
+}
+
+.master {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px !important;
+  line-height: 20px !important;
+
+  color: #000000;
+}
+
+.pay-desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px !important;
+  line-height: 20px !important;
+
+  color: #000000;
+}
+
+//
+
+.order-summ {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px !important;
+  line-height: 17px !important;
+
+  color: black;
+}
+
+.ship-add {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 27px;
+  margin-bottom: 5px;
+
+  color: #000000;
+}
+
+.bill {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.table {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  //   margin-left: 10px;
+}
+
+.other-charges {
+  color: gray !important;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 18px !important;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+.bill-order {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px !important;
+  line-height: 18px !important;
+  /* identical to box height, or 120% */
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.drop-down {
+  display: flex;
+  align-items: center;
+}
+
+.drop-down-content {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.off {
+  color: #874bf9 !important;
+  font-size: 15px !important;
+  margin-left: 7px !important;
+}
+
+.whole-amount {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px !important;
+  line-height: 18px !important;
+  /* identical to box height, or 120% */
+
+  color: #874bf9;
+}
+
+//
+
+.invoice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-invoice {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+
+  color: #000000;
+}
+
+.payable {
+  margin-left: 9px;
+}
+
+//
+
+.last-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.return-replace {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #000000;
+}
+
+.shippped {
+  width: 14%;
+  text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+  .shippped {
+    width: 46%;
+  }
+  .ord-detail {
+    margin-left: 10px;
+  }
+  .vl {
+    position: relative;
+    left: 19px;
+    transform: translate(0px, -2px);
+    width: 0%;
+  }
+  .vl-2 {
+    position: relative;
+    left: 19px;
+    transform: translate(0px, -2px);
+    width: 0%;
+  }
+  .vl-3 {
+    position: relative;
+    left: 19px;
+    transform: translate(0px, -2px);
+    width: 0%;
+  }
+  .header-img {
+    margin-left: 6px;
+  }
+  .right-bar {
+    margin-right: 20px;
+  }
+}

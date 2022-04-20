@@ -1,0 +1,253 @@
+.prod-img {
+  margin-right: 10px;
+}
+
+.content-img {
+  display: flex;
+  overflow: scroll;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+//
+
+.main {
+  background: #fff;
+  margin-top: 2px;
+  //   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content-section {
+  margin-left: -23px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content-text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px !important;
+  line-height: 29px !important;
+
+  color: #000000;
+}
+
+.content-desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px !important;
+  line-height: 22px !important;
+
+  color: #000000;
+  span {
+    color: blue;
+  }
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+}
+
+.cut {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  text-decoration: line-through;
+  margin-right: 0 !important;
+  color: #a4a4a4;
+}
+
+.price {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  margin-right: 0 !important;
+  color: #000000;
+}
+
+.taxes {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px !important;
+  line-height: 14px !important;
+  margin-left: 10px !important;
+  color: #000000;
+  margin-left: 5px !important;
+  margin-top: 5px !important;
+}
+
+.color {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+
+  color: #0e0e0e;
+}
+
+//
+
+.black {
+  width: 31px;
+  height: 31px;
+  background: #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.red {
+  width: 31px;
+  height: 31px;
+  background: #f31a1a;
+
+  border: 1px solid #f31a1a;
+  box-sizing: border-box;
+
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.orange {
+  width: 31px;
+  height: 31px;
+  background: blueviolet;
+  border: 1px solid blueviolet;
+  box-sizing: border-box;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.gray {
+  width: 31px;
+  height: 31px;
+  background: #c4c4c4;
+
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box-color {
+  display: flex;
+}
+
+.size-text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px !important;
+  line-height: 19px !important;
+  text-transform: capitalize;
+  text-align: center;
+  color: #000000;
+  margin-right: 18px !important;
+}
+
+.gry {
+  margin-left: 8px !important;
+}
+
+//
+
+.space-bet {
+  width: 111%;
+  height: 7px;
+  background: #c4c4c461;
+  margin-top: 10px;
+  margin-left: -23px;
+}
+
+//
+
+.tse {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: -12px;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+}
+
+.product-lay {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 17px !important;
+  color: #000000;
+  margin: 0 !important;
+
+  margin-left: 10px !important;
+}
+
+.policy-img {
+  margin-left: 20px;
+}
+
+.plus-minus {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-lay {
+  margin: 10px;
+}
+
+.input-btn {
+  display: flex;
+  align-items: center;
+
+  // width: 32%;
+  // height: 50px;
+
+  background: #ddcbfff5;
+
+  border-radius: 5px;
+}
+
+.increase {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px !important;
+  line-height: 35px !important;
+  color: #000000;
+  margin: 0 !important;
+  margin-bottom: 3px !important;
+}
+
+//
+
+.item-add {
+  width: 100%;
+  height: 50px;
+  background: #874bf9;
+  border-radius: 5px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px !important;
+  line-height: 35px !important;
+  color: #ffffff;
+}
+
+.add-item {
+  // margin-left: 43px;
+}
+
+.mat-bottom-sheet-container {
+  padding: 0 !important;
+}

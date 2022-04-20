@@ -1,0 +1,267 @@
+<div class="col col-100">
+
+    <div class="header">
+        <div class="header-img">
+
+            <img src="assets/img/chevron_left_black_24dp.svg" alt="" />
+        </div>
+
+        <div class="header-details">
+            <p class="identity pro-details">MyCart</p>
+
+        </div>
+
+        <span class="divide"></span>
+
+        <div class="left">
+            <div class="coins">
+                <button mat-raised-button matTooltip="Info about the action"
+                    aria-label="Button that displays a tooltip when focused or hovered over">
+                    <img class="coin-img" src="assets/img/coin.png" alt=""> <span class="coin-number">1222</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<div class="container">
+
+    <div class="asb">
+
+        <div class="row">
+
+
+
+
+
+            <div class="col col-100 col-sm-100 col-card">
+                <div class="card-box">
+
+                    <div class="main">
+
+                        <div class="product">
+                            <img src="assets/img/cake.jpg" class="prod-img" alt="">
+                        </div>
+
+                        <div class="prod-content">
+                            <p class="prod-name">Product Name</p>
+                            <!-- <p class="desc">Description</p> -->
+                            <div class="price">
+                                <h5 class="rupee">₹500</h5>
+                                <h5 class="rup">₹300</h5>
+                                <h5 class="off rup">10% off</h5>
+                            </div>
+
+                            <div class="prod-btn">
+                                <button mat-icon-button color="primary"
+                                    aria-label="Example icon button with a home icon">
+                                    <img class="minus" src="assets/img/remove_black_24dp.svg" alt="">
+                                </button>
+                                <span>1</span>
+                                <button mat-icon-button color="primary"
+                                    aria-label="Example icon button with a home icon">
+                                    <img class="minus" src="assets/img/add_black_24dp.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="assets/img/close_black_24dp.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-100">
+                <div class="ship-add" style="margin-top: 10px;">
+                    <span> Contact Details</span>
+                </div>
+                <div class="details fullWidth">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input matInput>
+
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Mobile</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email address</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+            <div class="col col-100">
+                <div class="ship-add">
+                    <div class="ship-change">
+
+                        <span>Shipping Address</span>
+                        <button mat-button class="change">Change</button>
+                        <!-- <span class="change">Change</span> -->
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="details fullWidth">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Pin code</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Complete address</mat-label>
+                        <input matInput>
+
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Floor (Optional)</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Nearby landmark (Optional)</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="col col-100">
+                <div class="ship-add">
+                    <span>Save Address As</span>
+
+                </div>
+
+                <div class="save-add-btn save-add">
+
+                    <button class="home" mat-raised-button matTooltip="Info about the action"
+                        aria-label="Button that displays a tooltip when focused or hovered over">
+                        <span>Home</span>
+                    </button>
+                    <button class="work" mat-raised-button matTooltip="Info about the action"
+                        aria-label="Button that displays a tooltip when focused or hovered over">
+                        <span>Work</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="col col-100">
+                <div class="cashback ship-add">
+                    <span>
+                        Get 5% cashback for recommending this business.
+                    </span>
+                </div>
+
+
+
+                <div class="ship-add" style="margin-bottom: 15px;margin-top: 20px;">
+                    ORDER SUMMARY
+                </div>
+
+                <div class="bill">
+                    <div class="table">
+
+                        <p class="bill-order">Order Total</p>
+                        <p class="bill-order">₹12500.00</p>
+                    </div>
+                    <div class="table">
+
+                        <p class="bill-order">Discount</p>
+                        <p class="off bill-order">-₹9000.00</p>
+                    </div>
+
+                    <div class="table">
+
+                        <p class="bill-order">Delivery Charges</p>
+                        <p class="bill-order">₹90.00</p>
+                    </div>
+
+
+
+                    <div class="table" (click)="show = !show">
+
+                        <p class="drop-down table bill-order">Other Charges <img
+                                src="assets/img/arrow_drop_down_black_24dp.svg" alt=""></p>
+                        <p class="bill-order">₹90.00</p>
+                    </div>
+                    <div *ngIf="show" class="drop-down-content">
+
+
+                        <div class="table">
+
+                            <p class="other-charges bill-order">Restaurant Packaging Charges</p>
+                            <p class="off bill-order other-charges">₹90.00</p>
+                        </div>
+                        <div class="table">
+
+                            <p class="other-charges bill-order">Taxes</p>
+                            <p class="off bill-order other-charges">₹90.00</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="pay">
+                    <div class="refr">
+                        <button mat-button><svg class="checkbox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="#000000">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
+                            </svg> Use Refr Cash</button>
+                    </div>
+
+                    <input type="number" class="ent-amount" placeholder="Enter amount">
+                </div>
+
+            </div>
+
+            <div class="col col-100">
+                <div class="payable table">
+
+                    <p class="off">Payable Amount</p>
+                    <p class="off">₹12500.00 </p>
+                </div>
+            </div>
+
+
+            <div class="col col-100">
+
+                <div class="ship-add" style="margin-bottom: 15px;">
+                    Pay Using
+                </div>
+
+                <div class="pay">
+                    <div class="refr">
+                        <input type="radio" id="cod" name="payment">
+                        <p class="use">COD</p>
+                    </div>
+                    <div class="refr">
+                        <input type="radio" id="online" name="payment">
+                        <p class="use">Online Payment</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="col col-100">
+                <div class="ship-add" class="place-order-btn">
+                    <button class="submit" mat-raised-button>Place Order</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

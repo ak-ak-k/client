@@ -1,0 +1,109 @@
+.header {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-details {
+  display: flex;
+  justify-content: center;
+  // text-align: center;
+  width: 100%;
+  margin-right: 10%;
+}
+
+.header-img {
+  margin-left: 7%;
+}
+
+.pro-details {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  margin-bottom: 0px !important;
+  color: #000000;
+}
+//
+
+.content {
+  text-align: center;
+}
+
+.prod-text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  text-align: center;
+
+  color: #000000;
+}
+
+.prod-desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  text-align: center;
+
+  color: #a2a3a3;
+}
+
+.prod-rup {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  text-align: center;
+
+  color: #000000;
+}
+
+.prod-img {
+  width: 144px;
+}
+
+.buy-now {
+  background: #874bf9;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px !important;
+  //   line-height: 19px !important;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  width: 131px;
+}
+
+.wish-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-img {
+    margin-left: 6px;
+  }
+  .right-bar {
+    margin-right: 20px;
+  }
+  .buy-now {
+    margin-left: 12px;
+  }
+}

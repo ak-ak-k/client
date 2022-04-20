@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+  //   border-radius: 30px 30px 0px 0px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.address {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 27px;
+
+  margin-left: 15px;
+
+  color: #000000;
+}
+
+//
+
+.enter-add {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px !important;
+  line-height: 25px !important;
+  margin-left: 10px !important;
+  color: #000000;
+}
+
+//
+
+.all-buttons {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.btn {
+  border-radius: 15px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  //   line-height: 18px;
+  //   height: 40px;
+
+  color: rgba(0, 0, 0, 0.8);
+}
+
+//
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-details {
+  margin-bottom: 0 !important;
+}
+
+.add-address {
+  margin-top: 0 !important;
+}
+
+//
+
+.logout {
+  text-align: center;
+  margin-top: 35px;
+  button {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    // width: 30%;
+  }
+}
+
+.log {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #000000;
+}

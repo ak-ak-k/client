@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-img {
+  margin-left: 7%;
+}
+
+//
+.main {
+  background: #fff;
+  margin-top: 2px;
+  height: 100%;
+  //   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+//
+
+.entire {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #000000;
+  margin-top: 8px !important;
+}
+
+.content {
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text {
+  //   margin-left: 20px;
+}
+
+.prod-text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  text-align: center;
+  color: #000000;
+  text-align: left;
+  margin-left: 0 !important;
+}
+
+.prod-desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  text-align: center;
+  color: #a2a3a3;
+  text-align: left;
+  margin-left: 0 !important;
+}
+
+.prod-img {
+  width: 194px;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  width: 113%;
+}
+
+.product-image {
+  text-align: left;
+}
+
+.cut {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 23px !important;
+  text-decoration: line-through;
+  color: #a4a4a4;
+  margin-left: 0 !important;
+  margin-bottom: 5px !important;
+}
+
+.prod-rup {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  text-align: center;
+  text-align: left;
+  color: #000000;
+  margin-left: 0 !important;
+}
+
+.off {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #874bf9;
+  margin-left: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-img {
+    margin-left: 6px;
+  }
+  .right-bar {
+    margin-right: 20px;
+  }
+  .buy-now {
+    margin-left: 12px;
+  }
+  .prod-img {
+    width: 158px;
+  }
+  .cut {
+    margin-right: 5px !important;
+  }
+  .prod-rup {
+    margin-right: 2px !important;
+  }
+  .off {
+    margin-right: 12px !important;
+  }
+  .pricing {
+    width: 107%;
+  }
+}

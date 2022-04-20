@@ -1,0 +1,189 @@
+.header {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-details {
+  display: flex;
+  justify-content: center;
+  // text-align: center;
+  width: 100%;
+  margin-right: 10%;
+}
+
+.header-img {
+  margin-left: 7%;
+}
+
+.pro-details {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  margin-bottom: 0px !important;
+  color: #000000;
+}
+
+//
+
+.main {
+  background: #fff;
+  margin-top: 2px;
+  //   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+//
+
+.wallet {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px !important;
+  line-height: 50px !important;
+  margin-bottom: 0px !important;
+  color: #000000;
+}
+
+.refr-card {
+  background: linear-gradient(
+    91.11deg,
+    #7d7aed 5.34%,
+    #a88ef1 47.13%,
+    #d4c7fc 91.05%
+  ) !important;
+  border-radius: 4px;
+}
+
+.refr-cash {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+.balance {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+
+  color: #ececec;
+}
+
+.amount {
+  display: flex;
+}
+
+.coin-number {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  color: #ececec;
+
+  margin-left: 0 !important;
+
+  display: flex;
+  align-items: center;
+}
+
+.refr-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-arrow {
+  margin: 20px;
+}
+
+.payment {
+  margin-bottom: 0 !important;
+}
+
+.cards {
+  margin-top: 0 !important;
+}
+
+//
+
+.line {
+  width: 98%;
+  margin-left: 10px;
+}
+
+//
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.abc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personal-pay {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  margin-bottom: 5px !important;
+  color: #000000;
+}
+
+.personal-number {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  /* identical to box height, or 164% */
+
+  color: #969a9d;
+}
+
+.verification {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+
+  color: #874bf9;
+}
+
+.verify {
+  color: #000000;
+}
+
+.register {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px !important;
+  line-height: 18px !important;
+
+  color: #969a9d;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-img {
+    margin-left: 6px;
+  }
+  .right-bar {
+    margin-right: 20px;
+  }
+}
