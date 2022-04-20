@@ -30,6 +30,7 @@ import { ProductsPopupComponent } from './components/products-popup/products-pop
 import { RefillComponent } from './components/refill/refill.component';
 import { RefrcashComponent } from './components/refrcash/refrcash.component';
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
+import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -63,6 +64,7 @@ const routes: Routes = [
   { path: 'refill', component: RefillComponent },
   { path: 'refrcash', component: RefrcashComponent },
   { path: 'productpopup', component: ProductsPopupComponent },
+  { path: 'shopdetails', component: ShopDetailsComponent },
 ];
 
 @NgModule({

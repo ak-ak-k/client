@@ -35,7 +35,7 @@ import { Page6Component } from './components/page6/page6.component';
 import { Page7Component } from './components/page7/page7.component';
 import { Page8Component } from './components/page8/page8.component';
 import { Page9Component } from './components/page9/page9.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Page10Component } from './components/page10/page10.component';
 import { Page11Component } from './components/page11/page11.component';
 import { Page12Component } from './components/page12/page12.component';
@@ -59,6 +59,7 @@ import { RefrcashComponent } from './components/refrcash/refrcash.component';
 import { Refrcash1Component } from './components/refrcash1/refrcash1.component';
 import { Refrcash2Component } from './components/refrcash2/refrcash2.component';
 import { ProductsPopupComponent } from './components/products-popup/products-popup.component';
+import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
 
 @NgModule({
   declarations: [
@@ -99,6 +100,7 @@ import { ProductsPopupComponent } from './components/products-popup/products-pop
     Refrcash1Component,
     Refrcash2Component,
     ProductsPopupComponent,
+    ShopDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -106,6 +108,7 @@ import { ProductsPopupComponent } from './components/products-popup/products-pop
 
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
 
     MatButtonModule,
     MatFormFieldModule,
