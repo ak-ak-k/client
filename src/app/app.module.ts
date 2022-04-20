@@ -108,6 +108,7 @@ import { ProductsPopupComponent } from './components/products-popup/products-pop
 
     MatButtonModule,
     MatFormFieldModule,
+
     MatIconModule,
     MatTooltipModule,
     MatInputModule,
