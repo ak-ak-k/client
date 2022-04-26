@@ -60,6 +60,19 @@ import { Refrcash1Component } from './components/refrcash1/refrcash1.component';
 import { Refrcash2Component } from './components/refrcash2/refrcash2.component';
 import { ProductsPopupComponent } from './components/products-popup/products-popup.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
+import { OrderdetailsComponent } from './components/orderdetails/orderdetails.component';
+import { Orderdetail1Component } from './components/orderdetail1/orderdetail1.component';
+import { Orderdetail2Component } from './components/orderdetail2/orderdetail2.component';
+import { Orderdetail3Component } from './components/orderdetail3/orderdetail3.component';
+import { Orderdetail4Component } from './components/orderdetail4/orderdetail4.component';
+import { Orderdetail5Component } from './components/orderdetail5/orderdetail5.component';
+import { Orderdetail6Component } from './components/orderdetail6/orderdetail6.component';
+import { FormPageComponent } from './components/form-page/form-page.component';
+import { RefrFormComponent } from './components/refr-form/refr-form.component';
+import { ReturnreplacedialogComponent } from './components/returnreplacedialog/returnreplacedialog.component';
+import { ReturnitemsComponent } from './components/returnitems/returnitems.component';
+import { ReplaceitemsComponent } from './components/replaceitems/replaceitems.component';
+import { ExchangeOrderComponent } from './components/exchange-order/exchange-order.component';
 
 @NgModule({
   declarations: [
@@ -101,6 +114,19 @@ import { ShopDetailsComponent } from './components/shop-details/shop-details.com
     Refrcash2Component,
     ProductsPopupComponent,
     ShopDetailsComponent,
+    OrderdetailsComponent,
+    Orderdetail1Component,
+    Orderdetail2Component,
+    Orderdetail3Component,
+    Orderdetail4Component,
+    Orderdetail5Component,
+    Orderdetail6Component,
+    FormPageComponent,
+    RefrFormComponent,
+    ReturnreplacedialogComponent,
+    ReturnitemsComponent,
+    ReplaceitemsComponent,
+    ExchangeOrderComponent,
   ],
   imports: [
     BrowserModule,

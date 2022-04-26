@@ -1,0 +1,61 @@
+.heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px !important;
+  line-height: 29px !important;
+
+  color: #000000;
+}
+
+//
+
+.select {
+  align-items: center;
+  display: flex;
+  gap: 13px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.size-text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 23px !important;
+
+  color: #000000;
+}
+
+//
+
+.comments {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px !important;
+  line-height: 20px !important;
+
+  color: #000000;
+}
+
+input[type="textarea"] {
+  height: 25px;
+}
+
+.continue {
+  display: flex;
+  justify-content: center;
+  button {
+    background: #874bf9;
+    border-radius: 5px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    //   line-height: 23px !important;
+
+    color: #ffffff;
+  }
+}

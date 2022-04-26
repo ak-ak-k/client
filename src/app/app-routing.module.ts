@@ -2,11 +2,20 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CartComponent } from './components/cart/cart.component';
 import { ElectronicsComponent } from './components/electronics/electronics.component';
+import { ExchangeOrderComponent } from './components/exchange-order/exchange-order.component';
 import { FitnessComponent } from './components/fitness/fitness.component';
+import { FormPageComponent } from './components/form-page/form-page.component';
 import { HealthcareComponent } from './components/healthcare/healthcare.component';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 import { LoginpageComponent } from './components/loginpage/loginpage.component';
 import { OnFashionComponent } from './components/on-fashion/on-fashion.component';
+import { Orderdetail1Component } from './components/orderdetail1/orderdetail1.component';
+import { Orderdetail2Component } from './components/orderdetail2/orderdetail2.component';
+import { Orderdetail3Component } from './components/orderdetail3/orderdetail3.component';
+import { Orderdetail4Component } from './components/orderdetail4/orderdetail4.component';
+import { Orderdetail5Component } from './components/orderdetail5/orderdetail5.component';
+import { Orderdetail6Component } from './components/orderdetail6/orderdetail6.component';
+import { OrderdetailsComponent } from './components/orderdetails/orderdetails.component';
 import { OtpComponent } from './components/otp/otp.component';
 import { Page1Component } from './components/page1/page1.component';
 import { Page10Component } from './components/page10/page10.component';
@@ -65,6 +74,15 @@ const routes: Routes = [
   { path: 'refrcash', component: RefrcashComponent },
   { path: 'productpopup', component: ProductsPopupComponent },
   { path: 'shopdetails', component: ShopDetailsComponent },
+  { path: 'orderdetails', component: OrderdetailsComponent },
+  { path: 'od1', component: Orderdetail1Component },
+  { path: 'od2', component: Orderdetail2Component },
+  { path: 'od3', component: Orderdetail3Component },
+  { path: 'od4', component: Orderdetail4Component },
+  { path: 'od5', component: Orderdetail5Component },
+  { path: 'od6', component: Orderdetail6Component },
+  { path: 'form', component: FormPageComponent },
+  { path: 'exchangeorder', component: ExchangeOrderComponent },
 ];
 
 @NgModule({

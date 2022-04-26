@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-100">
+            <div>
+                <div class="header">
+                    <p>We will reach out to you</p>
+                    <span class="divide"></span>
+                    <a routerLink=""><img class="circle" src="../../../assets/img/form/Close_Circle.svg" alt=""></a>
+                </div>
+                <div class="vl"></div>
+            </div>
+
+            <div class="fields">
+                <div class="fname">
+                    <p class="field-name">Your Name*</p>
+                    <div class="example-container">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Name</mat-label>
+                            <input matInput class="input-field" [formControl]="name" required>
+                            <!-- <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error> -->
+                        </mat-form-field>
+                    </div>
+
+                </div>
+
+                <div class="fname">
+                    <p class="field-name">Email Address*</p>
+                    <div class="example-container">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input matInput [formControl]="email" required>
+                            <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage1()}}</mat-error> -->
+                        </mat-form-field>
+                    </div>
+
+                </div>
+
+                <div class="fname">
+                    <p class="field-name">Phone No.*</p>
+                    <div class="example-container">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Phone No.</mat-label>
+                            <input matInput [formControl]="phone" required>
+                            <!-- <mat-error *ngIf="phone.invalid">{{getErrorMessage2()}}</mat-error> -->
+                        </mat-form-field>
+                    </div>
+
+                </div>
+
+                <div class="fname">
+                    <p class="field-name">Store Name*</p>
+                    <div class="example-container">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Organization Name</mat-label>
+                            <input matInput [formControl]="ogname" required>
+                            <!-- <mat-error *ngIf="ogname.invalid">{{getErrorMessage3()}}</mat-error> -->
+                        </mat-form-field>
+                    </div>
+
+                </div>
+
+                <div class="fname">
+                    <p class="field-name">Message*</p>
+                    <div class="example-container">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Message</mat-label>
+                            <textarea matInput [formControl]="msg" required></textarea>
+
+                            <!-- <mat-error *ngIf="msg.invalid">{{getErrorMessage4()}}</mat-error> -->
+                        </mat-form-field>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="submit">
+                <div>
+
+                    <img class="undraw" src="../../../assets/img/order-detail/undraw_letter_re_8m03.svg" alt="">
+                </div>
+                <div>
+                    <button mat-buttom>Submit</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
