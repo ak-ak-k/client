@@ -5,6 +5,7 @@ import { ElectronicsComponent } from './components/electronics/electronics.compo
 import { ExchangeOrderComponent } from './components/exchange-order/exchange-order.component';
 import { FitnessComponent } from './components/fitness/fitness.component';
 import { FormPageComponent } from './components/form-page/form-page.component';
+import { GatewaycardComponent } from './components/gatewaycard/gatewaycard.component';
 import { HealthcareComponent } from './components/healthcare/healthcare.component';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 import { LoginpageComponent } from './components/loginpage/loginpage.component';
@@ -83,6 +84,7 @@ const routes: Routes = [
   { path: 'od6', component: Orderdetail6Component },
   { path: 'form', component: FormPageComponent },
   { path: 'exchangeorder', component: ExchangeOrderComponent },
+  { path: 'gateway', component: GatewaycardComponent },
 ];
 
 @NgModule({

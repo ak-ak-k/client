@@ -73,6 +73,7 @@ import { ReturnreplacedialogComponent } from './components/returnreplacedialog/r
 import { ReturnitemsComponent } from './components/returnitems/returnitems.component';
 import { ReplaceitemsComponent } from './components/replaceitems/replaceitems.component';
 import { ExchangeOrderComponent } from './components/exchange-order/exchange-order.component';
+import { GatewaycardComponent } from './components/gatewaycard/gatewaycard.component';
 
 @NgModule({
   declarations: [
@@ -127,6 +128,7 @@ import { ExchangeOrderComponent } from './components/exchange-order/exchange-ord
     ReturnitemsComponent,
     ReplaceitemsComponent,
     ExchangeOrderComponent,
+    GatewaycardComponent,
   ],
   imports: [
     BrowserModule,
