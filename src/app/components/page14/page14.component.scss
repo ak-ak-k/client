@@ -82,6 +82,7 @@ input {
   padding-left: 18px;
   background: #f6f6f6;
   border: none;
+  outline: none;
 }
 
 .search-field {
@@ -254,6 +255,11 @@ input {
   position: absolute;
   top: 78%;
   left: 76%;
+}
+
+.coinoff {
+  margin-top: 4px;
+  margin-left: 4px;
 }
 
 @media screen and (max-width: 763px) {
