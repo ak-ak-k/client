@@ -42,6 +42,7 @@ import { RefillComponent } from './components/refill/refill.component';
 import { RefrcashComponent } from './components/refrcash/refrcash.component';
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
+import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -86,6 +87,7 @@ const routes: Routes = [
   { path: 'reqformdemo', component: FormPageComponent },
   { path: 'exchangeorder', component: ExchangeOrderComponent },
   { path: 'gatewaypopup', component: GatewaycardpopupComponent },
+  { path: 'wallet', component: WalletscreenComponent },
   // { path: 'gateway', component: GatewaycardComponent },
 ];
 

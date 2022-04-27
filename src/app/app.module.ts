@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 // use this
 
@@ -75,6 +76,7 @@ import { ReplaceitemsComponent } from './components/replaceitems/replaceitems.co
 import { ExchangeOrderComponent } from './components/exchange-order/exchange-order.component';
 import { GatewaycardComponent } from './components/gatewaycard/gatewaycard.component';
 import { GatewaycardpopupComponent } from './components/gatewaycardpopup/gatewaycardpopup.component';
+import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
 
 @NgModule({
   declarations: [
@@ -131,6 +133,7 @@ import { GatewaycardpopupComponent } from './components/gatewaycardpopup/gateway
     ExchangeOrderComponent,
     GatewaycardComponent,
     GatewaycardpopupComponent,
+    WalletscreenComponent,
   ],
   imports: [
     BrowserModule,
@@ -139,7 +142,7 @@ import { GatewaycardpopupComponent } from './components/gatewaycardpopup/gateway
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-
+    MatToolbarModule,
     MatButtonModule,
     MatFormFieldModule,
 
