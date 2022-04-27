@@ -6,6 +6,7 @@ import { ExchangeOrderComponent } from './components/exchange-order/exchange-ord
 import { FitnessComponent } from './components/fitness/fitness.component';
 import { FormPageComponent } from './components/form-page/form-page.component';
 import { GatewaycardComponent } from './components/gatewaycard/gatewaycard.component';
+import { GatewaycardpopupComponent } from './components/gatewaycardpopup/gatewaycardpopup.component';
 import { HealthcareComponent } from './components/healthcare/healthcare.component';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 import { LoginpageComponent } from './components/loginpage/loginpage.component';
@@ -82,9 +83,10 @@ const routes: Routes = [
   { path: 'od4', component: Orderdetail4Component },
   { path: 'od5', component: Orderdetail5Component },
   { path: 'od6', component: Orderdetail6Component },
-  { path: 'form', component: FormPageComponent },
+  { path: 'reqformdemo', component: FormPageComponent },
   { path: 'exchangeorder', component: ExchangeOrderComponent },
-  { path: 'gateway', component: GatewaycardComponent },
+  { path: 'gatewaypopup', component: GatewaycardpopupComponent },
+  // { path: 'gateway', component: GatewaycardComponent },
 ];
 
 @NgModule({

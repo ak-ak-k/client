@@ -74,6 +74,7 @@ import { ReturnitemsComponent } from './components/returnitems/returnitems.compo
 import { ReplaceitemsComponent } from './components/replaceitems/replaceitems.component';
 import { ExchangeOrderComponent } from './components/exchange-order/exchange-order.component';
 import { GatewaycardComponent } from './components/gatewaycard/gatewaycard.component';
+import { GatewaycardpopupComponent } from './components/gatewaycardpopup/gatewaycardpopup.component';
 
 @NgModule({
   declarations: [
@@ -129,6 +130,7 @@ import { GatewaycardComponent } from './components/gatewaycard/gatewaycard.compo
     ReplaceitemsComponent,
     ExchangeOrderComponent,
     GatewaycardComponent,
+    GatewaycardpopupComponent,
   ],
   imports: [
     BrowserModule,

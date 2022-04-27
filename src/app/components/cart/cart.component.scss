@@ -112,7 +112,8 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px !important;
-  line-height: 23px;
+  line-height: 18px !important;
+  margin-left: 0 !important;
 }
 
 .prod-img {
@@ -127,12 +128,12 @@
   margin-right: 60px;
 }
 
-.prod-btn {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+// .prod-btn {
+//   width: 50%;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
 
 .main {
   display: flex;
@@ -172,16 +173,22 @@
   display: flex;
 }
 
+.add-remove {
+  display: flex;
+  align-items: center;
+  margin-left: -9px !important;
+}
+
 .rup {
   margin-right: 0px !important;
-  margin-left: 10px;
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
-  font-size: 15px !important;
+  font-size: 14px !important;
   line-height: 18px;
   color: #000000;
-  margin-left: 7px !important;
+
+  margin-left: 0px !important;
 }
 
 .off {
@@ -460,12 +467,13 @@ input {
 
 .card-main {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .product-img {
+  margin: 6px;
   img {
-    width: 118px;
+    width: 100px;
     border-radius: 8px;
   }
 }

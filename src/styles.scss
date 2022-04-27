@@ -64,7 +64,10 @@ $gradient: linear-gradient(170deg, #ff3269, #ff794d);
 //             user-select: none; /* Non-prefixed version, currently
 //                                   supported by Chrome, Opera and Firefox */
 // }
-
+.color-scheme-light .mat-dialog-container {
+  background: #ffffff;
+  padding: 0;
+}
 .color-scheme-dark {
   $grey: #212121;
   ::-webkit-scrollbar {

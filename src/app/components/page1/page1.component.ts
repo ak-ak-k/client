@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { GatewaycardComponent } from '../gatewaycard/gatewaycard.component';
 import { LoginSignupComponent } from '../login-signup/login-signup.component';
 import { OtpComponent } from '../otp/otp.component';
 import { Page15Component } from '../page15/page15.component';
@@ -144,6 +145,22 @@ export class Page1Component implements OnInit {
     const profile = this.dialog.open(RefrcashComponent, {
       width: w,
       minWidth: '250px',
+      maxWidth: '320px',
+      height: h,
+      hasBackdrop: true,
+      disableClose: false,
+      panelClass: 'dialogLayout', //, autoFocus:false
+    });
+    profile.afterClosed().subscribe(() => {});
+  }
+
+  gatewaycard() {
+    let isPhone = this.getWidth < 768;
+    let w = isPhone ? this.getWidth + 'px' : '480px';
+    let h = isPhone ? this.getHeight + 'px' : '98vh';
+    const profile = this.dialog.open(GatewaycardComponent, {
+      width: w,
+      minWidth: '350px',
       maxWidth: '320px',
       height: h,
       hasBackdrop: true,
