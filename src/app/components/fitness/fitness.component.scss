@@ -82,6 +82,7 @@ input {
   padding-left: 18px;
   background: #f6f6f6;
   border: none;
+  outline: none;
 }
 
 .search-field {
@@ -252,21 +253,21 @@ input {
 
 .large-arrow {
   position: absolute;
-  top: 73%;
-  left: 46%;
+  top: 30%;
+  left: 53%;
 }
 
 .zig-zag {
   position: absolute;
-  top: 13%;
-  left: 79%;
+  top: 81%;
+  left: 4%;
 }
 
 .f-coin {
-  width: 8px;
+  // width: 8px;
   position: absolute;
   top: 27%;
-  left: 5%;
+  left: 2%;
 }
 .right-dot {
   position: absolute;
@@ -420,7 +421,7 @@ input {
   min-height: 49px;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 122px;
+  width: 123px;
   position: relative;
   left: -7px;
   top: 92px;
@@ -446,7 +447,7 @@ input {
 
 .purple-offer-tag {
   // background-image: url(../../../assets/svg/purple-card.tag.svg);
-  background-image: url("../../../assets/img/screen/card-tag.svg");
+  background-image: url("../../../assets/img/resturant/card-tag.svg");
 }
 
 .inline {
