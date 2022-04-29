@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+  margin-left: 32px;
 }
 
 .x {
@@ -42,7 +43,7 @@
 
 .second-heading {
   text-align: center;
-  margin-left: -2% !important;
+  margin-left: 8% !important;
   p {
     font-family: "Jost";
     font-style: normal;
@@ -91,7 +92,7 @@
   // position: relative;
   // top: -85px;
   // left: 209px;
-  transform: translate(228px, -470px);
+  transform: translate(244px, -470px);
   // svg {
   // }
 }
