@@ -154,19 +154,30 @@ export class Page1Component implements OnInit {
     profile.afterClosed().subscribe(() => {});
   }
 
-  gatewaycard() {
-    let isPhone = this.getWidth < 768;
-    let w = isPhone ? this.getWidth + 'px' : '480px';
-    let h = isPhone ? this.getHeight + 'px' : '98vh';
-    const profile = this.dialog.open(GatewaycardComponent, {
-      width: w,
-      minWidth: '350px',
-      maxWidth: '320px',
-      height: h,
-      hasBackdrop: true,
-      disableClose: false,
-      panelClass: 'dialogLayout', //, autoFocus:false
+  // gatewaycard() {
+  //   let isPhone = this.getWidth < 768;
+  //   let w = isPhone ? this.getWidth + 'px' : '480px';
+  //   let h = isPhone ? this.getHeight + 'px' : '50vh';
+  //   const profile = this.dialog.open(GatewaycardComponent, {
+  //     width: w,
+  //     minWidth: '350px',
+  //     maxWidth: '320px',
+  //     height: h,
+  //     hasBackdrop: true,
+  //     disableClose: false,
+  //     panelClass: 'dialogLayout', //, autoFocus:false
+  //   });
+  //   profile.afterClosed().subscribe(() => {});
+  // }
+
+  gatewaycard(mode: any) {
+    const dialogRef = this.dialog.open(GatewaycardComponent, {
+      data: mode,
+      maxWidth: '100vw',
+      // maxHeight: '100vh',
+      // height: '75%',
+      width: '90%',
+      panelClass: 'full-screen-modal-2',
     });
-    profile.afterClosed().subscribe(() => {});
   }
 }
