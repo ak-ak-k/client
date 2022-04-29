@@ -78,7 +78,7 @@
     font-family: "Jost";
     font-style: normal;
     font-weight: 400;
-    font-size: 11px !important;
+    font-size: 14px !important;
     line-height: 18px !important;
 
     text-align: center;
@@ -92,7 +92,7 @@
   // position: relative;
   // top: -85px;
   // left: 209px;
-  transform: translate(244px, -470px);
+  transform: translate(248px, -492px);
   // svg {
   // }
 }
@@ -101,9 +101,11 @@
 
 .stock-img {
   text-align: center;
+  margin-top: 12px;
 }
 
 .friend-recommed {
+  margin-top: 18px;
   p {
     font-family: "Jost";
     font-style: normal;
