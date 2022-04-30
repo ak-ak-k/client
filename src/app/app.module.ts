@@ -77,6 +77,8 @@ import { ExchangeOrderComponent } from './components/exchange-order/exchange-ord
 import { GatewaycardComponent } from './components/gatewaycard/gatewaycard.component';
 import { GatewaycardpopupComponent } from './components/gatewaycardpopup/gatewaycardpopup.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
+import { AdvocaseyComponent } from './components/advocasey/advocasey.component';
+import { HowitworksComponent } from './components/howitworks/howitworks.component';
 
 @NgModule({
   declarations: [
@@ -134,6 +136,8 @@ import { WalletscreenComponent } from './components/walletscreen/walletscreen.co
     GatewaycardComponent,
     GatewaycardpopupComponent,
     WalletscreenComponent,
+    AdvocaseyComponent,
+    HowitworksComponent,
   ],
   imports: [
     BrowserModule,

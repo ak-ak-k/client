@@ -1,0 +1,157 @@
+.box {
+  background: #8111e8;
+  overflow: hidden;
+  height: 520px;
+  // height: 100vh;
+  // width: 100vw;
+}
+
+//
+
+.header {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-left: 32px;
+}
+
+.x {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  color: #ffffff;
+  transform: translate(-3px, 12px);
+}
+
+.pic {
+  height: 0px;
+}
+
+.dheal {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px !important;
+  line-height: 29px !important;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-left: 7px !important;
+}
+
+//
+
+.second-heading {
+  text-align: center;
+  margin-left: 8% !important;
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px !important;
+    line-height: 19px !important;
+
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
+
+//
+
+.recommend {
+  margin-top: 60px;
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px !important;
+    line-height: 23px !important;
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
+
+.recommends {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 18px !important;
+
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
+
+//
+
+.unlimited-cashback {
+  color: #fd9372 !important;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px !important;
+  line-height: 19px !important;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 0px black;
+}
+
+//
+
+.friend-recommed {
+  margin-top: 18px;
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px !important;
+    line-height: 19px !important;
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
+
+//
+
+.refr-now {
+  text-align: center;
+  button {
+    color: #000;
+    background: white;
+    padding: 6px 28px;
+    box-shadow: 4px 4px white;
+    border-radius: 0;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+//
+
+.speaker {
+  transform: translateY(-248px);
+}
+
+//
+
+.logo-img {
+  transform: translate(219px, -334px);
+  // display: inline;
+  // position: relative;
+  // top: -85px;
+  // left: 209px;
+  // svg {
+  // }
+}

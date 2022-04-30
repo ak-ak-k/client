@@ -8,6 +8,7 @@ import { FormPageComponent } from './components/form-page/form-page.component';
 import { GatewaycardComponent } from './components/gatewaycard/gatewaycard.component';
 import { GatewaycardpopupComponent } from './components/gatewaycardpopup/gatewaycardpopup.component';
 import { HealthcareComponent } from './components/healthcare/healthcare.component';
+import { HowitworksComponent } from './components/howitworks/howitworks.component';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 import { LoginpageComponent } from './components/loginpage/loginpage.component';
 import { OnFashionComponent } from './components/on-fashion/on-fashion.component';
@@ -89,6 +90,7 @@ const routes: Routes = [
   { path: 'gatewaypopup', component: GatewaycardpopupComponent },
   { path: 'wallet', component: WalletscreenComponent },
   { path: 'gateway', component: GatewaycardComponent },
+  { path: 'howitworks', component: HowitworksComponent },
 ];
 
 @NgModule({

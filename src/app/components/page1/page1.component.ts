@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { AdvocaseyComponent } from '../advocasey/advocasey.component';
 import { GatewaycardComponent } from '../gatewaycard/gatewaycard.component';
 import { LoginSignupComponent } from '../login-signup/login-signup.component';
 import { OtpComponent } from '../otp/otp.component';
@@ -178,6 +179,15 @@ export class Page1Component implements OnInit {
       // height: '75%',
       width: '90%',
       panelClass: 'full-screen-modal-2',
+    });
+  }
+
+  abc(mode: any) {
+    const res = this.dialog.open(AdvocaseyComponent, {
+      data: mode,
+      maxWidth: '100vw',
+      width: '90%',
+      panelClass: 'full-screen-model-2',
     });
   }
 }

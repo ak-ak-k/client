@@ -1,0 +1,155 @@
+.cards {
+  margin: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+//
+
+.card1 {
+  background: linear-gradient(90deg, #dd5e89 0%, #f7bb97 100%);
+  border-radius: 8px;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+//
+
+.share {
+  svg {
+    margin-top: -1px;
+    background: transparent;
+    border: none;
+    margin-left: 20px;
+  }
+}
+
+//
+
+.heading1 {
+  margin-left: 5px;
+  margin-top: 15px;
+
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px !important;
+    line-height: 20px !important;
+
+    color: #ffffff;
+  }
+}
+
+.easysteps {
+  color: #ffd161 !important;
+}
+
+.sse {
+  display: flex;
+  gap: 10px;
+  span {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 18px !important;
+    text-transform: capitalize;
+    padding: 0 !important;
+    color: #ffffff;
+  }
+}
+
+.circle {
+  margin-top: 23px;
+}
+
+//
+
+.card2 {
+  background: linear-gradient(90deg, #085078 0%, #85d8ce 100%);
+}
+
+.circlecard2 {
+  margin-top: 17px;
+}
+
+#refrcash {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px !important;
+  line-height: 18px !important;
+  width: 100%;
+  color: #ffffff;
+}
+
+//
+
+.card3 {
+  background: linear-gradient(102.03deg, #874bf9 5.09%, #f9b4bf 96.31%);
+}
+
+//
+
+.card4 {
+  background: linear-gradient(102.03deg, #0091ad 5.09%, #6efafb 96.31%);
+}
+
+//
+
+.card5 {
+  background: linear-gradient(102.03deg, #3f2b96 5.09%, #a8c0ff 96.31%);
+}
+
+#grow {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px !important;
+  line-height: 24px !important;
+  color: #95db3b;
+}
+
+#grow-comm {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  /* or 120% */
+
+  color: #ffffff;
+}
+
+//
+
+.card6 {
+  background: linear-gradient(102.03deg, #6a82fb 5.09%, #fc5c7d 96.31%);
+}
+
+#vocal {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px !important;
+  line-height: 20px !important;
+  color: #ff8eac;
+}
+
+//
+
+.card7 {
+  background: linear-gradient(102.03deg, #ff5f6d 0%, #ffc371 98.49%);
+}
+
+#refr {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px !important;
+  line-height: 24px !important;
+  color: #ffd312;
+}
