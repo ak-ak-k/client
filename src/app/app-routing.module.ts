@@ -90,7 +90,7 @@ const routes: Routes = [
   { path: 'exchangeorder', component: ExchangeOrderComponent },
   { path: 'gatewaypopup', component: GatewaycardpopupComponent },
   { path: 'wallet', component: WalletscreenComponent },
-  { path: 'gateway', component: GatewaycardComponent },
+  // { path: 'gateway', component: GatewaycardComponent },
   { path: 'howitworks', component: HowitworksComponent },
   { path: 'home', component: HomeComponent },
 ];

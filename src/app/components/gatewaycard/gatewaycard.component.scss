@@ -1,7 +1,7 @@
 .box {
   background: #8111e8;
   overflow: hidden;
-  height: 520px;
+  height: 500px;
   // height: 100vh;
   // width: 100vw;
 }
@@ -13,7 +13,8 @@
   display: flex;
   align-items: center;
   margin-bottom: 5px;
-  margin-left: 32px;
+  margin-left: 20px;
+  margin-top: 8px;
 }
 
 .x {
@@ -23,6 +24,8 @@
   font-size: 16px !important;
   color: #ffffff;
   transform: translate(-3px, 12px);
+  margin-left: 9px !important;
+  margin-right: 9px !important;
 }
 
 .pic {
@@ -42,25 +45,28 @@
 }
 
 .second-heading {
-  text-align: center;
-  margin-left: 8% !important;
+  margin-left: 41px !important;
   p {
     font-family: "Jost";
     font-style: normal;
     font-weight: 400;
     font-size: 13px !important;
     line-height: 19px !important;
-
     text-align: center;
-
     color: #ffffff;
+    width: 100%;
+    margin: 0 !important;
   }
 }
 
 //
 
+.this-store {
+  margin-left: -26px !important;
+}
+
 .recommend {
-  margin-top: 60px;
+  margin-top: 20px;
   p {
     font-family: "Jost";
     font-style: normal;
@@ -92,7 +98,10 @@
   // position: relative;
   // top: -85px;
   // left: 209px;
-  transform: translate(244px, -492px);
+  // transform: translate(244px, -525px);
+  position: relative;
+  top: -484px;
+  left: 255px;
   // svg {
   // }
 }
@@ -100,17 +109,30 @@
 //
 
 .stock-img {
-  text-align: center;
+  text-align: right;
   margin-top: 12px;
+  height: 56px;
+
+  margin-top: -31px;
 }
 
+.stock-img2 {
+  text-align: left;
+}
+
+.coin-animation {
+  text-align: center;
+}
+
+//
+
 .friend-recommed {
-  margin-top: 18px;
+  margin-top: -55px;
   p {
     font-family: "Jost";
     font-style: normal;
     font-weight: 500;
-    font-size: 13px !important;
+    font-size: 15px !important;
     line-height: 19px !important;
     text-align: center;
 
@@ -138,6 +160,16 @@
 }
 
 //
+
+.or {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  margin-top: -33px !important;
+  color: #ffffff;
+}
 
 .save-this {
   a {

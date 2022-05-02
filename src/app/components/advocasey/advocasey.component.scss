@@ -1,5 +1,6 @@
 .box {
-  background: #8111e8;
+  background: #2e186b;
+
   overflow: hidden;
   height: 520px;
   // height: 100vh;
@@ -62,7 +63,7 @@
 //
 
 .recommend {
-  margin-top: 60px;
+  margin-top: -123px;
   p {
     font-family: "Jost";
     font-style: normal;
@@ -92,7 +93,11 @@
 //
 
 .unlimited-cashback {
-  color: #fd9372 !important;
+  // color: #ff37f2 !important;
+  // color: linear-gradient(#ff37f2, #fd9372);
+  background: -webkit-linear-gradient(#ff37f2, #fd9372);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   font-family: "Jost";
   font-style: normal;
@@ -101,22 +106,25 @@
   line-height: 19px !important;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 2px 0px black;
+  // text-shadow: 4px 0px black;
 }
 
 //
 
 .friend-recommed {
-  margin-top: 18px;
+  margin-top: 59px;
   p {
     font-family: "Jost";
     font-style: normal;
     font-weight: 500;
-    font-size: 13px !important;
+    font-size: 15px !important;
     line-height: 19px !important;
     text-align: center;
 
     color: #ffffff;
+  }
+  .money {
+    color: pink;
   }
 }
 
@@ -124,6 +132,7 @@
 
 .refr-now {
   text-align: center;
+  margin-top: 30px;
   button {
     color: #000;
     background: white;
@@ -141,13 +150,19 @@
 //
 
 .speaker {
-  transform: translateY(-248px);
+  position: relative;
+  transform: scaleX(-1);
+  top: -37px;
+  left: -37px;
 }
 
 //
 
 .logo-img {
-  transform: translate(219px, -334px);
+  position: relative;
+  top: -482px;
+  left: 223px;
+  // transform: translate(219px, -334px);
   // display: inline;
   // position: relative;
   // top: -85px;
