@@ -79,6 +79,7 @@ import { GatewaycardpopupComponent } from './components/gatewaycardpopup/gateway
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
 import { AdvocaseyComponent } from './components/advocasey/advocasey.component';
 import { HowitworksComponent } from './components/howitworks/howitworks.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -138,6 +139,7 @@ import { HowitworksComponent } from './components/howitworks/howitworks.componen
     WalletscreenComponent,
     AdvocaseyComponent,
     HowitworksComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
