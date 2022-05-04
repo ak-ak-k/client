@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AdvocaseyComponent } from '../advocasey/advocasey.component';
+import { DemoadvocaseyComponent } from '../demoadvocasey/demoadvocasey.component';
+import { DemogatewayComponent } from '../demogateway/demogateway.component';
 import { GatewaycardComponent } from '../gatewaycard/gatewaycard.component';
 import { LoginSignupComponent } from '../login-signup/login-signup.component';
 import { OtpComponent } from '../otp/otp.component';
@@ -155,39 +157,55 @@ export class Page1Component implements OnInit {
     profile.afterClosed().subscribe(() => {});
   }
 
-  // gatewaycard() {
-  //   let isPhone = this.getWidth < 768;
-  //   let w = isPhone ? this.getWidth + 'px' : '480px';
-  //   let h = isPhone ? this.getHeight + 'px' : '50vh';
-  //   const profile = this.dialog.open(GatewaycardComponent, {
-  //     width: w,
-  //     minWidth: '350px',
-  //     maxWidth: '320px',
-  //     height: h,
-  //     hasBackdrop: true,
-  //     disableClose: false,
-  //     panelClass: 'dialogLayout', //, autoFocus:false
+  // gatewaycard(mode: any) {
+  //   const dialogRef = this.dialog.open(GatewaycardComponent, {
+  //     data: mode,
+  //     maxWidth: '100vw',
+  //     // maxHeight: '100vh',
+  //     // height: '75%',
+  //     width: '90%',
+  //     panelClass: 'full-screen-modal-2',
   //   });
-  //   profile.afterClosed().subscribe(() => {});
   // }
 
-  gatewaycard(mode: any) {
-    const dialogRef = this.dialog.open(GatewaycardComponent, {
-      data: mode,
-      maxWidth: '100vw',
-      // maxHeight: '100vh',
-      // height: '75%',
-      width: '90%',
-      panelClass: 'full-screen-modal-2',
+  // abc(mode: any) {
+  //   const res = this.dialog.open(AdvocaseyComponent, {
+  //     data: mode,
+  //     maxWidth: '100vw',
+  //     width: '90%',
+  //     panelClass: 'full-screen-model-2',
+  //   });
+  // }
+
+  gatewaycard() {
+    let isPhone = this.getWidth < 768;
+    let w = isPhone ? this.getWidth + 'px' : '480px';
+    // let h = isPhone ? this.getHeight + 'px' : '50vh';
+    const profile = this.dialog.open(GatewaycardComponent, {
+      width: w,
+      minWidth: '350px',
+      maxWidth: '320px',
+      // height: h,
+      hasBackdrop: true,
+      disableClose: false,
+      panelClass: 'dialogLayout', //, autoFocus:false
     });
+    profile.afterClosed().subscribe(() => {});
   }
 
-  abc(mode: any) {
-    const res = this.dialog.open(AdvocaseyComponent, {
-      data: mode,
-      maxWidth: '100vw',
-      width: '90%',
-      panelClass: 'full-screen-model-2',
+  advocasy() {
+    let isPhone = this.getWidth < 768;
+    let w = isPhone ? this.getWidth + 'px' : '480px';
+    // let h = isPhone ? this.getHeight + 'px' : '50vh';
+    const profile = this.dialog.open(AdvocaseyComponent, {
+      width: w,
+      minWidth: '350px',
+      maxWidth: '320px',
+      // height: h,
+      hasBackdrop: true,
+      disableClose: false,
+      panelClass: 'dialogLayout', //, autoFocus:false
     });
+    profile.afterClosed().subscribe(() => {});
   }
 }

@@ -80,6 +80,9 @@ import { WalletscreenComponent } from './components/walletscreen/walletscreen.co
 import { AdvocaseyComponent } from './components/advocasey/advocasey.component';
 import { HowitworksComponent } from './components/howitworks/howitworks.component';
 import { HomeComponent } from './components/home/home.component';
+import { BurnComponent } from './components/burn/burn.component';
+import { DemogatewayComponent } from './components/demogateway/demogateway.component';
+import { DemoadvocaseyComponent } from './components/demoadvocasey/demoadvocasey.component';
 
 @NgModule({
   declarations: [
@@ -140,6 +143,9 @@ import { HomeComponent } from './components/home/home.component';
     AdvocaseyComponent,
     HowitworksComponent,
     HomeComponent,
+    BurnComponent,
+    DemogatewayComponent,
+    DemoadvocaseyComponent,
   ],
   imports: [
     BrowserModule,
