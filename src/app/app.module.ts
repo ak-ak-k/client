@@ -83,6 +83,8 @@ import { HomeComponent } from './components/home/home.component';
 import { BurnComponent } from './components/burn/burn.component';
 import { DemogatewayComponent } from './components/demogateway/demogateway.component';
 import { DemoadvocaseyComponent } from './components/demoadvocasey/demoadvocasey.component';
+import { BurnproductsComponent } from './components/burnproducts/burnproducts.component';
+import { AccessoriesComponent } from './components/accessories/accessories.component';
 
 @NgModule({
   declarations: [
@@ -146,6 +148,8 @@ import { DemoadvocaseyComponent } from './components/demoadvocasey/demoadvocasey
     BurnComponent,
     DemogatewayComponent,
     DemoadvocaseyComponent,
+    BurnproductsComponent,
+    AccessoriesComponent,
   ],
   imports: [
     BrowserModule,

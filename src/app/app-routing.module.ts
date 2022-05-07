@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AccessoriesComponent } from './components/accessories/accessories.component';
 import { BurnComponent } from './components/burn/burn.component';
+import { BurnproductsComponent } from './components/burnproducts/burnproducts.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ElectronicsComponent } from './components/electronics/electronics.component';
 import { ExchangeOrderComponent } from './components/exchange-order/exchange-order.component';
@@ -95,6 +97,8 @@ const routes: Routes = [
   { path: 'howitworks', component: HowitworksComponent },
   { path: 'home', component: HomeComponent },
   { path: 'burn', component: BurnComponent },
+  { path: 'burnproduct', component: BurnproductsComponent },
+  { path: 'accessories', component: AccessoriesComponent },
 ];
 
 @NgModule({
