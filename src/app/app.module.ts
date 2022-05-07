@@ -78,13 +78,14 @@ import { GatewaycardComponent } from './components/gatewaycard/gatewaycard.compo
 import { GatewaycardpopupComponent } from './components/gatewaycardpopup/gatewaycardpopup.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
 import { AdvocaseyComponent } from './components/advocasey/advocasey.component';
-import { HowitworksComponent } from './components/howitworks/howitworks.component';
+
 import { HomeComponent } from './components/home/home.component';
 import { BurnComponent } from './components/burn/burn.component';
 import { DemogatewayComponent } from './components/demogateway/demogateway.component';
 import { DemoadvocaseyComponent } from './components/demoadvocasey/demoadvocasey.component';
 import { BurnproductsComponent } from './components/burnproducts/burnproducts.component';
 import { AccessoriesComponent } from './components/accessories/accessories.component';
+import { HowitworksComponent } from './components/howitworks/howitworks.component';
 
 @NgModule({
   declarations: [
@@ -143,13 +144,13 @@ import { AccessoriesComponent } from './components/accessories/accessories.compo
     GatewaycardpopupComponent,
     WalletscreenComponent,
     AdvocaseyComponent,
-    HowitworksComponent,
     HomeComponent,
     BurnComponent,
     DemogatewayComponent,
     DemoadvocaseyComponent,
     BurnproductsComponent,
     AccessoriesComponent,
+    HowitworksComponent,
   ],
   imports: [
     BrowserModule,

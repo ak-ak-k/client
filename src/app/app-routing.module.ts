@@ -48,6 +48,7 @@ import { RefrcashComponent } from './components/refrcash/refrcash.component';
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
+import { ThreeeasystepsComponent } from './howitworkssection/threeeasysteps/threeeasysteps.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -99,6 +100,18 @@ const routes: Routes = [
   { path: 'burn', component: BurnComponent },
   { path: 'burnproduct', component: BurnproductsComponent },
   { path: 'accessories', component: AccessoriesComponent },
+
+  // demo
+
+  { path: 'easysteps', component: ThreeeasystepsComponent },
+  // lazy loading
+  {
+    path: 'howitworksection',
+    loadChildren: () =>
+      import('./howitworkssection/howitworks.module').then(
+        (mod) => mod.HowitworksModule
+      ),
+  },
 ];
 
 @NgModule({
