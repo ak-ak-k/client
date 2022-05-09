@@ -42,7 +42,7 @@
   );
 
   //   overflow: hidden;
-  //   height: 100vh;
+  height: 100vh;
 }
 
 //
@@ -66,9 +66,16 @@
 .main-heading {
   font-family: "Jost";
   font-style: normal;
-  font-weight: 700;
-  font-size: 32px !important;
-  line-height: 24px !important;
+  font-weight: 600;
+  font-size: 28px !important;
+  line-height: 40px !important;
+  .grow {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
 }
 
 .category {

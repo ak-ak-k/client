@@ -48,7 +48,15 @@ import { RefrcashComponent } from './components/refrcash/refrcash.component';
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
+import { BurncashComponent } from './howitworkssection/burncash/burncash.component';
+import { Cashback2xComponent } from './howitworkssection/cashback2x/cashback2x.component';
+import { GrowcommunityComponent } from './howitworkssection/growcommunity/growcommunity.component';
+import { OnerefrcashComponent } from './howitworkssection/onerefrcash/onerefrcash.component';
+import { RefrcreatorComponent } from './howitworkssection/refrcreator/refrcreator.component';
+import { RefrlevelsComponent } from './howitworkssection/refrlevels/refrlevels.component';
+import { StartedrefrComponent } from './howitworkssection/startedrefr/startedrefr.component';
 import { ThreeeasystepsComponent } from './howitworkssection/threeeasysteps/threeeasysteps.component';
+import { VocallocalComponent } from './howitworkssection/vocallocal/vocallocal.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -104,6 +112,14 @@ const routes: Routes = [
   // demo
 
   { path: 'easysteps', component: ThreeeasystepsComponent },
+  { path: 'grow', component: GrowcommunityComponent },
+  { path: 'started', component: StartedrefrComponent },
+  { path: 'cashback', component: Cashback2xComponent },
+  { path: 'vocallocal', component: VocallocalComponent },
+  { path: 'onerefrcash', component: OnerefrcashComponent },
+  { path: 'refrlevels', component: RefrlevelsComponent },
+  { path: 'refrcreator', component: RefrcreatorComponent },
+  { path: 'burncash', component: BurncashComponent },
   // lazy loading
   {
     path: 'howitworksection',

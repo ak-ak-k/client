@@ -41,7 +41,7 @@
     #e0e5f9 90.14%
   );
 
-  //   overflow: hidden;
+  overflow: hidden;
   //   height: 100vh;
 }
 
@@ -68,7 +68,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 32px !important;
-  line-height: 24px !important;
+  line-height: 30px !important;
 }
 
 .category {
@@ -92,6 +92,7 @@
     font-weight: 400;
     font-size: 16px !important;
     line-height: 23px !important;
+    width: 85%;
   }
 }
 
@@ -112,6 +113,18 @@
     font-weight: 700;
     font-size: 22px !important;
     line-height: 18px !important;
+  }
+}
+
+.list {
+  padding-left: 31px;
+  width: 85%;
+  li {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 23px !important;
   }
 }
 

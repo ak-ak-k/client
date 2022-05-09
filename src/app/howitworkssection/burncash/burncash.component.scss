@@ -41,8 +41,8 @@
     #e0e5f9 90.14%
   );
 
-  //   overflow: hidden;
-  //   height: 100vh;
+  overflow: hidden;
+  height: 100vh;
 }
 
 //
@@ -68,7 +68,23 @@
   font-style: normal;
   font-weight: 700;
   font-size: 32px !important;
-  line-height: 24px !important;
+  line-height: 40px !important;
+}
+
+.secondary-heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px !important;
+  line-height: 40px !important;
+}
+
+.friend-recommend {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px !important;
+  line-height: 40px !important;
 }
 
 .category {
@@ -83,6 +99,14 @@
   }
 }
 
+.whatis {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px !important;
+  line-height: 22px !important;
+}
+
 .para {
   margin-top: 15px;
   margin-left: 12px;
@@ -92,6 +116,7 @@
     font-weight: 400;
     font-size: 16px !important;
     line-height: 23px !important;
+    width: 85%;
   }
 }
 
@@ -111,7 +136,20 @@
     font-style: normal;
     font-weight: 700;
     font-size: 22px !important;
-    line-height: 18px !important;
+    line-height: 24px !important;
+    width: 93%;
+  }
+}
+
+.list {
+  padding-left: 31px;
+  width: 85%;
+  li {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 23px !important;
   }
 }
 
