@@ -16,6 +16,7 @@ import { HowitworksComponent } from './components/howitworks/howitworks.componen
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 import { LoginpageComponent } from './components/loginpage/loginpage.component';
 import { OnFashionComponent } from './components/on-fashion/on-fashion.component';
+import { OrderconfirmationComponent } from './components/orderconfirmation/orderconfirmation.component';
 import { Orderdetail1Component } from './components/orderdetail1/orderdetail1.component';
 import { Orderdetail2Component } from './components/orderdetail2/orderdetail2.component';
 import { Orderdetail3Component } from './components/orderdetail3/orderdetail3.component';
@@ -48,6 +49,7 @@ import { RefrcashComponent } from './components/refrcash/refrcash.component';
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
+import { TickComponent } from './greentickanimation/tick/tick.component';
 import { BurncashComponent } from './howitworkssection/burncash/burncash.component';
 import { Cashback2xComponent } from './howitworkssection/cashback2x/cashback2x.component';
 import { GrowcommunityComponent } from './howitworkssection/growcommunity/growcommunity.component';
@@ -57,6 +59,7 @@ import { RefrlevelsComponent } from './howitworkssection/refrlevels/refrlevels.c
 import { StartedrefrComponent } from './howitworkssection/startedrefr/startedrefr.component';
 import { ThreeeasystepsComponent } from './howitworkssection/threeeasysteps/threeeasysteps.component';
 import { VocallocalComponent } from './howitworkssection/vocallocal/vocallocal.component';
+import { AdminPanelComponent } from './merchant/admin-panel/admin-panel.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -108,6 +111,9 @@ const routes: Routes = [
   { path: 'burn', component: BurnComponent },
   { path: 'burnproduct', component: BurnproductsComponent },
   { path: 'accessories', component: AccessoriesComponent },
+  { path: 'orderconfirm', component: OrderconfirmationComponent },
+  { path: 'tick', component: TickComponent },
+  { path: 'admin', component: AdminPanelComponent },
 
   // demo
 

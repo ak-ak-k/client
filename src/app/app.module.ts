@@ -86,6 +86,10 @@ import { DemoadvocaseyComponent } from './components/demoadvocasey/demoadvocasey
 import { BurnproductsComponent } from './components/burnproducts/burnproducts.component';
 import { AccessoriesComponent } from './components/accessories/accessories.component';
 import { HowitworksComponent } from './components/howitworks/howitworks.component';
+import { OrderconfirmationComponent } from './components/orderconfirmation/orderconfirmation.component';
+import { TickComponent } from './greentickanimation/tick/tick.component';
+import { AdminPanelComponent } from './merchant/admin-panel/admin-panel.component';
+import { FooterComponent } from './footer/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -151,6 +155,10 @@ import { HowitworksComponent } from './components/howitworks/howitworks.componen
     BurnproductsComponent,
     AccessoriesComponent,
     HowitworksComponent,
+    OrderconfirmationComponent,
+    TickComponent,
+    AdminPanelComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,183 @@
+.sticky-bottom {
+  bottom: 0;
+  position: fixed;
+  width: -webkit-fill-available;
+  z-index: 10;
+}
+
+// flexx classes
+.mb-5 {
+  margin-bottom: 15px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+  .d-flex-row-md {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+  }
+
+  .d-flex-column-md {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+  }
+
+  .mt-md-35 {
+    margin-top: 35px;
+  }
+
+  .mt-md-25 {
+    margin-top: 20px;
+  }
+
+  .mr-md-5 {
+    margin-right: 5px;
+  }
+
+  .mr-md-10 {
+    margin-right: 10px;
+  }
+
+  .mr-md-15 {
+    margin-right: 15px;
+  }
+
+  .mr-md-25 {
+    margin-right: 25px;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+
+  .d-md-none {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .d-sm-block {
+    display: block;
+  }
+
+  .d-sm-none {
+    display: none;
+  }
+
+  .d-flex-row-sm {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+  }
+
+  .d-flex-column-sm {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+  }
+
+  .mt-sm-15 {
+    margin-top: 15px;
+  }
+  .mt-sm-10 {
+    margin-top: 10px;
+  }
+
+  .mt-sm-25 {
+    margin-top: 25px;
+  }
+
+  .mr-sm-10 {
+    margin-right: 10px;
+  }
+
+  .mr-sm-5 {
+    margin-right: 5px;
+  }
+
+  .mr-sm-15 {
+    margin-right: 15px;
+  }
+
+  .mr-sm-25 {
+    margin-right: 25px;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.footer-mobile {
+  padding: 12px 0 12px 0 !important;
+  text-align: center !important;
+  align-items: baseline !important;
+  justify-content: space-around;
+  bottom: 0;
+}
+
+.footer-mobile span {
+  font-size: 12px !important;
+}
+
+.navbar-mobile {
+  padding: 25px 15px 25px 15px !important;
+  text-align: center !important;
+  align-items: baseline !important;
+}
+
+@media (max-width: 767px) {
+  .d-sm-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .d-md-block {
+    display: block !important;
+  }
+}
