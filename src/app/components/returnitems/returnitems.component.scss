@@ -2,13 +2,25 @@
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
-  font-size: 13px !important;
+  font-size: 16px !important;
   line-height: 29px !important;
 
   color: #000000;
 }
 
 //
+
+// .line {
+//   border: 1px solid #000000;
+//   width: 87%;
+//   margin: 11px 11px;
+// }
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  outline: none;
+}
 
 .select {
   align-items: center;
@@ -22,7 +34,7 @@
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px !important;
+  font-size: 14px !important;
   line-height: 23px !important;
 
   color: #000000;

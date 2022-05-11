@@ -1,0 +1,146 @@
+.header {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-details {
+  display: flex;
+  justify-content: center;
+  // text-align: center;
+  width: 100%;
+  margin-right: 10%;
+}
+
+.header-img {
+  margin-left: 6px;
+}
+
+.pro-details {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  margin-bottom: 0px !important;
+  color: #000000;
+}
+//
+
+.heading {
+  margin: 20px 0;
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 23px !important;
+  }
+}
+
+.box {
+  width: 91%;
+  //   height: 360px;
+  border: 1px solid #d6d9d9;
+  border-radius: 5px;
+  margin-left: 12px;
+}
+
+.select {
+  align-items: center;
+  display: flex;
+  gap: 13px;
+  margin: 15px 0 15px 5px;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  outline: none;
+  accent-color: black;
+}
+
+.size-text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px !important;
+  line-height: 20px !important;
+}
+
+.charged {
+  float: right;
+  width: 91%;
+  margin-top: -7px;
+
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+}
+
+.name-card {
+  width: 90%;
+  height: 40px;
+  margin: 20px;
+  background: #f0f2f2;
+  margin: 15px 0 15px 14px;
+  .click {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  p {
+    padding: 8px 0 !important;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+}
+
+.checkbox {
+  display: flex;
+  margin: 30px;
+  .agree {
+    margin: auto;
+  }
+  .label {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin-left: 26px;
+  }
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+//
+
+.continue {
+  text-align: center;
+  margin-top: 30px;
+  button {
+    background: #874bf9;
+    border-radius: 5px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: white;
+    height: 43px;
+    width: 159px;
+  }
+}

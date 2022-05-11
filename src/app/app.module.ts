@@ -90,6 +90,8 @@ import { OrderconfirmationComponent } from './components/orderconfirmation/order
 import { TickComponent } from './greentickanimation/tick/tick.component';
 import { AdminPanelComponent } from './merchant/admin-panel/admin-panel.component';
 import { FooterComponent } from './footer/footer/footer.component';
+import { ChooseExchangeitemComponent } from './components/choose-exchangeitem/choose-exchangeitem.component';
+import { ExchangeProductComponent } from './components/exchange-product/exchange-product.component';
 
 @NgModule({
   declarations: [
@@ -159,6 +161,8 @@ import { FooterComponent } from './footer/footer/footer.component';
     TickComponent,
     AdminPanelComponent,
     FooterComponent,
+    ChooseExchangeitemComponent,
+    ExchangeProductComponent,
   ],
   imports: [
     BrowserModule,

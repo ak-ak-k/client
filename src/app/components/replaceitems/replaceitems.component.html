@@ -8,14 +8,16 @@
 
             <div>
                 <p class="select">
-                    <mat-icon>
+                    <!-- <mat-icon>
                         radio_button_unchecked
-                    </mat-icon>
-                    <span class="size-text">Size or fit issue</span>
+                    </mat-icon> -->
+
+                    <input id="size-fit" type="radio" name="replace_items">
+                    <label for="size-fit" class="size-text">Product damaged, but shipping box OK</label>
                 </p>
 
                 <p>
-                    <svg width="166" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100%" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="0.5" x2="330" y2="0.5" stroke="black" />
                     </svg>
                 </p>
@@ -23,14 +25,14 @@
             </div>
             <div>
                 <p class="select">
-                    <mat-icon>
-                        radio_button_unchecked
-                    </mat-icon>
-                    <span class="size-text">Product damaged, but shipping box OK</span>
+
+
+                    <input id="damaged" type="radio" name="replace_items">
+                    <label for="damaged" class="size-text">Both product and shipping box damaged</label>
                 </p>
 
                 <p>
-                    <svg width="166" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100%" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="0.5" x2="330" y2="0.5" stroke="black" />
                     </svg>
                 </p>
@@ -38,14 +40,13 @@
             </div>
             <div>
                 <p class="select">
-                    <mat-icon>
-                        radio_button_unchecked
-                    </mat-icon>
-                    <span class="size-text">Both product and shipping box damaged</span>
+
+                    <input id="product" type="radio" name="replace_items">
+                    <label for="product" class="size-text">Wrong item was sent</label>
                 </p>
 
                 <p>
-                    <svg width="166" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100%" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="0.5" x2="330" y2="0.5" stroke="black" />
                     </svg>
                 </p>
@@ -53,14 +54,16 @@
             </div>
             <div>
                 <p class="select">
-                    <mat-icon>
-                        radio_button_unchecked
-                    </mat-icon>
-                    <span class="size-text">Wrong item was sent</span>
+
+
+                    <input id="wrong" type="radio" name="replace_items">
+                    <label for="wrong" class="size-text">Item defective, spoilt, expired, or doesnt work</label>
+
+
                 </p>
 
                 <p>
-                    <svg width="166" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100%" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="0.5" x2="330" y2="0.5" stroke="black" />
                     </svg>
                 </p>
@@ -68,43 +71,21 @@
             </div>
             <div>
                 <p class="select">
-                    <mat-icon>
-                        radio_button_unchecked
-                    </mat-icon>
-                    <span class="size-text">Item defective, spoilt, expired, or doesnt work</span>
+
+                    <input id="defective" type="radio" name="replace_items">
+                    <label for="defective" class="size-text">Items or parts missing</label>
+
+                    <span class="size-text"></span>
                 </p>
 
                 <p>
-                    <svg width="166" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100%" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="0.5" x2="330" y2="0.5" stroke="black" />
                     </svg>
                 </p>
 
             </div>
-            <div>
-                <p class="select">
-                    <!-- <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="14.5" fill="white" stroke="black" />
-                    </svg> -->
 
-
-
-                    <mat-icon>
-                        radio_button_unchecked
-                    </mat-icon>
-
-
-
-                    <span class="size-text">Items or parts missing</span>
-                </p>
-                <p>
-                    <svg width="166" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="0.5" x2="330" y2="0.5" stroke="black" />
-                    </svg>
-                </p>
-
-
-            </div>
 
             <div>
                 <p class="comments">Comments (optional)</p>

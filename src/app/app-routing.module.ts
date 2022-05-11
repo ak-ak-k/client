@@ -4,6 +4,7 @@ import { AccessoriesComponent } from './components/accessories/accessories.compo
 import { BurnComponent } from './components/burn/burn.component';
 import { BurnproductsComponent } from './components/burnproducts/burnproducts.component';
 import { CartComponent } from './components/cart/cart.component';
+import { ChooseExchangeitemComponent } from './components/choose-exchangeitem/choose-exchangeitem.component';
 import { ElectronicsComponent } from './components/electronics/electronics.component';
 import { ExchangeOrderComponent } from './components/exchange-order/exchange-order.component';
 import { FitnessComponent } from './components/fitness/fitness.component';
@@ -46,6 +47,7 @@ import { Page9Component } from './components/page9/page9.component';
 import { ProductsPopupComponent } from './components/products-popup/products-popup.component';
 import { RefillComponent } from './components/refill/refill.component';
 import { RefrcashComponent } from './components/refrcash/refrcash.component';
+import { ReplaceitemsComponent } from './components/replaceitems/replaceitems.component';
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
@@ -114,6 +116,7 @@ const routes: Routes = [
   { path: 'orderconfirm', component: OrderconfirmationComponent },
   { path: 'tick', component: TickComponent },
   { path: 'admin', component: AdminPanelComponent },
+  { path: 'makeitright', component: ChooseExchangeitemComponent },
 
   // demo
 

@@ -1,0 +1,50 @@
+.heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px !important;
+  line-height: 23px !important;
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+}
+
+.buttons {
+  margin: 20px 0 0 35px;
+  button {
+    margin-right: 10px;
+    height: 41px;
+    border: 1px solid #aeb1b7;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+}
+
+.size:focus {
+  background-color: lightgray;
+}
+
+.prod-detail {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.prod-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  color: #687e7e;
+  margin-left: 0 !important;
+}

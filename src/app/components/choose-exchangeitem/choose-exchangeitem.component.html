@@ -1,0 +1,103 @@
+<div class="col col-100">
+
+    <div class="header">
+        <a class="header-img">
+
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z" />
+            </svg>
+        </a>
+
+        <div class="header-details">
+            <p class="identity pro-details">Orders</p>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="heading">
+            <p>How can we make it right ?</p>
+        </div>
+
+        <div class="box">
+            <div>
+                <div class="select">
+                    <div>
+
+                        <input id="size-fit" type="radio" name="replace_items">
+                    </div>
+                    <div>
+
+                        <label for="size-fit" class="size-text">Exchange for different size or color</label>
+
+                    </div>
+
+
+                </div>
+
+                <div class="charged">
+                    <p>You will not be charged or refunded any price differential with the exchanged item.</p>
+                </div>
+
+                <p>
+                    <svg width="100%" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="0.5" x2="330" y2="0.5" stroke="#d6d9d9" />
+                    </svg>
+                </p>
+
+                <div class="name-card">
+                    <a class="click" (click)="continue()">
+                        <p>CHOOSE EXCHANGE ITEM</p>
+                        <a>
+                            <mat-icon>
+                                chevron_right
+                            </mat-icon>
+                        </a>
+                    </a>
+                </div>
+
+                <div class="checkbox">
+
+                    <div class="agree">
+                        <input type="checkbox" name="agree" id="agree">
+                    </div>
+
+                    <div class="label">
+                        <label for="agree">I agree to return all items in original condition, with MRP tags attached,
+                            warranty cards, and original accessories in
+                            packaging.</label>
+                    </div>
+
+                </div>
+
+                <p>
+                    <svg width="100%" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="0.5" x2="330" y2="0.5" stroke="#d6d9d9" />
+                    </svg>
+                </p>
+
+                <div class="select">
+                    <div>
+
+                        <input id="refund" type="radio" name="refund">
+                    </div>
+                    <div>
+
+                        <label for="refund" class="size-text">Refund to your original payment method</label>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="continue">
+            <button mat-button>Continue</button>
+        </div>
+    </div>
+</div>
