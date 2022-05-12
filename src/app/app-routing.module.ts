@@ -16,6 +16,8 @@ import { HomeComponent } from './components/home/home.component';
 import { HowitworksComponent } from './components/howitworks/howitworks.component';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 import { LoginpageComponent } from './components/loginpage/loginpage.component';
+import { Mk1Component } from './components/mk1/mk1.component';
+import { Mk2Component } from './components/mk2/mk2.component';
 import { OnFashionComponent } from './components/on-fashion/on-fashion.component';
 import { OrderconfirmationComponent } from './components/orderconfirmation/orderconfirmation.component';
 import { Orderdetail1Component } from './components/orderdetail1/orderdetail1.component';
@@ -47,6 +49,8 @@ import { Page9Component } from './components/page9/page9.component';
 import { ProductsPopupComponent } from './components/products-popup/products-popup.component';
 import { RefillComponent } from './components/refill/refill.component';
 import { RefrcashComponent } from './components/refrcash/refrcash.component';
+import { ReplacedetailsComponent } from './components/replacedetails/replacedetails.component';
+import { Replacedetails2Component } from './components/replacedetails2/replacedetails2.component';
 import { ReplaceitemsComponent } from './components/replaceitems/replaceitems.component';
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
@@ -117,6 +121,10 @@ const routes: Routes = [
   { path: 'tick', component: TickComponent },
   { path: 'admin', component: AdminPanelComponent },
   { path: 'makeitright', component: ChooseExchangeitemComponent },
+  { path: 'mk1', component: Mk1Component },
+  { path: 'mk2', component: Mk2Component },
+  { path: 'replacedetails', component: ReplacedetailsComponent },
+  { path: 'replacedetails2', component: Replacedetails2Component },
 
   // demo
 

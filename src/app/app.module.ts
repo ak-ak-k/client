@@ -92,6 +92,10 @@ import { AdminPanelComponent } from './merchant/admin-panel/admin-panel.componen
 import { FooterComponent } from './footer/footer/footer.component';
 import { ChooseExchangeitemComponent } from './components/choose-exchangeitem/choose-exchangeitem.component';
 import { ExchangeProductComponent } from './components/exchange-product/exchange-product.component';
+import { Mk1Component } from './components/mk1/mk1.component';
+import { Mk2Component } from './components/mk2/mk2.component';
+import { ReplacedetailsComponent } from './components/replacedetails/replacedetails.component';
+import { Replacedetails2Component } from './components/replacedetails2/replacedetails2.component';
 
 @NgModule({
   declarations: [
@@ -163,6 +167,10 @@ import { ExchangeProductComponent } from './components/exchange-product/exchange
     FooterComponent,
     ChooseExchangeitemComponent,
     ExchangeProductComponent,
+    Mk1Component,
+    Mk2Component,
+    ReplacedetailsComponent,
+    Replacedetails2Component,
   ],
   imports: [
     BrowserModule,

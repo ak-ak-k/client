@@ -8,27 +8,10 @@
 
             <div>
                 <p class="select">
-                    <!-- <mat-icon>
-                        radio_button_unchecked
-                    </mat-icon> -->
-
-                    <input id="size-fit" type="radio" name="replace_items">
-                    <label for="size-fit" class="size-text">Size or fit issue</label>
-                </p>
-
-                <p>
-                    <svg width="100%" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="0.5" x2="330" y2="0.5" stroke="black" />
-                    </svg>
-                </p>
-
-            </div>
-            <div>
-                <p class="select">
 
 
                     <input id="damaged" type="radio" name="replace_items">
-                    <label for="damaged" class="size-text">Product damaged, but shipping box OK</label>
+                    <label for="damaged" class="size-text">Size or fit issue</label>
                 </p>
 
                 <p>
@@ -42,7 +25,7 @@
                 <p class="select">
 
                     <input id="product" type="radio" name="replace_items">
-                    <label for="product" class="size-text">Both product and shipping box damaged</label>
+                    <label for="product" class="size-text">Product quality issue</label>
                 </p>
 
                 <p>
@@ -57,7 +40,7 @@
 
 
                     <input id="wrong" type="radio" name="replace_items">
-                    <label for="wrong" class="size-text">Wrong item was sent</label>
+                    <label for="wrong" class="size-text">Damaged or used product</label>
 
 
                 </p>
@@ -73,7 +56,7 @@
                 <p class="select">
 
                     <input id="defective" type="radio" name="replace_items">
-                    <label for="defective" class="size-text">Item defective, spoilt, expired, or doesnt work</label>
+                    <label for="defective" class="size-text">Does not look good on me</label>
 
                     <span class="size-text"></span>
                 </p>
@@ -85,25 +68,45 @@
                 </p>
 
             </div>
+
+            <div>
+                <p class="select">
+                    <!-- <mat-icon>
+                                    radio_button_unchecked
+                                </mat-icon> -->
+
+                    <input id="size-fit" type="radio" name="replace_items">
+                    <label for="size-fit" class="size-text">Item no longer needed</label>
+                </p>
+
+                <p>
+                    <svg width="100%" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="0.5" x2="330" y2="0.5" stroke="black" />
+                    </svg>
+                </p>
+
+            </div>
+
             <div>
                 <p class="select">
+                    <!-- <mat-icon>
+                                                            radio_button_unchecked
+                                                        </mat-icon> -->
 
                     <input id="missing" type="radio" name="replace_items">
-                    <label for="missing" class="size-text">Items or parts missing</label>
-
-
-                    <span class="size-text"></span>
+                    <label for="missing" class="size-text">Item or part missing</label>
                 </p>
+
                 <p>
                     <svg width="100%" height="1" viewBox="0 0 330 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="0.5" x2="330" y2="0.5" stroke="black" />
                     </svg>
                 </p>
 
-
             </div>
 
-            <div>
+
+            <div style="margin-bottom: 16px;">
                 <p class="comments">Comments (optional)</p>
                 <p>
                     <input type="textarea" name="" id="">

@@ -1,0 +1,95 @@
+<div class="col col-100">
+
+    <div class="header">
+        <a class="header-img">
+
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z" />
+            </svg>
+        </a>
+
+        <div class="header-details">
+            <p class="identity pro-details">Orders</p>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="heading">
+            <p>How will you mail your return ?</p>
+        </div>
+
+        <div class="box">
+            <div>
+                <div class="select">
+                    <div>
+
+                        <input id="size-fit" type="radio" name="replace_items">
+                    </div>
+                    <div>
+
+                        <label for="size-fit" class="size-text"><b>Pickup at the time of delivery</b></label>
+
+                    </div>
+
+                    <span class="divide"></span>
+
+                    <div class="return-price">
+                        <label for="size-fit" class="size-text"><b>Rs 0.00</b></label>
+                    </div>
+
+
+                </div>
+
+                <div class="charged">
+                    <p>Your package will be picked up by a courier service at the time of delivery of the
+                        Replacement/Exchange Order item(s).
+                        Please Keep your return item(s) ready at the time of delivery.</p>
+                </div>
+                <p class="size-text"><b>Pickup Address.</b></p>
+                <div class="charged">
+                    <p>Address: 403,Rehana Heights, S V Road, Nr.Rass Showroom, Santacruz (W) Mumbai-400054</p>
+                </div>
+
+
+                <div class="change-address">
+
+                    <p class="size-text"><b>Change Address</b></p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="return-exhange">
+                <p>Return & Exchange</p>
+                <p>Rs 0.00</p>
+            </div>
+
+            <a class="return-exhange" (click)="show = !show">
+                <p>Summary</p>
+
+                <p>
+                    <mat-icon>
+                        expand_more
+                    </mat-icon>
+
+                </p>
+            </a>
+
+            <div *ngIf="show">
+                <p class="free-charge">Free of Charge</p>
+            </div>
+
+        </div>
+
+        <div class="continue">
+            <button mat-button>Confirm your return</button>
+        </div>
+    </div>
+</div>
