@@ -96,6 +96,7 @@ import { Mk1Component } from './components/mk1/mk1.component';
 import { Mk2Component } from './components/mk2/mk2.component';
 import { ReplacedetailsComponent } from './components/replacedetails/replacedetails.component';
 import { Replacedetails2Component } from './components/replacedetails2/replacedetails2.component';
+import { DelivereyComponent } from './components/deliverey/deliverey.component';
 
 @NgModule({
   declarations: [
@@ -171,6 +172,7 @@ import { Replacedetails2Component } from './components/replacedetails2/replacede
     Mk2Component,
     ReplacedetailsComponent,
     Replacedetails2Component,
+    DelivereyComponent,
   ],
   imports: [
     BrowserModule,
