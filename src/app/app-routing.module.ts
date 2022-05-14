@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccessoriesComponent } from './components/accessories/accessories.component';
+import { BottomsupComponent } from './components/bottomsup/bottomsup.component';
 import { BurnComponent } from './components/burn/burn.component';
 import { BurnproductsComponent } from './components/burnproducts/burnproducts.component';
 import { CartComponent } from './components/cart/cart.component';
@@ -13,6 +14,7 @@ import { GatewaycardComponent } from './components/gatewaycard/gatewaycard.compo
 import { GatewaycardpopupComponent } from './components/gatewaycardpopup/gatewaycardpopup.component';
 import { HealthcareComponent } from './components/healthcare/healthcare.component';
 import { HomeComponent } from './components/home/home.component';
+import { HowitworkbottompopupComponent } from './components/howitworkbottompopup/howitworkbottompopup.component';
 import { HowitworksComponent } from './components/howitworks/howitworks.component';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 import { LoginpageComponent } from './components/loginpage/loginpage.component';
@@ -66,6 +68,10 @@ import { StartedrefrComponent } from './howitworkssection/startedrefr/startedref
 import { ThreeeasystepsComponent } from './howitworkssection/threeeasysteps/threeeasysteps.component';
 import { VocallocalComponent } from './howitworkssection/vocallocal/vocallocal.component';
 import { AdminPanelComponent } from './merchant/admin-panel/admin-panel.component';
+import { OfflineStoreComponent } from './online-offlinestores/offline-store/offline-store.component';
+import { OnlineOfflineComponent } from './online-offlinestores/online-offline/online-offline.component';
+import { OnlineStoreComponent } from './online-offlinestores/online-store/online-store.component';
+import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/shopdetails-demo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -125,6 +131,12 @@ const routes: Routes = [
   { path: 'mk2', component: Mk2Component },
   { path: 'replacedetails', component: ReplacedetailsComponent },
   { path: 'replacedetails2', component: Replacedetails2Component },
+  { path: 'sddemo', component: ShopdetailsDemoComponent },
+  { path: 'bb', component: BottomsupComponent },
+  { path: 'howitworkpopup', component: HowitworkbottompopupComponent },
+  { path: 'offlinestore', component: OfflineStoreComponent },
+  { path: 'onlinestore', component: OnlineStoreComponent },
+  { path: 'onoff', component: OnlineOfflineComponent },
 
   // demo
 

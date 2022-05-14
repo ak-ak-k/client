@@ -97,6 +97,13 @@ import { Mk2Component } from './components/mk2/mk2.component';
 import { ReplacedetailsComponent } from './components/replacedetails/replacedetails.component';
 import { Replacedetails2Component } from './components/replacedetails2/replacedetails2.component';
 import { DelivereyComponent } from './components/deliverey/deliverey.component';
+import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/shopdetails-demo.component';
+import { HowitworkbottompopupComponent } from './components/howitworkbottompopup/howitworkbottompopup.component';
+import { BottomsupComponent } from './components/bottomsup/bottomsup.component';
+import { OfflineStoreComponent } from './online-offlinestores/offline-store/offline-store.component';
+import { OnlineOfflineHeaderComponent } from './online-offlinestores/online-offline-header/online-offline-header.component';
+import { OnlineStoreComponent } from './online-offlinestores/online-store/online-store.component';
+import { OnlineOfflineComponent } from './online-offlinestores/online-offline/online-offline.component';
 
 @NgModule({
   declarations: [
@@ -173,6 +180,13 @@ import { DelivereyComponent } from './components/deliverey/deliverey.component';
     ReplacedetailsComponent,
     Replacedetails2Component,
     DelivereyComponent,
+    ShopdetailsDemoComponent,
+    HowitworkbottompopupComponent,
+    BottomsupComponent,
+    OfflineStoreComponent,
+    OnlineOfflineHeaderComponent,
+    OnlineStoreComponent,
+    OnlineOfflineComponent,
   ],
   imports: [
     BrowserModule,
