@@ -104,6 +104,10 @@ import { OfflineStoreComponent } from './online-offlinestores/offline-store/offl
 import { OnlineOfflineHeaderComponent } from './online-offlinestores/online-offline-header/online-offline-header.component';
 import { OnlineStoreComponent } from './online-offlinestores/online-store/online-store.component';
 import { OnlineOfflineComponent } from './online-offlinestores/online-offline/online-offline.component';
+import { Admin1Component } from './admin/admin1/admin1.component';
+import { Admin2Component } from './admin/admin2/admin2.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -187,6 +191,8 @@ import { OnlineOfflineComponent } from './online-offlinestores/online-offline/on
     OnlineOfflineHeaderComponent,
     OnlineStoreComponent,
     OnlineOfflineComponent,
+    Admin1Component,
+    Admin2Component,
   ],
   imports: [
     BrowserModule,
@@ -214,6 +220,8 @@ import { OnlineOfflineComponent } from './online-offlinestores/online-offline/on
     MatNativeDateModule,
     MatSelectModule,
     MatSidenavModule,
+    MatPaginatorModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

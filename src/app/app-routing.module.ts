@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { Admin1Component } from './admin/admin1/admin1.component';
+import { Admin2Component } from './admin/admin2/admin2.component';
 import { AccessoriesComponent } from './components/accessories/accessories.component';
 import { BottomsupComponent } from './components/bottomsup/bottomsup.component';
 import { BurnComponent } from './components/burn/burn.component';
@@ -137,6 +139,8 @@ const routes: Routes = [
   { path: 'offlinestore', component: OfflineStoreComponent },
   { path: 'onlinestore', component: OnlineStoreComponent },
   { path: 'onoff', component: OnlineOfflineComponent },
+  { path: 'admin1', component: Admin1Component },
+  { path: 'admin2', component: Admin2Component },
 
   // demo
 
