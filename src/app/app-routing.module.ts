@@ -59,6 +59,7 @@ import { ReplaceitemsComponent } from './components/replaceitems/replaceitems.co
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
+import { CpComponent } from './delete/cp/cp.component';
 import { PqrComponent } from './delete/pqr/pqr.component';
 import { TickComponent } from './greentickanimation/tick/tick.component';
 import { BurncashComponent } from './howitworkssection/burncash/burncash.component';
@@ -71,6 +72,7 @@ import { StartedrefrComponent } from './howitworkssection/startedrefr/startedref
 import { ThreeeasystepsComponent } from './howitworkssection/threeeasysteps/threeeasysteps.component';
 import { VocallocalComponent } from './howitworkssection/vocallocal/vocallocal.component';
 import { AdminPanelComponent } from './merchant/admin-panel/admin-panel.component';
+import { CreateProductComponent } from './merchant/create-product/create-product.component';
 import { CreateProfileComponent } from './merchant/create-profile/create-profile.component';
 import { MerchantDashComponent } from './merchant/merchant-dash/merchant-dash.component';
 import { OfflineStoreComponent } from './online-offlinestores/offline-store/offline-store.component';
@@ -147,6 +149,7 @@ const routes: Routes = [
   { path: 'merchantdash', component: MerchantDashComponent },
   { path: 'createprofile', component: CreateProfileComponent },
   { path: 'pqr', component: PqrComponent },
+  { path: 'createproduct', component: CreateProductComponent },
 
   // demo
 

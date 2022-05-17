@@ -1,4 +1,3 @@
-import { style } from '@angular/animations';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
@@ -21,11 +20,11 @@ interface Food {
 }
 
 @Component({
-  selector: 'app-create-profile',
-  templateUrl: './create-profile.component.html',
-  styleUrls: ['./create-profile.component.scss'],
+  selector: 'app-create-product',
+  templateUrl: './create-product.component.html',
+  styleUrls: ['./create-product.component.scss'],
 })
-export class CreateProfileComponent implements OnInit {
+export class CreateProductComponent implements OnInit {
   // ===========
 
   types: Food[] = [
@@ -134,4 +133,19 @@ export class CreateProfileComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  category = new FormControl('', [Validators.required, Validators.required]);
+  prodname = new FormControl('', [Validators.required, Validators.required]);
+  text = new FormControl('', [Validators.required, Validators.required]);
+  mrp = new FormControl('', [Validators.required, Validators.required]);
+  dis = new FormControl('', [Validators.required, Validators.required]);
+  hsn = new FormControl('', [Validators.required, Validators.required]);
+
+  getErrorMessage() {
+    if (this.category.hasError('required')) {
+      return 'You must enter a value';
+    }
+
+    return this.category.hasError('category') ? 'Not a valid category' : '';
+  }
 }

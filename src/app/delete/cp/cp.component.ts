@@ -1,4 +1,3 @@
-import { style } from '@angular/animations';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
@@ -21,11 +20,11 @@ interface Food {
 }
 
 @Component({
-  selector: 'app-create-profile',
-  templateUrl: './create-profile.component.html',
-  styleUrls: ['./create-profile.component.scss'],
+  selector: 'app-cp',
+  templateUrl: './cp.component.html',
+  styleUrls: ['./cp.component.scss'],
 })
-export class CreateProfileComponent implements OnInit {
+export class CpComponent implements OnInit {
   // ===========
 
   types: Food[] = [

@@ -114,6 +114,8 @@ import { MerchantHeaderComponent } from './merchant/merchant-header/merchant-hea
 import { CreateProfileComponent } from './merchant/create-profile/create-profile.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { PqrComponent } from './delete/pqr/pqr.component';
+import { CpComponent } from './delete/cp/cp.component';
+import { CreateProductComponent } from './merchant/create-product/create-product.component';
 
 @NgModule({
   declarations: [
@@ -203,6 +205,8 @@ import { PqrComponent } from './delete/pqr/pqr.component';
     MerchantHeaderComponent,
     CreateProfileComponent,
     PqrComponent,
+    CpComponent,
+    CreateProductComponent,
   ],
   imports: [
     BrowserModule,
