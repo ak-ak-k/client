@@ -70,6 +70,8 @@ import { StartedrefrComponent } from './howitworkssection/startedrefr/startedref
 import { ThreeeasystepsComponent } from './howitworkssection/threeeasysteps/threeeasysteps.component';
 import { VocallocalComponent } from './howitworkssection/vocallocal/vocallocal.component';
 import { AdminPanelComponent } from './merchant/admin-panel/admin-panel.component';
+import { CreateProfileComponent } from './merchant/create-profile/create-profile.component';
+import { MerchantDashComponent } from './merchant/merchant-dash/merchant-dash.component';
 import { OfflineStoreComponent } from './online-offlinestores/offline-store/offline-store.component';
 import { OnlineOfflineComponent } from './online-offlinestores/online-offline/online-offline.component';
 import { OnlineStoreComponent } from './online-offlinestores/online-store/online-store.component';
@@ -141,6 +143,8 @@ const routes: Routes = [
   { path: 'onoff', component: OnlineOfflineComponent },
   { path: 'admin1', component: Admin1Component },
   { path: 'admin2', component: Admin2Component },
+  { path: 'merchantdash', component: MerchantDashComponent },
+  { path: 'createprofile', component: CreateProfileComponent },
 
   // demo
 

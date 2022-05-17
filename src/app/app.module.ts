@@ -8,6 +8,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTabsModule } from '@angular/material/tabs';
 
 // use this
 
@@ -108,6 +109,9 @@ import { Admin1Component } from './admin/admin1/admin1.component';
 import { Admin2Component } from './admin/admin2/admin2.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
+import { MerchantDashComponent } from './merchant/merchant-dash/merchant-dash.component';
+import { MerchantHeaderComponent } from './merchant/merchant-header/merchant-header.component';
+import { CreateProfileComponent } from './merchant/create-profile/create-profile.component';
 
 @NgModule({
   declarations: [
@@ -193,6 +197,9 @@ import { MatTableModule } from '@angular/material/table';
     OnlineOfflineComponent,
     Admin1Component,
     Admin2Component,
+    MerchantDashComponent,
+    MerchantHeaderComponent,
+    CreateProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -222,6 +229,7 @@ import { MatTableModule } from '@angular/material/table';
     MatSidenavModule,
     MatPaginatorModule,
     MatTableModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

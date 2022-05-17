@@ -1,0 +1,170 @@
+.box {
+  margin: 20px;
+}
+
+.ep {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px !important;
+    line-height: 44px !important;
+  }
+}
+
+//
+
+// .one1 {
+//   position: relative;
+//   width: 100%;
+//   overflow: hidden;
+//   padding-top: 100%; /* 1:1 Aspect Ratio */
+//   img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     width: 10%;
+//     height: 10%;
+//     border: none;
+//   }
+// }
+
+// .six {
+//   position: relative;
+//   width: 100%;
+//   overflow: hidden;
+//   padding-top: 56.25%;
+//   img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     width: 10%;
+//     height: 10%;
+//     border: none;
+//   }
+// }
+
+.one1 {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 203px;
+    left: 204px;
+  }
+}
+
+.six {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 108px;
+    left: 206px;
+  }
+}
+
+.add-button {
+  margin-left: 15px;
+}
+
+.add {
+  width: 43px;
+  height: 43px;
+
+  background: #d7d6d6;
+
+  border-radius: 2px;
+  svg {
+    padding: 11px;
+    padding: 0;
+  }
+}
+
+.whole {
+  display: flex;
+  gap: 30px;
+}
+
+//
+
+.right-info {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sn {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 29px !important;
+  }
+  input[type="text"] {
+    width: 351px;
+    height: 40px;
+    padding-left: 8px;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid gray;
+  }
+  input[type="text"]:focus-within {
+    border: 2px solid #512da8;
+  }
+}
+input[type="email"] {
+  width: 351px;
+  height: 40px;
+  padding-left: 8px;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid gray;
+}
+input[type="text"]:focus-within {
+  border: 2px solid #512da8;
+}
+
+input[type="number"] {
+  width: 351px;
+  height: 40px;
+  padding-left: 8px;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid gray;
+}
+input[type="text"]:focus-within {
+  border: 2px solid #512da8;
+}
+
+//
+
+.example-additional-selection {
+  opacity: 0.75;
+  font-size: 0.75em;
+}
+
+//
+
+.select {
+  margin-left: 15px;
+}
+
+.mat-form-field {
+  width: 179%;
+}
