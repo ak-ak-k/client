@@ -94,9 +94,7 @@
   background: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  /* width: 100%; */
-  float: right;
-  margin-right: 200px;
+  width: 100%;
 }
 
 .main {
@@ -207,7 +205,7 @@ input[type="text"]:focus-within {
 
 .sub-location {
   display: flex;
-  gap: 11%;
+  gap: 15%;
 }
 
 .area {
@@ -220,7 +218,7 @@ input[type="text"]:focus-within {
     margin: 10px 0 !important;
   }
   mat-form-field {
-    width: 102%;
+    width: 142%;
   }
 }
 
@@ -241,7 +239,8 @@ input[type="text"]:focus-within {
   }
   .options_ {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     // width: 174%;
 
     p {
@@ -250,7 +249,6 @@ input[type="text"]:focus-within {
       font-weight: 400;
       font-size: 20px !important;
       line-height: 29px !important;
-      margin-top: 0 !important;
     }
 
     .radio-btn {
@@ -318,6 +316,16 @@ input[type="text"]:focus-within {
     }
   }
 }
+.closed {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px !important;
+  line-height: 17px !important;
+  margin-right: 0 !important;
+  width: 46%;
+  text-align: right;
+}
 
 .small {
   position: absolute;
@@ -345,225 +353,4 @@ input[type="text"]:focus-within {
 .weeks {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  margin-top: 10px;
-}
-
-.toogle {
-  display: flex;
-  gap: 20px;
-
-  label {
-    font-family: "Jost";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px !important;
-    line-height: 29px !important;
-  }
-}
-
-.all-options {
-  display: flex;
-  gap: 207px;
-}
-
-.toogleLists {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.all-log {
-  display: flex;
-  gap: 72px;
-}
-
-.weeeeks {
-  display: flex;
-  gap: 18px;
-}
-
-.timings {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  .time {
-    display: flex;
-    gap: 20px;
-    margin-top: 10px;
-  }
-  .close {
-    text-align: right;
-    display: inline;
-  }
-  p {
-    font-family: "Jost";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px !important;
-    line-height: 17px !important;
-    margin: 0 !important;
-  }
-  .smalls {
-    position: absolute;
-    margin-top: -21px;
-    display: flex;
-    gap: 91px;
-  }
-  input[type="time"] {
-    outline: none;
-    position: relative;
-  }
-}
-
-//
-
-.main3 {
-  margin-top: 32px;
-  margin-right: 10px;
-  div {
-    /* text-align: right; */
-    display: flex;
-    justify-content: end;
-    gap: 46px;
-  }
-  button {
-    width: 126px;
-    height: 40px;
-    border-radius: 5px;
-  }
-  .cancel {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    font-family: "Jost";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px !important;
-    line-height: 23px !important;
-
-    color: #000000;
-  }
-  .create {
-    background: #8111e8;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    font-family: "Jost";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px !important;
-    line-height: 23px !important;
-
-    color: #ffffff;
-  }
-}
-
-// --------------
-
-.line {
-  width: 100%;
-  border: 1px solid #6c6c6c;
-  margin: 30px 0;
-}
-
-.gst-softcopy {
-  position: relative;
-}
-
-.upload {
-  position: absolute;
-  margin-left: -358px;
-  margin-top: 2px;
-}
-
-// .fssai-copy {
-//   position: relative;
-// }
-
-// .fssai-soft {
-//   position: absolute;
-//   margin-left: -358px;
-//   margin-top: 2px;
-// }
-
-// ----------------------------------------
-
-//
-
-.col-card {
-  .mat-form-field {
-    font-size: 14px;
-    width: 55%;
-    margin: 0 5%;
-    margin-top: 15px;
-  }
-  .card-box {
-    overflow: hidden;
-    table {
-      width: 100%;
-      td,
-      th {
-        width: 50%;
-      }
-    }
-    mat-paginator {
-      margin: 0 -18px;
-    }
-  }
-}
-
-tr.mat-row,
-tr.mat-footer-row {
-  height: 70px;
-}
-
-.table-heading {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px !important;
-  line-height: 23px !important;
-  color: #000000;
-  background-color: lightgray;
-}
-
-//
-
-.crud {
-  display: flex;
-  gap: 23px;
-  align-items: center;
-
-  button {
-    background: #874bf9;
-    border-radius: 3px;
-    font-family: "Jost";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px !important;
-    color: white;
-  }
-}
-
-//
-
-.heading1 {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px !important;
-  line-height: 26px !important;
-}
-
-.price-section {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px !important;
-  line-height: 23px !important;
-}
-
-.prod-img {
-  display: flex;
-  align-items: center;
-  width: 114%;
-
-  margin-top: 10px;
 }

@@ -59,6 +59,7 @@ import { ReplaceitemsComponent } from './components/replaceitems/replaceitems.co
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
+import { PqrComponent } from './delete/pqr/pqr.component';
 import { TickComponent } from './greentickanimation/tick/tick.component';
 import { BurncashComponent } from './howitworkssection/burncash/burncash.component';
 import { Cashback2xComponent } from './howitworkssection/cashback2x/cashback2x.component';
@@ -145,6 +146,7 @@ const routes: Routes = [
   { path: 'admin2', component: Admin2Component },
   { path: 'merchantdash', component: MerchantDashComponent },
   { path: 'createprofile', component: CreateProfileComponent },
+  { path: 'pqr', component: PqrComponent },
 
   // demo
 

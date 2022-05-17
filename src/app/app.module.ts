@@ -112,6 +112,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MerchantDashComponent } from './merchant/merchant-dash/merchant-dash.component';
 import { MerchantHeaderComponent } from './merchant/merchant-header/merchant-header.component';
 import { CreateProfileComponent } from './merchant/create-profile/create-profile.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { PqrComponent } from './delete/pqr/pqr.component';
 
 @NgModule({
   declarations: [
@@ -200,6 +202,7 @@ import { CreateProfileComponent } from './merchant/create-profile/create-profile
     MerchantDashComponent,
     MerchantHeaderComponent,
     CreateProfileComponent,
+    PqrComponent,
   ],
   imports: [
     BrowserModule,
@@ -230,6 +233,7 @@ import { CreateProfileComponent } from './merchant/create-profile/create-profile
     MatPaginatorModule,
     MatTableModule,
     MatTabsModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

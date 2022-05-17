@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -10,7 +10,7 @@ export interface UserData {
   storename: string;
   phone: string;
   storetype: string;
-  status: string;
+  // status: string;
   storewallet: string;
   area: string;
   onboard: string;
@@ -23,6 +23,8 @@ export interface UserData {
   styleUrls: ['./merchant-dash.component.scss'],
 })
 export class MerchantDashComponent implements OnInit {
+  selected = 'option2';
+
   displayedColumns: string[] = [
     'storename',
     'phone',
@@ -61,7 +63,7 @@ export class MerchantDashComponent implements OnInit {
         storename: 'Aakad bakad baumbay boo',
         phone: '1234567890',
         storetype: 'Online+Offline',
-        status: 'Inactive',
+        // status: 'Inactive',
         storewallet: '5,000',
         area: 'Mahavir Nagar,Ahmedabad',
         onboard: 'Product Catalog',
@@ -71,7 +73,7 @@ export class MerchantDashComponent implements OnInit {
         storename: 'Aakad bakad baumbay boo',
         phone: '1234567890',
         storetype: 'Online',
-        status: 'Active',
+        // status: 'Active',
         storewallet: '5,000',
         area: 'Mahavir Nagar,Ahmedabad',
         onboard: 'Product Catalog',
@@ -81,7 +83,7 @@ export class MerchantDashComponent implements OnInit {
         storename: 'Aakad bakad baumbay boo',
         phone: '1234567890',
         storetype: 'Offline',
-        status: 'Active',
+        // status: 'Active',
         storewallet: '5,000',
         area: 'Mahavir Nagar,Ahmedabad',
         onboard: 'Product Catalog',
@@ -176,4 +178,11 @@ export class MerchantDashComponent implements OnInit {
   statusList: string[] = ['Active', 'Inactive'];
 
   ngOnInit(): void {}
+
+  openFile() {
+    document.querySelector('input')?.click();
+  }
+  handle(e: any) {
+    console.log('Change input file');
+  }
 }

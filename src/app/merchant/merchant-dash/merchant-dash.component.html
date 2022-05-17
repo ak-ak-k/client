@@ -26,12 +26,16 @@
 
             <div class="export">
 
-                <button mat-button>
+                <button (click)="abc.click()" mat-button>
                     <mat-icon>
                         file_upload
                     </mat-icon>
                     Export
+                    <input #abc type="file" style="display:none" (change)="handle($event)">
                 </button>
+
+
+
 
             </div>
 
@@ -56,7 +60,7 @@
                     </mat-select>
                 </mat-form-field>
 
-                <mat-form-field appearance="fill">
+                <!-- <mat-form-field appearance="fill">
                     <mat-label>Sub Category</mat-label>
                     <mat-select [formControl]="sub_cat" multiple>
                         <mat-select-trigger>
@@ -67,7 +71,7 @@
                         </mat-select-trigger>
                         <mat-option *ngFor="let sub_cat of sub_catlist" [value]="sub_cat">{{sub_cat}}</mat-option>
                     </mat-select>
-                </mat-form-field>
+                </mat-form-field> -->
 
                 <mat-form-field appearance="fill">
                     <mat-label>State</mat-label>
@@ -199,7 +203,21 @@
                     </ng-container> -->
                     <ng-container matColumnDef="status">
                         <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Status </th>
-                        <td mat-cell *matCellDef="let row">{{row.status}} </td>
+                        <td mat-cell *matCellDef="let row">
+                            <div style="margin-top: 11px;    margin-left: -16px;">
+
+                                <mat-form-field appearance="fill">
+                                    <mat-label>Select an option</mat-label>
+                                    <mat-select [(value)]="selected">
+                                        <mat-option value="option1">Active</mat-option>
+                                        <mat-option value="option2">Inactive</mat-option>
+
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+
+
+                        </td>
                     </ng-container>
 
                     <ng-container matColumnDef="storewallet">
