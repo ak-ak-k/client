@@ -155,14 +155,14 @@
 
                 <mat-form-field appearance="fill">
                     <mat-label>Wallet</mat-label>
-                    <mat-select [formControl]="toppings" multiple>
+                    <mat-select [formControl]="wallet" multiple>
                         <mat-select-trigger>
-                            {{toppings.value ? toppings.value[0] : ''}}
-                            <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
-                                (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                            {{wallet.value ? wallet.value[0] : ''}}
+                            <span *ngIf="wallet.value?.length > 1" class="example-additional-selection">
+                                (+{{wallet.value.length - 1}} {{wallet.value?.length === 2 ? 'other' : 'others'}})
                             </span>
                         </mat-select-trigger>
-                        <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                        <mat-option *ngFor="let wallet of walletList" [value]="wallet">{{wallet}}</mat-option>
                     </mat-select>
                 </mat-form-field>
 
@@ -260,7 +260,7 @@
                                         </defs>
                                     </svg>
                                 </a>
-                                <a>
+                                <a routerLink="/editprofile">
                                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.125" y="0.125" width="24.75" height="24.75" fill="#8EC18D" />

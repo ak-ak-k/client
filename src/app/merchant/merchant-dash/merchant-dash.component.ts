@@ -177,6 +177,10 @@ export class MerchantDashComponent implements OnInit {
 
   statusList: string[] = ['Active', 'Inactive'];
 
+  wallet = new FormControl();
+
+  walletList: string[] = ['1k', '5k', '10k', '15k', '20k'];
+
   ngOnInit(): void {}
 
   openFile() {

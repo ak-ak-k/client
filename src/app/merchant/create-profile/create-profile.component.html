@@ -58,6 +58,23 @@
                                 stroke-width="0.811737" />
                         </svg>
                     </button>
+                    <button mat-button class="add"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <line x1="9.85509" y1="0.839844" x2="9.85509" y2="19.7804" stroke="white"
+                                stroke-width="0.811737" />
+                            <line x1="0.25" y1="9.90419" x2="19.1905" y2="9.90419" stroke="white"
+                                stroke-width="0.811737" />
+                        </svg>
+                    </button>
+                    <button mat-button class="add"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <line x1="9.85509" y1="0.839844" x2="9.85509" y2="19.7804" stroke="white"
+                                stroke-width="0.811737" />
+                            <line x1="0.25" y1="9.90419" x2="19.1905" y2="9.90419" stroke="white"
+                                stroke-width="0.811737" />
+                        </svg>
+                    </button>
+
                 </div>
 
             </div>
@@ -881,7 +898,7 @@
                                                     class="table-heading">
                                                     <div>
                                                         <mat-form-field appearance="fill">
-                                                            <mat-label>Electronics</mat-label>
+                                                            <mat-label class="table-heading">Electronics</mat-label>
                                                             <mat-select>
                                                                 <mat-option *ngFor="let type of types"
                                                                     [value]="type.value">
@@ -948,7 +965,7 @@
 
                                                     <div class="crud">
 
-                                                        <a>
+                                                        <a routerLink="/editproduct">
                                                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg">
                                                                 <rect x="0.125" y="0.125" width="24.75" height="24.75"

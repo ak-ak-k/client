@@ -74,7 +74,12 @@ import { VocallocalComponent } from './howitworkssection/vocallocal/vocallocal.c
 import { AdminPanelComponent } from './merchant/admin-panel/admin-panel.component';
 import { CreateProductComponent } from './merchant/create-product/create-product.component';
 import { CreateProfileComponent } from './merchant/create-profile/create-profile.component';
+import { EditProductComponent } from './merchant/edit-product/edit-product.component';
+import { EditProfileComponent } from './merchant/edit-profile/edit-profile.component';
+import { EditsectionComponent } from './merchant/editsection/editsection.component';
 import { MerchantDashComponent } from './merchant/merchant-dash/merchant-dash.component';
+import { ProfileviewComponent } from './merchant/profileview/profileview.component';
+import { ViewdetailsComponent } from './merchant/viewdetails/viewdetails.component';
 import { OfflineStoreComponent } from './online-offlinestores/offline-store/offline-store.component';
 import { OnlineOfflineComponent } from './online-offlinestores/online-offline/online-offline.component';
 import { OnlineStoreComponent } from './online-offlinestores/online-store/online-store.component';
@@ -148,8 +153,12 @@ const routes: Routes = [
   { path: 'admin2', component: Admin2Component },
   { path: 'merchantdash', component: MerchantDashComponent },
   { path: 'createprofile', component: CreateProfileComponent },
+  { path: 'editprofile', component: EditProfileComponent },
   { path: 'pqr', component: PqrComponent },
   { path: 'createproduct', component: CreateProductComponent },
+  { path: 'editproduct', component: EditProductComponent },
+  { path: 'profileview', component: ProfileviewComponent },
+  { path: 'viewdetails', component: ViewdetailsComponent },
 
   // demo
 

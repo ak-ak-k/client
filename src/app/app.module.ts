@@ -116,6 +116,14 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { PqrComponent } from './delete/pqr/pqr.component';
 import { CpComponent } from './delete/cp/cp.component';
 import { CreateProductComponent } from './merchant/create-product/create-product.component';
+import { EditProfileComponent } from './merchant/edit-profile/edit-profile.component';
+import { EditProductComponent } from './merchant/edit-product/edit-product.component';
+import { EditsectionComponent } from './merchant/editsection/editsection.component';
+import { ViewdetailsComponent } from './merchant/viewdetails/viewdetails.component';
+import { ProfileSummaryComponent } from './merchant/profile-summary/profile-summary.component';
+import { ProfileviewComponent } from './merchant/profileview/profileview.component';
+import { ProfilewalletsComponent } from './merchant/profilewallets/profilewallets.component';
+import { TransactionhistoryComponent } from './merchant/transactionhistory/transactionhistory.component';
 
 @NgModule({
   declarations: [
@@ -207,6 +215,14 @@ import { CreateProductComponent } from './merchant/create-product/create-product
     PqrComponent,
     CpComponent,
     CreateProductComponent,
+    EditProfileComponent,
+    EditProductComponent,
+    EditsectionComponent,
+    ViewdetailsComponent,
+    ProfileSummaryComponent,
+    ProfileviewComponent,
+    ProfilewalletsComponent,
+    TransactionhistoryComponent,
   ],
   imports: [
     BrowserModule,

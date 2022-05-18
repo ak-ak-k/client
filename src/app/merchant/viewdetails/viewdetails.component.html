@@ -1,0 +1,219 @@
+<app-merchant-header></app-merchant-header>
+
+
+<div class="col col-80">
+    <div class="box">
+
+        <div class="ep">
+            <a routerLink="/profileview" class="view-details">
+                <mat-icon>
+                    keyboard_backspace
+                </mat-icon>
+                <p>Viewing Order Details</p>
+            </a>
+
+            <div class="detail-info">
+                <p>Customer Details</p>
+            </div>
+
+
+            <div class="white detail-info">
+
+                <div class="main">
+
+                    <div class="section">
+                        <div class="section1">
+                            <p>Order No:</p>
+                            <p>Name:</p>
+                            <p>Contact:</p>
+                            <p>E-mail:</p>
+                        </div>
+                        <div class="section2">
+
+                            <p>#1234567890</p>
+                            <p>Brij Mohanlal Desai</p>
+                            <p>1234567890</p>
+                            <p>BrijMohanlalDesai@gmail.com</p>
+
+                        </div>
+                    </div>
+
+                    <div class="sector">
+                        <div class="ship-add">
+                            <p>Shipping Address:</p>
+                            <p class="address">leena residency, 7, Gulmohar Rd, Junaid Nagar, Yadav Nagar, Juhu, Mumbai,
+                                Maharashtra
+                                400056</p>
+                        </div>
+                        <div class="ship-add" style="margin-top: 15px;">
+                            <p>Billing Address:</p>
+                            <p class="address">leena residency, 7, Gulmohar Rd, Junaid Nagar, Yadav Nagar, Juhu, Mumbai,
+                                Maharashtra
+                                400056</p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="detail-info">
+                <p>Order Information</p>
+            </div>
+
+            <div class="white detail-info">
+
+                <div class="main">
+
+                    <div class="section">
+                        <div class="section1">
+                            <p>Date:</p>
+                            <p>Order Status:</p>
+                            <p>Amount:</p>
+                            <p>Payment Method:</p>
+                            <p>Campaign Name:</p>
+                        </div>
+                        <div class="section2">
+
+                            <p>#22/12/2022</p>
+                            <p>Instore</p>
+                            <p>10,000</p>
+                            <p>COD/Online</p>
+                            <p>Aryan57</p>
+
+                        </div>
+                    </div>
+
+                    <div class="right-sec">
+                        <div class="left-name">
+                            <p>Cashback Given to:</p>
+                            <p>Referred By:</p>
+                            <p>Referrer Cashback:</p>
+                            <p>Refr Cash Paid:</p>
+                            <p>Refr Cash Earned:</p>
+                            <p>Total Cashback:</p>
+
+                        </div>
+
+                        <div class="right-name">
+                            <p>Direct Sale</p>
+                            <p>Aditya Jhunjhunwala</p>
+                            <p>50</p>
+                            <p>100</p>
+                            <p>150</p>
+                            <p>150</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="detail-info">
+                <p>Order Summary</p>
+            </div>
+
+            <div class="col col-100 col-sm-100 col-card ">
+
+                <div class="card-box">
+                    <table mat-table [dataSource]="dataSource" matSort>
+
+
+                        <ng-container matColumnDef="sr">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Sr No.
+                            </th>
+                            <td mat-cell *matCellDef="let row"> {{row.sr}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="itdesc">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Item
+                                Description
+                            </th>
+                            <td mat-cell *matCellDef="let row"> {{row.itdesc}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="hsncode">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">HSN Code
+                            </th>
+                            <td mat-cell *matCellDef="let row"> {{row.hsncode}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="qty">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">Qty
+                            </th>
+                            <td mat-cell *matCellDef="let row"> {{row.qty}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="unit_price">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">Unit Price
+                            </th>
+                            <td mat-cell *matCellDef="let row"> {{row.unit_price}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="net_value">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">Net Value
+                            </th>
+                            <td mat-cell *matCellDef="let row"> {{row.net_value}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="tax_rate">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">Tax Rate
+                            </th>
+                            <td mat-cell *matCellDef="let row"> {{row.tax_rate}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="tax_type">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">Tax Type
+                            </th>
+                            <td mat-cell *matCellDef="let row"> {{row.tax_type}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="tax_amount">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">Tax Amount
+                            </th>
+                            <td mat-cell *matCellDef="let row"> {{row.tax_amount}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="total_amount">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">Total Amount
+                            </th>
+                            <td mat-cell *matCellDef="let row"> {{row.total_amount}} </td>
+                        </ng-container>
+
+
+
+
+
+
+
+
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+                        <!-- Row shown when there is no matching data. -->
+                        <tr class="mat-row" *matNoDataRow>
+                            <!-- <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td> -->
+                        </tr>
+
+
+                    </table>
+
+
+                    <!-- <app-spinner *ngIf="!dataSource"></app-spinner> -->
+                    <mat-paginator [pageSizeOptions]="[10, 25, 50, 100]" aria-label="Select page of users">
+                    </mat-paginator>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

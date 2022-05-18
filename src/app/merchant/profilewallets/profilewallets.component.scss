@@ -1,0 +1,147 @@
+.main {
+  margin: 20px;
+  display: flex;
+  gap: 113px;
+  .qr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    span {
+      background: #874bf9;
+      border-radius: 9px;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      color: #ffffff;
+      margin: 21px 10px;
+      display: flex;
+      align-items: center;
+      padding: 8px 25px;
+    }
+  }
+
+  .box {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 510px;
+    height: 211px;
+    position: relative;
+  }
+  .wallet-btn {
+    position: absolute;
+    background: linear-gradient(90.17deg, #ff6a54 -4.31%, #ff4064 104.75%);
+    border-radius: 3px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #ffffff;
+    right: 0;
+  }
+  .wallet {
+    margin: 60px;
+    margin: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .funds {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 29px !important;
+    color: #000000;
+  }
+}
+
+// --------------
+
+.other {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+  margin: 10px;
+  width: 856px;
+  height: 490px;
+}
+
+//
+
+//
+
+.col-card {
+  .mat-form-field {
+    font-size: 14px;
+    width: 55%;
+    margin: 0 5%;
+  }
+  .card-box {
+    overflow: hidden;
+    table {
+      width: 100%;
+
+      td,
+      th {
+        width: 10%;
+        padding: 4px;
+      }
+    }
+    mat-paginator {
+      margin: 0 -18px;
+    }
+  }
+}
+
+tr.mat-row,
+tr.mat-footer-row {
+  height: 70px;
+}
+
+.table-heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  color: #000000;
+  background-color: lightgray;
+}
+
+//
+
+.right-field {
+}
+.search {
+  width: 100% !important;
+  margin: 0 !important;
+  position: relative;
+}
+
+input[type="text"]::placeholder {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  color: black;
+}
+.icon {
+  position: absolute;
+  top: 38px;
+
+  right: 27px;
+}
+
+.xyz {
+  display: flex;
+  margin-left: -43px;
+}
