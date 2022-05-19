@@ -1,0 +1,210 @@
+.box {
+  margin: 20px;
+}
+
+.ep {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px !important;
+    line-height: 44px !important;
+  }
+}
+//
+
+.one1 {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 203px;
+    left: 204px;
+  }
+}
+
+.six {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 108px;
+    left: 206px;
+  }
+}
+
+.add-button {
+  margin-left: 15px;
+  display: flex;
+  gap: 11px;
+}
+
+.add {
+  width: 43px;
+  height: 43px;
+
+  background: #d7d6d6;
+
+  border-radius: 2px;
+  svg {
+    padding: 11px;
+    padding: 0;
+  }
+}
+
+.whole {
+  display: flex;
+  gap: 30px;
+}
+
+//
+
+.right-info {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  /* width: 100%; */
+  float: right;
+  margin-right: 200px;
+  height: 50%;
+}
+
+.main {
+  .leader-board {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    a {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px !important;
+      line-height: 20px !important;
+
+      text-decoration: underline;
+
+      color: #874bf9;
+    }
+  }
+}
+p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px !important;
+  line-height: 29px !important;
+}
+.section {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  .left {
+    display: flex;
+  }
+  .left1 {
+    display: grid;
+    gap: 4px;
+    p {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px !important;
+      line-height: 29px !important;
+    }
+  }
+  .right1 {
+    display: grid;
+    gap: 4px;
+    p {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px !important;
+      line-height: 29px !important;
+      display: flex;
+      align-items: center;
+      .yes {
+        background: #4caf50;
+        border-radius: 5px;
+
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
+        color: #000000;
+        padding: 1px 11px;
+        margin-right: 10px;
+      }
+      .no {
+        background: #ff7d7d;
+        border-radius: 5px;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
+        color: #000000;
+        padding: 1px 11px;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.line {
+  width: 100%;
+  border: 1px solid lightgray;
+  margin: 20px 0;
+}
+
+//
+
+.user-address {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px !important;
+    line-height: 29px !important;
+  }
+  .leftside {
+    div {
+      p {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px !important;
+        line-height: 29px !important;
+      }
+    }
+  }
+}
+
+.all {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.address {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px !important;
+  line-height: 29px !important;
+  width: 291px;
+}
+
+.abc {
+  display: flex;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 331px;
+}

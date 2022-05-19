@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Admin1Component } from './admin/admin1/admin1.component';
 import { Admin2Component } from './admin/admin2/admin2.component';
+import { CampaignComponent } from './campaign/campaign/campaign.component';
 import { AccessoriesComponent } from './components/accessories/accessories.component';
 import { BottomsupComponent } from './components/bottomsup/bottomsup.component';
 import { BurnComponent } from './components/burn/burn.component';
@@ -83,7 +84,11 @@ import { ViewdetailsComponent } from './merchant/viewdetails/viewdetails.compone
 import { OfflineStoreComponent } from './online-offlinestores/offline-store/offline-store.component';
 import { OnlineOfflineComponent } from './online-offlinestores/online-offline/online-offline.component';
 import { OnlineStoreComponent } from './online-offlinestores/online-store/online-store.component';
+import { OrdersectionComponent } from './orders-section/ordersection/ordersection.component';
 import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/shopdetails-demo.component';
+import { UserViewallComponent } from './users/user-viewall/user-viewall.component';
+import { UserdashComponent } from './users/userdash/userdash.component';
+import { UserprofileviewComponent } from './users/userprofileview/userprofileview.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -151,6 +156,7 @@ const routes: Routes = [
   { path: 'onoff', component: OnlineOfflineComponent },
   { path: 'admin1', component: Admin1Component },
   { path: 'admin2', component: Admin2Component },
+  // ==============merchant
   { path: 'merchantdash', component: MerchantDashComponent },
   { path: 'createprofile', component: CreateProfileComponent },
   { path: 'editprofile', component: EditProfileComponent },
@@ -159,6 +165,18 @@ const routes: Routes = [
   { path: 'editproduct', component: EditProductComponent },
   { path: 'profileview', component: ProfileviewComponent },
   { path: 'viewdetails', component: ViewdetailsComponent },
+
+  // ==============users
+
+  { path: 'userdash', component: UserdashComponent },
+  { path: 'userprofile', component: UserprofileviewComponent },
+  { path: 'userview', component: UserViewallComponent },
+
+  // ==============orders
+  { path: 'ordersection', component: OrdersectionComponent },
+
+  // ==============campaign
+  { path: 'campaign', component: CampaignComponent },
 
   // demo
 

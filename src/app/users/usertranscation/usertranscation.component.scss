@@ -1,0 +1,69 @@
+//
+
+.col-card {
+  .mat-form-field {
+    font-size: 14px;
+    width: 55%;
+    margin: 0 5%;
+  }
+  .card-box {
+    overflow: hidden;
+    table {
+      width: 100%;
+
+      td,
+      th {
+        width: 13%;
+        padding: 8px;
+      }
+    }
+    mat-paginator {
+      margin: 0 -18px;
+    }
+  }
+}
+
+tr.mat-row,
+tr.mat-footer-row {
+  height: 70px;
+}
+
+.table-heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  color: #000000;
+  background-color: lightgray;
+}
+
+//@at-root
+
+.right-field {
+}
+.search {
+  width: 100% !important;
+  margin: 0 !important;
+  position: relative;
+}
+
+input[type="text"]::placeholder {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  color: black;
+}
+.icon {
+  position: absolute;
+  top: 38px;
+
+  right: 27px;
+}
+
+.xyz {
+  display: flex;
+  margin-left: -43px;
+}

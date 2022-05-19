@@ -124,6 +124,17 @@ import { ProfileSummaryComponent } from './merchant/profile-summary/profile-summ
 import { ProfileviewComponent } from './merchant/profileview/profileview.component';
 import { ProfilewalletsComponent } from './merchant/profilewallets/profilewallets.component';
 import { TransactionhistoryComponent } from './merchant/transactionhistory/transactionhistory.component';
+import { UserdashComponent } from './users/userdash/userdash.component';
+import { UserprofileviewComponent } from './users/userprofileview/userprofileview.component';
+import { BankingdetailsComponent } from './users/bankingdetails/bankingdetails.component';
+import { UserodersComponent } from './users/useroders/useroders.component';
+import { UserwalletComponent } from './users/userwallet/userwallet.component';
+import { UsertranscationComponent } from './users/usertranscation/usertranscation.component';
+import { UserViewallComponent } from './users/user-viewall/user-viewall.component';
+import { LevelsStoreShareComponent } from './users/levels-store-share/levels-store-share.component';
+import { LevelsRecommendComponent } from './users/levels-recommend/levels-recommend.component';
+import { OrdersectionComponent } from './orders-section/ordersection/ordersection.component';
+import { CampaignComponent } from './campaign/campaign/campaign.component';
 
 @NgModule({
   declarations: [
@@ -223,6 +234,17 @@ import { TransactionhistoryComponent } from './merchant/transactionhistory/trans
     ProfileviewComponent,
     ProfilewalletsComponent,
     TransactionhistoryComponent,
+    UserdashComponent,
+    UserprofileviewComponent,
+    BankingdetailsComponent,
+    UserodersComponent,
+    UserwalletComponent,
+    UsertranscationComponent,
+    UserViewallComponent,
+    LevelsStoreShareComponent,
+    LevelsRecommendComponent,
+    OrdersectionComponent,
+    CampaignComponent,
   ],
   imports: [
     BrowserModule,
