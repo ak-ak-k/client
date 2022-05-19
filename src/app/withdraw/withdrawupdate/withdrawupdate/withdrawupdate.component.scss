@@ -1,0 +1,86 @@
+.box {
+  margin: 20px;
+}
+
+.heading {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px !important;
+    line-height: 36px !important;
+  }
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 15px;
+  label {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 29px !important;
+  }
+  mat-form-field {
+    // height: 200px;
+  }
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  gap: 15px;
+  label {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 29px !important;
+  }
+  mat-form-field {
+    width: 50%;
+  }
+}
+
+//
+
+.main3 {
+  margin-top: 32px;
+  margin-right: 10px;
+  div {
+    /* text-align: right; */
+    display: flex;
+    justify-content: end;
+    gap: 46px;
+  }
+  button {
+    width: 126px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .cancel {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 23px !important;
+
+    color: #000000;
+  }
+  .create {
+    background: #8111e8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 23px !important;
+
+    color: #ffffff;
+  }
+}

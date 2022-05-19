@@ -5,6 +5,7 @@
 .merchant-search-export {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   p {
     font-family: "Jost" !important;
     font-style: normal;
@@ -200,5 +201,10 @@ tr.mat-footer-row {
   background: #53bdea;
   border-radius: 7px;
 
-  padding: 3px 9px;
+  height: 32px;
+  width: 77px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

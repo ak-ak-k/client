@@ -135,6 +135,12 @@ import { LevelsStoreShareComponent } from './users/levels-store-share/levels-sto
 import { LevelsRecommendComponent } from './users/levels-recommend/levels-recommend.component';
 import { OrdersectionComponent } from './orders-section/ordersection/ordersection.component';
 import { CampaignComponent } from './campaign/campaign/campaign.component';
+import { CampaigncustomComponent } from './campaign/campaigncustom/campaigncustom.component';
+import { MerchantTransactionComponent } from './merchant-transaction/merchant-transaction/merchant-transaction.component';
+import { TransactionusersComponent } from './user-transaction/transactionusers/transactionusers.component';
+import { WithdrawrequestComponent } from './withdraw/withdrawrequest/withdrawrequest.component';
+import { WithdrawviewComponent } from './withdraw/withdrawview/withdrawview/withdrawview.component';
+import { WithdrawupdateComponent } from './withdraw/withdrawupdate/withdrawupdate/withdrawupdate.component';
 
 @NgModule({
   declarations: [
@@ -245,6 +251,12 @@ import { CampaignComponent } from './campaign/campaign/campaign.component';
     LevelsRecommendComponent,
     OrdersectionComponent,
     CampaignComponent,
+    CampaigncustomComponent,
+    MerchantTransactionComponent,
+    TransactionusersComponent,
+    WithdrawrequestComponent,
+    WithdrawviewComponent,
+    WithdrawupdateComponent,
   ],
   imports: [
     BrowserModule,

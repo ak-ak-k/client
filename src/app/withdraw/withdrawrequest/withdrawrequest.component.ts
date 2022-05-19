@@ -4,49 +4,43 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { CampaigncustomComponent } from '../campaigncustom/campaigncustom.component';
+import { WithdrawupdateComponent } from '../withdrawupdate/withdrawupdate/withdrawupdate.component';
+import { WithdrawviewComponent } from '../withdrawview/withdrawview/withdrawview.component';
 
 export interface UserData {
-  camp_name: string;
-  storename: string;
-  category: string;
-  sub_category: string;
-  total_earn: string;
-  total_spent: string;
-  refr_count: string;
-  wallet_amount: string;
-  cashback_type: string;
-  approval: string;
-  start_date: string;
-  end_date: string;
-  status: string;
+  oid: string;
+  name: string;
+  phone: string;
+  Email: string;
+  Amount: string;
+  withdraw_status: string;
+  payout_status: string;
+  bank_details: string;
+
+  Date: string;
   action: string;
 }
 
 @Component({
-  selector: 'app-campaign',
-  templateUrl: './campaign.component.html',
-  styleUrls: ['./campaign.component.scss'],
+  selector: 'app-withdrawrequest',
+  templateUrl: './withdrawrequest.component.html',
+  styleUrls: ['./withdrawrequest.component.scss'],
 })
-export class CampaignComponent implements OnInit {
+export class WithdrawrequestComponent implements OnInit {
   //
 
   selected = 'option2';
 
   displayedColumns: string[] = [
-    'camp_name',
-    'storename',
-    'category',
-    'sub_category',
-    'total_earn',
-    'total_spent',
-    'refr_count',
-    'wallet_amount',
-    'cashback_type',
-    'approval',
-    'start_date',
-    'end_date',
-    'status',
+    'oid',
+    'name',
+    'phone',
+    'Email',
+    'Amount',
+    'withdraw_status',
+    'payout_status',
+    'bank_details',
+    'Date',
     'action',
   ];
   dataSource!: MatTableDataSource<UserData>;
@@ -72,53 +66,16 @@ export class CampaignComponent implements OnInit {
   execute() {
     const users = [
       {
-        camp_name: 'Dipesh',
-        storename: 'Dent Heal',
-        category: 'Health',
-        sub_category: 'Dentist',
-        total_earn: '1400',
-        total_spent: '1400',
-        refr_count: '1400',
-        wallet_amount: '1400',
-        cashback_type: 'Flat',
-        approval: 'Pending',
-        start_date: '22/12/2022',
-        end_date: '22/12/2022',
-        status: 'Inactive',
-        action: 'yes',
-      },
-      {
-        camp_name: 'Ashish',
-        storename: 'Dent Heal',
-        category: 'Health',
-        sub_category: 'Dentist',
-        total_earn: '1400',
-        total_spent: '1400',
-        refr_count: '1400',
-        wallet_amount: '1400',
-        cashback_type: 'Flat',
-        approval: 'Approved',
-        // approval-- green color
-        start_date: '22/12/2022',
-        end_date: '22/12/2022',
-        status: 'Active',
-        action: 'yes',
-      },
-      {
-        camp_name: 'Aryan',
-        storename: 'Dent Heal',
-        category: 'Health',
-        sub_category: 'Dentist',
-        total_earn: '1400',
-        total_spent: '1400',
-        refr_count: '1400',
-        wallet_amount: '1400',
-        cashback_type: 'Flat',
-        approval: 'Rejected',
-        // approval-- red color
-        start_date: '22/12/2022',
-        end_date: '22/12/2022',
-        status: 'Active',
+        oid: '1234567890',
+        name: 'Dent Heal',
+        phone: '1234567890',
+        Email: 'BrijMohu@gmail.com',
+        Amount: '5126',
+        withdraw_status: 'Pending',
+        payout_status: 'Completed',
+        bank_details: 'Completed',
+
+        Date: '16/05/2022',
         action: 'yes',
       },
     ];
@@ -225,9 +182,16 @@ export class CampaignComponent implements OnInit {
 
   endDatelist: string[] = ['1 Month', '3 Month', '6 Month'];
 
-  constructor(public dialog: MatDialog) {}
+  transaction = new FormControl();
 
-  ngOnInit(): void {}
+  transactionlist: string[] = [
+    'Campaign Refill',
+    'Transfer',
+    'Withdraw',
+    'Direct Sale',
+    'Exisiting Lead',
+    'New Lead',
+  ];
 
   // export
 
@@ -238,7 +202,11 @@ export class CampaignComponent implements OnInit {
     console.log('Change input file');
   }
 
-  // Approval
+  constructor(public dialog: MatDialog) {}
+
+  ngOnInit(): void {}
+
+  // view update
 
   get getHeight() {
     return window.innerHeight;
@@ -247,10 +215,25 @@ export class CampaignComponent implements OnInit {
     return window.innerWidth;
   }
 
-  openDialog(): void {
+  view(): void {
     let isPhone = this.getWidth < 768;
     let w = isPhone ? this.getWidth + 'px' : '480px';
-    const profile = this.dialog.open(CampaigncustomComponent, {
+    const profile = this.dialog.open(WithdrawviewComponent, {
+      width: w,
+      minWidth: '950px',
+      maxWidth: '320px',
+      // height: h,
+      hasBackdrop: true,
+      disableClose: false,
+      panelClass: 'dialogLayout', //, autoFocus:false
+    });
+    profile.afterClosed().subscribe(() => {});
+  }
+
+  update(): void {
+    let isPhone = this.getWidth < 768;
+    let w = isPhone ? this.getWidth + 'px' : '480px';
+    const profile = this.dialog.open(WithdrawupdateComponent, {
       width: w,
       minWidth: '950px',
       maxWidth: '320px',

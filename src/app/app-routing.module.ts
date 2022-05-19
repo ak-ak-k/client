@@ -72,6 +72,7 @@ import { RefrlevelsComponent } from './howitworkssection/refrlevels/refrlevels.c
 import { StartedrefrComponent } from './howitworkssection/startedrefr/startedrefr.component';
 import { ThreeeasystepsComponent } from './howitworkssection/threeeasysteps/threeeasysteps.component';
 import { VocallocalComponent } from './howitworkssection/vocallocal/vocallocal.component';
+import { MerchantTransactionComponent } from './merchant-transaction/merchant-transaction/merchant-transaction.component';
 import { AdminPanelComponent } from './merchant/admin-panel/admin-panel.component';
 import { CreateProductComponent } from './merchant/create-product/create-product.component';
 import { CreateProfileComponent } from './merchant/create-profile/create-profile.component';
@@ -86,9 +87,13 @@ import { OnlineOfflineComponent } from './online-offlinestores/online-offline/on
 import { OnlineStoreComponent } from './online-offlinestores/online-store/online-store.component';
 import { OrdersectionComponent } from './orders-section/ordersection/ordersection.component';
 import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/shopdetails-demo.component';
+import { TransactionusersComponent } from './user-transaction/transactionusers/transactionusers.component';
 import { UserViewallComponent } from './users/user-viewall/user-viewall.component';
 import { UserdashComponent } from './users/userdash/userdash.component';
 import { UserprofileviewComponent } from './users/userprofileview/userprofileview.component';
+import { WithdrawrequestComponent } from './withdraw/withdrawrequest/withdrawrequest.component';
+import { WithdrawupdateComponent } from './withdraw/withdrawupdate/withdrawupdate/withdrawupdate.component';
+import { WithdrawviewComponent } from './withdraw/withdrawview/withdrawview/withdrawview.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -177,6 +182,13 @@ const routes: Routes = [
 
   // ==============campaign
   { path: 'campaign', component: CampaignComponent },
+
+  // ============== transaction
+  { path: 'merchanttrans', component: MerchantTransactionComponent },
+  { path: 'usertrans', component: TransactionusersComponent },
+  { path: 'withdraw', component: WithdrawrequestComponent },
+  { path: 'viewwithdraw', component: WithdrawviewComponent },
+  { path: 'updatewithdraw', component: WithdrawupdateComponent },
 
   // demo
 

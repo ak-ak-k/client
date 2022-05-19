@@ -4,48 +4,39 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { CampaigncustomComponent } from '../campaigncustom/campaigncustom.component';
 
 export interface UserData {
-  camp_name: string;
+  oid: string;
   storename: string;
   category: string;
   sub_category: string;
-  total_earn: string;
-  total_spent: string;
-  refr_count: string;
-  wallet_amount: string;
-  cashback_type: string;
-  approval: string;
-  start_date: string;
-  end_date: string;
+  transaction_type: string;
+  refr_earned: string;
+  refr_paid: string;
+  date: string;
   status: string;
   action: string;
 }
 
 @Component({
-  selector: 'app-campaign',
-  templateUrl: './campaign.component.html',
-  styleUrls: ['./campaign.component.scss'],
+  selector: 'app-merchant-transaction',
+  templateUrl: './merchant-transaction.component.html',
+  styleUrls: ['./merchant-transaction.component.scss'],
 })
-export class CampaignComponent implements OnInit {
+export class MerchantTransactionComponent implements OnInit {
   //
 
   selected = 'option2';
 
   displayedColumns: string[] = [
-    'camp_name',
+    'oid',
     'storename',
     'category',
     'sub_category',
-    'total_earn',
-    'total_spent',
-    'refr_count',
-    'wallet_amount',
-    'cashback_type',
-    'approval',
-    'start_date',
-    'end_date',
+    'transaction_type',
+    'refr_earned',
+    'refr_paid',
+    'date',
     'status',
     'action',
   ];
@@ -72,53 +63,51 @@ export class CampaignComponent implements OnInit {
   execute() {
     const users = [
       {
-        camp_name: 'Dipesh',
+        oid: '1234567890',
         storename: 'Dent Heal',
         category: 'Health',
         sub_category: 'Dentist',
-        total_earn: '1400',
-        total_spent: '1400',
-        refr_count: '1400',
-        wallet_amount: '1400',
-        cashback_type: 'Flat',
-        approval: 'Pending',
-        start_date: '22/12/2022',
-        end_date: '22/12/2022',
-        status: 'Inactive',
+        transaction_type: 'Campaign Refill',
+        refr_earned: '0',
+        refr_paid: '0',
+        date: '14/05/2022',
+        status: 'Credited',
         action: 'yes',
       },
       {
-        camp_name: 'Ashish',
+        oid: '1234567890',
         storename: 'Dent Heal',
         category: 'Health',
         sub_category: 'Dentist',
-        total_earn: '1400',
-        total_spent: '1400',
-        refr_count: '1400',
-        wallet_amount: '1400',
-        cashback_type: 'Flat',
-        approval: 'Approved',
-        // approval-- green color
-        start_date: '22/12/2022',
-        end_date: '22/12/2022',
-        status: 'Active',
+        transaction_type: 'Transfer',
+        refr_earned: '0',
+        refr_paid: '0',
+        date: '14/05/2022',
+        status: 'Debited',
         action: 'yes',
       },
       {
-        camp_name: 'Aryan',
+        oid: '1234567890',
         storename: 'Dent Heal',
         category: 'Health',
         sub_category: 'Dentist',
-        total_earn: '1400',
-        total_spent: '1400',
-        refr_count: '1400',
-        wallet_amount: '1400',
-        cashback_type: 'Flat',
-        approval: 'Rejected',
-        // approval-- red color
-        start_date: '22/12/2022',
-        end_date: '22/12/2022',
-        status: 'Active',
+        transaction_type: 'Withdraw',
+        refr_earned: '0',
+        refr_paid: '0',
+        date: '14/05/2022',
+        status: 'Credited + Debited ',
+        action: 'yes',
+      },
+      {
+        oid: '1234567890',
+        storename: 'Dent Heal',
+        category: 'Health',
+        sub_category: 'Dentist',
+        transaction_type: 'Direct Sale',
+        refr_earned: '0',
+        refr_paid: '0',
+        date: '14/05/2022',
+        status: 'Debited ',
         action: 'yes',
       },
     ];
@@ -225,9 +214,16 @@ export class CampaignComponent implements OnInit {
 
   endDatelist: string[] = ['1 Month', '3 Month', '6 Month'];
 
-  constructor(public dialog: MatDialog) {}
+  transaction = new FormControl();
 
-  ngOnInit(): void {}
+  transactionlist: string[] = [
+    'Campaign Refill',
+    'Transfer',
+    'Withdraw',
+    'Direct Sale',
+    'Exisiting Lead',
+    'New Lead',
+  ];
 
   // export
 
@@ -238,27 +234,7 @@ export class CampaignComponent implements OnInit {
     console.log('Change input file');
   }
 
-  // Approval
+  constructor() {}
 
-  get getHeight() {
-    return window.innerHeight;
-  }
-  get getWidth() {
-    return window.innerWidth;
-  }
-
-  openDialog(): void {
-    let isPhone = this.getWidth < 768;
-    let w = isPhone ? this.getWidth + 'px' : '480px';
-    const profile = this.dialog.open(CampaigncustomComponent, {
-      width: w,
-      minWidth: '950px',
-      maxWidth: '320px',
-      // height: h,
-      hasBackdrop: true,
-      disableClose: false,
-      panelClass: 'dialogLayout', //, autoFocus:false
-    });
-    profile.afterClosed().subscribe(() => {});
-  }
+  ngOnInit(): void {}
 }
