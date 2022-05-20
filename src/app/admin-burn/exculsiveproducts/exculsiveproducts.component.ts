@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -7,33 +8,37 @@ import { MatTableDataSource } from '@angular/material/table';
 import { take } from 'rxjs';
 
 export interface UserData {
-  storename: string;
-  phonename: string;
-  storetype: string;
-  status: string;
-  storewallet: string;
-  area: string;
-  onboard: string;
+  products_detail: string;
+  brand_name: string;
+  category_name: string;
+  sub_category: string;
+  mrp: string;
+  discount_price: string;
+  quantity: string;
+  sale: string;
+  new: string;
 
   action: string;
 }
 
 @Component({
-  selector: 'app-pqr',
-  templateUrl: './pqr.component.html',
-  styleUrls: ['./pqr.component.scss'],
+  selector: 'app-exculsiveproducts',
+  templateUrl: './exculsiveproducts.component.html',
+  styleUrls: ['./exculsiveproducts.component.scss'],
 })
-export class PqrComponent implements OnInit {
+export class ExculsiveproductsComponent implements OnInit {
   selected = 'option2';
 
   displayedColumns: string[] = [
-    'storename',
-    'phonename',
-    'storetype',
-    'status',
-    'storewallet',
-    'area',
-    'onboard',
+    'products_detail',
+    'brand_name',
+    'category_name',
+    'sub_category',
+    'mrp',
+    'discount_price',
+    'quantity',
+    'sale',
+    'new',
 
     'action',
   ];
@@ -42,7 +47,7 @@ export class PqrComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
   ngAfterViewInit() {
     setTimeout(() => {
@@ -62,24 +67,17 @@ export class PqrComponent implements OnInit {
   execute() {
     const users = [
       {
-        storename: 'Aakad bakad baumbay boo',
-        phonename: '1234567890',
-        storetype: 'Online+Offline',
-        status: 'Inactive ',
-        storewallet: '5,000 ',
-        area: 'Mahavir Nagar,Ahmedabad ',
-        onboard: 'Product Catalog ',
-        action: 'yes',
-      },
-      {
-        storename: 'Aakad bakad baumbay boo',
-        phonename: '1234567890',
-        storetype: 'Online+Offline',
-        status: 'Active ',
-        storewallet: '5,000 ',
-        area: 'Mahavir Nagar,Ahmedabad ',
-        onboard: 'Product Catalog ',
-        action: 'yes',
+        products_detail: 'yes',
+        brand_name: 'Uni',
+        category_name: 'Electronics',
+        sub_category: 'Electronics',
+        mrp: '1000',
+        discount_price: '1000',
+        quantity: '1000',
+        sale: 'Yes',
+        new: 'Yes',
+
+        action: 'active',
       },
     ];
     this.dataSource = new MatTableDataSource(users);

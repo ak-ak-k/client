@@ -1,0 +1,112 @@
+<div class="col col-100 col-sm-100 col-card">
+
+    <div class="card-box">
+        <table mat-table [dataSource]="dataSource" matSort>
+
+            <!-- storename Column -->
+            <ng-container matColumnDef="products_detail">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Products Detail</th>
+                <td mat-cell *matCellDef="let row">
+                    <div>
+                        <img width="100px" style="max-width: 100%;"
+                            src="../../../assets/img/merchant-admin/Frame 8977.png" alt="">
+                    </div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="brand_name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Store/Brand Name</th>
+                <td mat-cell *matCellDef="let row">{{row.brand_name}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="category_name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Category </th>
+                <td mat-cell *matCellDef="let row">{{row.category_name}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="sub_category">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Sub Category </th>
+                <td mat-cell *matCellDef="let row">{{row.sub_category}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="mrp">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> MRP</th>
+                <td mat-cell *matCellDef="let row">{{row.mrp}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="discount_price">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Discount price</th>
+                <td mat-cell *matCellDef="let row">{{row.discount_price}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="quantity">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Quantity</th>
+                <td mat-cell *matCellDef="let row">{{row.quantity}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="sale">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Flash Sale</th>
+                <td mat-cell *matCellDef="let row">
+
+                    <span class="status">
+                        {{row.sale}}
+                    </span>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="new">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">New In</th>
+                <td mat-cell *matCellDef="let row">
+
+                    <span class="status">
+                        {{row.new}}
+                    </span>
+                </td>
+            </ng-container>
+
+
+
+            <!-- ------------------ -->
+
+            <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Action </th>
+                <td mat-cell *matCellDef="let row">
+
+                    <div class="crud">
+                        <a>
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.125" y="0.125" width="24.75" height="24.75" fill="#8EC18D" />
+                                <path
+                                    d="M21 7.52983C20.9592 7.52983 20.9517 7.56425 20.9442 7.59241C20.8594 7.92537 20.6681 8.19073 20.4284 8.43106C17.3356 11.5186 14.2442 14.6076 11.154 17.6981C10.7009 18.1506 10.246 18.6025 9.79547 19.0575C9.68074 19.1782 9.52998 19.2588 9.36564 19.2871C8.12446 19.5162 6.8839 19.744 5.64209 19.9731C5.63017 19.9731 5.62076 19.9912 5.61072 20H5.29697C4.95373 19.8066 4.97318 19.5118 5.03782 19.1783C5.26873 17.9891 5.48459 16.8 5.70045 15.6109C5.73127 15.4525 5.81194 15.308 5.93074 15.1984C7.92115 13.2107 9.91093 11.2224 11.9001 9.2334C13.4479 7.68712 14.9957 6.14001 16.5435 4.59206C16.8221 4.31293 17.1334 4.10139 17.5274 4.02879C17.5394 4.02879 17.5482 4.01001 17.5582 4H18.0897C18.0947 4.00814 18.0991 4.02316 18.1047 4.02378C18.4994 4.06759 18.8182 4.25723 19.093 4.53198C19.5532 4.99094 20.0123 5.4499 20.4704 5.90886C20.6971 6.12452 20.8605 6.39784 20.9429 6.69932C20.9511 6.73186 20.9511 6.77504 20.9987 6.78255L21 7.52983ZM16.0817 6.40329C16.0453 6.43833 16.0121 6.46587 15.9801 6.50029C12.9739 9.50315 9.9672 12.5066 6.95983 15.5107C6.87574 15.5952 6.8701 15.6359 6.95983 15.7248C7.73332 16.4904 8.50325 17.26 9.26963 18.0336C9.36501 18.1306 9.40768 18.1155 9.4949 18.0279C11.4636 16.0552 13.4339 14.0846 15.4059 12.1161L18.5057 9.00997C18.5534 8.96241 18.6231 8.93237 18.5333 8.8435C17.737 8.05617 16.9464 7.26259 16.1545 6.47088C16.135 6.44897 16.1118 6.42895 16.0817 6.40078V6.40329ZM20.0613 7.15431C20.0606 6.95181 19.9806 6.75757 19.8385 6.61295C19.3553 6.12541 18.8753 5.63348 18.3796 5.15908C18.0545 4.84616 17.6266 4.86556 17.3028 5.17598C17.1415 5.33057 16.9891 5.49454 16.8265 5.64788C16.7638 5.70671 16.7588 5.73863 16.8234 5.80372C17.6182 6.59188 18.4097 7.38233 19.1978 8.17508C19.2524 8.22953 19.2863 8.23767 19.3434 8.17884C19.5084 8.0061 19.681 7.84025 19.8454 7.66814C19.9789 7.52955 20.0558 7.34638 20.0613 7.15431ZM8.34031 18.5148L6.47603 16.6517C6.46998 16.6616 6.46613 16.6727 6.46474 16.6842C6.33233 17.3996 6.20684 18.1155 6.07004 18.8278C6.05122 18.9292 6.06251 18.9392 6.16228 18.9198C6.64671 18.8259 7.13302 18.7414 7.61807 18.6519C7.8722 18.6075 8.12571 18.5568 8.34031 18.5148Z"
+                                    fill="#080707" />
+                                <rect x="0.125" y="0.125" width="24.75" height="24.75" stroke="black"
+                                    stroke-width="0.25" />
+                            </svg>
+                        </a>
+
+                        <!-- <button class="flash" mat-button>Flash Sale</button> -->
+                    </div>
+                </td>
+
+            </ng-container>
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            <!-- Row shown when there is no matching data. -->
+            <tr class="mat-row" *matNoDataRow>
+                <!-- <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td> -->
+            </tr>
+
+
+        </table>
+
+
+        <!-- <app-spinner *ngIf="!dataSource"></app-spinner> -->
+        <mat-paginator [pageSizeOptions]="[10, 25, 50, 100]" aria-label="Select page of users">
+        </mat-paginator>
+    </div>
+
+</div>

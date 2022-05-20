@@ -151,6 +151,8 @@ import { UpdatesubcategoryComponent } from './subcategory/updatesubcategory/upda
 import { DashboardComponent } from './admindashboard/dashboard/dashboard.component';
 import { RecentusersComponent } from './admindashboard/recentusers/recentusers.component';
 import { RecentcampaignsComponent } from './admindashboard/recentcampaigns/recentcampaigns.component';
+import { AdminburnComponent } from './admin-burn/adminburn/adminburn.component';
+import { ExculsiveproductsComponent } from './admin-burn/exculsiveproducts/exculsiveproducts.component';
 
 @NgModule({
   declarations: [
@@ -277,6 +279,8 @@ import { RecentcampaignsComponent } from './admindashboard/recentcampaigns/recen
     DashboardComponent,
     RecentusersComponent,
     RecentcampaignsComponent,
+    AdminburnComponent,
+    ExculsiveproductsComponent,
   ],
   imports: [
     BrowserModule,

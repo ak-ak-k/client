@@ -18,7 +18,7 @@
         </div>
 
         <div class="xyz">
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <mat-label>Transaction Type</mat-label>
                 <mat-select>
                     <mat-option *ngFor="let transaction of transactiontype" [value]="transaction.value">
@@ -26,7 +26,7 @@
                     </mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <mat-label>Status</mat-label>
                 <mat-select>
                     <mat-option *ngFor="let date of datelist" [value]="date.value">

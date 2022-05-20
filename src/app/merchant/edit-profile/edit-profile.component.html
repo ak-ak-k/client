@@ -147,7 +147,7 @@
                                     <div class="sn">
                                         <p>Store Type</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
 
                                                 <mat-select [formControl]="store" multiple>
                                                     <mat-select-trigger>
@@ -171,7 +171,7 @@
                                     <div class="sn" style="    margin-right: 171px;">
                                         <p>Category</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
 
                                                 <mat-select [formControl]="toppings" multiple>
                                                     <mat-select-trigger>
@@ -196,7 +196,7 @@
                                     <div class="sn">
                                         <p>Sub Category</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
                                                 <mat-label>Sub Category</mat-label>
                                                 <mat-select [formControl]="sub_cat" multiple>
                                                     <mat-select-trigger>
@@ -219,7 +219,7 @@
                                     <div class="sn" style="    margin-right: 171px;">
                                         <p>Burn</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
                                                 <mat-label>Categories</mat-label>
                                                 <mat-select [formControl]="burn" multiple>
                                                     <mat-select-trigger>
@@ -246,7 +246,7 @@
                                     <div class="sn">
                                         <p>Burn</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
                                                 <mat-select [formControl]="burn" multiple>
                                                     <mat-select-trigger>
                                                         {{burn.value ? burn.value[0] : ''}}
@@ -270,7 +270,7 @@
                                     <div class="sn" style="margin-right: 171px;">
                                         <p>Store Approval</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
                                                 <mat-select [formControl]="sa" multiple>
                                                     <mat-select-trigger>
                                                         {{sa.value ? sa.value[0] : ''}}
@@ -892,7 +892,7 @@
                                                 <th mat-header-cell *matHeaderCellDef mat-sort-header
                                                     class="table-heading">
                                                     <div>
-                                                        <mat-form-field appearance="fill">
+                                                        <mat-form-field appearance="outline">
                                                             <mat-label class="table-heading">Electronics</mat-label>
                                                             <mat-select>
                                                                 <mat-option *ngFor="let type of types"

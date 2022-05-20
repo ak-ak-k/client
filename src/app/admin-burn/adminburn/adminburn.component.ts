@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -7,33 +8,25 @@ import { MatTableDataSource } from '@angular/material/table';
 import { take } from 'rxjs';
 
 export interface UserData {
-  storename: string;
-  phonename: string;
-  storetype: string;
-  status: string;
-  storewallet: string;
-  area: string;
-  onboard: string;
+  Image: string;
+  sub_category: string;
+  category_name: string;
 
   action: string;
 }
 
 @Component({
-  selector: 'app-pqr',
-  templateUrl: './pqr.component.html',
-  styleUrls: ['./pqr.component.scss'],
+  selector: 'app-adminburn',
+  templateUrl: './adminburn.component.html',
+  styleUrls: ['./adminburn.component.scss'],
 })
-export class PqrComponent implements OnInit {
+export class AdminburnComponent implements OnInit {
   selected = 'option2';
 
   displayedColumns: string[] = [
-    'storename',
-    'phonename',
-    'storetype',
-    'status',
-    'storewallet',
-    'area',
-    'onboard',
+    'Image',
+    'category_name',
+    'sub_category',
 
     'action',
   ];
@@ -42,7 +35,7 @@ export class PqrComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
   ngAfterViewInit() {
     setTimeout(() => {
@@ -62,24 +55,18 @@ export class PqrComponent implements OnInit {
   execute() {
     const users = [
       {
-        storename: 'Aakad bakad baumbay boo',
-        phonename: '1234567890',
-        storetype: 'Online+Offline',
-        status: 'Inactive ',
-        storewallet: '5,000 ',
-        area: 'Mahavir Nagar,Ahmedabad ',
-        onboard: 'Product Catalog ',
-        action: 'yes',
+        Image: 'yes',
+        sub_category: 'Electronics',
+        category_name: 'Electronics',
+
+        action: 'active',
       },
       {
-        storename: 'Aakad bakad baumbay boo',
-        phonename: '1234567890',
-        storetype: 'Online+Offline',
-        status: 'Active ',
-        storewallet: '5,000 ',
-        area: 'Mahavir Nagar,Ahmedabad ',
-        onboard: 'Product Catalog ',
-        action: 'yes',
+        Image: 'yes',
+        sub_category: 'Electronics',
+        category_name: 'Electronics',
+
+        action: 'active',
       },
     ];
     this.dataSource = new MatTableDataSource(users);
@@ -94,4 +81,34 @@ export class PqrComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  openFile() {
+    document.querySelector('input')?.click();
+  }
+  handle(e: any) {
+    console.log('Change input file');
+  }
+
+  // -----------------
+
+  toppings = new FormControl();
+
+  toppingList: string[] = [
+    'Fashion',
+    'Food & Beverages',
+    'Salon & Spas',
+    'Beauty & Grooming',
+    'Electronics',
+    'Health',
+    'Fitness',
+    'Grocery',
+    'Pet Store',
+    'Pharmacy',
+    'Home',
+    'Mom & baby',
+  ];
+
+  sub_cat = new FormControl();
+
+  sub_catlist: string[] = ['Men', 'Women', 'Kids', 'Footwear', 'Accessories'];
 }

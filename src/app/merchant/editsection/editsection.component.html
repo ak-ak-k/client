@@ -129,7 +129,7 @@
                                     <div class="sn">
                                         <p>Store Type</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
 
                                                 <mat-select [formControl]="store" multiple>
                                                     <mat-select-trigger>
@@ -153,7 +153,7 @@
                                     <div class="sn" style="    margin-right: 171px;">
                                         <p>Category</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
 
                                                 <mat-select [formControl]="toppings" multiple>
                                                     <mat-select-trigger>
@@ -180,7 +180,7 @@
                                     <div class="sn">
                                         <p>Burn</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
                                                 <mat-select [formControl]="burn" multiple>
                                                     <mat-select-trigger>
                                                         {{burn.value ? burn.value[0] : ''}}
@@ -204,7 +204,7 @@
                                     <div class="sn" style="margin-right: 171px;">
                                         <p>Store Approval</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
                                                 <mat-select [formControl]="sa" multiple>
                                                     <mat-select-trigger>
                                                         {{sa.value ? sa.value[0] : ''}}
@@ -231,7 +231,7 @@
                                     <div class="sn">
                                         <p>KYC</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
                                                 <mat-select>
                                                     <mat-option *ngFor="let kyc of kycLists" [value]="kyc.value">
                                                         {{kyc.viewValue}}
@@ -248,7 +248,7 @@
                                     <div class="sn" style="margin-right: 171px;">
                                         <p>Banking Details</p>
                                         <div class="select">
-                                            <mat-form-field appearance="fill">
+                                            <mat-form-field appearance="outline">
                                                 <mat-select>
                                                     <mat-option *ngFor="let bank of bankLists" [value]="bank.value">
                                                         {{bank.viewValue}}
@@ -1370,7 +1370,7 @@
                         <div class="sn">
 
                             <div class="select">
-                                <mat-form-field appearance="fill">
+                                <mat-form-field appearance="outline">
                                     <mat-label>Cashback Type</mat-label>
                                     <mat-select>
                                         <mat-option *ngFor="let kyc of kycLists" [value]="kyc.value">
@@ -1388,7 +1388,7 @@
                         <div class="sn" style="margin-right: 171px;">
 
                             <div class="select">
-                                <mat-form-field appearance="fill">
+                                <mat-form-field appearance="outline">
                                     <mat-label>Status</mat-label>
                                     <mat-select>
                                         <mat-option *ngFor="let bank of bankLists" [value]="bank.value">

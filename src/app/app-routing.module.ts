@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminburnComponent } from './admin-burn/adminburn/adminburn.component';
 import { Admin1Component } from './admin/admin1/admin1.component';
 import { Admin2Component } from './admin/admin2/admin2.component';
 import { DashboardComponent } from './admindashboard/dashboard/dashboard.component';
@@ -165,6 +166,7 @@ const routes: Routes = [
   { path: 'onoff', component: OnlineOfflineComponent },
   { path: 'admin1', component: Admin1Component },
   { path: 'admin2', component: Admin2Component },
+
   // ==============merchant
   { path: 'merchantdash', component: MerchantDashComponent },
   { path: 'createprofile', component: CreateProfileComponent },
@@ -203,6 +205,10 @@ const routes: Routes = [
   // --------------------admin-dashboard
 
   { path: 'admindash', component: DashboardComponent },
+
+  // ---------------adminburn
+
+  { path: 'adminburn', component: AdminburnComponent },
 
   // demo
 
