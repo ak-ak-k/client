@@ -1,0 +1,145 @@
+.box {
+  margin: 20px;
+}
+
+.merchant-search-export {
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-family: "Jost" !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px !important;
+    line-height: 44px !important;
+    color: #000000;
+    text-transform: capitalize;
+  }
+  span {
+    font-family: "Jost" !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px !important;
+    line-height: 44px !important;
+    color: gray;
+  }
+  .right-field {
+    position: relative;
+  }
+  .search {
+    width: 400px;
+  }
+
+  input[type="text"]::placeholder {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px !important;
+    line-height: 20px !important;
+    color: black;
+  }
+  .icon {
+    position: absolute;
+    margin-top: -56px;
+    margin-left: 91%;
+  }
+}
+
+.export {
+  margin-left: 20px;
+
+  button {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px !important;
+    line-height: 20px !important;
+    color: #000000;
+    margin-top: 26px;
+  }
+}
+
+//
+
+.categories {
+  margin: 16px 4px 15px 13px;
+
+  .category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+  }
+}
+
+.cm {
+  background: #874bf9;
+  border-radius: 6px;
+  width: 130px;
+  height: 53px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+//
+
+.col-card {
+  .mat-form-field {
+    font-size: 14px;
+    width: 55%;
+    margin: 0 5%;
+  }
+  .card-box {
+    overflow: hidden;
+    table {
+      width: 100%;
+      td,
+      th {
+        width: 10%;
+        padding: 8px;
+      }
+    }
+    mat-paginator {
+      margin: 0 -18px;
+    }
+  }
+}
+
+tr.mat-row,
+tr.mat-footer-row {
+  height: 70px;
+}
+
+.table-heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  color: #000000;
+}
+
+.crud {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+//
+
+.status {
+  background: #52c41a;
+  border-radius: 3px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  color: #000000;
+  padding: 8px 14px;
+}

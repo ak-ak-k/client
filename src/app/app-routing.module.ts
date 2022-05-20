@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Admin1Component } from './admin/admin1/admin1.component';
 import { Admin2Component } from './admin/admin2/admin2.component';
+import { DashboardComponent } from './admindashboard/dashboard/dashboard.component';
 import { CampaignComponent } from './campaign/campaign/campaign.component';
+import { CategorygroupComponent } from './category/categorygroup/categorygroup.component';
 import { AccessoriesComponent } from './components/accessories/accessories.component';
 import { BottomsupComponent } from './components/bottomsup/bottomsup.component';
 import { BurnComponent } from './components/burn/burn.component';
@@ -86,7 +88,9 @@ import { OfflineStoreComponent } from './online-offlinestores/offline-store/offl
 import { OnlineOfflineComponent } from './online-offlinestores/online-offline/online-offline.component';
 import { OnlineStoreComponent } from './online-offlinestores/online-store/online-store.component';
 import { OrdersectionComponent } from './orders-section/ordersection/ordersection.component';
+import { RefrtransactionComponent } from './refr-transaction/refrtransaction/refrtransaction.component';
 import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/shopdetails-demo.component';
+import { SubcategoryComponent } from './subcategory/subcategory/subcategory.component';
 import { TransactionusersComponent } from './user-transaction/transactionusers/transactionusers.component';
 import { UserViewallComponent } from './users/user-viewall/user-viewall.component';
 import { UserdashComponent } from './users/userdash/userdash.component';
@@ -189,6 +193,16 @@ const routes: Routes = [
   { path: 'withdraw', component: WithdrawrequestComponent },
   { path: 'viewwithdraw', component: WithdrawviewComponent },
   { path: 'updatewithdraw', component: WithdrawupdateComponent },
+  { path: 'refrtrans', component: RefrtransactionComponent },
+
+  // -----------category
+
+  { path: 'categorygroup', component: CategorygroupComponent },
+  { path: 'subcategory', component: SubcategoryComponent },
+
+  // --------------------admin-dashboard
+
+  { path: 'admindash', component: DashboardComponent },
 
   // demo
 

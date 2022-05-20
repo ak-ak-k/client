@@ -1,0 +1,168 @@
+.box {
+  margin: 20px;
+}
+
+.heading {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px !important;
+    line-height: 43px !important;
+
+    color: #000000;
+  }
+}
+
+//
+
+.boxes {
+  margin: 27px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+
+  .users {
+    box-sizing: border-box;
+
+    width: 250px;
+    height: 80px;
+
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    position: relative;
+    button {
+      background: #ff3f80;
+      border-radius: 4px;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px !important;
+      line-height: 20px !important;
+      color: #ffffff;
+      position: absolute;
+      right: 0;
+      //   width: 53px;
+      height: 25px;
+    }
+  }
+}
+
+.user-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 12px 0px 14px;
+  .img {
+    margin-top: -6px;
+  }
+}
+
+.number {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px !important;
+    line-height: 35px !important ;
+  }
+}
+
+//
+
+.subheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px !important;
+    line-height: 29px !important;
+    color: #000000;
+  }
+  a {
+    background: #874bf9;
+    border-radius: 3px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px !important;
+    line-height: 20px !important;
+    padding: 7px;
+    color: #ffffff;
+  }
+}
+
+//
+
+.col-card {
+  .mat-form-field {
+    font-size: 14px;
+    width: 55%;
+    margin: 0 5%;
+  }
+  .card-box {
+    overflow: hidden;
+    table {
+      width: 100%;
+      td,
+      th {
+        width: 10%;
+      }
+    }
+    mat-paginator {
+      margin: 0 -18px;
+    }
+  }
+}
+
+tr.mat-row,
+tr.mat-footer-row {
+  height: 70px;
+}
+
+.table-heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  color: #000000;
+}
+
+//
+
+.inactive {
+  background: #ff7d7d;
+  height: 39px;
+  border-radius: 3px;
+  color: #000000;
+  /* padding-left: 16px; */
+  padding: 12px;
+}
+
+.crud {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+//
+
+.status {
+  background: #ff7d7d;
+  border-radius: 3px;
+  width: 65px;
+  height: 30px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

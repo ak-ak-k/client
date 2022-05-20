@@ -141,6 +141,16 @@ import { TransactionusersComponent } from './user-transaction/transactionusers/t
 import { WithdrawrequestComponent } from './withdraw/withdrawrequest/withdrawrequest.component';
 import { WithdrawviewComponent } from './withdraw/withdrawview/withdrawview/withdrawview.component';
 import { WithdrawupdateComponent } from './withdraw/withdrawupdate/withdrawupdate/withdrawupdate.component';
+import { RefrtransactionComponent } from './refr-transaction/refrtransaction/refrtransaction.component';
+import { CategorygroupComponent } from './category/categorygroup/categorygroup.component';
+import { AddcategoryComponent } from './category/addcategory/addcategory.component';
+import { UpdatecategoryComponent } from './category/updatecategory/updatecategory.component';
+import { SubcategoryComponent } from './subcategory/subcategory/subcategory.component';
+import { AddsubcategoryComponent } from './subcategory/addsubcategory/addsubcategory.component';
+import { UpdatesubcategoryComponent } from './subcategory/updatesubcategory/updatesubcategory.component';
+import { DashboardComponent } from './admindashboard/dashboard/dashboard.component';
+import { RecentusersComponent } from './admindashboard/recentusers/recentusers.component';
+import { RecentcampaignsComponent } from './admindashboard/recentcampaigns/recentcampaigns.component';
 
 @NgModule({
   declarations: [
@@ -257,6 +267,16 @@ import { WithdrawupdateComponent } from './withdraw/withdrawupdate/withdrawupdat
     WithdrawrequestComponent,
     WithdrawviewComponent,
     WithdrawupdateComponent,
+    RefrtransactionComponent,
+    CategorygroupComponent,
+    AddcategoryComponent,
+    UpdatecategoryComponent,
+    SubcategoryComponent,
+    AddsubcategoryComponent,
+    UpdatesubcategoryComponent,
+    DashboardComponent,
+    RecentusersComponent,
+    RecentcampaignsComponent,
   ],
   imports: [
     BrowserModule,

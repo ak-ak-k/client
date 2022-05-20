@@ -1,0 +1,69 @@
+<div class="box">
+    <div class="heading">
+        <p>Add Category </p>
+    </div>
+    <div class="fields">
+        <div class="left">
+
+            <div>
+
+                <div class="label_input">
+                    <label for="">Sub Category Name :</label>
+                    <mat-form-field class="input_field" appearance="outline">
+                        <input type="name" matInput>
+                    </mat-form-field>
+
+                </div>
+
+                <div class="label_input">
+                    <label for="">Status</label>
+                    <mat-form-field class="input_field" appearance="outline">
+                        <mat-select>
+                            <mat-option *ngFor="let status of statuslist" [value]="status.value">
+                                {{status.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div>
+
+                <div class="label_input">
+                    <label for="">Category Group :</label>
+
+                    <mat-form-field class="input_field" appearance="outline">
+                        <mat-select [formControl]="toppings" multiple>
+                            <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+
+                </div>
+
+                <div class="label_input">
+                    <label for="">Category Image :</label>
+
+                    <input type="file" class="file">
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="main3">
+        <div>
+            <button class="cancel" (click)="onNoClick()" mat-button>Cancel</button>
+            <button class="create" mat-button>Save</button>
+        </div>
+    </div>
+</div>
