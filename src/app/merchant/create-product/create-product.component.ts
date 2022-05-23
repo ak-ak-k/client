@@ -140,6 +140,7 @@ export class CreateProductComponent implements OnInit {
   mrp = new FormControl('', [Validators.required, Validators.required]);
   dis = new FormControl('', [Validators.required, Validators.required]);
   hsn = new FormControl('', [Validators.required, Validators.required]);
+  quantity = new FormControl('', [Validators.required, Validators.required]);
 
   getErrorMessage() {
     if (this.category.hasError('required')) {

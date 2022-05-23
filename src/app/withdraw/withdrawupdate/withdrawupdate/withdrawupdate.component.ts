@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Inject, OnInit } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { DialogData } from 'src/app/components/refrcash/refrcash.component';
 interface status {
   value: string;
   viewValue: string;
@@ -11,7 +12,13 @@ interface status {
   styleUrls: ['./withdrawupdate.component.scss'],
 })
 export class WithdrawupdateComponent implements OnInit {
-  constructor() {}
+  cancel(): void {
+    this.dialogRef.close();
+  }
+  constructor(
+    public dialogRef: MatDialogRef<WithdrawupdateComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData
+  ) {}
 
   ngOnInit(): void {}
 

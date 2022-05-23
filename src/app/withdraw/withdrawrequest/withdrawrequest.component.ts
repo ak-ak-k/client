@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -27,6 +27,13 @@ export interface UserData {
   styleUrls: ['./withdrawrequest.component.scss'],
 })
 export class WithdrawrequestComponent implements OnInit {
+  //
+
+  range = new FormGroup({
+    start: new FormControl(),
+    end: new FormControl(),
+  });
+
   //
 
   selected = 'option2';

@@ -153,6 +153,12 @@ import { RecentusersComponent } from './admindashboard/recentusers/recentusers.c
 import { RecentcampaignsComponent } from './admindashboard/recentcampaigns/recentcampaigns.component';
 import { AdminburnComponent } from './admin-burn/adminburn/adminburn.component';
 import { ExculsiveproductsComponent } from './admin-burn/exculsiveproducts/exculsiveproducts.component';
+import { MaindashboardComponent } from './dashboard/maindashboard/maindashboard.component';
+import { EditburnproductsComponent } from './admin-burn/editburnproducts/editburnproducts.component';
+import { Editburnproducts1Component } from './admin-burn/editburnproducts1/editburnproducts1.component';
+import { DemoadminComponent } from './demo/demoadmin/demoadmin.component';
+import { BurnSectionComponent } from './admin-burn/burn-section/burn-section.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -281,6 +287,12 @@ import { ExculsiveproductsComponent } from './admin-burn/exculsiveproducts/excul
     RecentcampaignsComponent,
     AdminburnComponent,
     ExculsiveproductsComponent,
+    MaindashboardComponent,
+    EditburnproductsComponent,
+    Editburnproducts1Component,
+    DemoadminComponent,
+    BurnSectionComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,

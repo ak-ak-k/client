@@ -3,13 +3,64 @@
 }
 
 .heading {
+  margin: 27px 0;
   p {
     font-family: "Jost";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px !important;
     line-height: 29px !important;
   }
+}
+.header_burn {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px !important;
+    line-height: 43px !important;
+  }
+}
+
+.section {
+  margin: 20px 0;
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 29px !important;
+
+    color: #000000;
+  }
+}
+
+.accessories_img {
+  margin: 18px 11px;
+  display: flex;
+  align-items: center;
+  gap: 13%;
+  .add_img {
+    width: 551px;
+    height: 310px;
+    background: #d7d6d6;
+    position: relative;
+  }
+}
+
+.view_delete {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
 }
 
 //
@@ -36,6 +87,9 @@
       margin: 0 -18px;
     }
   }
+}
+th {
+  background: lightgray !important;
 }
 
 tr.mat-row,

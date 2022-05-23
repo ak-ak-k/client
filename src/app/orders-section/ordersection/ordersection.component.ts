@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -24,6 +24,13 @@ export interface UserData {
   styleUrls: ['./ordersection.component.scss'],
 })
 export class OrdersectionComponent implements OnInit {
+  //
+
+  range = new FormGroup({
+    start: new FormControl(),
+    end: new FormControl(),
+  });
+
   //
 
   selected = 'option2';

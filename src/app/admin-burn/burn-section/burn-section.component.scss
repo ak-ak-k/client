@@ -1,0 +1,76 @@
+//
+
+.col-card {
+  .mat-form-field {
+    font-size: 14px;
+    width: 55%;
+    margin: 0 5%;
+    margin-top: 15px;
+  }
+  .card-box {
+    overflow: hidden;
+    table {
+      width: 100%;
+      td,
+      th {
+        width: 49px;
+        padding: 8px;
+      }
+    }
+    mat-paginator {
+      margin: 0 -18px;
+    }
+  }
+}
+
+tr.mat-row,
+tr.mat-footer-row {
+  height: 70px;
+}
+
+.table-heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  color: #000000;
+  background-color: lightgray;
+}
+
+//
+
+.crud {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  button {
+    background: #874bf9;
+    border-radius: 3px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px !important;
+    color: white;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 2px 12px;
+    gap: 6px;
+  }
+}
+
+//
+.approval {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  color: #ffffff;
+  background: #53bdea;
+  border-radius: 7px;
+
+  padding: 3px 9px;
+}

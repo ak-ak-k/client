@@ -615,3 +615,21 @@ tr.mat-footer-row {
     color: #000000;
   }
 }
+
+.file {
+  // margin: 14px 0;
+  border: 1px solid gray;
+  padding: 4px;
+  border-radius: 6px;
+  width: 356px;
+  height: 31px;
+}
+
+input[type="file"]::file-selector-button {
+  border: 2px solid lightgray;
+
+  padding: 5px;
+  border-radius: 0.2em;
+
+  transition: 1s;
+}

@@ -1,0 +1,1238 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+    <mat-sidenav-container class="example-sidenav-container">
+        <mat-sidenav class="bg-primary sidennav " #snav [mode]="mobileQuery.matches ? 'side' : 'side'"
+            [opened]="mobileQuery.matches ? 'false' : 'true'" [fixedInViewport]="mobileQuery.matches">
+            <div>
+                <div class="mt-5">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 10.332H3" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M21 6.47266H3" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M21 14.1914H3" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                    <svg class="mr-3" width="97" height="52" viewBox="0 0 97 52" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M86.5289 6.76981L87.4167 7.65758L89.9856 10.2265C90.0317 10.2617 90.0881 10.2808 90.1461 10.2808C90.2042 10.2808 90.2606 10.2617 90.3067 10.2265L90.9678 9.56536C91.003 9.51925 91.0221 9.46283 91.0221 9.4048C91.0221 9.34678 91.003 9.29036 90.9678 9.24425L89.3056 7.58203C89.5948 7.4969 89.8635 7.35351 90.0952 7.16066C90.3269 6.96782 90.5168 6.7296 90.653 6.46066C90.7892 6.19173 90.869 5.89776 90.8874 5.59685C90.9058 5.29594 90.8625 4.99445 90.76 4.71092H92.12C92.1498 4.71092 92.1792 4.70506 92.2067 4.69366C92.2342 4.68227 92.2592 4.66558 92.2803 4.64453C92.3013 4.62348 92.318 4.59849 92.3294 4.57099C92.3408 4.54349 92.3467 4.51402 92.3467 4.48425V3.5587C92.3467 3.49858 92.3228 3.44093 92.2803 3.39842C92.2378 3.35591 92.1801 3.33203 92.12 3.33203H86.2267C86.1666 3.33203 86.1089 3.35591 86.0664 3.39842C86.0239 3.44093 86 3.49858 86 3.5587V4.42759C86 4.4877 86.0239 4.54535 86.0664 4.58786C86.1089 4.63037 86.1666 4.65425 86.2267 4.65425H88.7389C88.9259 4.68337 89.0963 4.77838 89.2194 4.92212C89.3425 5.06587 89.4102 5.24889 89.4102 5.43814C89.4102 5.62739 89.3425 5.81041 89.2194 5.95416C89.0963 6.09791 88.9259 6.19291 88.7389 6.22203H86.7556C86.6922 6.22219 86.6302 6.2411 86.5776 6.2764C86.5249 6.31169 86.4839 6.36178 86.4596 6.42036C86.4354 6.47894 86.429 6.54338 86.4414 6.60557C86.4537 6.66776 86.4842 6.7249 86.5289 6.76981Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M95.6161 14.9222L94.7094 15.7533L94.5772 15.8856L95.6161 14.9222ZM80.8638 2.02111L81.3172 1.39778L81.6005 1.00111L80.8638 2.02111ZM96.3716 14.7711L91.5172 19.1911H88.6272L84.3016 24.8578L85.5105 19.1911H78.4083C78.131 19.1912 77.8647 19.0823 77.6669 18.888C77.4691 18.6937 77.3554 18.4295 77.3505 18.1522V6.63C77.3211 6.37551 77.3885 6.11927 77.5394 5.91222L81.6949 0.245558C81.7487 0.170233 81.8195 0.108707 81.9015 0.0660244C81.9836 0.0233417 82.0747 0.00071482 82.1672 0H95.9561C96.1114 0 96.2603 0.0616933 96.3701 0.171506C96.4799 0.281319 96.5416 0.430256 96.5416 0.585555V14.3744C96.5455 14.4519 96.5323 14.5293 96.5029 14.6012C96.4735 14.673 96.4287 14.7374 96.3716 14.79V14.7711ZM89.0805 14.9222L89.2127 14.5067H82.186C82.136 14.5067 82.0879 14.4868 82.0525 14.4513C82.0171 14.4159 81.9972 14.3679 81.9972 14.3178V0.566669C81.9972 0.541864 82.0021 0.5173 82.0115 0.494383C82.021 0.471466 82.0349 0.450643 82.0525 0.433103C82.07 0.415563 82.0908 0.40165 82.1138 0.392158C82.1367 0.382665 82.1612 0.377779 82.186 0.377779H95.9372C95.9635 0.375131 95.9901 0.378051 96.0153 0.38635C96.0404 0.39465 96.0635 0.408144 96.0831 0.425955C96.1027 0.443767 96.1183 0.465497 96.129 0.489739C96.1396 0.51398 96.1451 0.540191 96.1449 0.566669V14.3178C96.1451 14.3443 96.1396 14.3705 96.129 14.3947C96.1183 14.4189 96.1027 14.4407 96.0831 14.4585C96.0635 14.4763 96.0404 14.4898 96.0153 14.4981C95.9901 14.5064 95.9635 14.5093 95.9372 14.5067H90.875L90.5538 14.9222L89.9872 15.64L88.0983 17.9256L88.7972 15.64L89.0805 14.9222Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.14001 36.8873V50.9785H0V15.6185H13.0145C16.4379 15.3947 19.8172 16.4896 22.4589 18.6785C23.5232 19.6252 24.371 20.7901 24.9446 22.0939C25.5183 23.3977 25.8044 24.8097 25.7833 26.234C25.7796 28.4752 25.0654 30.6576 23.7434 32.4673C22.1779 34.5289 19.9027 35.9357 17.3589 36.4151L26.3878 50.9596H17.9256L9.46334 36.8685L7.14001 36.8873ZM7.14001 21.0773V31.504H13.0145C14.5093 31.6043 15.9831 31.1085 17.1133 30.1251C18.0426 29.0862 18.5563 27.7412 18.5563 26.3473C18.5563 24.9535 18.0426 23.6085 17.1133 22.5696C15.986 21.5793 14.5119 21.0767 13.0145 21.1718L7.14001 21.0773Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M36.2842 51.0162C34.6574 51.0784 33.0356 50.7996 31.5229 50.1978C30.0103 49.596 28.6403 48.6845 27.5008 47.5217C26.3528 46.2833 25.4627 44.8289 24.8822 43.2431C24.3017 41.6574 24.0425 39.972 24.1197 38.2851C24.0395 36.602 24.2992 34.92 24.8833 33.3395C25.4675 31.759 26.3641 30.3125 27.5197 29.0862C28.6736 27.9348 30.0525 27.0337 31.5702 26.439C33.0879 25.8442 34.7119 25.5687 36.3408 25.6295C37.9729 25.569 39.6007 25.8353 41.1285 26.4127C42.6563 26.9901 44.0533 27.8669 45.2375 28.9917C46.4067 30.165 47.3193 31.5683 47.9176 33.1128C48.5159 34.6573 48.7868 36.3093 48.713 37.9639C48.7203 38.7738 48.6571 39.5828 48.5241 40.3817H30.5419C30.6425 41.8182 31.2757 43.1654 32.3175 44.1595C33.3924 45.1566 34.819 45.6865 36.2842 45.6328C37.2551 45.6815 38.22 45.4557 39.0685 44.9813C39.9171 44.5069 40.6148 43.8032 41.0819 42.9506H47.9386C47.2246 45.2451 45.7697 47.238 43.8019 48.6173C41.6266 50.1437 39.016 50.9256 36.3597 50.8462L36.2842 51.0162ZM42.2719 36.3206C42.2517 35.5723 42.0729 34.8369 41.7473 34.1628C41.4216 33.4888 40.9567 32.8916 40.383 32.4106C39.2694 31.4276 37.8257 30.9014 36.3408 30.9373C34.8889 30.8957 33.4785 31.4246 32.4119 32.4106C31.3284 33.4413 30.657 34.8312 30.523 36.3206H42.2719Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M57.8937 32.3924V50.9791H50.8103V21.3424C50.6893 19.9872 50.8668 18.6219 51.3302 17.3427C51.7936 16.0634 52.5317 14.9013 53.4926 13.9379C55.9495 12.1866 58.948 11.3634 61.9548 11.6146H65.8837V17.5646H61.9548C60.8381 17.4563 59.7209 17.7658 58.8192 18.4335C58.4735 18.8251 58.2128 19.284 58.0535 19.7815C57.8942 20.2789 57.8398 20.804 57.8937 21.3235V26.5557H62.3514V32.3735L57.8937 32.3924Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M70.607 26.7266V28.6155C72.1559 27.0099 75.1781 26.7266 78.2759 26.7266V32.5066C75.7636 32.5066 70.7203 33.2432 70.7203 36.5866V50.9799H64.4492V26.7266H70.607Z"
+                            fill="white" />
+                    </svg>
+
+
+                </div>
+                <div class="side-item active">
+
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.05556 10.5556H7.38889C7.66884 10.5556 7.93732 10.4443 8.13528 10.2464C8.33323 10.0484 8.44444 9.77995 8.44444 9.5V1.05556C8.44444 0.775605 8.33323 0.50712 8.13528 0.309165C7.93732 0.11121 7.66884 0 7.38889 0H1.05556C0.775605 0 0.50712 0.11121 0.309165 0.309165C0.11121 0.50712 0 0.775605 0 1.05556V9.5C0 9.77995 0.11121 10.0484 0.309165 10.2464C0.50712 10.4443 0.775605 10.5556 1.05556 10.5556ZM0 17.9444C0 18.2244 0.11121 18.4929 0.309165 18.6908C0.50712 18.8888 0.775605 19 1.05556 19H7.38889C7.66884 19 7.93732 18.8888 8.13528 18.6908C8.33323 18.4929 8.44444 18.2244 8.44444 17.9444V13.7222C8.44444 13.4423 8.33323 13.1738 8.13528 12.9758C7.93732 12.7779 7.66884 12.6667 7.38889 12.6667H1.05556C0.775605 12.6667 0.50712 12.7779 0.309165 12.9758C0.11121 13.1738 0 13.4423 0 13.7222V17.9444ZM10.5556 17.9444C10.5556 18.2244 10.6668 18.4929 10.8647 18.6908C11.0627 18.8888 11.3312 19 11.6111 19H17.9444C18.2244 19 18.4929 18.8888 18.6908 18.6908C18.8888 18.4929 19 18.2244 19 17.9444V10.5556C19 10.2756 18.8888 10.0071 18.6908 9.80917C18.4929 9.61121 18.2244 9.5 17.9444 9.5H11.6111C11.3312 9.5 11.0627 9.61121 10.8647 9.80917C10.6668 10.0071 10.5556 10.2756 10.5556 10.5556V17.9444ZM11.6111 7.38889H17.9444C18.2244 7.38889 18.4929 7.27768 18.6908 7.07972C18.8888 6.88177 19 6.61328 19 6.33333V1.05556C19 0.775605 18.8888 0.50712 18.6908 0.309165C18.4929 0.11121 18.2244 0 17.9444 0H11.6111C11.3312 0 11.0627 0.11121 10.8647 0.309165C10.6668 0.50712 10.5556 0.775605 10.5556 1.05556V6.33333C10.5556 6.61328 10.6668 6.88177 10.8647 7.07972C11.0627 7.27768 11.3312 7.38889 11.6111 7.38889Z"
+                            fill="#F178B6" />
+                    </svg>
+
+                    <p> Dashboard</p>
+                </div>
+                <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/bag.png" alt="">
+                    <p> Merchants</p>
+                </div>
+                <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/bag.png" alt="">
+                    <p> Users</p>
+                </div>
+                <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/orders.png" alt="">
+                    <p> Orders</p>
+                </div>
+                <!-- <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/bag.png" alt="">
+                    <p> My Store</p>
+                </div> -->
+                <div class=" side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/campaign.png" alt="">
+                    <p> Campaigns</p>
+                </div>
+                <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/wallet.png" alt="">
+                    <p> Burn</p>
+                </div>
+                <div class="side-item">
+                    <div class="side_categories">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10.332H3" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M21 6.47266H3" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M21 14.1914H3" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                        <p> Categories</p>
+
+                    </div>
+
+                    <span class="divide"></span>
+
+                    <div class="chev_right">
+                        <mat-icon style="color: white;">
+                            chevron_right
+                        </mat-icon>
+
+                    </div>
+
+
+
+                </div>
+                <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/wallet.png" alt="">
+                    <p> Wallets</p>
+                </div>
+                <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/Products.png" alt="">
+                    <p> Products</p>
+                </div>
+                <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/heart.png" alt="">
+                    <p> My Customers</p>
+                </div>
+
+                <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/like.png" alt="">
+                    <p> Subscriptions</p>
+                </div>
+                <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/link.png" alt="">
+                    <p> Integrations</p>
+                </div>
+                <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/stats.png" alt="">
+                    <p> Reports</p>
+                </div>
+                <div class="side-item">
+                    <img src="../../../assets/img/merchant-admin/icon/Settings.png" alt="">
+                    <p> Settings</p>
+                </div>
+            </div>
+        </mat-sidenav>
+        <mat-sidenav-content [class.ml-130]="!mobileQuery.matches">
+            <div class="d-md-none d-sm-block">
+                <div class="bg-primary navbar-mobile d-flex-row">
+                    <div class="col-10">
+                        <img src="../../../assets/img/merchant-admin/grid.png" alt="">
+                    </div>
+                    <div class="col-70">
+                        <img src="../../../assets/img/merchant-admin/Logo.png" alt="">
+                    </div>
+                    <div class="col-20">
+                        <img class="mx-3" src="../../../assets/img/merchant-admin/bell.png" alt="">
+                        <img class="mx-3" src="../../../assets/img/merchant-admin/help-circle.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="main-content">
+
+                <div class="profile d-flex-row">
+                    <div class="mr-5">
+                        <img src="../../../assets/img/merchant-admin/dp.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Simran Fashion <br> <span> Online Store </span> </h4>
+                    </div>
+                </div>
+                <div class="statistics d-flex-row">
+                    <div class="d-flex-column col-50 mr-10">
+                        <div class="col-100 mb-5">
+                            <div class="card-purple card mat-card">
+                                <div class="d-flex-row mr-md-15 mr-sm-10 align-items-center">
+                                    <div class="col-10  col-sm-20 mr-5">
+                                        <button mat-flat-button class="icon-button"><img width="45%"
+                                                src="../assets/sideicons/heart.png" alt=""> </button>
+                                    </div>
+                                    <div class="col-90  col-sm-80">
+                                        <span>Your Customers</span><br>
+                                        <b>531</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-100">
+                            <div class="card-green card mat-card">
+                                <div class="d-flex-row mr-md-15 mr-sm-10 align-items-center">
+                                    <div class="col-10  col-sm-20 mr-10">
+                                        <button mat-flat-button class="icon-button"><img width="45%"
+                                                src="../assets/sideicons/orders.png" alt=""> </button>
+                                    </div>
+                                    <div class="col-90  col-sm-80">
+                                        <span>Orders</span><br>
+                                        <b>19</b>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-50">
+                        <div class="card-white card mat-card">
+                            <div class="d-flex-column ">
+                                <div class="d-flex-row mr-md-15 mr-sm-10 align-items-center">
+                                    <div class="col-10  col-sm-20 mr-md-25 mr-sm-10">
+                                        <button mat-flat-button class="icon-button"><img width="45%"
+                                                src="../assets/sideicons/dollar.png" alt=""> </button>
+                                    </div>
+                                    <div class="col-90  col-sm-80 ">
+                                        <span>Your Earnings</span><br>
+                                        <b>9356</b>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex-row align-items-center mt-md-25 mt-sm-25">
+                                    <div class="col-10  col-sm-20  mr-md-25 mr-sm-10">
+                                        <button mat-flat-button class="icon-button"><img width="45%"
+                                                src="../assets/sideicons/campaigns.png" alt=""> </button>
+                                    </div>
+                                    <br>
+                                    <div class="col-90  col-sm-80 mr-5">
+                                        <span>Campaign Wallet</span> <br>
+                                        <b>20020</b>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="step d-flex-row">
+                    <div class="col-100">
+                        <mat-stepper [linear]="isLinear" labelPosition="bottom" #stepper>
+                            <mat-step label="Create Store">
+                            </mat-step>
+                            <mat-step label="Create Campaigns">
+
+                            </mat-step>
+                            <mat-step label="Add Funds">
+                            </mat-step>
+                            <mat-step label="Add Products">
+                            </mat-step>
+                        </mat-stepper>
+
+                    </div>
+
+                    <div>
+
+                    </div>
+                </div>
+                <br>
+
+                <div class="redeem-card">
+                    <div class="redeem-card mat-card">
+                        <div class="heading"> <b> Redeem Requests </b> <span class="ml-auto view-details">
+                                <div class="badge">12</div>
+                            </span>
+                        </div>
+                        <hr>
+                        <div class="d-flex-column d-md-none d-sm-block">
+                            <div class="redeem-item">
+                                <div class="d-flex-row">
+
+                                    <div class="col-70">
+                                        <h5>[Name Goes Here]</h5>
+                                        <ng-container *ngIf="showDetailsRedeem[0].show">
+                                            <p>Jan 04, 2021 | 08:42:31 pm </p>
+                                            <p>Instant Cashback </p>
+                                            <p>Min Order Value </p>
+                                        </ng-container>
+                                    </div>
+
+                                    <div class="col-30">
+                                        <div class="d-flex-row justify-content-end align-items-start">
+                                            <img class="col-20" width="50%" src="../assets/personicon.svg" alt="">
+                                            <button class=" down-arrow" (click)="expandRedeemCard(0)">
+                                                <img src="../assets/downarrow.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="textR mt-5">
+                                            <button mat-stroked-button color="success"
+                                                class="outline-success ">Accept</button> <br>
+                                            <ng-container *ngIf="showDetailsRedeem[0].show">
+                                                <button mat-stroked-button color="danger"
+                                                    class="outline-danger  mt-3">Reject</button>
+                                            </ng-container>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="redeem-item">
+                                <div class="d-flex-row">
+                                    <div class="col-sm-70">
+                                        <h5>[Name Goes Here]</h5>
+                                        <ng-container *ngIf="showDetailsRedeem[1].show">
+                                            <p>Jan 04, 2021 | 08:42:31 pm </p>
+                                            <p>Instant Cashback </p>
+                                            <p>Min Order Value </p>
+                                        </ng-container>
+                                    </div>
+
+                                    <div class="col-30">
+                                        <div class="d-flex-row justify-content-end align-items-start">
+                                            <img class="col-20" width="50%" src="../assets/personicon.svg" alt="">
+                                            <button class="down-arrow" (click)="expandRedeemCard(1)">
+                                                <img src="../assets/downarrow.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="textR mt-5">
+                                            <button mat-stroked-button color="success"
+                                                class="outline-success ">Accept</button> <br>
+                                            <ng-container *ngIf="showDetailsRedeem[1].show">
+                                                <button mat-stroked-button color="danger"
+                                                    class="outline-danger  mt-3">Reject</button>
+                                            </ng-container>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="d-flex-column d-sm-none d-md-block">
+                            <div class="redeem-item header col-100">
+                                <div class="d-flex-row">
+                                    <div class="col-25">
+                                        <p class="text-primary">Details </p>
+                                    </div>
+                                    <div class="col-25">
+                                        <p class="text-primary">Bill Amount </p>
+                                    </div>
+                                    <div class="col-25">
+                                        <p class="text-primary">Instant Cashback (Rs.) </p>
+                                    </div>
+                                    <div class="col-20">
+                                        <p class="text-primary">Action </p>
+                                    </div>
+                                    <div class="col-5">
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="redeem-item col-100">
+                                <div class="d-flex-row">
+                                    <div class="col-25">
+
+                                        <h5>[Name Goes Here]</h5>
+                                        <ng-container *ngIf="showDetailsRedeem[0].show">
+                                            <p>Jan 04, 2021 | 08:42:31 pm </p>
+
+                                            <p>Min Order Value </p>
+                                            <p class="text-primary">Maximum Cashback : 50 </p>
+                                        </ng-container>
+
+                                    </div>
+                                    <div class="col-25">
+
+                                        <input class="bill-card" type="number" value="12345678">
+                                    </div>
+                                    <div class="col-25">
+
+                                        <div class="cashback-card">
+                                            <span> 123400 </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-15">
+
+                                        <div class="d-flex-column">
+                                            <button mat-stroked-button color="success"
+                                                class="outline-success">Accept</button> <br>
+                                            <ng-container *ngIf="showDetailsRedeem[0].show">
+                                                <button mat-stroked-button color="danger"
+                                                    class="outline-danger">Reject</button>
+                                            </ng-container>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="d-flex-row">
+                                            <img class="col-20" src="../assets/personicon.svg" alt="">
+                                            <button class="col-50" mat-icon-button (click)="expandRedeemCard(0)">
+                                                <img src="../assets/downarrow.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="redeem-item col-100">
+                                <div class="d-flex-row">
+                                    <div class="col-25">
+
+                                        <h5>[Name Goes Here]</h5>
+                                        <ng-container *ngIf="showDetailsRedeem[1].show">
+                                            <p>Jan 04, 2021 | 08:42:31 pm </p>
+
+                                            <p>Min Order Value </p>
+                                            <p class="text-primary">Maximum Cashback : 50 </p>
+                                        </ng-container>
+
+                                    </div>
+                                    <div class="col-25">
+
+                                        <input class="bill-card" type="number" value="12345678">
+                                    </div>
+                                    <div class="col-25">
+
+                                        <div class="cashback-card">
+                                            <span> 123400 </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-15">
+
+                                        <div class="d-flex-column">
+                                            <button mat-stroked-button color="success"
+                                                class="outline-success">Accept</button> <br>
+                                            <ng-container *ngIf="showDetailsRedeem[1].show">
+                                                <button mat-stroked-button color="danger"
+                                                    class="outline-danger">Reject</button>
+                                            </ng-container>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="d-flex-row">
+                                            <img class="col-20" src="../assets/personicon.svg" alt="">
+                                            <button class="col-50" mat-icon-button (click)="expandRedeemCard(1)">
+                                                <img src="../assets/downarrow.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="active-campaigns">
+                    <div class="active-campaigns mat-card">
+                        <div class="heading"> <b> Active Store Campaigns </b> </div>
+                        <hr>
+                        <div class="d-flex-row-md  d-flex-column-sm flex-wrap">
+                            <div class="col-50 col-md-100 col-sm-100">
+                                <div class="campaign-item">
+                                    <div class="d-flex-column">
+                                        <div class="d-flex-row mt-md-10 mt-sm-5">
+                                            <h3 class="mr-5 col-70 col-sm-60">
+                                                <b> Campaign Name </b>
+                                                <button class="active-chip" color="success"
+                                                    mat-flat-button>Active</button>
+                                            </h3>
+                                            <div class="col-5 col-sm-5"> </div>
+                                            <button class="quick-chip col-25 col-sm-35" mat-flat-button><img
+                                                    src="../assets/send.svg" alt="">
+                                                Quick
+                                                Send</button>
+                                        </div>
+                                        <div class="dash-border align-items-center d-flex-row">
+                                            <div class="col-65  col-sm-50">
+                                                <h5> <b> On Direct Sale </b>
+                                                </h5>
+                                                <div> <img src="../assets/percent.svg" alt="" width="15" height="15">
+                                                    <span> You give:
+                                                        10%</span>
+                                                </div>
+                                                <div class="mt-5"></div>
+                                                <h5> <b>Sale Via Recommendation </b> </h5>
+                                                <div> <img src="../assets/customerpinknew.svg" alt="">
+                                                    <span> New Customer : 10%</span>
+                                                </div>
+                                                <div class="mt-3"> <img src="../assets/customerpink.svg" alt="">
+                                                    <span> Existing Customer : 5%</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-35  col-sm-50">
+                                                <div class="padding-grd ">
+                                                    <div class="bg-gradient">
+                                                        <h6> 10% Cashback upto Rs 250/-
+                                                            <br> <br>
+                                                            Minimum order value ₹3000/-
+                                                        </h6>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="d-flex-row mt-5">
+                                            <div class="col-50">
+                                                <p> Expiry Date <br> <b> March 04, 2022 </b> </p>
+                                            </div>
+                                            <div class="col-50">
+                                                <button class="copy-chip float-right" mat-flat-button><img
+                                                        src="../assets/copy.svg" class="mx-3" alt=""> Copy to
+                                                    Clipboard</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-50 col-md-100 col-sm-100">
+                                <div class="campaign-item">
+                                    <div class="d-flex-column">
+                                        <div class="d-flex-row mt-md-10 mt-sm-5">
+                                            <h3 class="mr-5 col-70 col-sm-60">
+                                                <b> Campaign Name </b>
+                                                <button class="active-chip" color="success"
+                                                    mat-flat-button>Active</button>
+                                            </h3>
+                                            <div class="col-5 col-sm-5"> </div>
+                                            <button class="quick-chip col-25 col-sm-35" mat-flat-button><img
+                                                    src="../assets/send.svg" alt="">
+                                                Quick
+                                                Send</button>
+                                        </div>
+                                        <div class="dash-border align-items-center d-flex-row">
+                                            <div class="col-65  col-sm-50">
+                                                <h5> <b> On Direct Sale </b>
+                                                </h5>
+                                                <div> <img src="../assets/percent.svg" alt="" width="15" height="15">
+                                                    <span> You give:
+                                                        10%</span>
+                                                </div>
+                                                <div class="mt-5"></div>
+                                                <h5> <b>Sale Via Recommendation </b> </h5>
+                                                <div> <img src="../assets/customerpinknew.svg" alt="">
+                                                    <span> New Customer : 10%</span>
+                                                </div>
+                                                <div class="mt-3"> <img src="../assets/customerpink.svg" alt="">
+                                                    <span> Existing Customer : 5%</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-35  col-sm-50">
+                                                <div class="padding-grd ">
+                                                    <div class="bg-gradient">
+                                                        <h6> 10% Cashback upto Rs 250/-
+                                                            <br> <br>
+                                                            Minimum order value ₹3000/-
+                                                        </h6>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="d-flex-row mt-5">
+                                            <div class="col-50">
+                                                <p> Expiry Date <br> <b> March 04, 2022 </b> </p>
+                                            </div>
+                                            <div class="col-50">
+                                                <button class="copy-chip float-right" mat-flat-button><img
+                                                        src="../assets/copy.svg" class="mx-3" alt=""> Copy to
+                                                    Clipboard</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recent-orders">
+                    <div class="mat-card">
+                        <div class="heading"> <b> Recent Orders </b> <a class="ml-auto view-details" href="#">View
+                                All</a> </div>
+                        <hr>
+
+                        <div class="d-flex-row-md d-flex-col-sm flex-wrap">
+                            <div class="col-50 col-sm-100">
+                                <div class="order-item">
+                                    <div class="d-flex-column">
+                                        <div>
+                                            <h3> Diljeet Singh
+                                                <button class="float-right" mat-icon-button
+                                                    (click)="expandOrderCard(0)">
+                                                    <img src="../assets/downarrow.svg" alt="">
+                                                </button>
+                                            </h3>
+                                        </div>
+                                        <ng-container>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Order No : ORDG871V1753 </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Jan 02, 2022 | 10:47:31 pm </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Cashback Given : </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Order Amount: 289 </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Items : </span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5"></div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <p> Status</p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <button color="warn" class="status-chip float-right"
+                                                        mat-flat-button>Rejected</button>
+                                                </div>
+                                            </div>
+                                            <ng-container *ngIf="showDetailsOrders[0].show">
+
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Address : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Contact Number : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                            </ng-container>
+
+                                        </ng-container>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50 col-sm-100">
+                                <div class="order-item">
+                                    <div class="d-flex-column">
+                                        <div>
+                                            <h3> Diljeet Singh
+
+                                                <button class="float-right" mat-icon-button
+                                                    (click)="expandOrderCard(1)">
+                                                    <img src="../assets/downarrow.svg" alt="">
+                                                </button>
+
+                                            </h3>
+                                        </div>
+                                        <ng-container>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Order No : ORDG871V1753 </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Jan 02, 2022 | 10:47:31 pm </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Cashback Given : </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Order Amount: 289 </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Items : </span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5"></div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <p> Status</p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <button color="primary" class="status-chip float-right"
+                                                        mat-flat-button>Returned</button>
+                                                </div>
+                                            </div>
+                                            <ng-container *ngIf="showDetailsOrders[1].show">
+
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Address : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Contact Number : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                            </ng-container>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50 col-sm-100 ">
+                                <div class="order-item">
+                                    <div class="d-flex-column">
+                                        <div>
+                                            <h3> Diljeet Singh
+                                                <button class="float-right" mat-icon-button
+                                                    (click)="expandOrderCard(2)">
+                                                    <img src="../assets/downarrow.svg" alt="">
+                                                </button>
+                                            </h3>
+                                        </div>
+                                        <ng-container>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Order No : ORDG871V1753 </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Jan 02, 2022 | 10:47:31 pm </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Cashback Given : </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Order Amount: 289 </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Items : </span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5"></div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <p> Status</p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <button color="success" class="status-chip float-right"
+                                                        mat-flat-button>Delivered</button>
+                                                </div>
+                                            </div>
+                                            <ng-container *ngIf="showDetailsOrders[2].show">
+
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Address : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Contact Number : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                            </ng-container>
+                                        </ng-container>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class=" col-50 col-sm-100 ">
+                                <div class="order-item">
+                                    <div class="d-flex-column">
+                                        <div>
+                                            <h3> Diljeet Singh <button class="float-right" mat-icon-button
+                                                    (click)="expandOrderCard(3)">
+                                                    <img src="../assets/downarrow.svg" alt="">
+                                                </button></h3>
+                                        </div>
+                                        <ng-container>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Order No : ORDG871V1753 </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Jan 02, 2022 | 10:47:31 pm </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Cashback Given : </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Order Amount: 289 </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Items : </span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5"></div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <p> Status</p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <button color="warn" class="status-chip float-right"
+                                                        mat-flat-button>Refund</button>
+                                                </div>
+                                            </div>
+                                            <ng-container *ngIf="showDetailsOrders[3].show">
+
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Address : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Contact Number : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                            </ng-container>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-50 col-sm-100 ">
+                                <div class="order-item">
+                                    <div class="d-flex-column">
+                                        <div>
+                                            <h3> Diljeet Singh
+                                                <button class="float-right" mat-icon-button
+                                                    (click)="expandOrderCard(4)">
+                                                    <img src="../assets/downarrow.svg" alt="">
+                                                </button>
+                                            </h3>
+                                        </div>
+                                        <ng-container>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Order No : ORDG871V1753 </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Jan 02, 2022 | 10:47:31 pm </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Cashback Given : </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Order Amount: 289 </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Items : </span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5"></div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <p> Status</p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <button color="primary" class="status-chip float-right"
+                                                        mat-flat-button>Shipped</button>
+                                                </div>
+                                            </div>
+                                            <ng-container *ngIf="showDetailsOrders[4].show">
+
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Address : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Contact Number : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                            </ng-container>
+                                        </ng-container>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-50 col-sm-100 ">
+                                <div class="order-item">
+                                    <div class="d-flex-column">
+                                        <div>
+                                            <h3> Diljeet Singh
+                                                <button class="float-right" mat-icon-button
+                                                    (click)="expandOrderCard(5)">
+                                                    <img src="../assets/downarrow.svg" alt="">
+                                                </button>
+                                            </h3>
+                                        </div>
+                                        <ng-container>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Order No : ORDG871V1753 </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Jan 02, 2022 | 10:47:31 pm </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Cashback Given : </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Order Amount: 289 </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Items : </span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5"></div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <p> Status</p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <button color="success" class="status-chip float-right"
+                                                        mat-flat-button>Prepared</button>
+                                                </div>
+                                            </div>
+                                            <ng-container *ngIf="showDetailsOrders[5].show">
+
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Address : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Contact Number : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                            </ng-container>
+                                        </ng-container>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-50 col-sm-100 ">
+                                <div class="order-item">
+                                    <div class="d-flex-column">
+                                        <div>
+                                            <h3> Diljeet Singh
+                                                <button class="float-right" mat-icon-button
+                                                    (click)="expandOrderCard(6)">
+                                                    <img src="../assets/downarrow.svg" alt="">
+                                                </button>
+                                            </h3>
+                                        </div>
+                                        <ng-container>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Order No : ORDG871V1753 </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Jan 02, 2022 | 10:47:31 pm </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Cashback Given : </span>
+                                                </div>
+                                                <div class="col-50">
+                                                    <span class="float-right"> Order Amount: 289 </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <span> Items : </span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5"></div>
+                                            <div class="d-flex-row">
+                                                <div class="col-50">
+                                                    <p> Status</p>
+                                                </div>
+                                                <div class="col-50">
+                                                    <button color="primary" class="status-chip float-right"
+                                                        mat-flat-button>Pending</button>
+                                                </div>
+                                            </div>
+                                            <ng-container *ngIf="showDetailsOrders[6].show">
+
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Address : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex-row">
+                                                    <div class="col-50">
+                                                        <span> Contact Number : </span>
+                                                    </div>
+                                                    <div class="col-50">
+                                                        <span class="float-right"> </span>
+                                                    </div>
+                                                </div>
+                                            </ng-container>
+                                        </ng-container>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="ledger-details">
+                    <div class="mat-card">
+                        <div>
+                            <div class="heading"> <b> Ledger Details</b> <a class="ml-auto view-details" href="#">View
+                                    All</a> </div>
+                            <hr>
+
+                            <div class="d-flex-row-md d-flex-column-sm flex-wrap">
+                                <div class="col-50 col-md-100 col-sm-100">
+                                    <div class="ledger-item">
+                                        <div class="d-flex-column">
+                                            <div class="d-flex-row">
+                                                <div class="mr-5"> <img src="../assets/ledgerpic.png" alt=""></div>
+                                                <div class="mr-5 col-90">
+                                                    <h5> <b>Simran Ahuja </b> <br>
+                                                        +91 12345678 <br>
+                                                        loreipsum@email.com
+                                                    </h5>
+
+                                                </div>
+                                                <div class="col-10 textR">
+                                                    <button mat-icon-button (click)="expandLedgerCard(0)">
+                                                        <img src="../assets/downarrow.svg" alt="">
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                            <ng-container *ngIf="showLedgerOrders[0].show">
+
+                                                <div class="d-flex-column">
+                                                    <div class="col-100">
+                                                        <p> Created Date <span class="float-right"> Jan 02,2022 </span>
+                                                        </p>
+                                                        <p> Referred by <span class="float-right"> Roshan khan </span>
+                                                        </p>
+                                                        <p> Total Referrals <span class="float-right"> 3 </span> </p>
+                                                        <p> Earning Potential <span class="float-right"> $ </span> </p>
+                                                        <p> Cashback Earned <span class="float-right"> $ </span> </p>
+                                                    </div>
+                                                </div>
+                                            </ng-container>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-50 col-md-100 col-sm-100">
+                                    <div class="ledger-item">
+                                        <div class="d-flex-column">
+                                            <div class="d-flex-row">
+                                                <div class="mr-5"> <img src="../assets/ledgerpic.png" alt=""></div>
+                                                <div class="mr-5 col-90">
+                                                    <h5> <b>Simran Ahuja </b> <br>
+                                                        +91 12345678 <br>
+                                                        loreipsum@email.com
+                                                    </h5>
+
+                                                </div>
+                                                <div class="col-10 textR">
+                                                    <button mat-icon-button (click)="expandLedgerCard(1)">
+                                                        <img src="../assets/downarrow.svg" alt="">
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                            <ng-container *ngIf="showLedgerOrders[1].show">
+                                                <div class="d-flex-column">
+                                                    <div class="col-100">
+                                                        <p> Created Date <span class="float-right"> Jan 02,2022 </span>
+                                                        </p>
+                                                        <p> Referred by <span class="float-right"> Roshan khan </span>
+                                                        </p>
+                                                        <p> Total Referrals <span class="float-right"> 3 </span> </p>
+                                                        <p> Earning Potential <span class="float-right"> $ </span> </p>
+                                                        <p> Cashback Earned <span class="float-right"> $ </span> </p>
+                                                    </div>
+                                                </div>
+                                            </ng-container>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="revenue-overview">
+                    <div class="mat-card">
+                        <div>
+                            <div class="heading"> <b> Revenue Overview</b> </div>
+                            <hr>
+
+                            <div class="d-flex-row-md d-flex-column-sm">
+
+                                <div class="col-50  col-md-100 col-sm-100">
+                                    <div>
+                                        <img width="100%" src="../assets/sideicons/chart.svg" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="d-flex-row-md d-flex-column-sm revenue-line">
+                                        <div class="col-33 col-sm-100 mr-5">
+                                            <b> Total Shares </b>
+                                        </div>
+                                        <div class="col-33 col-sm-100 mr-5">
+                                            <b>Total Revenue : ₹ </b>
+                                        </div>
+                                        <div class="col-33 col-sm-100 mr-5">
+                                            <b>Total Spent : ₹ </b>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <br>
+                                <div class="col-50 col-md-100  col-sm-100 d-flex-row">
+                                    <div class="mr-md-25">
+
+                                    </div>
+                                    <div class="col-50  col-sm-45 mr-10">
+                                        <p>Yearly </p>
+                                        <mat-form-field appearance="outline">
+                                            <mat-label>Year</mat-label>
+                                            <mat-select>
+                                                <mat-option>2022
+                                                </mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+
+                                        <div class="money-stat">
+                                            <div class="money-card">
+                                                <div>
+                                                    <div class="d-flex-row align-items-center">
+                                                        <div class="col-30 col-sm-50 textC">
+                                                            <img src="../assets/sideicons/moneyin.svg" alt="">
+                                                        </div>
+                                                        <div class="col-70 col-sm-50 mt-5">
+                                                            <h4> <span class="text-grey"> Money In</span>
+                                                                <br> <b>₹ 256751</b>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 mr-5">
+
+                                    </div>
+                                    <div class="col-50  col-sm-45 mr-10">
+                                        <p>Monthly </p>
+                                        <mat-form-field appearance="outline">
+                                            <mat-label>Month</mat-label>
+                                            <mat-select>
+                                                <mat-option>January
+                                                </mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+
+                                        <div class="money-stat">
+                                            <div class="money-card">
+                                                <div>
+                                                    <div class="d-flex-row align-items-center">
+                                                        <div class="col-30 col-sm-50 textC">
+                                                            <img src="../assets/sideicons/moneyout.svg" alt="">
+                                                        </div>
+                                                        <div class="col-70 col-sm-50 mt-5">
+                                                            <h4> <span class="text-grey"> Money Out</span>
+                                                                <br> <b>₹ 256751</b>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div> -->
+
+
+
+
+        </mat-sidenav-content>
+
+    </mat-sidenav-container>
+
+
+</div>

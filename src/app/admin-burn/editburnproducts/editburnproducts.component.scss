@@ -1,0 +1,239 @@
+.box {
+  margin: 20px;
+}
+
+.merchant-search-export {
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-family: "Jost" !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px !important;
+    line-height: 44px !important;
+    color: #000000;
+    text-transform: capitalize;
+  }
+  span {
+    font-family: "Jost" !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px !important;
+    line-height: 44px !important;
+    color: gray;
+  }
+  .right-field {
+    position: relative;
+  }
+  .search {
+    width: 400px;
+  }
+
+  input[type="text"]::placeholder {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px !important;
+    line-height: 20px !important;
+    color: black;
+  }
+  .icon {
+    position: absolute;
+    margin-top: -56px;
+    margin-left: 91%;
+  }
+}
+
+.product_detail {
+  margin-top: 10px;
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px !important;
+    line-height: 36px !important;
+    color: #000000;
+  }
+}
+
+//
+
+.main {
+  margin: 20px;
+  .section {
+    p {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px !important;
+      line-height: 29px !important;
+
+      color: #000000;
+    }
+  }
+  .big {
+    display: flex;
+    // justify-content: space-between;
+    gap: 46%;
+    margin-top: 30px;
+  }
+  .flash_sale {
+    display: flex;
+    margin-bottom: 15px;
+    p {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px !important;
+      line-height: 29px !important;
+    }
+    .toggle {
+      display: flex;
+    }
+  }
+}
+
+.custom_banner {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 29px !important;
+  }
+
+  .add_custom {
+    //   width: 220px;
+    height: 123px;
+    background: #d7d6d6;
+    // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    margin: 20px 13px;
+    position: relative;
+    .view_delete {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+//
+
+.line {
+  width: 100%;
+  border: 1px solid #6c6c6c;
+  margin: 33px 0;
+}
+
+//
+
+.category_section {
+  .category_main {
+    display: flex;
+    justify-content: space-between;
+    .category_left {
+      p {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px !important;
+        line-height: 29px !important;
+
+        color: #000000;
+      }
+      mat-form-field {
+        width: 340px;
+        margin: 2px 13px;
+        textarea {
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+
+.mrp-dis {
+  display: flex;
+}
+
+.mrp_dis {
+  width: 156px !important;
+}
+
+.prd-img {
+  width: 327px;
+  height: 278px;
+  background: #d7d6d6;
+  //   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.small-img {
+  width: 73px;
+  height: 73px;
+  background: #d7d6d6;
+  //   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3.65px;
+}
+
+.small_box {
+  display: flex;
+  gap: 12px;
+}
+
+.imgss {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hsn {
+  margin-left: -13px;
+}
+
+//
+
+.main3 {
+  margin-top: 32px;
+  margin-right: 10px;
+  div {
+    /* text-align: right; */
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+  }
+  button {
+    width: 126px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .cancel {
+    // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 23px !important;
+
+    color: #000000;
+  }
+  .create {
+    background: #8111e8;
+    // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 23px !important;
+
+    color: #ffffff;
+  }
+}

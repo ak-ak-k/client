@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminburnComponent } from './admin-burn/adminburn/adminburn.component';
+import { BurnSectionComponent } from './admin-burn/burn-section/burn-section.component';
+import { EditburnproductsComponent } from './admin-burn/editburnproducts/editburnproducts.component';
+import { Editburnproducts1Component } from './admin-burn/editburnproducts1/editburnproducts1.component';
 import { Admin1Component } from './admin/admin1/admin1.component';
 import { Admin2Component } from './admin/admin2/admin2.component';
 import { DashboardComponent } from './admindashboard/dashboard/dashboard.component';
@@ -63,8 +66,10 @@ import { ReplaceitemsComponent } from './components/replaceitems/replaceitems.co
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
+import { MaindashboardComponent } from './dashboard/maindashboard/maindashboard.component';
 import { CpComponent } from './delete/cp/cp.component';
 import { PqrComponent } from './delete/pqr/pqr.component';
+import { DemoadminComponent } from './demo/demoadmin/demoadmin.component';
 import { TickComponent } from './greentickanimation/tick/tick.component';
 import { BurncashComponent } from './howitworkssection/burncash/burncash.component';
 import { Cashback2xComponent } from './howitworkssection/cashback2x/cashback2x.component';
@@ -92,6 +97,7 @@ import { OrdersectionComponent } from './orders-section/ordersection/ordersectio
 import { RefrtransactionComponent } from './refr-transaction/refrtransaction/refrtransaction.component';
 import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/shopdetails-demo.component';
 import { SubcategoryComponent } from './subcategory/subcategory/subcategory.component';
+import { TableComponent } from './table/table.component';
 import { TransactionusersComponent } from './user-transaction/transactionusers/transactionusers.component';
 import { UserViewallComponent } from './users/user-viewall/user-viewall.component';
 import { UserdashComponent } from './users/userdash/userdash.component';
@@ -166,6 +172,7 @@ const routes: Routes = [
   { path: 'onoff', component: OnlineOfflineComponent },
   { path: 'admin1', component: Admin1Component },
   { path: 'admin2', component: Admin2Component },
+  { path: 'table', component: TableComponent },
 
   // ==============merchant
   { path: 'merchantdash', component: MerchantDashComponent },
@@ -205,10 +212,18 @@ const routes: Routes = [
   // --------------------admin-dashboard
 
   { path: 'admindash', component: DashboardComponent },
+  { path: 'maindash', component: MaindashboardComponent },
 
   // ---------------adminburn
 
   { path: 'adminburn', component: AdminburnComponent },
+  { path: 'editburn', component: EditburnproductsComponent },
+  { path: 'editburn1', component: Editburnproducts1Component },
+  { path: 'burnsection', component: BurnSectionComponent },
+
+  // -------------------demoadmin
+
+  { path: 'demoadmin', component: DemoadminComponent },
 
   // demo
 
