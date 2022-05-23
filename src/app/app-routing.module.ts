@@ -30,6 +30,7 @@ import { LoginpageComponent } from './components/loginpage/loginpage.component';
 import { Mk1Component } from './components/mk1/mk1.component';
 import { Mk2Component } from './components/mk2/mk2.component';
 import { OnFashionComponent } from './components/on-fashion/on-fashion.component';
+// import { OnFashionComponent } from './components/on-fashion/on-fashion.component';
 import { OrderconfirmationComponent } from './components/orderconfirmation/orderconfirmation.component';
 import { Orderdetail1Component } from './components/orderdetail1/orderdetail1.component';
 import { Orderdetail2Component } from './components/orderdetail2/orderdetail2.component';
@@ -65,6 +66,9 @@ import { Replacedetails2Component } from './components/replacedetails2/replacede
 import { ReplaceitemsComponent } from './components/replaceitems/replaceitems.component';
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
+import { OfflinestoreComponent } from './components/termsnconditions/offlinestore/offlinestore.component';
+import { OnlineofflineconditionsComponent } from './components/termsnconditions/onlineofflineconditions/onlineofflineconditions.component';
+import { OnlinestoreconditionsComponent } from './components/termsnconditions/onlinestoreconditions/onlinestoreconditions.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
 import { MaindashboardComponent } from './dashboard/maindashboard/maindashboard.component';
 import { CpComponent } from './delete/cp/cp.component';
@@ -173,6 +177,9 @@ const routes: Routes = [
   { path: 'admin1', component: Admin1Component },
   { path: 'admin2', component: Admin2Component },
   { path: 'table', component: TableComponent },
+  { path: 'tncofflinestore', component: OfflinestoreComponent },
+  { path: 'tnconlinestore', component: OnlinestoreconditionsComponent },
+  { path: 'tnonoff', component: OnlineofflineconditionsComponent },
 
   // ==============merchant
   { path: 'merchantdash', component: MerchantDashComponent },

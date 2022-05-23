@@ -50,7 +50,7 @@ import { Page18Component } from './components/page18/page18.component';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 import { OtpComponent } from './components/otp/otp.component';
 import { LoginpageComponent } from './components/loginpage/loginpage.component';
-import { OnFashionComponent } from './components/on-fashion/on-fashion.component';
+// import { OnFashionComponent } from './components/on-fashion/on-fashion.component';
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
 import { HealthcareComponent } from './components/healthcare/healthcare.component';
 import { FitnessComponent } from './components/fitness/fitness.component';
@@ -159,6 +159,10 @@ import { Editburnproducts1Component } from './admin-burn/editburnproducts1/editb
 import { DemoadminComponent } from './demo/demoadmin/demoadmin.component';
 import { BurnSectionComponent } from './admin-burn/burn-section/burn-section.component';
 import { TableComponent } from './table/table.component';
+import { OnFashionComponent } from './components/on-fashion/on-fashion.component';
+import { OfflinestoreComponent } from './components/termsnconditions/offlinestore/offlinestore.component';
+import { OnlinestoreconditionsComponent } from './components/termsnconditions/onlinestoreconditions/onlinestoreconditions.component';
+import { OnlineofflineconditionsComponent } from './components/termsnconditions/onlineofflineconditions/onlineofflineconditions.component';
 
 @NgModule({
   declarations: [
@@ -188,7 +192,7 @@ import { TableComponent } from './table/table.component';
     LoginSignupComponent,
     OtpComponent,
     LoginpageComponent,
-    OnFashionComponent,
+    // OnFashionComponent,
     SalonSpaComponent,
     HealthcareComponent,
     FitnessComponent,
@@ -293,6 +297,10 @@ import { TableComponent } from './table/table.component';
     DemoadminComponent,
     BurnSectionComponent,
     TableComponent,
+    OnFashionComponent,
+    OfflinestoreComponent,
+    OnlinestoreconditionsComponent,
+    OnlineofflineconditionsComponent,
   ],
   imports: [
     BrowserModule,
