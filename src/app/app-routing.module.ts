@@ -69,6 +69,7 @@ import { ShopDetailsComponent } from './components/shop-details/shop-details.com
 import { OfflinestoreComponent } from './components/termsnconditions/offlinestore/offlinestore.component';
 import { OnlineofflineconditionsComponent } from './components/termsnconditions/onlineofflineconditions/onlineofflineconditions.component';
 import { OnlinestoreconditionsComponent } from './components/termsnconditions/onlinestoreconditions/onlinestoreconditions.component';
+import { ThankyouscreenComponent } from './components/thankyouscreen/thankyouscreen.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
 import { MaindashboardComponent } from './dashboard/maindashboard/maindashboard.component';
 import { CpComponent } from './delete/cp/cp.component';
@@ -100,6 +101,7 @@ import { OnlineStoreComponent } from './online-offlinestores/online-store/online
 import { OrdersectionComponent } from './orders-section/ordersection/ordersection.component';
 import { RefrtransactionComponent } from './refr-transaction/refrtransaction/refrtransaction.component';
 import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/shopdetails-demo.component';
+import { StoresComponent } from './stores/stores/stores.component';
 import { SubcategoryComponent } from './subcategory/subcategory/subcategory.component';
 import { TableComponent } from './table/table.component';
 import { TransactionusersComponent } from './user-transaction/transactionusers/transactionusers.component';
@@ -180,6 +182,8 @@ const routes: Routes = [
   { path: 'tncofflinestore', component: OfflinestoreComponent },
   { path: 'tnconlinestore', component: OnlinestoreconditionsComponent },
   { path: 'tnonoff', component: OnlineofflineconditionsComponent },
+  { path: 'thankyou', component: ThankyouscreenComponent },
+  { path: 'stores', component: StoresComponent },
 
   // ==============merchant
   { path: 'merchantdash', component: MerchantDashComponent },

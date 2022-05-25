@@ -163,6 +163,8 @@ import { OnFashionComponent } from './components/on-fashion/on-fashion.component
 import { OfflinestoreComponent } from './components/termsnconditions/offlinestore/offlinestore.component';
 import { OnlinestoreconditionsComponent } from './components/termsnconditions/onlinestoreconditions/onlinestoreconditions.component';
 import { OnlineofflineconditionsComponent } from './components/termsnconditions/onlineofflineconditions/onlineofflineconditions.component';
+import { ThankyouscreenComponent } from './components/thankyouscreen/thankyouscreen.component';
+import { StoresComponent } from './stores/stores/stores.component';
 
 @NgModule({
   declarations: [
@@ -301,6 +303,8 @@ import { OnlineofflineconditionsComponent } from './components/termsnconditions/
     OfflinestoreComponent,
     OnlinestoreconditionsComponent,
     OnlineofflineconditionsComponent,
+    ThankyouscreenComponent,
+    StoresComponent,
   ],
   imports: [
     BrowserModule,
