@@ -17,14 +17,18 @@ import { CartComponent } from './components/cart/cart.component';
 import { ChooseExchangeitemComponent } from './components/choose-exchangeitem/choose-exchangeitem.component';
 import { ElectronicsComponent } from './components/electronics/electronics.component';
 import { ExchangeOrderComponent } from './components/exchange-order/exchange-order.component';
+import { FeedbackComponent } from './components/feedback/feedback.component';
 import { FitnessComponent } from './components/fitness/fitness.component';
 import { FormPageComponent } from './components/form-page/form-page.component';
 import { GatewaycardComponent } from './components/gatewaycard/gatewaycard.component';
 import { GatewaycardpopupComponent } from './components/gatewaycardpopup/gatewaycardpopup.component';
+import { GeneralInformationComponent } from './components/general-information/general-information.component';
+import { GeninfoComponent } from './components/geninfo/geninfo.component';
 import { HealthcareComponent } from './components/healthcare/healthcare.component';
 import { HomeComponent } from './components/home/home.component';
 import { HowitworkbottompopupComponent } from './components/howitworkbottompopup/howitworkbottompopup.component';
 import { HowitworksComponent } from './components/howitworks/howitworks.component';
+import { InvitecontactsComponent } from './components/invitecontacts/invitecontacts.component';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 import { LoginpageComponent } from './components/loginpage/loginpage.component';
 import { Mk1Component } from './components/mk1/mk1.component';
@@ -184,6 +188,11 @@ const routes: Routes = [
   { path: 'tnonoff', component: OnlineofflineconditionsComponent },
   { path: 'thankyou', component: ThankyouscreenComponent },
   { path: 'stores', component: StoresComponent },
+
+  { path: 'generalinfo', component: GeneralInformationComponent },
+  { path: 'geninfo', component: GeninfoComponent },
+  { path: 'feedback', component: FeedbackComponent },
+  // { path: 'invtecontact', component: InvitecontactsComponent },
 
   // ==============merchant
   { path: 'merchantdash', component: MerchantDashComponent },

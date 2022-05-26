@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
 import { HowitworkbottompopupComponent } from '../howitworkbottompopup/howitworkbottompopup.component';
+import { InvitecontactsComponent } from '../invitecontacts/invitecontacts.component';
 
 @Component({
   selector: 'app-bottomsup',
@@ -13,6 +14,10 @@ export class BottomsupComponent implements OnInit {
 
   openBottomSheet(): void {
     this._bottomSheet.open(HowitworkbottompopupComponent);
+  }
+
+  invite() {
+    this._bottomSheet.open(InvitecontactsComponent);
   }
 
   ngOnInit(): void {}

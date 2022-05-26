@@ -165,6 +165,10 @@ import { OnlinestoreconditionsComponent } from './components/termsnconditions/on
 import { OnlineofflineconditionsComponent } from './components/termsnconditions/onlineofflineconditions/onlineofflineconditions.component';
 import { ThankyouscreenComponent } from './components/thankyouscreen/thankyouscreen.component';
 import { StoresComponent } from './stores/stores/stores.component';
+import { GeneralInformationComponent } from './components/general-information/general-information.component';
+import { GeninfoComponent } from './components/geninfo/geninfo.component';
+import { FeedbackComponent } from './components/feedback/feedback.component';
+import { InvitecontactsComponent } from './components/invitecontacts/invitecontacts.component';
 
 @NgModule({
   declarations: [
@@ -305,6 +309,10 @@ import { StoresComponent } from './stores/stores/stores.component';
     OnlineofflineconditionsComponent,
     ThankyouscreenComponent,
     StoresComponent,
+    GeneralInformationComponent,
+    GeninfoComponent,
+    FeedbackComponent,
+    InvitecontactsComponent,
   ],
   imports: [
     BrowserModule,
