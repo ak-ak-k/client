@@ -170,6 +170,7 @@ import { GeninfoComponent } from './components/geninfo/geninfo.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { InvitecontactsComponent } from './components/invitecontacts/invitecontacts.component';
 import { OrderconfirmationvocalforlocalComponent } from './components/orderconfirmationvocalforlocal/orderconfirmationvocalforlocal.component';
+import { Deliverycomponent2Component } from './components/deliverycomponent2/deliverycomponent2.component';
 
 @NgModule({
   declarations: [
@@ -315,6 +316,7 @@ import { OrderconfirmationvocalforlocalComponent } from './components/orderconfi
     FeedbackComponent,
     InvitecontactsComponent,
     OrderconfirmationvocalforlocalComponent,
+    Deliverycomponent2Component,
   ],
   imports: [
     BrowserModule,
