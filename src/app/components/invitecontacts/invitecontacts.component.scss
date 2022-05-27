@@ -117,3 +117,25 @@
     }
   }
 }
+
+//
+
+.line {
+  border: 1px solid #bdbdbd;
+}
+
+.sync {
+  text-align: center;
+  padding: 11px 0 11px 0;
+  a {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px !important;
+    line-height: 22px !important;
+
+    text-transform: capitalize;
+
+    color: #000000;
+  }
+}
