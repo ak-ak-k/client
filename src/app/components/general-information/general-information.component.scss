@@ -40,10 +40,35 @@
 
 //
 
-mat-tab-group {
-  mat-tab {
-    button {
-      display: none;
+.box {
+  margin: 15px 0 15px 0px;
+}
+
+.heading {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 23px !important;
+    color: #000000;
+    margin-top: 10px !important;
+  }
+  .explain {
+    p {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500 !important;
+      font-size: 16px !important;
+      line-height: 23px !important;
+
+      color: #000000;
     }
   }
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

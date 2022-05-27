@@ -20,18 +20,413 @@
 
         <div class="row">
 
-            <div>
-                <mat-tab-group>
-                    <mat-tab label="Returns, Replacements and Refunds">
-                        Returns, Replacements and Refunds
-                    </mat-tab>
-                    <mat-tab label="Shipping and Delivery  ">
-                        How does the delivery process work?
-                    </mat-tab>
 
-                </mat-tab-group>
+            <mat-tab-group>
+                <mat-tab label="Returns and Refunds">
 
-            </div>
+                    <div class="box">
+                        <div class="heading">
+                            <p>Returns, Replacements and Refunds</p>
+                            <div class="explain">
+                                <p>Refr offers its customers an ’Easy return/refund policy’, wherein the option of
+                                    exchange, replacement and/ or refund is
+                                    offered by the respective stores to you. You can raise a return/exchange request of
+                                    a product within 15 days of its
+                                    delivery.
+                                    All returns and exchanges are subject to each store’s specific policy. Returned
+                                    orders void Cash Back and will be
+                                    deducted from your Refr wallet. If a store processes your exchange order as a
+                                    cancellation and a new transaction is
+                                    created, the exchange may be treated as a cancelled order.To ensure you receive Cash
+                                    Back on exchanged orders, you can
+                                    instead return the item and place an entirely new order at that store.</p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show = !show">
+
+                                <p>How do I return an item purchased on Refr?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show">
+                                <p>
+                                    To return a product, please follow these steps
+                                    Step 1:
+                                    <br>
+                                    Create a 'Return Request' under “My Orders” section. Select the reason for your
+                                    return and tap the 'Return’ button. Keep
+                                    the item ready for pick <br>
+                                    Step 2:
+                                    <br>
+                                    Pick up: In most locations, we offer a free pick-up service. We will pick up the
+                                    products within 2-4 business days. We
+                                    will notify you by email when your return has been processed. We will initiate the
+                                    refund or replacement process only if
+                                    the products received by us in their original packaging with their seals, labels and
+                                    barcodes intact
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show1 = !show1">
+
+                                <p>I have received a damaged or defective item/wrong product in my order, how should I
+                                    proceed?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show1">
+                                <p>
+                                    If you have received an item in a damaged/defective condition or have been sent a
+                                    wrong product, you can initiate your
+                                    return/refund within 15 days of receiving the order. Such products can only be
+                                    returned in their original packaging, in
+                                    an unused and sealed condition. <br> [Opened or used products will not be accepted
+                                    as
+                                    returns.] <br>
+                                    If a return is accepted, Refr will replace or refund the entire amount for the
+                                    damaged/ defective / expired / wrong
+                                    product. <br>
+                                    Note: If it is a case of replacement, it is subject to the availability of stock. In
+                                    cases when a replacement may not be
+                                    available, we will refund you the full amount.
+                                    Which are the items that cannot be returned/exchanged? <br>
+                                    Returns will not be accepted under the following conditions: <br>
+                                    • Product which has been used <br>
+                                    • Returned without original packaging including, price tags, labels, and other
+                                    accessories or if the original packaging
+                                    is damaged. <br>
+                                    • If serial number or price tag is tampered <br>
+                                    • Products that are not covered under Store’s Exchange/Return policy <br>
+                                    • Product is altered or tampered with <br>
+                                    • If request is initiated after 15 business days of order delivery <br>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show2 = !show2">
+
+                                <p>Categories not eligible for Return:</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show2">
+                                <p>
+                                    • Products like jewellery, sunglasses, socks, deodorants, perfumes, shapewear
+                                    bottoms, lingerie, cosmetics (eg:
+                                    lipsticks, compacts, mascaras, etc) cannot be returned <br>
+                                    • Personal care appliances cannot be returned due to hygiene issues
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show3 = !show3">
+
+                                <p>Can I return part of my order?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show3">
+                                <p>
+                                    Yes. If you have ordered multiple items together, you can initiate a
+                                    return/replacement/refund for any individual item
+                                    of that order. However, any product being returned needs to be returned in the
+                                    original condition with all packaging &
+                                    tags intact.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show4 = !show4">
+
+                                <p>How will I get refunded for the returned orders and how long will this process take?
+                                </p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show4">
+                                <p>
+                                    In case of a return/replacement/refund, we process the refund once the products have
+                                    been received and verified at the
+                                    respective store. <br>
+                                    • For payments done through credit/debit cards or net banking, the refund will be
+                                    processed to the same account from
+                                    which the payment was made within 2-4 business days of the store receiving the
+                                    product.<br>
+                                    • For cash on delivery transactions, we will initiate a bank transfer for the refund
+                                    amount. Please add your bank
+                                    details to your Refr account. This process will be completed within 2-4 business
+                                    days of the store receiving the
+                                    product.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show5 = !show5">
+
+                                <p>Why is my return request cancelled multiple times and how can I re-initiate?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show5">
+                                <p>
+                                    Return requests can get cancelled if the pick-up of the product is unsuccessful.
+                                    Make sure that the pickup address &
+                                    your contact number are correct & that someone is available at the given address for
+                                    the pick-up of the order.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show6 = !show6">
+
+                                <p>How do I track my Return/Exchange product?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show6">
+                                <p>
+                                    You can track your Return/Exchange by selecting your order from the “My Orders”
+                                    section.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show7 = !show7">
+
+                                <p>Can I change my pickup address?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show7">
+                                <p>
+                                    Please note that the pickup address can be updated only after cancelling your
+                                    ongoing return/exchange request and
+                                    reinitiating the same. Kindly cancel your ongoing return/exchange request by
+                                    visiting the ‘My Orders’ section. At the
+                                    time of reinitiating the return/exchange request, please add the correct address
+                                    along with the correct pin code.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show8 = !show8">
+
+                                <p>Why is my return request getting rejected?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show8">
+                                <p>
+                                    The possible reasons for return request rejection can be
+                                    • Wrong reason selected <br>
+                                    • Products that are not covered under Store’s Return policy
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show9 = !show9">
+
+                                <p>Why has my return request been declined after the product has been picked up?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show9">
+                                <p>
+                                    This may have happened if the item you returned is used, damaged or it’s original
+                                    tags are missing. In the event that
+                                    the return request is declined, the product will be returned to you & you will not
+                                    be eligible for a refund. Refr has no
+                                    liability in this regard.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </mat-tab>
+                <mat-tab label="Shipping and Delivery  ">
+                    <div class="box">
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show = !show">
+
+                                <p>How does the delivery process work?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show">
+                                <p>
+                                    • Once our system processes your order, your products are inspected thoroughly by
+                                    the store to ensure they are in
+                                    perfect condition. <br>
+                                    • They are packed and handed over to our trusted delivery partner at the store <br>
+                                    • Our delivery partners then bring the package to you at the earliest possible. In
+                                    case, they are unable to reach your
+                                    provided address or at a suitable time, they will contact you to resolve the issue.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show1 = !show1">
+
+                                <p>My order has been shipped. Now how can I track it?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show1">
+                                <p>
+                                    • Once your order has been dispatched, you will receive an email with the details of
+                                    the tracking number and the courier
+                                    company that is processing your order. <br>
+                                    • You can track the status of your package 24 hours after your order is dispatched
+                                    <br>
+                                    • You can track your order under the ‘My Orders’ section.
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show2 = !show2">
+
+                                <p>What if I am not available at the delivery address to collect my order?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show2">
+                                <p>
+                                    We make three attempts to deliver any product. In case you missed the first or
+                                    second attempt, make sure to be available
+                                    for the third attempt of the delivery. Please note that post three unsuccessful
+                                    attempts, the product is returned to the
+                                    store.
+                                    You can check the status of your order in the ‘My Orders’ section.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show3 = !show3">
+
+                                <p>What is the estimated delivery time?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show3">
+                                <p>
+                                    Stores generally procure and ship the items within the time specified mentioned on
+                                    the store page. Business days exclude
+                                    public holidays and Sundays. <br>
+                                    Estimated delivery time depends on the following factors: <br>
+                                    • The store offering the product <br>
+                                    • Product type <br>
+                                    • Product's availability with the store <br>
+                                    • Store location <br>
+                                    • Shipping address for delivery <br>
+                                    • Courier partner's time-to-deliver to location <br>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show3 = !show3">
+
+                                <p>Store does not ship to my area. Why?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show3">
+                                <p>
+                                    At times stores prefer not to ship to certain locations, which is entirely at their
+                                    discretion. This is mainly due to
+                                    the non- availability of reliable courier partners in your location.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show3 = !show3">
+
+                                <p>Why does the delivery date not correspond to the delivery timeline of X-Y business
+                                    days?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show3">
+                                <p>
+                                    It is possible that the store or our courier partners have a holiday between the day
+                                    you placed your order and the
+                                    estimated date of delivery, which is not factored in the timeline given. These
+                                    situations are rare & may encompass some
+                                    unforeseen circumstances.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show3 = !show3">
+
+                                <p>What are the delivery charges?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show3">
+                                <p>
+                                    Delivery charges are variable for different stores & products. Please check your
+                                    order summary to see their details.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="d-flex heading" (click)="show3 = !show3">
+
+                                <p>Why is the COD option not offered in my location?</p>
+                                <mat-icon>
+                                    expand_more
+                                </mat-icon>
+                            </div>
+                            <div class="explain" *ngIf="show3">
+                                <p>
+                                    Availability of COD depends on the ability of our courier partner servicing your
+                                    location to accept cash as payment at
+                                    the time of delivery.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+
+            </mat-tab-group>
+
+
 
 
         </div>
