@@ -36,6 +36,7 @@ import { Mk2Component } from './components/mk2/mk2.component';
 import { OnFashionComponent } from './components/on-fashion/on-fashion.component';
 // import { OnFashionComponent } from './components/on-fashion/on-fashion.component';
 import { OrderconfirmationComponent } from './components/orderconfirmation/orderconfirmation.component';
+import { OrderconfirmationvocalforlocalComponent } from './components/orderconfirmationvocalforlocal/orderconfirmationvocalforlocal.component';
 import { Orderdetail1Component } from './components/orderdetail1/orderdetail1.component';
 import { Orderdetail2Component } from './components/orderdetail2/orderdetail2.component';
 import { Orderdetail3Component } from './components/orderdetail3/orderdetail3.component';
@@ -193,6 +194,7 @@ const routes: Routes = [
   { path: 'geninfo', component: GeninfoComponent },
   { path: 'feedback', component: FeedbackComponent },
   // { path: 'invtecontact', component: InvitecontactsComponent },
+  { path: 'ocvocallocal', component: OrderconfirmationvocalforlocalComponent },
 
   // ==============merchant
   { path: 'merchantdash', component: MerchantDashComponent },

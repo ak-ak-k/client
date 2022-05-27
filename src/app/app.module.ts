@@ -169,6 +169,7 @@ import { GeneralInformationComponent } from './components/general-information/ge
 import { GeninfoComponent } from './components/geninfo/geninfo.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { InvitecontactsComponent } from './components/invitecontacts/invitecontacts.component';
+import { OrderconfirmationvocalforlocalComponent } from './components/orderconfirmationvocalforlocal/orderconfirmationvocalforlocal.component';
 
 @NgModule({
   declarations: [
@@ -313,6 +314,7 @@ import { InvitecontactsComponent } from './components/invitecontacts/inviteconta
     GeninfoComponent,
     FeedbackComponent,
     InvitecontactsComponent,
+    OrderconfirmationvocalforlocalComponent,
   ],
   imports: [
     BrowserModule,
