@@ -109,6 +109,7 @@ import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/sh
 import { StoresComponent } from './stores/stores/stores.component';
 import { SubcategoryComponent } from './subcategory/subcategory/subcategory.component';
 import { TableComponent } from './table/table.component';
+import { NewtransactionComponent } from './user-transaction/newtransaction/newtransaction.component';
 import { TransactionusersComponent } from './user-transaction/transactionusers/transactionusers.component';
 import { UserViewallComponent } from './users/user-viewall/user-viewall.component';
 import { UserdashComponent } from './users/userdash/userdash.component';
@@ -225,6 +226,7 @@ const routes: Routes = [
   { path: 'viewwithdraw', component: WithdrawviewComponent },
   { path: 'updatewithdraw', component: WithdrawupdateComponent },
   { path: 'refrtrans', component: RefrtransactionComponent },
+  { path: 'newtrans', component: NewtransactionComponent },
 
   // -----------category
 

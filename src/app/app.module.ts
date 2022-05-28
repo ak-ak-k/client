@@ -171,6 +171,7 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { InvitecontactsComponent } from './components/invitecontacts/invitecontacts.component';
 import { OrderconfirmationvocalforlocalComponent } from './components/orderconfirmationvocalforlocal/orderconfirmationvocalforlocal.component';
 import { Deliverycomponent2Component } from './components/deliverycomponent2/deliverycomponent2.component';
+import { NewtransactionComponent } from './user-transaction/newtransaction/newtransaction.component';
 
 @NgModule({
   declarations: [
@@ -317,6 +318,7 @@ import { Deliverycomponent2Component } from './components/deliverycomponent2/del
     InvitecontactsComponent,
     OrderconfirmationvocalforlocalComponent,
     Deliverycomponent2Component,
+    NewtransactionComponent,
   ],
   imports: [
     BrowserModule,
