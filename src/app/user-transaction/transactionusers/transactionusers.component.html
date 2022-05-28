@@ -13,8 +13,7 @@
 
                 <mat-form-field class="search" appearance="outline">
 
-                    <input type="text" matInput placeholder="Search (name,phone number,store name)">
-
+                    <input matInput (keyup)="applyFilter($event)" placeholder="Search" #input>
                 </mat-form-field>
 
                 <div class="icon">
@@ -24,95 +23,9 @@
                 </div>
             </div>
 
-            <div class="export">
-
-                <button (click)="abc.click()" mat-button>
-                    <mat-icon>
-                        file_upload
-                    </mat-icon>
-                    Export
-                    <input #abc type="file" style="display:none" (change)="handle($event)">
-                </button>
-
-
-
-
-            </div>
 
         </div>
 
-        <div class="filter">
-            <p>filter</p>
-        </div>
-
-        <div class="categories">
-            <div class="category">
-
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Categories</mat-label>
-                    <mat-select [formControl]="toppings" multiple>
-                        <mat-select-trigger>
-                            {{toppings.value ? toppings.value[0] : ''}}
-                            <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
-                                (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
-                            </span>
-                        </mat-select-trigger>
-                        <mat-option *ngFor="let topping of categories" [value]="topping">{{topping}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Sub Category</mat-label>
-                    <mat-select [formControl]="sub_cat" multiple>
-                        <mat-select-trigger>
-                            {{sub_cat.value ? sub_cat.value[0] : ''}}
-                            <span *ngIf="sub_cat.value?.length > 1" class="example-additional-selection">
-                                (+{{sub_cat.value.length - 1}} {{sub_cat.value?.length === 2 ? 'other' : 'others'}})
-                            </span>
-                        </mat-select-trigger>
-                        <mat-option *ngFor="let sub_cat of sub_catlist" [value]="sub_cat">{{sub_cat}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Transaction Type</mat-label>
-                    <mat-select [formControl]="transaction" multiple>
-                        <mat-select-trigger>
-                            {{transaction.value ? transaction.value[0] : ''}}
-                            <span *ngIf="transaction.value?.length > 1" class="example-additional-selection">
-                                (+{{transaction.value.length - 1}} {{transaction.value?.length === 2 ? 'other' :
-                                'others'}})
-                            </span>
-                        </mat-select-trigger>
-                        <mat-option *ngFor="let transaction of transactionlist" [value]="transaction">{{transaction}}
-                        </mat-option>
-                    </mat-select>
-                </mat-form-field>
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Status</mat-label>
-                    <mat-select [formControl]="status" multiple>
-                        <mat-select-trigger>
-                            {{status.value ? status.value[0] : ''}}
-                            <span *ngIf="status.value?.length > 1" class="example-additional-selection">
-                                (+{{status.value.length - 1}} {{status.value?.length === 2 ? 'other' : 'others'}})
-                            </span>
-                        </mat-select-trigger>
-                        <mat-option *ngFor="let status of statusList" [value]="status">{{status}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
-
-
-
-
-                <!-- <span class="divide"></span>
-
-                <button class="cm" mat-button routerLink="/createprofile">
-                    Create Merchant
-                </button> -->
-            </div>
-        </div>
 
         <div class="col col-100 col-sm-100 col-card">
 
@@ -121,14 +34,14 @@
 
 
                     <ng-container matColumnDef="oid">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>
                             Order Id
                         </th>
                         <td mat-cell *matCellDef="let row"> {{row.oid}} </td>
                     </ng-container>
 
                     <ng-container matColumnDef="storename">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>
                             Store
                             Name
                         </th>
@@ -136,53 +49,26 @@
                     </ng-container>
 
                     <ng-container matColumnDef="phonenumber">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>
                             Phone
                             Number
                         </th>
                         <td mat-cell *matCellDef="let row"> {{row.phonenumber}} </td>
                     </ng-container>
 
-                    <ng-container matColumnDef="category">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">
-                            Category
-                        </th>
-                        <td mat-cell *matCellDef="let row"> {{row.category}} </td>
-                    </ng-container>
 
-                    <ng-container matColumnDef="Sub_Category">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">
-                            Sub_Category
-                        </th>
-                        <td mat-cell *matCellDef="let row"> {{row.Sub_Category}} </td>
-                    </ng-container>
 
                     <ng-container matColumnDef="Transaction_Type">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>
                             Transaction
                             Type
                         </th>
                         <td mat-cell *matCellDef="let row"> {{row.Transaction_Type}} </td>
                     </ng-container>
 
-                    <ng-container matColumnDef="refr_earn">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">
-                            Refr Cash
-                            Earned
-                        </th>
-                        <td mat-cell *matCellDef="let row"> {{row.refr_earn}} </td>
-                    </ng-container>
-
-                    <ng-container matColumnDef="refr_paid">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">
-                            Refr Cash
-                            Paid
-                        </th>
-                        <td mat-cell *matCellDef="let row"> {{row.refr_paid}} </td>
-                    </ng-container>
 
                     <ng-container matColumnDef="Date">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>
                             Date
                         </th>
                         <td mat-cell *matCellDef="let row"> {{row.Date}} </td>
@@ -191,7 +77,7 @@
                     <!--  -->
 
                     <ng-container matColumnDef="status">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>
                             Status
                         </th>
                         <td mat-cell *matCellDef="let row"> {{row.status}} </td>
@@ -201,18 +87,30 @@
                     <!-- ------------- -->
 
                     <ng-container matColumnDef="action">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header class="table-heading"> Action
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Action
                         </th>
                         <td mat-cell *matCellDef="let row">
 
                             <div class="crud">
                                 <div>
                                     <button mat-button routerLink="/viewdetails">
-                                        <mat-icon>
-                                            visibility
-                                        </mat-icon>
-
-                                        <span>View</span>
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.125" y="0.125" width="24.75" height="24.75" fill="#DCCE8D" />
+                                            <g clip-path="url(#clip0_1979_8859)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.0083 18.378C8.7875 18.378 5.02 15.1388 3 11.898C5.015 8.74185 8.78583 6.07031 13.0083 6.07031C17.2875 6.07031 21.0375 8.72647 23.0075 11.8888C21.14 15.2965 17.4025 18.378 13.0083 18.378ZM3.97333 11.9042C4.67583 12.928 8.155 17.6088 13.0083 17.6088C18.2625 17.6088 21.435 12.9142 22.0508 11.9126C21.4075 10.9911 18.2125 6.83954 13.0083 6.83954C7.91167 6.83954 4.65417 10.9588 3.97333 11.9042ZM13 8.378C15.3 8.378 17.1667 10.1011 17.1667 12.2242C17.1667 14.3472 15.3 16.0703 13 16.0703C10.7 16.0703 8.83333 14.3472 8.83333 12.2242C8.83333 10.1011 10.7 8.378 13 8.378ZM13 9.14724C14.84 9.14724 16.3333 10.5257 16.3333 12.2242C16.3333 13.9226 14.84 15.3011 13 15.3011C11.16 15.3011 9.66667 13.9226 9.66667 12.2242C9.66667 10.5257 11.16 9.14724 13 9.14724Z"
+                                                    fill="black" />
+                                            </g>
+                                            <rect x="0.125" y="0.125" width="24.75" height="24.75" stroke="black"
+                                                stroke-width="0.25" />
+                                            <defs>
+                                                <clipPath id="clip0_1979_8859">
+                                                    <rect width="20" height="18.4615" fill="white"
+                                                        transform="translate(3 3)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
                                     </button>
 
                                 </div>

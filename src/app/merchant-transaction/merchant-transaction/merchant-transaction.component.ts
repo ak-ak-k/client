@@ -8,11 +8,7 @@ import { MatTableDataSource } from '@angular/material/table';
 export interface UserData {
   oid: string;
   storename: string;
-  category: string;
-  sub_category: string;
   transaction_type: string;
-  refr_earned: string;
-  refr_paid: string;
   date: string;
   status: string;
   action: string;
@@ -31,11 +27,7 @@ export class MerchantTransactionComponent implements OnInit {
   displayedColumns: string[] = [
     'oid',
     'storename',
-    'category',
-    'sub_category',
     'transaction_type',
-    'refr_earned',
-    'refr_paid',
     'date',
     'status',
     'action',
@@ -65,11 +57,7 @@ export class MerchantTransactionComponent implements OnInit {
       {
         oid: '1234567890',
         storename: 'Dent Heal',
-        category: 'Health',
-        sub_category: 'Dentist',
         transaction_type: 'Campaign Refill',
-        refr_earned: '0',
-        refr_paid: '0',
         date: '14/05/2022',
         status: 'Credited',
         action: 'yes',
@@ -77,11 +65,7 @@ export class MerchantTransactionComponent implements OnInit {
       {
         oid: '1234567890',
         storename: 'Dent Heal',
-        category: 'Health',
-        sub_category: 'Dentist',
         transaction_type: 'Transfer',
-        refr_earned: '0',
-        refr_paid: '0',
         date: '14/05/2022',
         status: 'Debited',
         action: 'yes',
@@ -89,25 +73,9 @@ export class MerchantTransactionComponent implements OnInit {
       {
         oid: '1234567890',
         storename: 'Dent Heal',
-        category: 'Health',
-        sub_category: 'Dentist',
         transaction_type: 'Withdraw',
-        refr_earned: '0',
-        refr_paid: '0',
         date: '14/05/2022',
         status: 'Credited + Debited ',
-        action: 'yes',
-      },
-      {
-        oid: '1234567890',
-        storename: 'Dent Heal',
-        category: 'Health',
-        sub_category: 'Dentist',
-        transaction_type: 'Direct Sale',
-        refr_earned: '0',
-        refr_paid: '0',
-        date: '14/05/2022',
-        status: 'Debited ',
         action: 'yes',
       },
     ];

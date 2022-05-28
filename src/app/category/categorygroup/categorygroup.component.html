@@ -13,7 +13,8 @@
 
                 <mat-form-field class="search" appearance="outline">
 
-                    <input type="text" matInput placeholder="Search (name,phone number,store name)">
+                    <input type="text" matInput (keyup)="applyFilter($event)" #input
+                        placeholder="Search (name,phone number,store name)">
 
                 </mat-form-field>
 

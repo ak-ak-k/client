@@ -53,22 +53,11 @@
         <p>Filter</p>
 
         <div class="all-filters">
-            <mat-form-field appearance="outline">
-                <mat-label>Merchant/User/Brand</mat-label>
-                <mat-select>
-                    <mat-option *ngFor="let merchant of merchantlist" [value]="merchant.value">
-                        {{merchant.viewValue}}
-                    </mat-option>
-                </mat-select>
+            <mat-form-field class="search" appearance="outline">
+
+                <input matInput (keyup)="applyFilter($event)" placeholder="Search" #input>
             </mat-form-field>
-            <mat-form-field appearance="outline">
-                <mat-label>Transaction Type</mat-label>
-                <mat-select>
-                    <mat-option *ngFor="let transaction of transactionlist" [value]="transaction.value">
-                        {{transaction.viewValue}}
-                    </mat-option>
-                </mat-select>
-            </mat-form-field>
+
 
             <mat-form-field appearance="outline">
                 <mat-label>Date Range</mat-label>

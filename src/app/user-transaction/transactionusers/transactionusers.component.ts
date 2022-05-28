@@ -9,11 +9,7 @@ export interface UserData {
   oid: string;
   storename: string;
   phonenumber: string;
-  category: string;
-  Sub_Category: string;
   Transaction_Type: string;
-  refr_earn: string;
-  refr_paid: string;
   Date: string;
   status: string;
   action: string;
@@ -33,11 +29,7 @@ export class TransactionusersComponent implements OnInit {
     'oid',
     'storename',
     'phonenumber',
-    'category',
-    'Sub_Category',
     'Transaction_Type',
-    'refr_earn',
-    'refr_paid',
     'Date',
     'status',
     'action',
@@ -68,11 +60,7 @@ export class TransactionusersComponent implements OnInit {
         oid: '1234567890',
         storename: 'Dent Heal',
         phonenumber: '1234567890l',
-        category: 'Health',
-        Sub_Category: 'Dentist',
         Transaction_Type: 'Direct Sale',
-        refr_earn: '0',
-        refr_paid: '0',
         Date: '16/05/2022',
         status: 'Direct Sale',
         action: 'yes',
@@ -82,8 +70,7 @@ export class TransactionusersComponent implements OnInit {
         storename: 'Dent Heal',
         phonenumber: '1234567890l',
         date: '14/05/2022',
-        category: 'Health',
-        Sub_Category: 'Dentist',
+
         Transaction_Type: 'Transfer',
         refr_earn: '0',
         refr_paid: '0',

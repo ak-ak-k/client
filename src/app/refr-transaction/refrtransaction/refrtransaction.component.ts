@@ -79,7 +79,7 @@ export class RefrtransactionComponent implements OnInit {
       },
       {
         oid: '1234567890',
-        merchant: 'Nachiket (U)',
+        merchant: 'Aditya (U)',
         TransactionType: 'Burn Section',
         Amount: '2000',
         Commission: '10%',
@@ -89,7 +89,7 @@ export class RefrtransactionComponent implements OnInit {
       },
       {
         oid: '1234567890',
-        merchant: 'Nachiket (U)',
+        merchant: 'Ashish (U)',
         TransactionType: 'User Withdrawl',
         Amount: '2000',
         Commission: '2%',
