@@ -80,6 +80,7 @@ import { MaindashboardComponent } from './dashboard/maindashboard/maindashboard.
 import { CpComponent } from './delete/cp/cp.component';
 import { PqrComponent } from './delete/pqr/pqr.component';
 import { DemoadminComponent } from './demo/demoadmin/demoadmin.component';
+import { OrderconfirmemailComponent } from './emailtemplates/orderconfirmemail/orderconfirmemail.component';
 import { TickComponent } from './greentickanimation/tick/tick.component';
 import { BurncashComponent } from './howitworkssection/burncash/burncash.component';
 import { Cashback2xComponent } from './howitworkssection/cashback2x/cashback2x.component';

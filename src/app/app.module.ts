@@ -172,6 +172,7 @@ import { InvitecontactsComponent } from './components/invitecontacts/inviteconta
 import { OrderconfirmationvocalforlocalComponent } from './components/orderconfirmationvocalforlocal/orderconfirmationvocalforlocal.component';
 import { Deliverycomponent2Component } from './components/deliverycomponent2/deliverycomponent2.component';
 import { NewtransactionComponent } from './user-transaction/newtransaction/newtransaction.component';
+import { OrderconfirmemailComponent } from './emailtemplates/orderconfirmemail/orderconfirmemail.component';
 
 @NgModule({
   declarations: [
@@ -319,6 +320,7 @@ import { NewtransactionComponent } from './user-transaction/newtransaction/newtr
     OrderconfirmationvocalforlocalComponent,
     Deliverycomponent2Component,
     NewtransactionComponent,
+    OrderconfirmemailComponent,
   ],
   imports: [
     BrowserModule,
