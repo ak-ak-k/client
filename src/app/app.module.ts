@@ -173,6 +173,7 @@ import { OrderconfirmationvocalforlocalComponent } from './components/orderconfi
 import { Deliverycomponent2Component } from './components/deliverycomponent2/deliverycomponent2.component';
 import { NewtransactionComponent } from './user-transaction/newtransaction/newtransaction.component';
 import { OrderconfirmemailComponent } from './emailtemplates/orderconfirmemail/orderconfirmemail.component';
+import { StoreoverviewComponent } from './storeoverview/storeoverview/storeoverview.component';
 
 @NgModule({
   declarations: [
@@ -321,6 +322,7 @@ import { OrderconfirmemailComponent } from './emailtemplates/orderconfirmemail/o
     Deliverycomponent2Component,
     NewtransactionComponent,
     OrderconfirmemailComponent,
+    StoreoverviewComponent,
   ],
   imports: [
     BrowserModule,

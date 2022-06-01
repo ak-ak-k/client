@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col col-25 col-sm-100 col-card ">
+            <div class="card-box about">
+                <div class="textC store">
+                    <p>Store Overview</p>
+                </div>
+                <table style="width: 100%;">
+                    <tr>
+                        <th class="heading">Balance A/c</th>
+                        <th class="heading">0</th>
+                    </tr>
+                    <tr>
+                        <th class="heading">Reserve A/c</th>
+                        <th class="heading">0</th>
+
+                    </tr>
+                    <tr>
+                        <th class="heading">Campaign A/c</th>
+                        <th class="heading">0</th>
+                    </tr>
+                    <tr>
+                        <th class="heading">Locations</th>
+                        <th class="heading">0</th>
+                    </tr>
+                    <tr (click)="show =!show">
+                        <th class="heading">Primary User</th>
+                        <td colspan="2"><a routerLink="" class="heading">Name</a></td>
+                        <td class="textC">
+                            <mat-icon><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-down">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg></mat-icon>
+                        </td>
+                    </tr>
+
+                    <tr *ngIf="show">
+                        <th class="heading">User A/c</th>
+                        <th class="heading">0</th>
+
+                    </tr>
+                    <tr *ngIf="show">
+                        <th class="heading">Reserve A/c</th>
+                        <th class="heading"> 0</th>
+                    </tr>
+
+
+                    <tr>
+                        <th class="heading">Campaigns</th>
+                        <td colspan="3"><a routerLink="" class="heading">Manage 0 Campaigns</a></td>
+                    </tr>
+                    <tr>
+                        <th class="heading">Products</th>
+                        <td colspan="3"><a routerLink="" class="heading">Manage 0 Products</a></td>
+                    </tr>
+                    <tr>
+                        <th class="heading">Access &nbsp; {{1}}</th>
+                        <td colspan="3"><a routerLink="" class="heading">Name</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>

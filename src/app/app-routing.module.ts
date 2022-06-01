@@ -107,6 +107,7 @@ import { OnlineStoreComponent } from './online-offlinestores/online-store/online
 import { OrdersectionComponent } from './orders-section/ordersection/ordersection.component';
 import { RefrtransactionComponent } from './refr-transaction/refrtransaction/refrtransaction.component';
 import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/shopdetails-demo.component';
+import { StoreoverviewComponent } from './storeoverview/storeoverview/storeoverview.component';
 import { StoresComponent } from './stores/stores/stores.component';
 import { SubcategoryComponent } from './subcategory/subcategory/subcategory.component';
 import { TableComponent } from './table/table.component';
@@ -197,6 +198,8 @@ const routes: Routes = [
   { path: 'feedback', component: FeedbackComponent },
   // { path: 'invtecontact', component: InvitecontactsComponent },
   { path: 'ocvocallocal', component: OrderconfirmationvocalforlocalComponent },
+
+  { path: 'storeoverview', component: StoreoverviewComponent },
 
   // ==============merchant
   { path: 'merchantdash', component: MerchantDashComponent },

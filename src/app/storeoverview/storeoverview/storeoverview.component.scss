@@ -1,0 +1,49 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.about {
+  table {
+    width: 100%;
+    tr,
+    td {
+      line-height: 30px;
+      font-size: 14px;
+    }
+    tr {
+      td {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+//
+
+.store {
+  background: #8111e8;
+
+  p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 32px !important;
+
+    color: #ffffff;
+  }
+}
+
+.heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px !important;
+  line-height: 32px !important;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
+}
