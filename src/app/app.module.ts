@@ -174,6 +174,11 @@ import { Deliverycomponent2Component } from './components/deliverycomponent2/del
 import { NewtransactionComponent } from './user-transaction/newtransaction/newtransaction.component';
 import { OrderconfirmemailComponent } from './emailtemplates/orderconfirmemail/orderconfirmemail.component';
 import { StoreoverviewComponent } from './storeoverview/storeoverview/storeoverview.component';
+import { UseroverviewComponent } from './admin/useroverview/useroverview.component';
+import { BucketlistComponent } from './component/bucketlist/bucketlist.component';
+import { BurnnewinComponent } from './component/burnnewin/burnnewin.component';
+import { ActivewearComponent } from './components/activewear/activewear.component';
+import { BucketdemoComponent } from './demo/bucketdemo/bucketdemo.component';
 
 @NgModule({
   declarations: [
@@ -323,6 +328,11 @@ import { StoreoverviewComponent } from './storeoverview/storeoverview/storeoverv
     NewtransactionComponent,
     OrderconfirmemailComponent,
     StoreoverviewComponent,
+    UseroverviewComponent,
+    BucketlistComponent,
+    BurnnewinComponent,
+    ActivewearComponent,
+    BucketdemoComponent,
   ],
   imports: [
     BrowserModule,

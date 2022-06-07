@@ -39,7 +39,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+  padding: 5px 0;
+  box-shadow: 1px 1px rgb(0 0 0 / 25%);
 }
 
 .saved {
@@ -79,6 +80,7 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+  text-transform: capitalize;
 
   color: #874bf9;
 }
@@ -89,8 +91,9 @@
   background: #f0f0f0;
   border-radius: 4px;
   display: flex;
-  margin-left: 11px;
-  margin-top: 20px;
+  // margin-left: 11px;
+  // margin-top: 20px;
+  margin: 5px;
 }
 
 .lorem {
@@ -99,7 +102,7 @@
   font-weight: 400;
   font-size: 13px !important    ;
   line-height: 18px !important  ;
-  padding: 13px !important;
+  padding: 5px !important;
   color: rgba(0, 0, 0, 0.5);
 }
 

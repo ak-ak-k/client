@@ -42,7 +42,7 @@
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px !important;
+  font-size: 18px !important;
   line-height: 50px !important;
   margin-bottom: 0px !important;
   color: #000000;
@@ -56,6 +56,8 @@
     #d4c7fc 91.05%
   ) !important;
   border-radius: 4px;
+  width: -webkit-fill-available;
+  height: 69px;
 }
 
 .refr-cash {
@@ -64,8 +66,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-
   color: #ffffff;
+  text-align: left;
 }
 
 .balance {
@@ -80,6 +82,7 @@
 
 .amount {
   display: flex;
+  align-items: center;
 }
 
 .coin-number {
@@ -99,10 +102,12 @@
 .refr-main {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 60px;
 }
 
 .right-arrow {
-  margin: 20px;
+  // margin: 20px;
 }
 
 .payment {
@@ -141,7 +146,7 @@
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px !important;
+  font-size: 15px !important;
   line-height: 18px !important;
   margin-bottom: 5px !important;
   color: #000000;
@@ -151,8 +156,8 @@
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
-  font-size: 11px;
-  line-height: 18px;
+  font-size: 14px !important;
+  line-height: 18px !important;
   /* identical to box height, or 164% */
 
   color: #969a9d;
@@ -162,8 +167,8 @@
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
-  font-size: 11px;
-  line-height: 18px;
+  font-size: 15px !important;
+  line-height: 18px !important;
 
   color: #874bf9;
 }

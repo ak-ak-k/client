@@ -6,10 +6,14 @@ import { EditburnproductsComponent } from './admin-burn/editburnproducts/editbur
 import { Editburnproducts1Component } from './admin-burn/editburnproducts1/editburnproducts1.component';
 import { Admin1Component } from './admin/admin1/admin1.component';
 import { Admin2Component } from './admin/admin2/admin2.component';
+import { UseroverviewComponent } from './admin/useroverview/useroverview.component';
 import { DashboardComponent } from './admindashboard/dashboard/dashboard.component';
 import { CampaignComponent } from './campaign/campaign/campaign.component';
 import { CategorygroupComponent } from './category/categorygroup/categorygroup.component';
+import { BucketlistComponent } from './component/bucketlist/bucketlist.component';
+import { BurnnewinComponent } from './component/burnnewin/burnnewin.component';
 import { AccessoriesComponent } from './components/accessories/accessories.component';
+import { ActivewearComponent } from './components/activewear/activewear.component';
 import { BottomsupComponent } from './components/bottomsup/bottomsup.component';
 import { BurnComponent } from './components/burn/burn.component';
 import { BurnproductsComponent } from './components/burnproducts/burnproducts.component';
@@ -79,6 +83,7 @@ import { WalletscreenComponent } from './components/walletscreen/walletscreen.co
 import { MaindashboardComponent } from './dashboard/maindashboard/maindashboard.component';
 import { CpComponent } from './delete/cp/cp.component';
 import { PqrComponent } from './delete/pqr/pqr.component';
+import { BucketdemoComponent } from './demo/bucketdemo/bucketdemo.component';
 import { DemoadminComponent } from './demo/demoadmin/demoadmin.component';
 import { OrderconfirmemailComponent } from './emailtemplates/orderconfirmemail/orderconfirmemail.component';
 import { TickComponent } from './greentickanimation/tick/tick.component';
@@ -167,9 +172,15 @@ const routes: Routes = [
   // { path: 'gateway', component: GatewaycardComponent },
   { path: 'howitworks', component: HowitworksComponent },
   { path: 'home', component: HomeComponent },
+  // burn
   { path: 'burn', component: BurnComponent },
   { path: 'burnproduct', component: BurnproductsComponent },
   { path: 'accessories', component: AccessoriesComponent },
+  { path: 'bucketlist', component: BucketlistComponent },
+  { path: 'burnnew', component: BurnnewinComponent },
+  // { path: 'bucketdemo', component: BucketdemoComponent },
+
+  //
   { path: 'orderconfirm', component: OrderconfirmationComponent },
   { path: 'tick', component: TickComponent },
   { path: 'admin', component: AdminPanelComponent },
@@ -198,8 +209,6 @@ const routes: Routes = [
   { path: 'feedback', component: FeedbackComponent },
   // { path: 'invtecontact', component: InvitecontactsComponent },
   { path: 'ocvocallocal', component: OrderconfirmationvocalforlocalComponent },
-
-  { path: 'storeoverview', component: StoreoverviewComponent },
 
   // ==============merchant
   { path: 'merchantdash', component: MerchantDashComponent },
@@ -272,6 +281,10 @@ const routes: Routes = [
         (mod) => mod.HowitworksModule
       ),
   },
+
+  // ===============================================
+  { path: 'storeoverview', component: StoreoverviewComponent },
+  { path: 'useroverview', component: UseroverviewComponent },
 ];
 
 @NgModule({

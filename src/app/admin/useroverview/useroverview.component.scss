@@ -1,0 +1,56 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.about {
+  table {
+    width: 100%;
+    tr,
+    td {
+      line-height: 30px;
+      font-size: 14px;
+    }
+    tr {
+      td {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+//
+
+.store {
+  border-bottom: 1px solid;
+  p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px !important;
+    line-height: 32px !important;
+
+    color: #000;
+  }
+}
+
+.name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px !important;
+  line-height: 32px !important;
+}
+
+.heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px !important;
+  line-height: 32px !important;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
+}
