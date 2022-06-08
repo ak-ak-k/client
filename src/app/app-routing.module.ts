@@ -84,6 +84,7 @@ import { MaindashboardComponent } from './dashboard/maindashboard/maindashboard.
 import { CpComponent } from './delete/cp/cp.component';
 import { PqrComponent } from './delete/pqr/pqr.component';
 import { BucketdemoComponent } from './demo/bucketdemo/bucketdemo.component';
+import { BurnabcComponent } from './demo/burnabc/burnabc.component';
 import { DemoadminComponent } from './demo/demoadmin/demoadmin.component';
 import { OrderconfirmemailComponent } from './emailtemplates/orderconfirmemail/orderconfirmemail.component';
 import { TickComponent } from './greentickanimation/tick/tick.component';
@@ -178,6 +179,7 @@ const routes: Routes = [
   { path: 'accessories', component: AccessoriesComponent },
   { path: 'bucketlist', component: BucketlistComponent },
   { path: 'burnnew', component: BurnnewinComponent },
+  { path: 'burnabc', component: BurnabcComponent },
   // { path: 'bucketdemo', component: BucketdemoComponent },
 
   //

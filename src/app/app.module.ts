@@ -179,6 +179,7 @@ import { BucketlistComponent } from './component/bucketlist/bucketlist.component
 import { BurnnewinComponent } from './component/burnnewin/burnnewin.component';
 import { ActivewearComponent } from './components/activewear/activewear.component';
 import { BucketdemoComponent } from './demo/bucketdemo/bucketdemo.component';
+import { BurnabcComponent } from './demo/burnabc/burnabc.component';
 
 @NgModule({
   declarations: [
@@ -333,6 +334,7 @@ import { BucketdemoComponent } from './demo/bucketdemo/bucketdemo.component';
     BurnnewinComponent,
     ActivewearComponent,
     BucketdemoComponent,
+    BurnabcComponent,
   ],
   imports: [
     BrowserModule,
