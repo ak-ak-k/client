@@ -113,6 +113,7 @@ import { OnlineStoreComponent } from './online-offlinestores/online-store/online
 import { OrdersectionComponent } from './orders-section/ordersection/ordersection.component';
 import { RefrtransactionComponent } from './refr-transaction/refrtransaction/refrtransaction.component';
 import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/shopdetails-demo.component';
+import { ShopdetailsComponent } from './shopdetails/shopdetails/shopdetails.component';
 import { StoreoverviewComponent } from './storeoverview/storeoverview/storeoverview.component';
 import { StoresComponent } from './stores/stores/stores.component';
 import { SubcategoryComponent } from './subcategory/subcategory/subcategory.component';
@@ -183,7 +184,7 @@ const routes: Routes = [
   // { path: 'bucketdemo', component: BucketdemoComponent },
 
   //
-  { path: 'orderconfirm', component: OrderconfirmationComponent },
+
   { path: 'tick', component: TickComponent },
   { path: 'admin', component: AdminPanelComponent },
   { path: 'makeitright', component: ChooseExchangeitemComponent },
@@ -191,7 +192,6 @@ const routes: Routes = [
   { path: 'mk2', component: Mk2Component },
   { path: 'replacedetails', component: ReplacedetailsComponent },
   { path: 'replacedetails2', component: Replacedetails2Component },
-  { path: 'sddemo', component: ShopdetailsDemoComponent },
   { path: 'bb', component: BottomsupComponent },
   { path: 'howitworkpopup', component: HowitworkbottompopupComponent },
   { path: 'offlinestore', component: OfflineStoreComponent },
@@ -210,7 +210,17 @@ const routes: Routes = [
   { path: 'geninfo', component: GeninfoComponent },
   { path: 'feedback', component: FeedbackComponent },
   // { path: 'invtecontact', component: InvitecontactsComponent },
+
+  // shopscreen starts-----------
+  { path: 'sddemo', component: ShopdetailsDemoComponent },
+  { path: 'shopdetails1', component: ShopdetailsComponent },
+  // shopscreen ends-----------
+
+  // order confirmations screens starts-----------
+  { path: 'orderconfirm', component: OrderconfirmationComponent },
   { path: 'ocvocallocal', component: OrderconfirmationvocalforlocalComponent },
+
+  // order confirmations screens ends-----------
 
   // ==============merchant
   { path: 'merchantdash', component: MerchantDashComponent },
@@ -284,9 +294,10 @@ const routes: Routes = [
       ),
   },
 
-  // ===============================================
+  // dipesh work starts ===============================================
   { path: 'storeoverview', component: StoreoverviewComponent },
   { path: 'useroverview', component: UseroverviewComponent },
+  // dipesh work ends ===============================================
 ];
 
 @NgModule({

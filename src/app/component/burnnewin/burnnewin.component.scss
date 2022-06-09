@@ -33,6 +33,9 @@
   display: flex;
   gap: 10px;
   overflow: scroll;
+  a {
+    text-decoration: none;
+  }
 }
 
 .access-img::-webkit-scrollbar {
@@ -59,6 +62,7 @@
   margin: 0;
   border-spacing: 0;
   width: -webkit-fill-available;
+  text-decoration: none;
 }
 
 .brand_img {
@@ -72,6 +76,7 @@
 //
 
 .explore_more {
+  text-decoration: none;
   background: #000000;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -121,6 +126,7 @@
   line-height: 19px !important;
   text-transform: uppercase;
   padding: 20px;
+  text-decoration: none;
 }
 
 .footwear1 {
@@ -132,6 +138,8 @@
   padding: 0;
   //   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   .footwear_card {
+    text-decoration: none;
+
     .img_footwear img {
       width: 150px;
       background-size: cover;
@@ -254,6 +262,7 @@
   padding: 0;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   .curated-card {
+    text-decoration: none;
     .img-curated {
       width: 161px;
       height: 163px;

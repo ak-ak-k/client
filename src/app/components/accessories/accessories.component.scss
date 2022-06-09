@@ -29,6 +29,13 @@
   display: flex;
   gap: 10px;
   overflow: scroll;
+  a {
+    text-decoration: none;
+  }
+}
+
+.access-img::-webkit-scrollbar {
+  display: none;
 }
 
 //
@@ -60,6 +67,7 @@
   padding: 0;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   .curated-card {
+    text-decoration: none;
     .img-curated {
       width: 161px;
       height: 163px;
