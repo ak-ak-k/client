@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-shopdetails',
@@ -7,15 +6,45 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./shopdetails.component.scss'],
 })
 export class ShopdetailsComponent implements OnInit {
-  firstFormGroup = this._formBuilder.group({
-    firstCtrl: ['', Validators.required],
-  });
-  secondFormGroup = this._formBuilder.group({
-    secondCtrl: ['', Validators.required],
-  });
-  isLinear = false;
+  //
+  products = false;
 
-  constructor(private _formBuilder: FormBuilder) {}
+  //
+  about_store = false;
+  highlight = false;
 
-  ngOnInit(): void {}
+  segment: string = 'visit-store';
+  openedAccordianLists: any = [];
+  storeTyp = '';
+
+  viewTyp = '';
+
+  constructor() {}
+
+  ngOnInit(): void {
+    this.storeTyp = 'Onli';
+    //this.storeTyp = 'Offl';
+    //this.storeTyp = 'Both';
+
+    if (this.storeTyp == 'Onli') {
+      this.viewTyp = 'Online';
+    }
+    if (this.storeTyp == 'Offl') {
+      this.viewTyp = 'Offline';
+    }
+    if (this.storeTyp == 'Both') {
+      this.viewTyp = 'Offline';
+    }
+  }
+
+  getWidth() {
+    var state = 0;
+    var stateMax = 2;
+    //state -= 1;
+    return (state / stateMax) * 100 + '%';
+  }
+
+  changeSegment(segmentValue: string) {
+    this.segment = segmentValue;
+  }
 }

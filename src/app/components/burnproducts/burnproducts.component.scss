@@ -488,3 +488,69 @@
   margin-left: 6px;
   // margin-bottom: 22px;
 }
+
+.amount_buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 99%;
+  position: fixed;
+  top: 90%;
+  background: white;
+  z-index: 100;
+}
+
+.amount {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  margin-bottom: 0 !important;
+}
+
+.amount_price {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px !important;
+  line-height: 32px !important;
+
+  color: #000000;
+}
+
+.buy_now {
+  button {
+    background: #874bf9;
+    border-radius: 20px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 11px 22px;
+    text-transform: capitalize;
+  }
+}
+
+// quantity
+
+.add-remove {
+  display: flex;
+  align-items: center;
+  margin-left: -9px !important;
+  margin-bottom: 0 !important;
+}
+
+.mat-icon-button i,
+.mat-icon-button .mat-icon {
+  color: #874bf9;
+}
+
+.mat-form-field {
+  width: 71px;
+  margin-top: 11px;
+}

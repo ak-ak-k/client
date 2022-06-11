@@ -174,7 +174,8 @@ const routes: Routes = [
   // { path: 'gateway', component: GatewaycardComponent },
   { path: 'howitworks', component: HowitworksComponent },
   { path: 'home', component: HomeComponent },
-  // burn
+
+  // burn-----------------------------
   { path: 'burn', component: BurnComponent },
   { path: 'burnproduct', component: BurnproductsComponent },
   { path: 'accessories', component: AccessoriesComponent },
