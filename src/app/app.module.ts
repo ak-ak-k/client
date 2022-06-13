@@ -182,6 +182,7 @@ import { BucketdemoComponent } from './demo/bucketdemo/bucketdemo.component';
 import { BurnabcComponent } from './demo/burnabc/burnabc.component';
 import { ShopdetailsComponent } from './shopdetails/shopdetails/shopdetails.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { HomescreenheaderComponent } from './homescreen/homescreenheader/homescreenheader.component';
 
 @NgModule({
   declarations: [
@@ -339,6 +340,7 @@ import { SettingsComponent } from './components/settings/settings.component';
     BurnabcComponent,
     ShopdetailsComponent,
     SettingsComponent,
+    HomescreenheaderComponent,
   ],
   imports: [
     BrowserModule,

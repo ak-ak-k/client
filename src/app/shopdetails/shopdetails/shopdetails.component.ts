@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ShopdetailsComponent implements OnInit {
   //
   products = false;
+  desc = false;
 
   //
   about_store = false;

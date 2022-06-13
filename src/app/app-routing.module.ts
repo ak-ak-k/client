@@ -89,6 +89,7 @@ import { BurnabcComponent } from './demo/burnabc/burnabc.component';
 import { DemoadminComponent } from './demo/demoadmin/demoadmin.component';
 import { OrderconfirmemailComponent } from './emailtemplates/orderconfirmemail/orderconfirmemail.component';
 import { TickComponent } from './greentickanimation/tick/tick.component';
+import { HomescreenheaderComponent } from './homescreen/homescreenheader/homescreenheader.component';
 import { BurncashComponent } from './howitworkssection/burncash/burncash.component';
 import { Cashback2xComponent } from './howitworkssection/cashback2x/cashback2x.component';
 import { GrowcommunityComponent } from './howitworkssection/growcommunity/growcommunity.component';
@@ -213,6 +214,9 @@ const routes: Routes = [
   { path: 'geninfo', component: GeninfoComponent },
   { path: 'feedback', component: FeedbackComponent },
   // { path: 'invtecontact', component: InvitecontactsComponent },
+
+  // -------------homescreen------------
+  { path: 'homescreen1', component: HomescreenheaderComponent },
 
   // shopscreen starts-----------
   { path: 'sddemo', component: ShopdetailsDemoComponent },

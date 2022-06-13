@@ -197,6 +197,39 @@
                         </clipPath>
                     </defs>
                 </svg>
+
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13 25C19.6274 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13C1 19.6274 6.37258 25 13 25Z"
+                        stroke="url(#paint0_linear_2_51083)" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M13 23C18.5228 23 23 18.5228 23 13C23 7.47715 18.5228 3 13 3C7.47715 3 3 7.47715 3 13C3 18.5228 7.47715 23 13 23Z"
+                        fill="url(#paint1_radial_2_51083)" />
+                    <path
+                        d="M16.9243 6.7793H8.97502C7.87022 6.7793 6.97461 7.67491 6.97461 8.77971V17.2206C6.97461 18.3254 7.87022 19.221 8.97502 19.221H16.9243C18.0291 19.221 18.9247 18.3254 18.9247 17.2206V8.77971C18.9247 7.67491 18.0291 6.7793 16.9243 6.7793Z"
+                        stroke="#F1F2F2" stroke-width="1.5" stroke-miterlimit="10" />
+                    <path
+                        d="M12.7863 16.183C14.5441 16.183 15.9691 14.758 15.9691 13.0002C15.9691 11.2424 14.5441 9.81738 12.7863 9.81738C11.0285 9.81738 9.60352 11.2424 9.60352 13.0002C9.60352 14.758 11.0285 16.183 12.7863 16.183Z"
+                        stroke="#F1F2F2" stroke-width="1.5" stroke-miterlimit="10" />
+                    <path
+                        d="M17.0536 9.35133C17.4079 9.35133 17.6951 9.06413 17.6951 8.70985C17.6951 8.35556 17.4079 8.06836 17.0536 8.06836C16.6993 8.06836 16.4121 8.35556 16.4121 8.70985C16.4121 9.06413 16.6993 9.35133 17.0536 9.35133Z"
+                        fill="white" />
+                    <defs>
+                        <linearGradient id="paint0_linear_2_51083" x1="13" y1="1" x2="13" y2="25"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#9401D6" />
+                            <stop offset="1" stop-color="#FEC520" />
+                        </linearGradient>
+                        <radialGradient id="paint1_radial_2_51083" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(6.85405 19.8603) scale(19.8009)">
+                            <stop stop-color="#FEC053" />
+                            <stop offset="0.33" stop-color="#F2203E" />
+                            <stop offset="0.65" stop-color="#B729A8" />
+                            <stop offset="1" stop-color="#5342D6" />
+                        </radialGradient>
+                    </defs>
+                </svg>
+
             </div>
 
             <!-- campaign refill -->
@@ -455,12 +488,9 @@
 
                 </div>
 
-                <div class="mt-1" *ngIf="about_store">
-                    <p class="desc_store">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt, voluptates
-                        ad error
-                        officia,
-                        temporibus ipsum dicta vitae sequi quam, architecto perspiciatis amet iste! Alias quo nostrum
-                        eligendi minus eius?</p>
+                <div class="mt-1 new_desc" *ngIf="about_store">
+                    <a routerLink="/generalinfo" class="desc_store">Return & Refund Policy</a>
+                    <a routerLink="/tnconlinestore" class="desc_store">Terms & Conditions</a>
                 </div>
             </div>
 
@@ -517,7 +547,12 @@
                         <div class="products_details">
                             <div class="products_summary">
                                 <p class="product_name">farmhouse</p>
-                                <p class="product_desc">description</p>
+                                <p class="product_desc" (click)="desc =!desc">Lorem ipsum dolor sit
+                                    <span id="more" *ngIf="desc">consectetur adipisicing elit. Saepe
+                                        quos nemo, aperiam voluptatum, odio quisquam in eum et totam velit tempore
+                                        laborum
+                                        iste. Nesciunt quo rerum officiis blanditiis sapiente. Ullam.</span>
+                                </p>
                                 <div class="discount_final">
                                     <p class="dis_price">₹500</p>
                                     <p class="final_price">₹300</p>
