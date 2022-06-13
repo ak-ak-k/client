@@ -181,6 +181,7 @@ import { ActivewearComponent } from './components/activewear/activewear.componen
 import { BucketdemoComponent } from './demo/bucketdemo/bucketdemo.component';
 import { BurnabcComponent } from './demo/burnabc/burnabc.component';
 import { ShopdetailsComponent } from './shopdetails/shopdetails/shopdetails.component';
+import { SettingsComponent } from './components/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -337,6 +338,7 @@ import { ShopdetailsComponent } from './shopdetails/shopdetails/shopdetails.comp
     BucketdemoComponent,
     BurnabcComponent,
     ShopdetailsComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,

@@ -74,6 +74,7 @@ import { ReplacedetailsComponent } from './components/replacedetails/replacedeta
 import { Replacedetails2Component } from './components/replacedetails2/replacedetails2.component';
 import { ReplaceitemsComponent } from './components/replaceitems/replaceitems.component';
 import { SalonSpaComponent } from './components/salon-spa/salon-spa.component';
+import { SettingsComponent } from './components/settings/settings.component';
 import { ShopDetailsComponent } from './components/shop-details/shop-details.component';
 import { OfflinestoreComponent } from './components/termsnconditions/offlinestore/offlinestore.component';
 import { OnlineofflineconditionsComponent } from './components/termsnconditions/onlineofflineconditions/onlineofflineconditions.component';
@@ -174,6 +175,7 @@ const routes: Routes = [
   // { path: 'gateway', component: GatewaycardComponent },
   { path: 'howitworks', component: HowitworksComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'settings', component: SettingsComponent },
 
   // burn-----------------------------
   { path: 'burn', component: BurnComponent },
