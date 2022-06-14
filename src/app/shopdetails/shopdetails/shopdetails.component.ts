@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ShopdetailsComponent implements OnInit {
   //
   products = false;
+  deserts = false;
   desc = false;
+
+  showAddToCard: boolean = false;
 
   //
   about_store = false;
@@ -47,5 +50,9 @@ export class ShopdetailsComponent implements OnInit {
 
   changeSegment(segmentValue: string) {
     this.segment = segmentValue;
+  }
+
+  showAndHideAddToCard() {
+    this.showAddToCard = true;
   }
 }
