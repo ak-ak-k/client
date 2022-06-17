@@ -183,6 +183,7 @@ import { BurnabcComponent } from './demo/burnabc/burnabc.component';
 import { ShopdetailsComponent } from './shopdetails/shopdetails/shopdetails.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { HomescreenheaderComponent } from './homescreen/homescreenheader/homescreenheader.component';
+import { HighlightComponent } from './highlightcompoment/highlight/highlight.component';
 
 @NgModule({
   declarations: [
@@ -341,6 +342,7 @@ import { HomescreenheaderComponent } from './homescreen/homescreenheader/homescr
     ShopdetailsComponent,
     SettingsComponent,
     HomescreenheaderComponent,
+    HighlightComponent,
   ],
   imports: [
     BrowserModule,

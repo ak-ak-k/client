@@ -8,6 +8,7 @@ header {
   width: 100%;
   height: 60px;
   z-index: 1000;
+  padding: 15px 0;
   .navigator {
     display: flex;
     align-items: center;
@@ -23,7 +24,7 @@ header {
     align-items: center;
     padding: 0;
     margin: 0 auto;
-    width: 50%;
+    width: 88%;
     max-width: 430px;
     position: relative;
     cursor: default;
@@ -49,7 +50,7 @@ header {
     width: 0%;
   }
   .statusBar > .node {
-    background-color: #874bf9;
+    // background-color: #874bf9; commented
     height: 1em;
     width: 1em;
     border-radius: 100%;
@@ -75,7 +76,7 @@ header {
   }
   .node > .main {
     position: absolute;
-    border: 0.6em #c4c4c4 solid;
+    border: 0.5em #c4c4c4 solid;
     width: 0;
     height: 0;
     border-radius: 100%;
@@ -103,7 +104,7 @@ header {
   width: 90%;
   max-width: 1180px;
   padding: 0 0;
-  margin: 0 auto;
+  margin: 0px auto;
   height: 60px;
 }
 
@@ -159,13 +160,14 @@ header {
 // recommed
 
 .recommed {
-  margin: 15px 0;
+  margin: 20px 0;
   p {
     font-family: var(--primary-font-family) !important;
     font-size: var(--primary-lg-font-size) !important;
     line-height: 22px !important;
     text-transform: capitalize;
     color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0 !important;
   }
   span {
     font-family: var(--primary-font-family) !important;
@@ -219,7 +221,11 @@ header {
 
 hr {
   border: 1px solid #e0e0e0;
-  margin: 12px;
+  margin: -14px 14px 10px 14px;
+}
+
+.hr {
+  margin: 1px 14px 8px 14px;
 }
 
 //
@@ -377,7 +383,8 @@ hr {
 .segment-container {
   color: #000000;
   text-align: center;
-  width: 54%;
+  width: 60%;
+  height: 45px;
   display: flex;
   justify-content: center;
   margin: 16px auto;
@@ -392,27 +399,28 @@ hr {
     img {
       width: 12px;
     }
-    font-size: 12px;
+    font-size: 13px;
   }
   .active {
     border-radius: 24px;
     background-color: #874bf9;
     color: #ffffff;
+    width: 60%;
     // box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
   }
 }
 
 // visit store
 
-.mt-1 {
-  // margin: 0 0 15px 0;
+.mt-8 {
+  margin-bottom: 18px;
 }
 .vist_and_redeem {
   font-family: var(--primary-font-family) !important;
   font-style: normal;
-  font-size: var(--primary-lg-font-size) !important;
+  font-size: var(--secondary-lg-font-size) !important;
   font-weight: 600;
-  line-height: 23px;
+  line-height: 23px !important;
 }
 
 .new_desc {
@@ -437,7 +445,7 @@ hr {
   width: 98%;
 }
 
-.desc_store {
+.desc_aboutstore {
   font-family: var(--primary-font-family) !important;
   font-size: var(--secondary-font-size) !important;
   font-style: normal;
@@ -445,14 +453,31 @@ hr {
   line-height: 23px !important;
   text-decoration: none;
   color: #000000;
+  padding-bottom: 10px;
+}
+
+.desc_store {
+  font-family: var(--primary-font-family) !important;
+  font-size: var(--secondary-font-size) !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px !important;
+  text-decoration: none;
+  color: #000000;
+  padding-bottom: 5px;
 }
 
 // delivery
 
 .search {
   position: sticky;
-  top: 4rem;
+  top: 0rem;
   z-index: 1000;
+  /* margin-bottom: 15px; */
+  padding: 15px 0;
+  width: 100%;
+  background: #ffff;
+
   input {
     background: #ececec;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
@@ -472,13 +497,17 @@ hr {
   mat-icon {
     position: absolute;
     margin-left: 69%;
-    margin-top: 0%;
+    margin-top: 4%;
     top: 0;
     left: 0;
   }
 }
 
 //
+
+.prod_line {
+  margin-bottom: 15px;
+}
 
 .product_section {
   display: flex;
@@ -553,28 +582,31 @@ hr {
 
 .add_button {
   position: absolute;
-  top: 86px;
+  top: 95px;
   left: 29px;
   button {
-    background: #000000;
+    background: #874bf9;
     border-radius: 1px;
     font-family: var(--primary-font-family) !important;
     font-size: var(--tertiary-font-size) !important;
     font-weight: 500;
     color: #ffffff;
     text-transform: capitalize;
-    // padding: 5px 15px;
+    padding: 2px 8px;
     border: none;
     outline: none;
+    border-radius: 4px;
+    margin-right: -5px;
   }
 }
 
 .add-sub-button-container {
   display: flex;
   position: absolute;
-  bottom: -14px;
+  bottom: -16px;
   width: 100%;
-  left: -16px;
+  left: -1px;
+  padding: 2px 8px;
 }
 
 .add-sub-button {
@@ -643,7 +675,7 @@ hr {
 
 .main {
   background: #fff;
-  margin-top: 2px;
+  // margin-top: 2px;
   //   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 .header {
@@ -652,6 +684,7 @@ hr {
   padding: 10px 6px 2px 0;
   background: #ffffff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgb(0 0 0 / 25%);
 }
 
 .header-details {
@@ -733,6 +766,6 @@ hr {
 
 .main {
   background: #fff;
-  margin-top: 2px;
+  // margin-top: 2px;
   //   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
