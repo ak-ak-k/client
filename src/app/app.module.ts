@@ -184,6 +184,10 @@ import { ShopdetailsComponent } from './shopdetails/shopdetails/shopdetails.comp
 import { SettingsComponent } from './components/settings/settings.component';
 import { HomescreenheaderComponent } from './homescreen/homescreenheader/homescreenheader.component';
 import { HighlightComponent } from './highlightcompoment/highlight/highlight.component';
+import { FoodproductComponent } from './homecategoriesproducts/foodproduct/foodproduct.component';
+import { HomescreenwithbackComponent } from './homescreenheaderback/homescreenwithback/homescreenwithback.component';
+import { MenucomponentComponent } from './online-offlinestores/online-offline/menucomponent/menucomponent.component';
+import { Header1Component } from './allheaders/header1/header1.component';
 
 @NgModule({
   declarations: [
@@ -343,6 +347,10 @@ import { HighlightComponent } from './highlightcompoment/highlight/highlight.com
     SettingsComponent,
     HomescreenheaderComponent,
     HighlightComponent,
+    FoodproductComponent,
+    HomescreenwithbackComponent,
+    MenucomponentComponent,
+    Header1Component,
   ],
   imports: [
     BrowserModule,

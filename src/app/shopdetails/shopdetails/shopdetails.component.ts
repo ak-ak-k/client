@@ -10,14 +10,14 @@ export class ShopdetailsComponent implements OnInit {
   products = false;
   deserts = false;
   desc = false;
-
+  iMinStore = true;
   showAddToCard: boolean = false;
 
   //
   about_store = false;
   highlight = false;
 
-  segment: string = 'visit-store';
+  //segment: string = 'visit-store';
   openedAccordianLists: any = [];
   storeTyp = '';
 
@@ -48,11 +48,14 @@ export class ShopdetailsComponent implements OnInit {
     return (state / stateMax) * 100 + '%';
   }
 
-  changeSegment(segmentValue: string) {
-    this.segment = segmentValue;
+  changeViewTyp(segmentValue: string) {
+    this.viewTyp = segmentValue;
   }
 
   showAndHideAddToCard() {
     this.showAddToCard = true;
+  }
+  makeChanges() {
+    this.iMinStore = false;
   }
 }

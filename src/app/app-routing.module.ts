@@ -8,6 +8,7 @@ import { Admin1Component } from './admin/admin1/admin1.component';
 import { Admin2Component } from './admin/admin2/admin2.component';
 import { UseroverviewComponent } from './admin/useroverview/useroverview.component';
 import { DashboardComponent } from './admindashboard/dashboard/dashboard.component';
+import { Header1Component } from './allheaders/header1/header1.component';
 import { CampaignComponent } from './campaign/campaign/campaign.component';
 import { CategorygroupComponent } from './category/categorygroup/categorygroup.component';
 import { BucketlistComponent } from './component/bucketlist/bucketlist.component';
@@ -89,7 +90,9 @@ import { BurnabcComponent } from './demo/burnabc/burnabc.component';
 import { DemoadminComponent } from './demo/demoadmin/demoadmin.component';
 import { OrderconfirmemailComponent } from './emailtemplates/orderconfirmemail/orderconfirmemail.component';
 import { TickComponent } from './greentickanimation/tick/tick.component';
+import { FoodproductComponent } from './homecategoriesproducts/foodproduct/foodproduct.component';
 import { HomescreenheaderComponent } from './homescreen/homescreenheader/homescreenheader.component';
+import { HomescreenwithbackComponent } from './homescreenheaderback/homescreenwithback/homescreenwithback.component';
 import { BurncashComponent } from './howitworkssection/burncash/burncash.component';
 import { Cashback2xComponent } from './howitworkssection/cashback2x/cashback2x.component';
 import { GrowcommunityComponent } from './howitworkssection/growcommunity/growcommunity.component';
@@ -215,8 +218,15 @@ const routes: Routes = [
   { path: 'feedback', component: FeedbackComponent },
   // { path: 'invtecontact', component: InvitecontactsComponent },
 
+  // -------------- All Headders
+  { path: 'h1', component: Header1Component },
+
   // -------------homescreen------------
   { path: 'homescreen1', component: HomescreenheaderComponent },
+  { path: 'homescreenback', component: HomescreenwithbackComponent },
+
+  // homecategorys -----------------------
+  { path: 'foodproducts', component: FoodproductComponent },
 
   // shopscreen starts-----------
   { path: 'sddemo', component: ShopdetailsDemoComponent },

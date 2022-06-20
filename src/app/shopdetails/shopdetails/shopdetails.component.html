@@ -350,7 +350,7 @@
                     <div class="carousel">
                         <div class="new-card">
                             <div>
-                                <svg width="250" height="90" viewBox="0 0 250 90" fill="none"
+                                <svg class="xyz" width="250" height="90" viewBox="0 0 250 90" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <mask id="path-1-inside-1_567_19032" fill="white">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -558,8 +558,8 @@
                     <div class="row">
                         <div class="col-12 mx-auto">
                             <div class="segment-container">
-                                <button mat-button (click)="changeSegment('visit-store')"
-                                    [ngClass]="{'active' : segment === 'visit-store'}">
+                                <button mat-button (click)="changeViewTyp('Offline')"
+                                    [ngClass]="{'active' : viewTyp === 'Offline'}">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_718_18932)">
@@ -577,8 +577,8 @@
 
                                     Visit Store
                                 </button>
-                                <button mat-button (click)="changeSegment('vehical')"
-                                    [ngClass]="{'active' : segment === 'vehical'}">
+                                <button mat-button (click)="changeViewTyp('Online')"
+                                    [ngClass]="{'active' : viewTyp === 'Online'}">
                                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -596,7 +596,7 @@
 
                 <!--  -->
 
-                <div class="mt-8">
+                <div class="mt-8" *ngIf="viewTyp == 'Online' || viewTyp == 'Offline'">
                     <p class="vist_and_redeem textC">Visit Store & Redeem on Purchase</p>
                 </div>
 
@@ -606,317 +606,355 @@
 
                 <!-- visit store  -->
 
-                <div class="mt-1">
-                    <div class="d-flex" (click)="about_store =! about_store">
-                        <p class="about_store">About Store</p>
+                <div *ngIf="viewTyp == 'Offline'">
 
-                        <mat-icon>expand_more</mat-icon>
+                    <div class="mt-1">
+                        <div class="d-flex" (click)="about_store =! about_store">
+                            <p class="about_store">About Store</p>
+
+                            <mat-icon>expand_more</mat-icon>
+
+                        </div>
+
+                        <div class="mt-1 new_desc" *ngIf="about_store">
+                            <a href="" class="desc_aboutstore">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sint,
+                                tenetur distinctio
+                                dignissimos neque, recusandae perferendis sunt incidunt, unde aut error possimus minus
+                                voluptates officia vero reprehenderit commodi iure impedit laboriosam.</a>
+                            <a routerLink="/generalinfo" class="desc_store">Return & Refund Policy</a>
+                            <a routerLink="/tnconlinestore" class="desc_store">Terms & Conditions</a>
+                        </div>
+                    </div>
+
+                    <!-- line -->
+
+                    <hr class="hr prod_line">
+
+                    <!-- visit store  -->
+
+                    <div class="mt-1 b_white">
+                        <div class="d-flex" (click)="highlight =! highlight">
+                            <p class="about_store">Highlights/user tips</p>
+
+                            <mat-icon>expand_more</mat-icon>
+
+                        </div>
+
+                        <div class="mt-1" *ngIf="highlight">
+                            <p class="desc_store">
+                                <app-highlight></app-highlight>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="store_abc">
+                        <div class="i_am_store">
+                            <div class="input">
+                                <p (click)=" !makeChanges ? (iMinStore = !iMinStore) : true"
+                                    style="min-width: 40%; padding: 0 !important; margin: 0 !important;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                        style=" height: 30px; width: 30px; display:inline-block; vertical-align:middle; ">
+                                        <path *ngIf="!iMinStore"
+                                            d="M9 42Q7.8 42 6.9 41.1Q6 40.2 6 39V9Q6 7.8 6.9 6.9Q7.8 6 9 6H39Q40.2 6 41.1 6.9Q42 7.8 42 9V39Q42 40.2 41.1 41.1Q40.2 42 39 42ZM9 39H39Q39 39 39 39Q39 39 39 39V9Q39 9 39 9Q39 9 39 9H9Q9 9 9 9Q9 9 9 9V39Q9 39 9 39Q9 39 9 39Z" />
+                                        <path *ngIf="iMinStore"
+                                            d="M9 42Q7.8 42 6.9 41.1Q6 40.2 6 39V9Q6 7.8 6.9 6.9Q7.8 6 9 6H39Q40.2 6 41.1 6.9Q42 7.8 42 9V39Q42 40.2 41.1 41.1Q40.2 42 39 42ZM9 39H39Q39 39 39 39Q39 39 39 39V9Q39 9 39 9Q39 9 39 9H9Q9 9 9 9Q9 9 9 9V39Q9 39 9 39Q9 39 9 39ZM20.95 31.35Q21.25 31.35 21.5 31.25Q21.75 31.15 22 30.9L34.35 18.55Q34.75 18.15 34.775 17.5Q34.8 16.85 34.35 16.4Q33.9 15.95 33.275 15.95Q32.65 15.95 32.2 16.4L20.95 27.65L16.05 22.75Q15.65 22.35 15.025 22.325Q14.4 22.3 13.95 22.75Q13.5 23.2 13.5 23.825Q13.5 24.45 13.95 24.9L19.9 30.9Q20.15 31.15 20.4 31.25Q20.65 31.35 20.95 31.35ZM9 39Q9 39 9 39Q9 39 9 39V9Q9 9 9 9Q9 9 9 9Q9 9 9 9Q9 9 9 9V39Q9 39 9 39Q9 39 9 39Z" />
+                                    </svg> &nbsp;I'm at the store
+                                </p>
+                            </div>
+                            <span class="divide"></span>
+                            <div class="redeem_btn">
+                                <button mat-button>redeem</button>
+                            </div>
+                        </div>
 
                     </div>
 
-                    <div class="mt-1 new_desc" *ngIf="about_store">
-                        <a href="" class="desc_aboutstore">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Sint,
-                            tenetur distinctio
-                            dignissimos neque, recusandae perferendis sunt incidunt, unde aut error possimus minus
-                            voluptates officia vero reprehenderit commodi iure impedit laboriosam.</a>
-                        <a routerLink="/generalinfo" class="desc_store">Return & Refund Policy</a>
-                        <a routerLink="/tnconlinestore" class="desc_store">Terms & Conditions</a>
-                    </div>
+
+
+                    <!-- line -->
+
+                    <!-- <hr class="hr"> -->
                 </div>
 
-                <!-- line -->
-
-                <hr class="hr prod_line">
-
-                <!-- visit store  -->
-
-                <div class="mt-1 b_white">
-                    <div class="d-flex" (click)="highlight =! highlight">
-                        <p class="about_store">Highlights/user tips</p>
-
-                        <mat-icon>expand_more</mat-icon>
-
-                    </div>
-
-                    <div class="mt-1" *ngIf="highlight">
-                        <p class="desc_store">
-                            <app-highlight></app-highlight>
-                        </p>
-                    </div>
-                </div>
-
-                <!-- line -->
-
-                <hr class="hr">
 
                 <!-- delivery section -->
 
                 <!-- search field -->
 
-                <div>
+                <div *ngIf="viewTyp == 'Online'">
                     <div class="search mt-5 textC">
 
                         <input type="text" name="" id="" placeholder="Search">
                         <mat-icon>search</mat-icon>
 
                     </div>
+                    <div>
+                        <div class="all_products">
+                            <div class="product_section" (click)="products =! products">
+                                <p>Quick Bites</p>
+                                <mat-icon>expand_more</mat-icon>
+                            </div>
 
-                    <div class="all_products">
-                        <div class="product_section" (click)="products =! products">
-                            <p>Quick Bites</p>
-                            <mat-icon>expand_more</mat-icon>
+                            <!-- line -->
+
+                            <hr class="hr prod_line">
+
+                            <div>
+                                <div class="products_details">
+                                    <div class="products_summary">
+                                        <p class="product_name">farmhouse</p>
+                                        <p class="product_desc" (click)="desc =!desc">Lorem ipsum dolor sit
+                                            <span id="more" *ngIf="desc">consectetur adipisicing elit. Saepe
+                                                quos nemo, aperiam voluptatum, odio quisquam in eum et totam velit
+                                                tempore
+                                                laborum
+                                                iste. Nesciunt quo rerum officiis blanditiis sapiente. Ullam.</span>
+                                        </p>
+                                        <div class="discount_final">
+                                            <p class="dis_price">₹500</p>
+                                            <p class="final_price">₹300</p>
+                                            <p class="off">10% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="img_add">
+                                        <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
+                                        <div class="add_button">
+                                            <ng-container *ngIf="!showAddToCard">
+                                                <button class="add-to-card-button" mat-button
+                                                    (click)="showAndHideAddToCard()">Add</button>
+                                            </ng-container>
+
+                                            <ng-container *ngIf="showAddToCard">
+                                                <div class="add-sub-button-container">
+                                                    <button class="add-sub-button">
+                                                        -
+                                                    </button>
+                                                    <button class="add-sub-button">1</button>
+                                                    <button class="add-sub-button">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </ng-container>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <hr class="hr"> -->
+
+                                <div class="products_details">
+                                    <div class="products_summary">
+                                        <p class="product_name">farmhouse</p>
+                                        <p class="product_desc">description</p>
+                                        <div class="discount_final">
+                                            <p class="dis_price">₹500</p>
+                                            <p class="final_price">₹300</p>
+                                            <p class="off">10% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="img_add">
+                                        <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
+                                        <div class="add_button">
+                                            <ng-container *ngIf="!showAddToCard">
+                                                <button class="add-to-card-button" mat-button
+                                                    (click)="showAndHideAddToCard()">Add</button>
+                                            </ng-container>
+
+                                            <ng-container *ngIf="showAddToCard">
+                                                <div class="add-sub-button-container">
+                                                    <button class="add-sub-button">
+                                                        -
+                                                    </button>
+                                                    <button class="add-sub-button">1</button>
+                                                    <button class="add-sub-button">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </ng-container>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <hr class="hr"> -->
+
+
+                            </div>
+
                         </div>
 
-                        <!-- line -->
-
-                        <hr class="hr prod_line">
-
-                        <div>
-                            <div class="products_details">
-                                <div class="products_summary">
-                                    <p class="product_name">farmhouse</p>
-                                    <p class="product_desc" (click)="desc =!desc">Lorem ipsum dolor sit
-                                        <span id="more" *ngIf="desc">consectetur adipisicing elit. Saepe
-                                            quos nemo, aperiam voluptatum, odio quisquam in eum et totam velit tempore
-                                            laborum
-                                            iste. Nesciunt quo rerum officiis blanditiis sapiente. Ullam.</span>
-                                    </p>
-                                    <div class="discount_final">
-                                        <p class="dis_price">₹500</p>
-                                        <p class="final_price">₹300</p>
-                                        <p class="off">10% off</p>
-                                    </div>
-                                </div>
-                                <div class="img_add">
-                                    <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
-                                    <div class="add_button">
-                                        <ng-container *ngIf="!showAddToCard">
-                                            <button class="add-to-card-button" mat-button
-                                                (click)="showAndHideAddToCard()">Add</button>
-                                        </ng-container>
-
-                                        <ng-container *ngIf="showAddToCard">
-                                            <div class="add-sub-button-container">
-                                                <button class="add-sub-button">
-                                                    -
-                                                </button>
-                                                <button class="add-sub-button">1</button>
-                                                <button class="add-sub-button">
-                                                    +
-                                                </button>
-                                            </div>
-                                        </ng-container>
-                                    </div>
-                                </div>
+                        <div class="all_products">
+                            <div class="product_section" (click)="deserts =! deserts">
+                                <p>Desserts</p>
+                                <mat-icon>expand_more</mat-icon>
                             </div>
 
-                            <div class="products_details">
-                                <div class="products_summary">
-                                    <p class="product_name">farmhouse</p>
-                                    <p class="product_desc">description</p>
-                                    <div class="discount_final">
-                                        <p class="dis_price">₹500</p>
-                                        <p class="final_price">₹300</p>
-                                        <p class="off">10% off</p>
-                                    </div>
-                                </div>
-                                <div class="img_add">
-                                    <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
-                                    <div class="add_button">
-                                        <ng-container *ngIf="!showAddToCard">
-                                            <button class="add-to-card-button" mat-button
-                                                (click)="showAndHideAddToCard()">Add</button>
-                                        </ng-container>
+                            <!-- line -->
 
-                                        <ng-container *ngIf="showAddToCard">
-                                            <div class="add-sub-button-container">
-                                                <button class="add-sub-button">
-                                                    -
-                                                </button>
-                                                <button class="add-sub-button">1</button>
-                                                <button class="add-sub-button">
-                                                    +
-                                                </button>
-                                            </div>
-                                        </ng-container>
+                            <hr class="hr prod_line">
+
+                            <div *ngIf="deserts">
+                                <div class="products_details">
+                                    <div class="products_summary">
+                                        <p class="product_name">farmhouse</p>
+                                        <p class="product_desc">description</p>
+                                        <div class="discount_final">
+                                            <p class="dis_price">₹500</p>
+                                            <p class="final_price">₹300</p>
+                                            <p class="off">10% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="img_add">
+                                        <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
+                                        <div class="add_button">
+                                            <ng-container *ngIf="!showAddToCard">
+                                                <button class="add-to-card-button" mat-button
+                                                    (click)="showAndHideAddToCard()">Add</button>
+                                            </ng-container>
+
+                                            <ng-container *ngIf="showAddToCard">
+                                                <div class="add-sub-button-container">
+                                                    <button class="add-sub-button">
+                                                        -
+                                                    </button>
+                                                    <button class="add-sub-button">1</button>
+                                                    <button class="add-sub-button">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </ng-container>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <div class="products_details">
+                                    <div class="products_summary">
+                                        <p class="product_name">farmhouse</p>
+                                        <p class="product_desc">description</p>
+                                        <div class="discount_final">
+                                            <p class="dis_price">₹500</p>
+                                            <p class="final_price">₹300</p>
+                                            <p class="off">10% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="img_add">
+                                        <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
+                                        <div class="add_button">
+                                            <ng-container *ngIf="!showAddToCard">
+                                                <button class="add-to-card-button" mat-button
+                                                    (click)="showAndHideAddToCard()">Add</button>
+                                            </ng-container>
+
+                                            <ng-container *ngIf="showAddToCard">
+                                                <div class="add-sub-button-container">
+                                                    <button class="add-sub-button">
+                                                        -
+                                                    </button>
+                                                    <button class="add-sub-button">1</button>
+                                                    <button class="add-sub-button">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </ng-container>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
 
+                        </div>
+
+                        <div class="all_products">
+                            <div class="product_section" (click)="products =! products">
+                                <p>Quick Bites</p>
+                                <mat-icon>expand_more</mat-icon>
+                            </div>
+
+                            <!-- line -->
+
+                            <hr class="hr prod_line">
+
+                            <div *ngIf="products">
+                                <div class="products_details">
+                                    <div class="products_summary">
+                                        <p class="product_name">farmhouse</p>
+                                        <p class="product_desc" (click)="desc =!desc">Lorem ipsum dolor sit
+                                            <span id="more" *ngIf="desc">consectetur adipisicing elit. Saepe
+                                                quos nemo, aperiam voluptatum, odio quisquam in eum et totam velit
+                                                tempore
+                                                laborum
+                                                iste. Nesciunt quo rerum officiis blanditiis sapiente. Ullam.</span>
+                                        </p>
+                                        <div class="discount_final">
+                                            <p class="dis_price">₹500</p>
+                                            <p class="final_price">₹300</p>
+                                            <p class="off">10% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="img_add">
+                                        <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
+                                        <div class="add_button">
+                                            <ng-container *ngIf="!showAddToCard">
+                                                <button class="add-to-card-button" mat-button
+                                                    (click)="showAndHideAddToCard()">Add</button>
+                                            </ng-container>
+
+                                            <ng-container *ngIf="showAddToCard">
+                                                <div class="add-sub-button-container">
+                                                    <button class="add-sub-button">
+                                                        -
+                                                    </button>
+                                                    <button class="add-sub-button">1</button>
+                                                    <button class="add-sub-button">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </ng-container>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products_details">
+                                    <div class="products_summary">
+                                        <p class="product_name">farmhouse</p>
+                                        <p class="product_desc">description</p>
+                                        <div class="discount_final">
+                                            <p class="dis_price">₹500</p>
+                                            <p class="final_price">₹300</p>
+                                            <p class="off">10% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="img_add">
+                                        <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
+                                        <div class="add_button">
+                                            <ng-container *ngIf="!showAddToCard">
+                                                <button class="add-to-card-button" mat-button
+                                                    (click)="showAndHideAddToCard()">Add</button>
+                                            </ng-container>
+
+                                            <ng-container *ngIf="showAddToCard">
+                                                <div class="add-sub-button-container">
+                                                    <button class="add-sub-button">
+                                                        -
+                                                    </button>
+                                                    <button class="add-sub-button">1</button>
+                                                    <button class="add-sub-button">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </ng-container>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
 
                         </div>
 
                     </div>
 
-                    <div class="all_products">
-                        <div class="product_section" (click)="deserts =! deserts">
-                            <p>Desserts</p>
-                            <mat-icon>expand_more</mat-icon>
-                        </div>
-
-                        <!-- line -->
-
-                        <hr class="hr prod_line">
-
-                        <div *ngIf="deserts">
-                            <div class="products_details">
-                                <div class="products_summary">
-                                    <p class="product_name">farmhouse</p>
-                                    <p class="product_desc">description</p>
-                                    <div class="discount_final">
-                                        <p class="dis_price">₹500</p>
-                                        <p class="final_price">₹300</p>
-                                        <p class="off">10% off</p>
-                                    </div>
-                                </div>
-                                <div class="img_add">
-                                    <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
-                                    <div class="add_button">
-                                        <ng-container *ngIf="!showAddToCard">
-                                            <button class="add-to-card-button" mat-button
-                                                (click)="showAndHideAddToCard()">Add</button>
-                                        </ng-container>
-
-                                        <ng-container *ngIf="showAddToCard">
-                                            <div class="add-sub-button-container">
-                                                <button class="add-sub-button">
-                                                    -
-                                                </button>
-                                                <button class="add-sub-button">1</button>
-                                                <button class="add-sub-button">
-                                                    +
-                                                </button>
-                                            </div>
-                                        </ng-container>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="products_details">
-                                <div class="products_summary">
-                                    <p class="product_name">farmhouse</p>
-                                    <p class="product_desc">description</p>
-                                    <div class="discount_final">
-                                        <p class="dis_price">₹500</p>
-                                        <p class="final_price">₹300</p>
-                                        <p class="off">10% off</p>
-                                    </div>
-                                </div>
-                                <div class="img_add">
-                                    <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
-                                    <div class="add_button">
-                                        <ng-container *ngIf="!showAddToCard">
-                                            <button class="add-to-card-button" mat-button
-                                                (click)="showAndHideAddToCard()">Add</button>
-                                        </ng-container>
-
-                                        <ng-container *ngIf="showAddToCard">
-                                            <div class="add-sub-button-container">
-                                                <button class="add-sub-button">
-                                                    -
-                                                </button>
-                                                <button class="add-sub-button">1</button>
-                                                <button class="add-sub-button">
-                                                    +
-                                                </button>
-                                            </div>
-                                        </ng-container>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="all_products">
-                        <div class="product_section" (click)="products =! products">
-                            <p>Quick Bites</p>
-                            <mat-icon>expand_more</mat-icon>
-                        </div>
-
-                        <!-- line -->
-
-                        <hr class="hr prod_line">
-
-                        <div *ngIf="products">
-                            <div class="products_details">
-                                <div class="products_summary">
-                                    <p class="product_name">farmhouse</p>
-                                    <p class="product_desc" (click)="desc =!desc">Lorem ipsum dolor sit
-                                        <span id="more" *ngIf="desc">consectetur adipisicing elit. Saepe
-                                            quos nemo, aperiam voluptatum, odio quisquam in eum et totam velit tempore
-                                            laborum
-                                            iste. Nesciunt quo rerum officiis blanditiis sapiente. Ullam.</span>
-                                    </p>
-                                    <div class="discount_final">
-                                        <p class="dis_price">₹500</p>
-                                        <p class="final_price">₹300</p>
-                                        <p class="off">10% off</p>
-                                    </div>
-                                </div>
-                                <div class="img_add">
-                                    <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
-                                    <div class="add_button">
-                                        <ng-container *ngIf="!showAddToCard">
-                                            <button class="add-to-card-button" mat-button
-                                                (click)="showAndHideAddToCard()">Add</button>
-                                        </ng-container>
-
-                                        <ng-container *ngIf="showAddToCard">
-                                            <div class="add-sub-button-container">
-                                                <button class="add-sub-button">
-                                                    -
-                                                </button>
-                                                <button class="add-sub-button">1</button>
-                                                <button class="add-sub-button">
-                                                    +
-                                                </button>
-                                            </div>
-                                        </ng-container>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="products_details">
-                                <div class="products_summary">
-                                    <p class="product_name">farmhouse</p>
-                                    <p class="product_desc">description</p>
-                                    <div class="discount_final">
-                                        <p class="dis_price">₹500</p>
-                                        <p class="final_price">₹300</p>
-                                        <p class="off">10% off</p>
-                                    </div>
-                                </div>
-                                <div class="img_add">
-                                    <img src="../../../assets/img/storepage/Rectangle 109.png" alt="">
-                                    <div class="add_button">
-                                        <ng-container *ngIf="!showAddToCard">
-                                            <button class="add-to-card-button" mat-button
-                                                (click)="showAndHideAddToCard()">Add</button>
-                                        </ng-container>
-
-                                        <ng-container *ngIf="showAddToCard">
-                                            <div class="add-sub-button-container">
-                                                <button class="add-sub-button">
-                                                    -
-                                                </button>
-                                                <button class="add-sub-button">1</button>
-                                                <button class="add-sub-button">
-                                                    +
-                                                </button>
-                                            </div>
-                                        </ng-container>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
 
 
                     <div class="cart_section">

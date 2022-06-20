@@ -1,0 +1,35 @@
+<ng-container *ngIf="mode==1">
+    <div class="mt-10"> <span> <input type="checkbox"> </span> Online</div>
+    <div class="mt-10"> <span> <input type="checkbox"> </span> Offline</div>
+    <div class="mt-10"> <span> <input type="checkbox"> </span> Hybrid</div>
+</ng-container>
+
+<ng-container *ngIf="mode==2">
+    <div class="mt-25"> <span> <input type="checkbox"> </span> Fashion <button mat-flat-button
+            (click)="toggleSubmenu=!toggleSubmenu"> <img src="../../../assets/screen3/downarrowmenu.svg" alt="">
+        </button></div>
+    <div class="fashion-menu sub-menu" *ngIf="toggleSubmenu">
+        <div> <span> <input type="checkbox"> </span> Men</div>
+        <div class="mt-10"> <span> <input type="checkbox"> </span> Women</div>
+        <div class="mt-10"> <span> <input type="checkbox"> </span> Children</div>
+    </div>
+    <div class="mt-25"> <span> <input type="checkbox"> </span> Food and Beverages <img
+            src="../../../assets/screen3/downarrowmenu.svg" alt=""></div>
+    <div class="mt-25"> <span> <input type="checkbox"> </span> Salon & spas <img
+            src="../../../assets/screen3/downarrowmenu.svg" alt=""></div>
+    <div class="mt-25"> <span> <input type="checkbox"> </span> Beauty & Grooming <img
+            src="../../../assets/screen3/downarrowmenu.svg" alt=""></div>
+</ng-container>
+
+
+<ng-container *ngIf="mode==3">
+    <div class="mt-25"> <span> <input type="checkbox"> </span> Upto 100</div>
+    <div class="mt-10"> <span> <input type="checkbox"> </span> 100 - 200</div>
+    <div class="mt-10"> <span> <input type="checkbox"> </span> 200 - 500</div>
+</ng-container>
+
+
+<div class="d-flex-row p-5 bottom-buttons">
+    <button mat-stroked-button color="danger" class="outline-danger mr-5" (click)="close()">Close</button>
+    <button mat-stroked-button color="success" class="outline-success " (click)="close()">Apply</button>
+</div>

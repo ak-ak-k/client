@@ -6,8 +6,6 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 2px;
   background: #ffffff;
@@ -105,7 +103,6 @@
 
 .search_how {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 10px;
   margin: 20px 20px 15px 20px;
@@ -115,24 +112,5 @@
   button {
     border: none;
     outline: none;
-  }
-}
-
-.right {
-  display: flex;
-
-  button {
-    background: linear-gradient(90deg, #fe848c -15%, #f24b57 125.71%);
-    border-radius: 20px;
-    font-family: "Jost";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 19px;
-    height: 28px;
-    padding: 0 10px;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
   }
 }

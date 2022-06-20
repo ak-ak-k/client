@@ -1,0 +1,45 @@
+.mt-10 {
+  margin-top: 10px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.sub-menu {
+  margin: 2% 2% 2% 6%;
+  padding: 2%;
+}
+
+.outline-success {
+  background-color: #27ae60;
+  color: #fff;
+  width: 70%;
+}
+
+.outline-danger {
+  border: #eb5757 solid 1px;
+  color: #eb5757;
+  width: 70%;
+}
+
+.bottom-buttons {
+  position: fixed;
+  width: 90%;
+  bottom: 0;
+  background: white;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
