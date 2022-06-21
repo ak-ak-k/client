@@ -184,6 +184,21 @@ header {
   width: 93%;
 }
 
+#map-canvas {
+  height: 420px;
+  width: 620px;
+  background-color: #6495ed;
+  display: none;
+}
+
+.prq {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
 .view_loc {
   display: flex;
   align-items: center;
@@ -229,6 +244,7 @@ header {
   font-size: var(--tertiary-font-size) !important;
   font-weight: 600;
   line-height: 30px;
+  color: #000000;
 }
 
 .svg_coin {
@@ -246,6 +262,7 @@ hr {
 
 .hr {
   margin: 1px 14px 8px 14px;
+  height: 0px;
 }
 
 //
@@ -290,9 +307,10 @@ hr {
   line-height: 17px !important;
   color: #d85769;
   text-align: center;
-  margin-left: 0 !important;
+  // margin-left: 0 !important;
   padding-top: 4px !important;
   margin-bottom: 0 !important;
+  margin-top: 8px !important;
 }
 
 .price {
@@ -325,6 +343,16 @@ hr {
 .newcard-left {
   position: absolute;
   top: 8px;
+}
+
+.radio_inp {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.radio_inp:checked {
+  accent-color: #d85769;
 }
 
 .dotted-line {
@@ -441,6 +469,7 @@ hr {
   font-size: var(--secondary-lg-font-size) !important;
   font-weight: 600;
   line-height: 23px !important;
+  margin-bottom: -8px !important;
 }
 
 .new_desc {
@@ -529,6 +558,12 @@ hr {
   margin-bottom: 15px;
 }
 
+.x_line {
+  border-top: 1px solid lightgray;
+  padding-top: 16px;
+  border-width: 10px;
+}
+
 .product_section {
   display: flex;
   justify-content: space-between;
@@ -536,7 +571,7 @@ hr {
   // border-bottom: 1px solid #b6b6b6;
   p {
     font-family: var(--primary-font-family) !important;
-    font-size: var(--primary-lg-font-size) !important;
+    font-size: 16px !important;
     font-weight: 600;
     font-style: normal;
   }
@@ -547,7 +582,7 @@ hr {
   align-items: center;
   justify-content: space-between;
   margin: 15px 0px;
-  border-bottom: 1px solid #e0e0e0;
+  // border-bottom: 1px solid #e0e0e0;
   padding-bottom: 10px;
   margin: 4px 0 4px 16px;
   width: 92%;

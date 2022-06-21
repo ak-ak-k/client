@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { StorepageshopsComponent } from '../storepageshops/storepageshops.component';
 
 @Component({
   selector: 'app-shopdetails',
@@ -6,6 +8,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopdetails.component.scss'],
 })
 export class ShopdetailsComponent implements OnInit {
+  constructor(private dialog: MatDialog) {}
+  //
+
+  get getheight() {
+    return window.innerHeight;
+  }
+  get getwidth() {
+    return window.innerWidth;
+  }
+
+  storeLoc() {
+    let isPhone = this.getwidth < 768;
+    let w = isPhone ? this.getwidth + 'px' : '480px';
+    let h = isPhone ? this.getheight + 'px' : '98vh';
+    const refDialog = this.dialog.open(StorepageshopsComponent, {
+      width: w,
+      minWidth: '320px',
+      maxWidth: '480px',
+      height: '500px',
+      hasBackdrop: true,
+      disableClose: false,
+      panelClass: 'dialogLayout', //, autoFocus:false
+    });
+    refDialog.afterClosed().subscribe(() => {});
+  }
+
+  // storeLoc(): void {
+  //   const dialogRef = this.dialog.open(StorepageshopsComponent, {
+  //     width: '100%',
+  //   });
+  // }
+
   //
   products = false;
   deserts = false;
@@ -22,8 +56,6 @@ export class ShopdetailsComponent implements OnInit {
   storeTyp = '';
 
   viewTyp = '';
-
-  constructor() {}
 
   ngOnInit(): void {
     this.storeTyp = 'Onli';

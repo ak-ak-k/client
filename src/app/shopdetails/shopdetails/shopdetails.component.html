@@ -155,7 +155,7 @@
                             <div class="svg_time">
 
                                 <div>
-                                    <div style="display: flex;align-items: center;gap:5px;padding-bottom: 2px;">
+                                    <a (click)="storeLoc()" class="prq">
                                         <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -168,16 +168,22 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                         <p class="city_schedule">Andheri South Street</p>
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10 6.66667L13.3333 10L10 13.3333" stroke="#FF5959"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path
-                                                d="M2.66699 2.66667V7.33334C2.66699 8.04058 2.94794 8.71886 3.44804 9.21896C3.94814 9.71905 4.62641 10 5.33366 10H13.3337"
-                                                stroke="#FF5959" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
+                                            <g clip-path="url(#clip0_1235_13211)">
+                                                <path
+                                                    d="M15.3055 7.59599L9.83328 1.86539L8.5382 3.22163L11.8124 6.64089H1.625V12.6538H3.44906V8.5511H11.8124L8.5382 11.9704L9.83328 13.3266L15.3055 7.59599Z"
+                                                    fill="#FF4D4D" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1235_13211">
+                                                    <rect width="16.1538" height="14" fill="white"
+                                                        transform="matrix(1 0 0 -1 0 14)" />
+                                                </clipPath>
+                                            </defs>
                                         </svg>
-                                    </div>
+
+                                    </a>
                                     <a class="view_loc">
                                         <span class="view_all">View all locations of this store
                                         </span>
@@ -204,9 +210,9 @@
                                 </svg>
 
                                 <!-- <p class="city_schedule">Mon-Sat: 10am-6pm, Sun closed</p> -->
-                                <!-- <p class="city_schedule">Mon-Sat: 10am-6pm, 9pm-12pm</p> -->
+                                <!-- <p class="city_schedule">Mon-Sat: 10am-6pm & 9pm-12pm</p> -->
                                 <!-- <p class="city_schedule">Mon-Sat: 10am-6pm</p> -->
-                                <p class="city_schedule">Mon-Sat : 10am-6pm, 9pm-12am, Sun closed</p>
+                                <p class="city_schedule">Mon-Sat : 10am-6pm & 9pm-12am, Sun closed</p>
                             </div>
                         </div>
 
@@ -404,6 +410,7 @@
                             </div>
 
                             <div class="newcard-left">
+                                <input type="radio" class="radio_inp" name="camp">
                                 <p class="upto">Upto</p>
                                 <p class="price"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -504,6 +511,7 @@
                             </div>
 
                             <div class="newcard-left">
+                                <input type="radio" class="radio_inp" name="camp">
                                 <p class="upto">Upto</p>
                                 <p class="price"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -720,7 +728,7 @@
 
                     </div>
                     <div>
-                        <div class="all_products">
+                        <div class="all_products ">
                             <div class="product_section" (click)="products =! products">
                                 <p>Quick Bites</p>
                                 <mat-icon>expand_more</mat-icon>
@@ -728,7 +736,7 @@
 
                             <!-- line -->
 
-                            <hr class="hr prod_line">
+                            <!-- <hr class="hr prod_line"> -->
 
                             <div>
                                 <div class="products_details">
@@ -770,7 +778,7 @@
                                     </div>
                                 </div>
 
-                                <!-- <hr class="hr"> -->
+                                <hr class="hr">
 
                                 <div class="products_details">
                                     <div class="products_summary">
@@ -812,7 +820,7 @@
 
                         </div>
 
-                        <div class="all_products">
+                        <div class="all_products x_line">
                             <div class="product_section" (click)="deserts =! deserts">
                                 <p>Desserts</p>
                                 <mat-icon>expand_more</mat-icon>
@@ -820,7 +828,7 @@
 
                             <!-- line -->
 
-                            <hr class="hr prod_line">
+                            <!-- <hr class="hr prod_line"> -->
 
                             <div *ngIf="deserts">
                                 <div class="products_details">
@@ -856,6 +864,8 @@
                                     </div>
                                 </div>
 
+                                <hr class="hr">
+
                                 <div class="products_details">
                                     <div class="products_summary">
                                         <p class="product_name">farmhouse</p>
@@ -894,7 +904,7 @@
 
                         </div>
 
-                        <div class="all_products">
+                        <div class="all_products x_line">
                             <div class="product_section" (click)="products =! products">
                                 <p>Quick Bites</p>
                                 <mat-icon>expand_more</mat-icon>
@@ -902,7 +912,7 @@
 
                             <!-- line -->
 
-                            <hr class="hr prod_line">
+                            <!-- <hr class="hr prod_line"> -->
 
                             <div *ngIf="products">
                                 <div class="products_details">
@@ -943,6 +953,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <hr class="hr">
 
                                 <div class="products_details">
                                     <div class="products_summary">
