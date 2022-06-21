@@ -184,8 +184,28 @@ header {
   width: 93%;
 }
 
+.view_loc {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+.view_all {
+  margin-left: 28px !important;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  text-align: center;
+
+  color: #6615ff;
+}
+
 .svg_time {
   display: flex;
+  gap: 5px;
   align-items: center;
   p {
     font-family: var(--primary-font-family) !important;
