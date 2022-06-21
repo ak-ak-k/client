@@ -216,6 +216,7 @@ header {
   text-align: center;
 
   color: #6615ff;
+  padding-bottom: 5px;
 }
 
 .svg_time {
@@ -245,6 +246,10 @@ header {
   font-weight: 600;
   line-height: 30px;
   color: #000000;
+}
+
+.nonbold {
+  font-weight: 500 !important;
 }
 
 .svg_coin {
@@ -466,10 +471,11 @@ hr {
 .vist_and_redeem {
   font-family: var(--primary-font-family) !important;
   font-style: normal;
-  font-size: var(--secondary-lg-font-size) !important;
+  font-size: 18px !important;
   font-weight: 600;
   line-height: 23px !important;
   margin-bottom: -8px !important;
+  padding-bottom: 15px !important;
 }
 
 .new_desc {
@@ -877,9 +883,9 @@ hr {
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 600;
-    font-size: var(--tertiary-font-size);
+    font-size: 16px;
     line-height: 19px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
     letter-spacing: 0.05em;
 
