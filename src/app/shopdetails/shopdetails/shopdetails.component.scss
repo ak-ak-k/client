@@ -92,10 +92,21 @@ header {
 //
 
 .store_logo {
-  img {
-    width: 38px;
-    border: 1px solid gray;
-  }
+  // img {
+  //   width: 38px;
+  //   border: 1px solid gray;
+  // }
+}
+
+.img_container {
+  background-size: cover;
+  background-position: center;
+  min-height: 38px;
+  position: relative;
+  border-radius: 3px;
+  width: 38px;
+  margin-left: auto;
+  border: 1px solid gray;
 }
 
 // .img_container {
@@ -677,13 +688,28 @@ hr {
 }
 
 .img_add {
+  background-size: cover;
+  background-position: center;
+  min-height: 92px;
   position: relative;
+  border-radius: 3px;
+  width: 120px;
+  margin-left: auto;
 }
 
 .add_button {
   position: absolute;
   top: 95px;
   left: 29px;
+  background-color: #874bf9;
+  border-radius: 0;
+  color: #fff;
+  position: absolute;
+  bottom: 4px;
+  line-height: 24px;
+  left: 21%;
+  z-index: 10;
+  margin-top: -6px;
   button {
     background: #874bf9;
     border-radius: 1px;

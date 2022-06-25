@@ -121,9 +121,11 @@
   font-weight: 700;
   font-size: 21px !important;
   line-height: 30px !important;
-  margin-left: 35px !important;
+  // margin-left: 35px !important;
   padding-top: 36px !important;
   color: #fd648d;
+  display: flex;
+  align-items: center;
 }
 
 .feed-section {

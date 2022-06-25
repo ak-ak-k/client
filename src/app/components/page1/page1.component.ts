@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { AcceptdelivereyComponent } from '../acceptdeliverey/acceptdeliverey.component';
 import { AdvocaseyComponent } from '../advocasey/advocasey.component';
 import { DelivereyComponent } from '../deliverey/deliverey.component';
 import { Deliverycomponent2Component } from '../deliverycomponent2/deliverycomponent2.component';
@@ -233,6 +234,21 @@ export class Page1Component implements OnInit {
       width: w,
       minWidth: '350px',
       maxWidth: '320px',
+      // height: h,
+      hasBackdrop: true,
+      disableClose: false,
+      panelClass: 'dialogLayout', //, autoFocus:false
+    });
+    profile.afterClosed().subscribe(() => {});
+  }
+
+  accept() {
+    let isPhone = this.getWidth < 768;
+    let w = isPhone ? this.getWidth + 'px' : '480px';
+    const profile = this.dialog.open(AcceptdelivereyComponent, {
+      width: w,
+      minWidth: '289px',
+      maxWidth: '283px',
       // height: h,
       hasBackdrop: true,
       disableClose: false,

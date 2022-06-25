@@ -189,6 +189,7 @@ import { HomescreenwithbackComponent } from './homescreenheaderback/homescreenwi
 import { MenucomponentComponent } from './online-offlinestores/online-offline/menucomponent/menucomponent.component';
 import { Header1Component } from './allheaders/header1/header1.component';
 import { StorepageshopsComponent } from './shopdetails/storepageshops/storepageshops.component';
+import { AcceptdelivereyComponent } from './components/acceptdeliverey/acceptdeliverey.component';
 
 @NgModule({
   declarations: [
@@ -353,6 +354,7 @@ import { StorepageshopsComponent } from './shopdetails/storepageshops/storepages
     MenucomponentComponent,
     Header1Component,
     StorepageshopsComponent,
+    AcceptdelivereyComponent,
   ],
   imports: [
     BrowserModule,
