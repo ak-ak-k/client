@@ -44,9 +44,13 @@ export class ShopdetailsComponent implements OnInit {
   products = false;
   deserts = false;
   desc = false;
-  iMinStore = true;
+  iMinStore = false;
+  makeChanges = false;
   showAddToCard: boolean = false;
 
+  //
+  tick = false;
+  ticked = false;
   //
   about_store = false;
   highlight = false;
@@ -86,8 +90,5 @@ export class ShopdetailsComponent implements OnInit {
 
   showAndHideAddToCard() {
     this.showAddToCard = true;
-  }
-  makeChanges() {
-    this.iMinStore = false;
   }
 }

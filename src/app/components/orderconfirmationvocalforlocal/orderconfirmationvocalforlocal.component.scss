@@ -110,6 +110,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0 !important;
+  .rupee {
+    color: #512da8;
+    margin-right: 2px;
+  }
+}
+.credited {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  text-align: center;
+
+  color: #000000;
 }
 
 //
@@ -122,12 +137,12 @@
     rgba(255, 247, 220, 0.59) 0%,
     rgba(255, 197, 179, 0.43) 100%
   );
-  margin-top: 60px;
+  margin-top: 30px;
   position: relative;
   .stamps {
     position: absolute;
     right: 0;
-    top: -99px;
+    top: -85px;
   }
 }
 
@@ -144,32 +159,42 @@
 }
 
 .feed-section {
-  margin: 10px 56px !important;
+  // margin: 10px 56px !important;
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
   font-size: 17px !important;
   line-height: 25px !important;
   text-align: center;
+  width: 100%;
+  max-width: 95%;
 }
 
 .earn {
   display: flex;
   align-items: center;
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px !important;
-  line-height: 29px !important;
-  width: 91%;
-  text-align: center;
-  padding-bottom: 12px !important;
+  width: 100%;
+  margin: 17px 0;
+  padding-bottom: 10px;
+
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px !important;
+    line-height: 25px !important;
+    width: 100%;
+    text-align: center;
+
+    color: #000000;
+    margin: 0 !important;
+  }
 }
 
 //
 
 .footer {
-  margin: 26px 0;
+  margin: 15px 0;
 }
 
 .get {

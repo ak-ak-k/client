@@ -1,6 +1,6 @@
 .box {
   background: #874bf9;
-  height: 423px;
+  height: 424px;
   overflow: hidden;
 }
 //
@@ -55,15 +55,24 @@
 
 .para {
   margin-top: 30px;
-  p {
+  .believe {
     font-family: "Jost";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px !important;
-    line-height: 23px !important;
+    line-height: 20px !important;
     text-align: center;
-    color: #ffffff;
-    margin-bottom: 0 !important;
+    color: #ffcf0f;
+  }
+  .gR {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px !important;
+    line-height: 20px !important;
+    text-align: center;
+    color: #fecb00;
+    text-transform: capitalize;
   }
 }
 
@@ -103,6 +112,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto !important;
   }
 }
 
@@ -132,16 +144,20 @@
 }
 
 .svg-person {
-  position: absolute;
-  right: 0;
-  top: -9px;
+  text-align: right;
+  margin-bottom: -40px;
+  // position: absolute;
+  // right: 0;
+  // top: -9px;
 }
 
 .cannot-exchange {
-  position: absolute;
-  bottom: -65px;
-  width: 85%;
-  left: 17px;
+  // position: absolute;
+  // bottom: -65px;
+  // left: 17px;
+  width: 100%;
+  max-width: 260px;
+  margin-left: 17px;
 
   p {
     font-family: "Jost";
