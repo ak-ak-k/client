@@ -8,6 +8,7 @@ import { StorepageshopsComponent } from '../storepageshops/storepageshops.compon
   styleUrls: ['./shopdetails.component.scss'],
 })
 export class ShopdetailsComponent implements OnInit {
+  show = false;
   constructor(private dialog: MatDialog) {}
   //
 

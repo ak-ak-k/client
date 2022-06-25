@@ -48,7 +48,7 @@
   stroke-width: 2;
   stroke: #fff;
   stroke-miterlimit: 10;
-  margin: 4% auto 4% auto;
+  margin: 5% auto 5% auto;
   box-shadow: inset 0px 0px 0px #7ac142;
   animation: fill 0.4s ease-in-out 0.4s forwards,
     scale 0.3s ease-in-out 0.9s both;
@@ -89,13 +89,18 @@
   font-size: 24px !important;
   line-height: 35px !important;
   color: #737373;
+  padding: 10px 0 !important;
+}
+
+.abc {
+  margin: 10px 0;
 }
 
 .saved {
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
-  font-size: 19px !important;
+  font-size: 20px !important;
   line-height: 27px !important;
   text-align: center;
 }
@@ -109,11 +114,17 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  gap: 2px;
   align-items: center;
   margin-bottom: 0 !important;
   .rupee {
     color: #512da8;
     margin-right: 2px;
+    background: linear-gradient(180deg, #d338f2 5.24%, #9500b3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 }
 .credited {
@@ -137,12 +148,13 @@
     rgba(255, 247, 220, 0.59) 0%,
     rgba(255, 197, 179, 0.43) 100%
   );
-  margin-top: 30px;
+  margin: 55px 0 0 0;
   position: relative;
   .stamps {
     position: absolute;
     right: 0;
-    top: -85px;
+    // top: -90px;
+    margin: -103px 0 0 0;
   }
 }
 
@@ -153,9 +165,13 @@
   font-size: 21px !important;
   line-height: 30px !important;
   margin-left: 35px !important;
-  padding-top: 36px !important;
-  color: #fd60a9;
+  padding-top: 21px !important;
   text-align: center;
+  background: linear-gradient(90deg, #fd60a9 0%, #ff7a4e 106.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .feed-section {
@@ -172,16 +188,21 @@
 
 .earn {
   display: flex;
+  gap: 7px;
   align-items: center;
-  width: 100%;
-  margin: 17px 0;
-  padding-bottom: 10px;
+  width: 94%;
+  margin: 5px 0;
+  padding: 10px 0 10px 10px;
+  svg {
+    height: 35px;
+    width: 35px;
+  }
 
   p {
     font-family: "Jost";
     font-style: normal;
     font-weight: 600;
-    font-size: 17px !important;
+    font-size: 16px !important;
     line-height: 25px !important;
     width: 100%;
     text-align: center;
@@ -194,7 +215,7 @@
 //
 
 .footer {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 .get {
@@ -217,7 +238,7 @@
     font-family: "Jost";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 16px !important;
+    line-height: 23px !important;
   }
 }
