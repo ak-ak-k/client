@@ -89,17 +89,24 @@
     position: relative;
     background: #f6f6f6;
     border-radius: 12px;
-    width: 240px;
+    width: 180px;
     height: 38px;
     border: none;
     outline: none;
-    padding: 1px 22px;
+    padding: 1px 36px 1px 22px;
+    margin: 0 -38px 0 0;
+    z-index: 1;
   }
   mat-icon {
-    position: absolute;
+    position: relative;
     color: #d1d1d1;
-    margin-left: -12%;
-    margin-top: 7px;
+    z-index: 2;
+    background: #f6f6f6;
+    padding: 7px 0;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    border-radius: 12px;
   }
 }
 
