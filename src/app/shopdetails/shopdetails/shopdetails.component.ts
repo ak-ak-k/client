@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { MatDialog } from '@angular/material/dialog';
+import { OnlinestoreconditionsComponent } from 'src/app/components/termsnconditions/onlinestoreconditions/onlinestoreconditions.component';
 import { StorepageshopsComponent } from '../storepageshops/storepageshops.component';
 
 @Component({
@@ -9,7 +11,10 @@ import { StorepageshopsComponent } from '../storepageshops/storepageshops.compon
 })
 export class ShopdetailsComponent implements OnInit {
   show = false;
-  constructor(private dialog: MatDialog) {}
+  constructor(
+    private dialog: MatDialog,
+    private _bottomSheet: MatBottomSheet
+  ) {}
   //
 
   get getheight() {
@@ -33,6 +38,10 @@ export class ShopdetailsComponent implements OnInit {
       panelClass: 'dialogLayout', //, autoFocus:false
     });
     refDialog.afterClosed().subscribe(() => {});
+  }
+
+  openBottomSheet(): void {
+    this._bottomSheet.open(OnlinestoreconditionsComponent);
   }
 
   // storeLoc(): void {
