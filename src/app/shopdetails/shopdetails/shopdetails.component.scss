@@ -1080,6 +1080,12 @@ hr {
   transform: rotate(180deg);
 }
 
+@media (min-width: 768px) {
+  .cart_section {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .d-none,
   .d-md-none,
@@ -1107,6 +1113,7 @@ hr {
   position: fixed;
   bottom: 12px;
   right: 14px;
+  z-index: 10001;
   .row {
     display: grid;
     grid-gap: 10px;
