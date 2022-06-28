@@ -568,7 +568,7 @@ hr {
 
 .desc_aboutstore {
   font-family: var(--primary-font-family) !important;
-  font-size: var(--secondary-font-size) !important;
+  font-size: var(--tertiary-font-size) !important;
   font-style: normal;
   font-weight: 400;
   line-height: 23px !important;
@@ -579,9 +579,9 @@ hr {
 
 .desc_store {
   font-family: var(--primary-font-family) !important;
-  font-size: var(--secondary-font-size) !important;
+  font-size: var(--tertiary-font-size) !important;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 23px !important;
   text-decoration: none;
   color: #000000;
@@ -793,7 +793,10 @@ hr {
 
 .cart_section {
   // margin: 10px;
-  margin-bottom: 5rem;
+  // margin-bottom: 5rem;
+
+  height: 7vh;
+
   .view_cart {
     background: #874bf9;
     box-shadow: 0px -2px 4px rgb(0 0 0 / 25%);

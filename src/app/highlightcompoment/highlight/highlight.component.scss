@@ -33,11 +33,11 @@ button {
 }
 
 .mt-2 {
-  margin-top: 0.5rem;
+  margin-top: 2rem;
 }
 
 .mt-1 {
-  // margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .p-1 {
@@ -165,6 +165,12 @@ mat-toolbar {
     font-weight: 400;
   }
 }
+
+// .pill button:focus {
+//   background-color: #5c4ce1;
+//   border-radius: 50px;
+//   color: white;
+// }
 
 .share {
   width: 100% !important;
