@@ -32,9 +32,9 @@ button {
   margin-top: 3rem;
 }
 
-.mt-2 {
-  margin-top: 2rem;
-}
+// .mt-2 {
+//   margin-top: 2rem;
+// }
 
 .mt-1 {
   margin-top: 1rem;
@@ -129,10 +129,10 @@ mat-toolbar {
 }
 
 .highlights {
-  background: #dcdeff;
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  // background: #dcdeff;
+  // box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  padding-top: 15px;
+  // padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 1px;
   padding-right: 1px;
@@ -145,7 +145,11 @@ mat-toolbar {
 }
 
 .pill-group {
-  display: -webkit-inline-box !important;
+  // display: -webkit-inline-box !important;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .pill {

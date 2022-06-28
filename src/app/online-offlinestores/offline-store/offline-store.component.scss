@@ -5,6 +5,72 @@
 
 //
 
+//
+
+.banner {
+  margin: 15px 0px;
+}
+
+.whole_banner {
+  width: 100%;
+  height: 200px;
+  background-color: #f2defd;
+}
+
+.banner_img_text {
+  display: flex;
+  /* align-items: center; */
+  padding: 25px 15px;
+}
+
+.img_container {
+  background-size: cover;
+  background-position: center;
+  // height: 38px;
+  // width: 38px;
+  // border: 1px solid gray;
+  position: relative;
+  border-radius: 3px;
+  margin-left: auto;
+  width: 260px;
+  max-width: 100%;
+  img {
+    width: 260px;
+    max-width: 100%;
+    // width: 38px;
+    // min-height: 38px;
+    object-fit: cover;
+    // border: 1px solid gray;
+    // display: none;
+  }
+}
+
+.imgLoaded {
+  // display: inline-block;
+}
+
+.more_store {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px !important;
+  line-height: 29px !important;
+  color: #8111e8;
+  width: 100%;
+  max-width: 110px;
+}
+
+.shop_in {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 25px !important;
+  color: #8111e8;
+}
+
+//
+
 .heading {
   margin-top: 15px;
   p {

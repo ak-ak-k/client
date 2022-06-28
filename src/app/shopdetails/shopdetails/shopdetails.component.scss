@@ -544,6 +544,90 @@ hr {
   padding-bottom: 15px !important;
 }
 
+.amnt_box {
+  background: linear-gradient(180deg, #ffdce3 0%, #ffeadd 100%);
+  opacity: 0.89;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  height: 10vh;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px 10px 10px;
+}
+
+.inp_btn input {
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ffbf9a;
+  width: 206px;
+  height: 34px;
+  outline: none;
+  padding: 0px 0px 0 15px;
+}
+
+.inp_btn input:focus {
+  border: 1px solid #ffbf9a;
+}
+
+.inp_btn input::placeholder {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px !important;
+  line-height: 117% !important;
+  color: #ffbf9a;
+}
+
+.inp_btn button {
+  background: #874bf9;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px !important;
+  line-height: 117% !important;
+  text-align: center;
+  color: #ffffff;
+  padding: 9px 31px;
+  margin-left: 10px;
+}
+
+.pay_via {
+  display: flex;
+  align-items: center;
+  padding: 15px 0 0 5px;
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 117% !important;
+    text-align: center;
+    color: #ff5e00;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: 0 !important;
+    .balance {
+      display: inline-flex;
+      align-items: center;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 479;
+      font-size: 12px !important;
+      line-height: 117% !important;
+
+      text-align: center;
+
+      color: #ff9355;
+    }
+  }
+}
+
 .new_desc {
   display: flex;
   flex-direction: column;
@@ -586,6 +670,7 @@ hr {
   text-decoration: none;
   color: #000000;
   padding-bottom: 5px;
+  margin: 0 0 0 -10px;
 }
 
 // delivery
@@ -802,7 +887,7 @@ hr {
     box-shadow: 0px -2px 4px rgb(0 0 0 / 25%);
     border-radius: 8px;
     width: -webkit-fill-available;
-    max-width: 300px;
+    max-width: 370px;
     padding: 10px 15px;
     position: fixed;
     bottom: 8px;
@@ -971,12 +1056,12 @@ hr {
   bottom: 54px;
   border-radius: 8px;
   width: -webkit-fill-available;
-  max-width: 300px;
+  max-width: 370px;
   padding: 10px 0;
   position: fixed;
-  bottom: 50px;
+  // bottom: 50px;
   z-index: 1000;
-  margin: 0 auto;
+  // margin: 0 auto;
   left: 0;
   right: 0;
 }
@@ -1085,6 +1170,19 @@ hr {
 
 @media (min-width: 768px) {
   .cart_section {
+    display: none;
+  }
+  .store_abc {
+    margin: 0 auto;
+  }
+  .hello {
+    padding: 0 0 30px 0px;
+    margin-bottom: 180px;
+  }
+  .store_abc {
+    display: none;
+  }
+  .amnt_box {
     display: none;
   }
 }
