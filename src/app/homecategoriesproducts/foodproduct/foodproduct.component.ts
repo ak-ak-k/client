@@ -40,7 +40,7 @@ export class FoodproductComponent implements OnInit {
   
   
   
-  
+  catList(){
   
   const x = [
 
