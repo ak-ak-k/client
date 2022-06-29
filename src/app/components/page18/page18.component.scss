@@ -67,6 +67,45 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.img-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 172px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  img {
+    border-radius: 14px;
+    width: 332px;
+    height: 172px;
+    display: none;
+  }
+}
+
+.imgLoaded {
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.img_container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 160px;
+  height: 124px;
+  border-radius: 14px;
+  max-width: 350px;
+  position: relative;
+  img {
+    border-radius: 14px;
+    width: 332px;
+    height: 115px;
+    display: none;
+  }
+}
+
 .banner-1 {
   max-width: 29vw;
   margin: auto;
@@ -141,10 +180,6 @@
 .coin {
   margin-left: 5px;
   margin-right: 5px;
-}
-
-.deals-img {
-  border-radius: 8px;
 }
 
 @media screen and (max-width: 763px) {
