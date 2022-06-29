@@ -190,6 +190,7 @@ import { MenucomponentComponent } from './online-offlinestores/online-offline/me
 import { Header1Component } from './allheaders/header1/header1.component';
 import { StorepageshopsComponent } from './shopdetails/storepageshops/storepageshops.component';
 import { AcceptdelivereyComponent } from './components/acceptdeliverey/acceptdeliverey.component';
+import { ProductdeliverComponent } from './components/productdeliver/productdeliver.component';
 
 @NgModule({
   declarations: [
@@ -355,6 +356,7 @@ import { AcceptdelivereyComponent } from './components/acceptdeliverey/acceptdel
     Header1Component,
     StorepageshopsComponent,
     AcceptdelivereyComponent,
+    ProductdeliverComponent,
   ],
   imports: [
     BrowserModule,
