@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --dmsans: "DM Sans", sans-serif;
+  --pop: "Poppins", sans-serif;
+}
+
+.mat-tab-group {
+  margin-bottom: 48px;
+  background-color: white;
+}
+
+.col {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+}
+
+// ---
+
+.banner_bg {
+  background: linear-gradient(177.53deg, #fff0eb 2.07%, #ffe0d6 96.76%);
+  border-radius: 3px;
+  height: 215px;
+}
+
+.heading_title {
+  font-family: var(--dmsans);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px !important;
+  line-height: 30px !important;
+  //   margin-bottom: 0 !important;
+}
+
+.heading_secondary {
+  font-family: var(--pop);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px !important;
+  line-height: 21px !important;
+  margin: 0 44px !important;
+  letter-spacing: 1px;
+}
+
+//
+
+.contents {
+  display: flex;
+
+  overflow-x: auto;
+
+  //   margin: 9px 16px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.box {
+  position: relative;
+  text-align: center;
+  min-width: 104px;
+  max-width: 122px;
+  min-height: 100px;
+  //   max-height: 100px;
+  border-radius: 4px;
+  margin: 0 0 0 10px;
+  padding: 0;
+  img {
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    border-radius: 9px;
+  }
+
+  .title_prod {
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    width: -webkit-fill-available;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    color: white;
+    text-transform: capitalize;
+  }
+}
+
+//
+
+// .cardss {
+//   margin-bottom: -106px !important;
+// }
+
+//  new
+
+.abc {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.whole_card {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  // width: 312px;
+  max-width: 333px;
+
+  //   height: 201px;
+  margin: auto;
+  position: relative;
+
+  img {
+    border-radius: 7px;
+    object-fit: cover;
+    max-width: 100%;
+    width: 600px;
+    position: relative;
+  }
+}
+
+.deliver_component {
+  position: absolute;
+  top: 85px;
+  right: -14px;
+  .band {
+    // transform: rotate(-45deg);
+
+    // background: #fc6b6b;
+    // width: 100%;
+    // height: 19px;
+    p {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px !important;
+      line-height: 17px !important;
+      color: #ffffff;
+      position: absolute;
+      top: 47px;
+      right: 13px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.offer-tag {
+  min-height: 49px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 123px;
+  position: absolute;
+  left: -7px;
+  top: 11px;
+  color: #fff;
+  .inline {
+    margin: 10px 20px !important;
+    position: absolute !important;
+
+    vertical-align: middle !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    display: flex;
+  }
+}
+
+.purple-offer-tag {
+  // background-image: url(../../../assets/svg/purple-card.tag.svg);
+  background-image: url("../../../assets/img/resturant/card-tag.svg");
+}
+
+.storename {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.fash_type {
+  display: flex;
+  align-items: center;
+}
+
+.cafe {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px !important;
+  line-height: 16px !important;
+  color: #000000;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.off-store {
+  color: #8900ff !important;
+}
+
+//
+.tabs .mat-tab-label.mat-tab-label-active {
+  background-color: #5e70db;
+  opacity: 1 !important;
+}
+.tabs .mat-ink-bar {
+  background-color: #3f51b5 !important;
+}
+
+// -----------
+
+.category-section-m {
+  /* margin-top: 1%; */
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  background: white;
+
+  .menu-item {
+    padding: 5px 2px 5px 2px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+  .active {
+    color: #8500e2;
+    border-bottom: 3px solid #8500e2;
+  }
+}
+
+.mat-tab-nav-bar,
+.mat-tab-header {
+  border-bottom: none !important;
+}

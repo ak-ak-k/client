@@ -68,6 +68,7 @@ import { Page6Component } from './components/page6/page6.component';
 import { Page7Component } from './components/page7/page7.component';
 import { Page8Component } from './components/page8/page8.component';
 import { Page9Component } from './components/page9/page9.component';
+import { ProductdeliverComponent } from './components/productdeliver/productdeliver.component';
 import { ProductsPopupComponent } from './components/products-popup/products-popup.component';
 import { RefillComponent } from './components/refill/refill.component';
 import { RefrcashComponent } from './components/refrcash/refrcash.component';
@@ -216,6 +217,7 @@ const routes: Routes = [
   { path: 'generalinfo', component: GeneralInformationComponent },
   { path: 'geninfo', component: GeninfoComponent },
   { path: 'feedback', component: FeedbackComponent },
+  { path: 'productdeliver', component: ProductdeliverComponent },
   // { path: 'invtecontact', component: InvitecontactsComponent },
 
   // -------------- All Headders
