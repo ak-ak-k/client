@@ -10,7 +10,7 @@ import { MenucomponentComponent } from 'src/app/online-offlinestores/online-offl
 export class FoodproductComponent implements OnInit {
   
   
-  cat = {
+  cat$food_and_beverages = {
         id:"food_and_beverages", title:"Food & Beverages", icon:"", anim:"", img:"", rank:0, count:0,
         items:[// food & beverages
             {id:"sc-food_and_beverages-bakery", icon:"", anim:"", img:"assets/cat/food_and_beverages/bakery.webp", name:"Bakery", type:"food_and_beverages", rank:0, count:0 },
