@@ -126,7 +126,7 @@
 .deliver_component {
   position: absolute;
   top: 86px;
-  right: -13px;
+  right: -14px;
   .band {
     // transform: rotate(-45deg);
 
@@ -173,6 +173,8 @@
   background-image: url("../../../assets/img/resturant/card-tag.svg");
 }
 
+.gradient_things {
+}
 .storename {
   font-family: "Jost";
   font-style: normal;
@@ -239,3 +241,5 @@
 .mat-tab-header {
   border-bottom: none !important;
 }
+
+// ------------------------------
