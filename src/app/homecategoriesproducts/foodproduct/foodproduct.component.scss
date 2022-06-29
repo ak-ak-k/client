@@ -80,6 +80,8 @@
     line-height: 17px !important;
     color: white;
     text-transform: capitalize;
+    z-index: 2;
+    opacity: 1;
   }
 }
 
@@ -90,7 +92,9 @@
   height: 100px;
   width: 100px;
   border-radius: 14px;
+  opacity: 0.9;
   position: relative;
+  z-index: 1;
   img {
     border-radius: 14px;
     width: 100px;
