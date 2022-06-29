@@ -8,31 +8,43 @@
 <div class="container">
     <div class="row">
         <div class="col col-100">
-            <div class="col col-100" style="margin-bottom: 0 !important;">
-                <div class="category-section-m">
-                    <nav mat-tab-nav-bar>
-                        <a mat-tab-link (click)="openDialog(1)" class="link active"> Store type </a>
-                        <!-- <a mat-tab-link (click)="openDialog(2)" class="link"> Category </a> -->
-                        <a mat-tab-link (click)="openDialog(3)" class="link"> Cashback tier </a>
-                        <!-- <a mat-tab-link (click)="openDialog(4)" class="link">Others </a> -->
 
-                    </nav>
-                </div>
-            </div>
             <div class="col-100">
                 <div class="banner_bg">
                     <div class="col col-100">
                         <div style="margin: 10px 0;">
-                            <p class="heading_title textC">Share the love for food</p>
-                            <p class="heading_secondary textC">Unlimited rewards on every dining and
-                                delivery
-                            </p>
+                            <p class="heading_title textC">{{title}}</p>
+                            <p class="heading_secondary textC">{{secondary_title}}</p>
                         </div>
                         <div class="col col-100">
                             <div class="contents">
-                                <div class="box">
-                                    <img src="../../../assets/img/webp/homescreencategories webp/Restaurant.webp"
-                                        alt="resturant">
+
+
+
+
+
+
+                                <div class="box" *ngFor="let x of cat$electronics.items">
+                                    <div class="img-container"
+                                        style="background-image: url('../../../assets/img/loaded/locate.svg');">
+                                        <img [src]="x.img" class="imgLoaded" [alt]="x.id">
+
+                                    </div>
+                                    <div class="title_prod">{{x.name}}</div>
+                                </div>
+
+
+
+
+
+                                <!-- <div class="box">
+                                    <div class="img-container"
+                                        style="background-image: url('../../../assets/img/loaded/locate.svg');">
+                                        <img src="../../../assets/img/webp/homescreencategories webp/Restaurant.webp"
+                                            alt="resturant">
+                                    </div>
+
+
                                     <div class="title_prod">Restaurant</div>
                                 </div>
                                 <div class="box">
@@ -46,7 +58,7 @@
                                 <div class="box">
                                     <img src="../../../assets/img/webp/webp/BAkery.webp" alt="resturant">
                                     <div class="title_prod">Bakery</div>
-                                </div>
+                                </div> -->
 
 
                             </div>

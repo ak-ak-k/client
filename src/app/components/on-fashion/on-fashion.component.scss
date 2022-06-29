@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  align-items: end;
   padding-top: 10px;
   padding-bottom: 10px;
   background: #ffffff;
@@ -79,10 +80,10 @@ input {
   width: 100%;
   border-radius: 12px;
   // padding: 8px 0 11px 25px;
-  padding-left: 18px;
   background: #f6f6f6;
   border: none;
   outline: none;
+  padding: 0 45px 0 18px;
 }
 
 .search-field {
@@ -99,6 +100,10 @@ input {
 }
 
 //
+
+.all-btn::-webkit-scrollbar {
+  display: none;
+}
 
 .all-btn {
   margin-left: 20px;
