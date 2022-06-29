@@ -30,6 +30,21 @@
                         </div>
                         <div class="col col-100">
                             <div class="contents">
+                             
+                              
+                              
+                              
+                              
+                              
+                                <div class="box" *ngFor="let x of cat$food_and_beverages.items">
+                                    <img [src]="x.img" [alt]="x.id">
+                                    <div class="title_prod">{{x.name}}</div>
+                                </div>
+                              
+                              
+                              
+                              
+                              
                                 <div class="box">
                                     <img src="../../../assets/img/webp/homescreencategories webp/Restaurant.webp"
                                         alt="resturant">
