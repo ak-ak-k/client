@@ -191,6 +191,8 @@ import { Header1Component } from './allheaders/header1/header1.component';
 import { StorepageshopsComponent } from './shopdetails/storepageshops/storepageshops.component';
 import { AcceptdelivereyComponent } from './components/acceptdeliverey/acceptdeliverey.component';
 import { ProductdeliverComponent } from './components/productdeliver/productdeliver.component';
+import { PetcareComponent } from './homecategoriesproducts/petcare/petcare.component';
+import { BeautyproductComponent } from './homecategoriesproducts/beautyproduct/beautyproduct.component';
 
 @NgModule({
   declarations: [
@@ -357,6 +359,8 @@ import { ProductdeliverComponent } from './components/productdeliver/productdeli
     StorepageshopsComponent,
     AcceptdelivereyComponent,
     ProductdeliverComponent,
+    PetcareComponent,
+    BeautyproductComponent,
   ],
   imports: [
     BrowserModule,

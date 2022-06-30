@@ -91,7 +91,9 @@ import { BurnabcComponent } from './demo/burnabc/burnabc.component';
 import { DemoadminComponent } from './demo/demoadmin/demoadmin.component';
 import { OrderconfirmemailComponent } from './emailtemplates/orderconfirmemail/orderconfirmemail.component';
 import { TickComponent } from './greentickanimation/tick/tick.component';
+import { BeautyproductComponent } from './homecategoriesproducts/beautyproduct/beautyproduct.component';
 import { FoodproductComponent } from './homecategoriesproducts/foodproduct/foodproduct.component';
+import { PetcareComponent } from './homecategoriesproducts/petcare/petcare.component';
 import { HomescreenheaderComponent } from './homescreen/homescreenheader/homescreenheader.component';
 import { HomescreenwithbackComponent } from './homescreenheaderback/homescreenwithback/homescreenwithback.component';
 import { BurncashComponent } from './howitworkssection/burncash/burncash.component';
@@ -229,6 +231,8 @@ const routes: Routes = [
 
   // homecategorys -----------------------
   { path: 'foodproducts', component: FoodproductComponent },
+  { path: 'petcare', component: PetcareComponent },
+  { path: 'beauty', component: BeautyproductComponent },
 
   // shopscreen starts-----------
   { path: 'sddemo', component: ShopdetailsDemoComponent },
