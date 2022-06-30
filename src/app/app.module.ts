@@ -193,6 +193,7 @@ import { AcceptdelivereyComponent } from './components/acceptdeliverey/acceptdel
 import { ProductdeliverComponent } from './components/productdeliver/productdeliver.component';
 import { PetcareComponent } from './homecategoriesproducts/petcare/petcare.component';
 import { BeautyproductComponent } from './homecategoriesproducts/beautyproduct/beautyproduct.component';
+import { CongratulationsComponent } from './components/congratulations/congratulations.component';
 
 @NgModule({
   declarations: [
@@ -361,6 +362,7 @@ import { BeautyproductComponent } from './homecategoriesproducts/beautyproduct/b
     ProductdeliverComponent,
     PetcareComponent,
     BeautyproductComponent,
+    CongratulationsComponent,
   ],
   imports: [
     BrowserModule,
