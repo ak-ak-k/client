@@ -11,6 +11,7 @@ import { LoginSignupComponent } from '../login-signup/login-signup.component';
 import { OtpComponent } from '../otp/otp.component';
 import { Page15Component } from '../page15/page15.component';
 import { RefrcashComponent } from '../refrcash/refrcash.component';
+import { RefrnowComponent } from '../refrnow/refrnow.component';
 import { AddAddressComponent } from './add-address/add-address.component';
 import { DialogXComponent } from './dialog-x/dialog-x.component';
 import { ManageAddressComponent } from './manage-address/manage-address.component';
@@ -246,6 +247,21 @@ export class Page1Component implements OnInit {
     let isPhone = this.getWidth < 768;
     let w = isPhone ? this.getWidth + 'px' : '480px';
     const profile = this.dialog.open(AcceptdelivereyComponent, {
+      width: w,
+      minWidth: '289px',
+      maxWidth: '283px',
+      // height: h,
+      hasBackdrop: true,
+      disableClose: false,
+      panelClass: 'dialogLayout', //, autoFocus:false
+    });
+    profile.afterClosed().subscribe(() => {});
+  }
+
+  refrnow() {
+    let isPhone = this.getWidth < 768;
+    let w = isPhone ? this.getWidth + 'px' : '480px';
+    const profile = this.dialog.open(RefrnowComponent, {
       width: w,
       minWidth: '289px',
       maxWidth: '283px',
