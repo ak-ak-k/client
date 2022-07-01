@@ -441,7 +441,7 @@
                                         </svg>
                                     </p>
 
-                                    <p class="upto">Get Utp</p>
+                                    <p class="upto">Get Upto</p>
                                     <p class="price">
                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -518,7 +518,7 @@
                                     </p>
 
                                     <div class="date-select">
-                                        <p class="date">Valid til : 04 April 2022</p>
+                                        <p class="date">Valid till : 04 April 2022</p>
                                         <!-- <button mat-button>Select</button> -->
                                     </div>
                                 </div>
@@ -644,7 +644,7 @@
                                     </p>
 
                                     <div class="date-select">
-                                        <p class="date">Valid til : 04 April 2022</p>
+                                        <p class="date">Valid till : 04 April 2022</p>
                                         <!-- <button mat-button>Select</button> -->
                                     </div>
                                 </div>
@@ -723,7 +723,7 @@
                         </p>
                     </div>
 
-                    <div *ngIf="viewTyp == 'Offline'">
+                    <!-- <div *ngIf="viewTyp == 'Offline'">
                         <div class="mt-1">
                             <div class="amnt_box">
 
@@ -789,7 +789,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- line -->
 
@@ -826,17 +826,48 @@
                         <!-- visit store  -->
 
                         <div class="mt-1 b_white">
-                            <div class="d-flex" (click)="highlight = !highlight">
-                                <p class="about_store">Highlights/user tips</p>
+                            <div class="d-flex">
+                                <p class="about_store">Highlights</p>
 
-                                <mat-icon>expand_more</mat-icon>
+                                <!-- <mat-icon>expand_more</mat-icon> -->
                             </div>
 
-                            <div class="mt-1" *ngIf="highlight">
+                            <div class="mt-1">
                                 <p class="desc_store">
                                     <app-highlight></app-highlight>
                                 </p>
                             </div>
+                        </div>
+
+                        <div class="mt-1 b_white">
+                            <div class="d-flex">
+                                <p class="about_store">User tips</p>
+                            </div>
+
+                            <div>
+
+                                <div class="d-flex-align-center">
+                                    <div class="img_contain"
+                                        style="background-image: url('../../../assets/img/loaded/locate.svg');">
+                                        <img class="imgLoaded" src="../../../assets/img/Avatar/Avatar 1.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <p class="user_name">aditya kirtane</p>
+                                            <p class="user_review">It was very special. Great quality products</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- <div class="mt-1">
+                                <p class="desc_store">
+                                    <app-highlight></app-highlight>
+                                </p>
+                            </div> -->
                         </div>
 
                         <div *ngIf="iMinStore" style="

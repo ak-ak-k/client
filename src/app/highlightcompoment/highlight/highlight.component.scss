@@ -153,10 +153,10 @@ mat-toolbar {
 }
 
 .pill {
-  background: #f1f2ff;
-  border: 1px solid #5c4ce1;
+  // background: #f1f2ff;
+  // border: 1px solid #5c4ce1;
   box-sizing: border-box;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  // box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   margin: 0px 4px 0px 4px;
   width: max-content !important;
@@ -167,7 +167,7 @@ mat-toolbar {
   button {
     background: none;
     border: none;
-    padding: 0.5rem !important;
+    padding: 0.3rem !important;
     font-weight: 400;
     text-transform: capitalize;
   }
