@@ -747,7 +747,7 @@ hr {
 
 .products_details {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin: 15px 0px;
   // border-bottom: 1px solid #e0e0e0;
@@ -772,6 +772,7 @@ hr {
       line-height: 18px !important;
       text-transform: capitalize;
       margin-bottom: 8px !important;
+      max-width: 200px;
     }
   }
 }
@@ -1007,7 +1008,7 @@ hr {
 .coins {
   button {
     background: linear-gradient(180deg, #ff3d65 0%, #ff7250 100%);
-    border-radius: 5px;
+    border-radius: 8px;
     font-family: "Jost";
     font-style: normal;
     font-weight: 500;
