@@ -545,7 +545,8 @@ hr {
 }
 
 .amnt_box {
-  background: linear-gradient(180deg, #ffdce3 0%, #ffeadd 100%);
+  // background: linear-gradient(180deg, #ffdce3 0%, #ffeadd 100%);
+  background: #e7daff;
   opacity: 0.89;
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -560,7 +561,8 @@ hr {
 .inp_btn input {
   background: #ffffff;
   border-radius: 5px;
-  border: 1px solid #ffbf9a;
+  border: 1px solid #959595;
+  // border: none;
   width: 206px;
   height: 34px;
   outline: none;
@@ -568,7 +570,7 @@ hr {
 }
 
 .inp_btn input:focus {
-  border: 1px solid #ffbf9a;
+  border: 1px solid #874bf9;
 }
 
 .inp_btn input::placeholder {
@@ -577,7 +579,7 @@ hr {
   font-weight: 600;
   font-size: 12px !important;
   line-height: 117% !important;
-  color: #ffbf9a;
+  color: #959595;
 }
 
 .inp_btn button {
@@ -607,7 +609,8 @@ hr {
     font-size: 14px !important;
     line-height: 117% !important;
     text-align: center;
-    color: #ff5e00;
+    // color: #ff5e00;
+    color: #945cff;
     display: flex;
     gap: 5px;
     align-items: center;
@@ -623,7 +626,7 @@ hr {
 
       text-align: center;
 
-      color: #ff9355;
+      color: #676767;
     }
   }
 }
