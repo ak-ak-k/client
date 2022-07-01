@@ -72,7 +72,7 @@ export class ShopdetailsComponent implements OnInit {
   viewTyp = '';
 
   ngOnInit(): void {
-    this.storeTyp = 'Onli';
+    this.storeTyp = 'Offl';
     //this.storeTyp = 'Offl';
     //this.storeTyp = 'Both';
 
