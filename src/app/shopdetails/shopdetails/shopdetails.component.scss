@@ -1275,7 +1275,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 768) and (orientation: landscape) {
+@media screen and (min-width: 768) and (orientation: landscape) {
   .d-none,
   .d-md-none,
   .d-lg-none {
