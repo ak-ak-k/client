@@ -1275,24 +1275,6 @@ hr {
   }
 }
 
-@media screen and (min-width: 768) and (orientation: landscape) {
-  .d-none,
-  .d-md-none,
-  .d-lg-none {
-    display: none !important;
-  }
-  .d-sm-block,
-  .d-block {
-    display: block !important;
-  }
-  .mat-tab-group.mat-primary .mat-ink-bar,
-  .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-    background-color: #8200ff !important;
-    height: 3px;
-    border-radius: 24px;
-  }
-}
-
 .download-app-container {
   background-color: #000000;
   color: #ffffff;
