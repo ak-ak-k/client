@@ -1,0 +1,366 @@
+.prod-img {
+  margin-right: 10px;
+}
+
+.content-img {
+  display: flex;
+  overflow: scroll;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+//
+
+.main {
+  // background: #fff;
+  margin-top: 2px;
+  //   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content-section {
+  margin-left: -23px;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.content-text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px !important;
+  line-height: 29px !important;
+  color: #000000;
+  margin-bottom: 0px !important;
+}
+
+.content-desc {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  color: #a2a3a3;
+  margin-bottom: 5px !important;
+  span {
+    color: blue;
+  }
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+}
+
+.cut {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  text-decoration: line-through;
+  margin-right: 0 !important;
+  color: #a4a4a4;
+}
+
+.price {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  margin-right: 0 !important;
+  color: #000000;
+}
+
+.taxes {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px !important;
+  line-height: 14px !important;
+  margin-left: 10px !important;
+  color: #000000;
+  margin-left: 5px !important;
+  margin-top: 5px !important;
+}
+
+.color {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 23px !important;
+
+  color: #0e0e0e;
+}
+
+//
+
+.black {
+  width: 31px;
+  height: 31px;
+  background: #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  margin-right: 0 !important;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.red {
+  width: 31px;
+  height: 31px;
+  background: #f31a1a;
+
+  border: 1px solid #f31a1a;
+  box-sizing: border-box;
+  margin-right: 0 !important;
+
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.orange {
+  width: 31px;
+  height: 31px;
+  background: blueviolet;
+  border: 1px solid blueviolet;
+  box-sizing: border-box;
+  margin-right: 0 !important;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.gray {
+  width: 31px;
+  height: 31px;
+  background: #c4c4c4;
+
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box-color {
+  display: flex;
+}
+
+.size-text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px !important;
+  line-height: 19px !important;
+  text-transform: capitalize;
+  text-align: center;
+  color: #000000;
+  // margin-right: 18px !important;
+  margin-right: 0 !important;
+}
+
+.gry {
+  margin-left: 11px !important;
+}
+
+//
+
+.space-bet {
+  width: 111%;
+  height: 12px;
+  background: #c4c4c461;
+  margin-top: 5px;
+  margin-left: -23px;
+}
+
+//
+
+.tse {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 1px;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+}
+
+.product-lay {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 17px !important;
+  color: #000000;
+  margin: 0 !important;
+
+  margin-left: 10px !important;
+}
+
+.policy-img {
+  margin-left: 20px;
+}
+
+.plus-minus {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-lay {
+  margin: 10px;
+  margin-left: -7px;
+}
+
+.input-btn {
+  display: flex;
+  align-items: center;
+
+  // width: 32%;
+  // height: 40px;
+
+  background: #ddcbfff5;
+
+  border-radius: 5px;
+}
+
+.increase {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px !important;
+  line-height: 35px !important;
+  color: #000000;
+  margin: 0 !important;
+  margin-bottom: 3px !important;
+}
+
+//
+
+.item-add {
+  width: 100%;
+  height: 40px;
+  background: #874bf9;
+  border-radius: 5px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px !important;
+  line-height: 35px !important;
+  color: #ffffff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.add-item {
+  width: 55%;
+}
+
+//
+
+span {
+  cursor: pointer;
+}
+
+.minus,
+.plus {
+  width: 20px;
+  height: 20px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 8px 5px 8px 5px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.minus {
+  position: absolute;
+  left: 2%;
+}
+
+.plus {
+  position: absolute;
+  left: 22%;
+}
+input {
+  height: 34px;
+  width: 100px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+}
+
+.prod_size {
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 23px !important;
+    color: #0e0e0e;
+    text-transform: capitalize;
+    span {
+      font-weight: 600;
+      font-size: 16px !important;
+      text-transform: uppercase;
+    }
+  }
+  .sizes {
+    margin: 5px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .all_sizes {
+      background: transparent;
+      border: 1px solid;
+      padding: 0px !important;
+      border-radius: 50%;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px !important;
+      color: #0e0e0e;
+      text-transform: uppercase;
+      min-width: 40px;
+    }
+    .all_sizes:focus-within {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px !important;
+    }
+  }
+}
+
+//
+
+.spaces {
+  background: #f2f2f2;
+  width: 100%;
+  height: 7px;
+  margin: 12px;
+}
+
+//
+
+.prod_details {
+  .prod_det_heading {
+    p {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px !important;
+      line-height: 23px !important;
+      color: #0e0e0e;
+    }
+  }
+}

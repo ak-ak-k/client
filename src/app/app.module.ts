@@ -195,6 +195,7 @@ import { PetcareComponent } from './homecategoriesproducts/petcare/petcare.compo
 import { BeautyproductComponent } from './homecategoriesproducts/beautyproduct/beautyproduct.component';
 import { CongratulationsComponent } from './components/congratulations/congratulations.component';
 import { RefrnowComponent } from './components/refrnow/refrnow.component';
+import { StoreproductpageComponent } from './shopdetails/storeproductpage/storeproductpage.component';
 
 @NgModule({
   declarations: [
@@ -365,6 +366,7 @@ import { RefrnowComponent } from './components/refrnow/refrnow.component';
     BeautyproductComponent,
     CongratulationsComponent,
     RefrnowComponent,
+    StoreproductpageComponent,
   ],
   imports: [
     BrowserModule,

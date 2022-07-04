@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import {
+  MatBottomSheet,
+  MatBottomSheetRef,
+} from '@angular/material/bottom-sheet';
 import { MatDialog } from '@angular/material/dialog';
 import { OnlinestoreconditionsComponent } from 'src/app/components/termsnconditions/onlinestoreconditions/onlinestoreconditions.component';
 import { StorepageshopsComponent } from '../storepageshops/storepageshops.component';
+import { StoreproductpageComponent } from '../storeproductpage/storeproductpage.component';
 
 @Component({
   selector: 'app-shopdetails',
@@ -42,6 +46,10 @@ export class ShopdetailsComponent implements OnInit {
 
   openBottomSheet(): void {
     this._bottomSheet.open(OnlinestoreconditionsComponent);
+  }
+
+  productpop(): void {
+    this._bottomSheet.open(StoreproductpageComponent);
   }
 
   // storeLoc(): void {
