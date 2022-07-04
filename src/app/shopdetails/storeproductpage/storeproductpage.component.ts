@@ -10,5 +10,9 @@ export class StoreproductpageComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  viewTyp = '';
+  isReadMore = true;
+
+  showText() {
+    this.isReadMore = !this.isReadMore;
+  }
 }
