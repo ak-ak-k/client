@@ -828,6 +828,12 @@ hr {
       text-transform: capitalize;
       margin-bottom: 8px !important;
     }
+    .halft_para {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
     .product_desc {
       font-family: var(--primary-font-family) !important;
       font-size: var(--tertiary-font-size) !important;
@@ -836,10 +842,6 @@ hr {
       text-transform: capitalize;
       margin-bottom: 8px !important;
       max-width: 200px;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
     }
   }
 }
