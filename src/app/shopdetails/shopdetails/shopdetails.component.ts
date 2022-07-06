@@ -15,6 +15,7 @@ import { StoreproductpageComponent } from '../storeproductpage/storeproductpage.
 })
 export class ShopdetailsComponent implements OnInit {
   show = false;
+  brrr = false;
   constructor(
     private dialog: MatDialog,
     private _bottomSheet: MatBottomSheet

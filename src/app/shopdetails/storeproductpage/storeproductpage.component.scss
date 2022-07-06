@@ -85,7 +85,7 @@
 }
 
 .limitTextHeight {
-  height: 20px;
+  height: 50px;
   overflow: hidden;
 }
 
@@ -248,6 +248,7 @@
 }
 
 .over_abc {
+  height: 6vh;
 }
 
 .btn-lay {
@@ -400,7 +401,7 @@ span {
     }
   }
   .sizes {
-    margin: 5px 20px;
+    margin: 10px 17px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -501,20 +502,21 @@ span {
 
 .pay_products {
   display: flex;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   height: 57px;
   background: #faf8ff;
-  margin: 0 0 0 25px;
   .svg_text {
     display: flex;
+    gap: 10px;
     p {
       font-family: "Jost";
       font-style: normal;
       font-weight: 400;
       font-size: 15px !important;
       color: #000000;
-      margin-bottom: 0 !important;
+      margin: 0 !important;
     }
   }
 }

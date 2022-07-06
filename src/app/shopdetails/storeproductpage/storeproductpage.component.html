@@ -28,12 +28,12 @@
 
                 <div class="content">
                     <p class="content-text">Face Primer</p>
-                    <p class="content-desc" [ngClass]="{'limitTextHeight': isReadMore}">Lorem ipsum dolor sit amet
+                    <!-- <p class="content-desc" [ngClass]="{'limitTextHeight': isReadMore}">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Inventore culpa
                         quod animi esse. Quasi assumenda, doloremque sequi ullam cumque illum rerum placeat, veritatis
                         quam minima quidem corporis, itaque laborum fugit.</p>
                     <button class="read_more" type="button" (click)="showText()">{{
-                        isReadMore ? 'Read More': 'Read Less' }}</button>
+                        isReadMore ? 'Read More': 'Read Less' }}</button> -->
                     <div class="pricing">
                         <p class="cut">Rs.500</p>
                         <p class="price">Rs.450</p>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
 
-                <div class="spaces">
+                <!-- <div class="spaces">
                 </div>
 
                 <div class="prod_details">
@@ -114,7 +114,7 @@
 
 
                     </div>
-                </div>
+                </div> -->
 
                 <div class="spaces">
                 </div>
@@ -126,18 +126,21 @@
                         <div>
 
                             <div class="prod_det">
-                                <p class="prod_primary">Material</p>
-                                <p class="prod_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Necessitatibus repellat id nemo facere? Sunt, consequuntur aspernatur perspiciatis
-                                    ipsa magnam soluta? Eum, explicabo facilis quos porro alias cumque vitae assumenda
-                                    numquam!</p>
+                                <!-- <p class="prod_primary">Material</p> -->
+                                <p class="prod_desc" [ngClass]="{'limitTextHeight': isReadMore}">Lörem ipsum kanar sonar
+                                    mäkaföheten om nysk, geokamist bioaktiv. Sonevis följare. Emav sulig lasade. Dibenuv
+                                    prebena
+                                    ifall tesirade det vill säga juska. Lörem ipsum kanar sonar mäkaföheten om nysk,
+                                    geokamist bioaktiv. Sonevis följare.
+                                    Emav sulig lasade. Dibenuv prebena ifall tesirade det vill säga juska. Lörem ipsum
+                                    kanar sonar mäkaföheten om nysk,
+                                    geokamist bioaktiv. Sonevis följare. Emav sulig lasade. Dibenuv prebena ifall
+                                    tesirade det vill säga juska.</p>
+                                <span class="read_more" (click)="showText()">{{
+                                    isReadMore ? 'Read More': 'Read Less' }}</span>
+
                             </div>
-                            <div class="prod_det">
-                                <p class="prod_primary">Material</p>
-                                <p class="prod_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                                    doloremque nisi vitae expedita voluptas rem quibusdam, dolorum temporibus impedit
-                                    harum aliquam quidem nihil suscipit magnam maiores, ut dicta tenetur molestias?</p>
-                            </div>
+
 
                         </div>
                     </div>
@@ -146,7 +149,7 @@
                 <div class="spaces">
                 </div>
 
-
+                <!-- 
                 <div class="prod_details">
                     <div class="prod_det_heading">
                         <p>Product Dimension</p>
@@ -189,7 +192,7 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="pay_products">
                     <div class="svg_text">

@@ -836,6 +836,10 @@ hr {
       text-transform: capitalize;
       margin-bottom: 8px !important;
       max-width: 200px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
     }
   }
 }
@@ -883,6 +887,20 @@ hr {
     object-fit: cover;
     display: none;
   }
+}
+
+.blank_img {
+  background-size: contain;
+  background-position: center;
+  // height: 92px;
+  position: relative;
+  border-radius: 3px;
+  width: 120px;
+  margin-left: auto;
+}
+
+.blank_add {
+  top: 50px !important;
 }
 
 .add_button {

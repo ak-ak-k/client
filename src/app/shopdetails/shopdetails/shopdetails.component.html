@@ -957,16 +957,15 @@
 
                                 <div>
                                     <div class="col-card">
-                                        <div class="products_details">
+                                        <div class="products_details" (click)="productpop()">
                                             <div class="products_summary">
                                                 <p class="product_name">farmhouse</p>
-                                                <p class="product_desc" (click)="desc = !desc">
-                                                    Lorem ipsum dolor sit
-                                                    <span id="more" *ngIf="desc">consectetur adipisicing elit. Saepe
-                                                        quos nemo,
-                                                        aperiam voluptatum, odio quisquam in eum et totam
-                                                        velit tempore laborum iste. Nesciunt quo rerum
-                                                        officiis blanditiis sapiente. Ullam.</span>
+                                                <p class="product_desc">
+                                                    Lorem ipsum dolor sit consectetur adipisicing elit. Saepe
+                                                    quos nemo,
+                                                    aperiam voluptatum, odio quisquam in eum et totam
+                                                    velit tempore laborum iste. Nesciunt quo rerum
+                                                    officiis blanditiis sapiente. Ullam.
                                                 </p>
                                                 <div class="discount_final">
                                                     <p class="dis_price">₹500</p>
@@ -974,7 +973,7 @@
                                                     <p class="off">10% off</p>
                                                 </div>
                                             </div>
-                                            <div class="img_add" (click)="productpop()"
+                                            <div class="img_add"
                                                 style="background-image: url('../../../assets/img/loaded/locate.svg');">
 
 
@@ -1006,20 +1005,26 @@
                                         <div class="products_details">
                                             <div class="products_summary">
                                                 <p class="product_name">farmhouse</p>
-                                                <p class="product_desc">description</p>
+                                                <p class="product_desc" (click)="brrr = !brrr">
+                                                    Lorem ipsum dolor sit
+                                                    <span id="more" *ngIf="brrr">consectetur adipisicing elit. Saepe
+                                                        quos nemo,
+                                                        aperiam voluptatum, odio quisquam in eum et totam
+                                                        velit tempore laborum iste. Nesciunt quo rerum
+                                                        officiis blanditiis sapiente. Ullam.</span>
+                                                </p>
                                                 <div class="discount_final">
                                                     <p class="dis_price">₹500</p>
                                                     <p class="final_price">₹300</p>
                                                     <p class="off">10% off</p>
                                                 </div>
                                             </div>
-                                            <div class="img_add"
-                                                style="background-image: url('../../../assets/img/loaded/locate.svg');">
+                                            <div class="blank_img">
 
-
+                                                <!-- 
                                                 <img class="imgLoaded"
-                                                    src="../../../assets/img/storepage/Rectangle 109.png" alt="" />
-                                                <div class="add_button">
+                                                    src="../../../assets/img/storepage/Rectangle 109.png" alt="" /> -->
+                                                <div class="blank_add add_button">
                                                     <ng-container *ngIf="!showAddToCard">
                                                         <button class="add-to-card-button" mat-button
                                                             (click)="showAndHideAddToCard()">
