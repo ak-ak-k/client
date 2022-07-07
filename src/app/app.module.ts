@@ -196,6 +196,7 @@ import { BeautyproductComponent } from './homecategoriesproducts/beautyproduct/b
 import { CongratulationsComponent } from './components/congratulations/congratulations.component';
 import { RefrnowComponent } from './components/refrnow/refrnow.component';
 import { StoreproductpageComponent } from './shopdetails/storeproductpage/storeproductpage.component';
+import { PreloadComponent } from './components/congratulations/preload/preload.component';
 
 @NgModule({
   declarations: [
@@ -367,6 +368,7 @@ import { StoreproductpageComponent } from './shopdetails/storeproductpage/storep
     CongratulationsComponent,
     RefrnowComponent,
     StoreproductpageComponent,
+    PreloadComponent,
   ],
   imports: [
     BrowserModule,

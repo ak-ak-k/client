@@ -20,6 +20,7 @@ import { BurnComponent } from './components/burn/burn.component';
 import { BurnproductsComponent } from './components/burnproducts/burnproducts.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ChooseExchangeitemComponent } from './components/choose-exchangeitem/choose-exchangeitem.component';
+import { CongratulationsComponent } from './components/congratulations/congratulations.component';
 import { ElectronicsComponent } from './components/electronics/electronics.component';
 import { ExchangeOrderComponent } from './components/exchange-order/exchange-order.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
@@ -183,6 +184,7 @@ const routes: Routes = [
   { path: 'howitworks', component: HowitworksComponent },
   { path: 'home', component: HomeComponent },
   { path: 'settings', component: SettingsComponent },
+  { path: 'congrats', component: CongratulationsComponent },
 
   // burn-----------------------------
   { path: 'burn', component: BurnComponent },
