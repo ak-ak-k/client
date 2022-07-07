@@ -197,6 +197,7 @@ import { CongratulationsComponent } from './components/congratulations/congratul
 import { RefrnowComponent } from './components/refrnow/refrnow.component';
 import { StoreproductpageComponent } from './shopdetails/storeproductpage/storeproductpage.component';
 import { PreloadComponent } from './components/congratulations/preload/preload.component';
+import { RefrnowinviteComponent } from './components/invitecontacts/refrnowinvite/refrnowinvite.component';
 
 @NgModule({
   declarations: [
@@ -369,6 +370,7 @@ import { PreloadComponent } from './components/congratulations/preload/preload.c
     RefrnowComponent,
     StoreproductpageComponent,
     PreloadComponent,
+    RefrnowinviteComponent,
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
 import { HowitworkbottompopupComponent } from '../howitworkbottompopup/howitworkbottompopup.component';
 import { InvitecontactsComponent } from '../invitecontacts/invitecontacts.component';
+import { RefrnowinviteComponent } from '../invitecontacts/refrnowinvite/refrnowinvite.component';
 
 @Component({
   selector: 'app-bottomsup',
@@ -18,6 +19,12 @@ export class BottomsupComponent implements OnInit {
 
   invite() {
     this._bottomSheet.open(InvitecontactsComponent);
+  }
+
+  refrnow() {
+    this._bottomSheet.open(RefrnowinviteComponent, {
+      panelClass: 'custom_width',
+    });
   }
 
   ngOnInit(): void {}
