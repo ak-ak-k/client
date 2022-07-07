@@ -20,7 +20,14 @@ export class ShopdetailsComponent implements OnInit {
     private dialog: MatDialog,
     private _bottomSheet: MatBottomSheet
   ) {}
+
   //
+
+  isReadMore = true;
+
+  showText() {
+    this.isReadMore = !this.isReadMore;
+  }
 
   get getheight() {
     return window.innerHeight;
