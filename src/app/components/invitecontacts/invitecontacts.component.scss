@@ -25,10 +25,9 @@
   text-align: center;
   margin: 24px 0;
   input[type="text"] {
-    width: 306px;
+    width: 280px;
     height: 37px;
     border-radius: 31px;
-    border: 1px solid #000000;
     padding: 7px;
     outline: none;
     position: relative;
@@ -39,9 +38,15 @@
     font-weight: 400;
     font-size: 16px !important;
     line-height: 23px !important;
-    color: #d1d1d1;
+    // color: #d1d1d1;
     margin: 15px 0;
+    padding: 0 38px 0px 17px !important;
+    border: 1px solid #000000;
   }
+  input[type="text"]:focus {
+    outline: #8111e8 solid 1px;
+  }
+
   mat-icon {
     position: absolute;
     margin-top: 21px;
@@ -55,12 +60,14 @@
   .section {
     margin: 11px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    align-items: center;
     gap: 15px;
 
     .main {
       display: flex;
-      justify-content: space-between;
+      gap: 20px;
+      // justify-content: space-between;
       align-items: center;
       .mix {
         display: flex;
@@ -97,25 +104,53 @@
           }
         }
       }
-      .invite {
-        button {
-          background: #8111e8;
-          border-radius: 4px;
-          width: 60px;
-          height: 28px;
-          font-family: "Jost";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 11px !important;
-          line-height: 16px !important;
-          text-align: center;
-          text-transform: capitalize;
-          color: #ffffff;
-          border: none;
-        }
-      }
     }
   }
+}
+
+.invite {
+  button {
+    background: #8111e8;
+    border-radius: 4px;
+    width: 60px;
+    height: 28px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px !important;
+    line-height: 16px !important;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    border: none;
+  }
+}
+
+//
+
+.img-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  border-radius: 14px;
+  width: 49px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid;
+  max-width: 100%;
+  overflow: hidden;
+  img {
+    border-radius: 14px;
+    width: 50px;
+    height: 49px;
+    background: white;
+    display: none;
+  }
+}
+
+.imgLoaded {
+  display: inline-block;
 }
 
 //
