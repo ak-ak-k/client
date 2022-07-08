@@ -136,6 +136,11 @@ header {
   height: 60px;
 }
 
+.name_details {
+  display: flex;
+  width: 100%;
+}
+
 .store_name {
   font-family: "Jost";
   font-size: 15px !important;
@@ -156,11 +161,11 @@ header {
 
 .store_online_offline {
   font-family: "Jost";
-  font-size: 14px !important;
+  font-size: 12px !important;
 
   font-weight: 600;
   color: #8200ff;
-  text-transform: capitalize;
+  // text-transform: capitalize;
   margin-right: 0 !important;
 }
 
@@ -223,7 +228,7 @@ header {
     font-family: "Jost";
     font-size: var(--primary-lg-font-size) !important;
     line-height: 22px !important;
-    text-transform: capitalize;
+    // text-transform: capitalize;
     color: rgba(0, 0, 0, 0.8);
     margin-bottom: 0 !important;
   }

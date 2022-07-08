@@ -41,7 +41,7 @@
     font-weight: 600;
     font-size: 16px !important;
     line-height: 23px !important;
-    text-transform: capitalize;
+
     color: #000000;
   }
 }
@@ -89,5 +89,20 @@
 
       color: #000000;
     }
+  }
+}
+
+//
+
+.brr {
+  display: flex;
+  margin-left: -9px;
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 23px !important;
+    color: #000000;
   }
 }

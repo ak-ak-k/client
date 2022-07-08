@@ -106,6 +106,9 @@ import { RefrlevelsComponent } from './howitworkssection/refrlevels/refrlevels.c
 import { StartedrefrComponent } from './howitworkssection/startedrefr/startedrefr.component';
 import { ThreeeasystepsComponent } from './howitworkssection/threeeasysteps/threeeasysteps.component';
 import { VocallocalComponent } from './howitworkssection/vocallocal/vocallocal.component';
+import { RedeemofflineComponent } from './howtoredeem/redeemoffline/redeemoffline.component';
+import { RedeemonlineComponent } from './howtoredeem/redeemonline/redeemonline.component';
+import { LevelsectionComponent } from './Levels/levelsection/levelsection.component';
 import { MerchantTransactionComponent } from './merchant-transaction/merchant-transaction/merchant-transaction.component';
 import { AdminPanelComponent } from './merchant/admin-panel/admin-panel.component';
 import { CreateProductComponent } from './merchant/create-product/create-product.component';
@@ -121,8 +124,10 @@ import { OnlineOfflineComponent } from './online-offlinestores/online-offline/on
 import { OnlineStoreComponent } from './online-offlinestores/online-store/online-store.component';
 import { OrdersectionComponent } from './orders-section/ordersection/ordersection.component';
 import { RefrtransactionComponent } from './refr-transaction/refrtransaction/refrtransaction.component';
+import { CustomercodeComponent } from './roshan/customercode/customercode.component';
 import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/shopdetails-demo.component';
 import { ShopdetailsComponent } from './shopdetails/shopdetails/shopdetails.component';
+import { ShoptermnconditionComponent } from './shopdetails/shoptermncondition/shoptermncondition.component';
 import { StoreoverviewComponent } from './storeoverview/storeoverview/storeoverview.component';
 import { StoresComponent } from './stores/stores/stores.component';
 import { SubcategoryComponent } from './subcategory/subcategory/subcategory.component';
@@ -217,6 +222,15 @@ const routes: Routes = [
   { path: 'tnonoff', component: OnlineofflineconditionsComponent },
   { path: 'thankyou', component: ThankyouscreenComponent },
   { path: 'stores', component: StoresComponent },
+  { path: 'levels', component: LevelsectionComponent },
+
+  // how to redeem
+  { path: 'redeemoffline', component: RedeemofflineComponent },
+  { path: 'redeemonline', component: RedeemonlineComponent },
+
+  // shop terms condition
+
+  { path: 'shopterm', component: ShoptermnconditionComponent },
 
   { path: 'generalinfo', component: GeneralInformationComponent },
   { path: 'geninfo', component: GeninfoComponent },
@@ -323,6 +337,10 @@ const routes: Routes = [
   { path: 'storeoverview', component: StoreoverviewComponent },
   { path: 'useroverview', component: UseroverviewComponent },
   // dipesh work ends ===============================================
+
+  // roshan code
+
+  { path: 'customercontact', component: CustomercodeComponent },
 ];
 
 @NgModule({

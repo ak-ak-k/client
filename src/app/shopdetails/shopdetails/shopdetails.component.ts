@@ -5,6 +5,8 @@ import {
 } from '@angular/material/bottom-sheet';
 import { MatDialog } from '@angular/material/dialog';
 import { OnlinestoreconditionsComponent } from 'src/app/components/termsnconditions/onlinestoreconditions/onlinestoreconditions.component';
+import { RedeemonlineComponent } from 'src/app/howtoredeem/redeemonline/redeemonline.component';
+import { ShoptermnconditionComponent } from '../shoptermncondition/shoptermncondition.component';
 import { StorepageshopsComponent } from '../storepageshops/storepageshops.component';
 import { StoreproductpageComponent } from '../storeproductpage/storeproductpage.component';
 
@@ -54,7 +56,11 @@ export class ShopdetailsComponent implements OnInit {
   }
 
   openBottomSheet(): void {
-    this._bottomSheet.open(OnlinestoreconditionsComponent);
+    this._bottomSheet.open(RedeemonlineComponent);
+  }
+
+  termncondition(): void {
+    this._bottomSheet.open(ShoptermnconditionComponent);
   }
 
   productpop(): void {

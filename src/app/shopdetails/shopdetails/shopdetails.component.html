@@ -125,20 +125,26 @@
 
                 <div class="b_white">
                     <div class="store_details">
-                        <div class="store_logo">
-                            <div class="img_container"
-                                style="background-image: url('../../../assets/img/loaded/locate.svg');">
-                                <img class="imgLoaded" src="../../../assets/img/storepage/Belan Banner 1.png" alt="" />
+                        <div>
+                            <div class="store_logo">
+                                <div class="img_container"
+                                    style="background-image: url('../../../assets/img/loaded/locate.svg');">
+                                    <img class="imgLoaded" src="../../../assets/img/storepage/Belan Banner 1.png"
+                                        alt="" />
+
+                                </div>
 
                             </div>
 
                         </div>
-                        <div>
-                            <p class="store_name">belan</p>
-                            <p class="store_category">foods & beverages</p>
+                        <div class="name_details" style="display: flex;width: 100%;">
+                            <div>
+                                <p class="store_name">belan</p>
+                                <p class="store_category">foods & beverages</p>
+                            </div>
+                            <span class="divide"></span>
+                            <p class="store_online_offline">Online store</p>
                         </div>
-                        <span class="divide"></span>
-                        <p class="store_online_offline">online store</p>
                     </div>
 
                     <!-- store banner -->
@@ -813,7 +819,7 @@
                             <div class="d-flex" (click)="about_store = !about_store">
                                 <p class="about_store">About store</p>
 
-                                <mat-icon>expand_more</mat-icon>
+                                <mat-icon>{{about_store==true?'expand_less':'expand_more'}}</mat-icon>
                             </div>
 
                             <div class="mt-1 new_desc" *ngIf="about_store">
@@ -850,6 +856,29 @@
                                 </div> -->
                         </div>
 
+
+                        <!-- line -->
+
+                        <hr class="hr prod_line" />
+
+                        <!-- visit store  -->
+
+                        <div class="mt-1 b_white">
+                            <div class="d-flex" (click)="highlights = !highlights" (click)="termncondition()">
+                                <p class="about_store">Terms and condition</p>
+
+                                <mat-icon>chevron_right</mat-icon>
+                            </div>
+
+                            <!-- <div class="mt-1" *ngIf="highlights">
+                                                            <p class="desc_store">
+                                                                <app-highlight></app-highlight>
+                                                            </p>
+                                                        </div> -->
+                        </div>
+
+
+
                         <!-- line -->
 
                         <hr class="hr prod_line" />
@@ -860,7 +889,7 @@
                             <div class="d-flex" (click)="highlights = !highlights">
                                 <p class="about_store">Highlights</p>
 
-                                <mat-icon>expand_more</mat-icon>
+                                <mat-icon>{{highlights==true?'expand_less':'expand_more'}}</mat-icon>
                             </div>
 
                             <div class="mt-1" *ngIf="highlights">
@@ -1099,7 +1128,7 @@
                             <div class="all_products">
                                 <div class="product_section" (click)="deserts = !deserts">
                                     <p>Desserts</p>
-                                    <mat-icon>expand_more</mat-icon>
+                                    <mat-icon>{{deserts?'expand_more':'expand_less'}}</mat-icon>
                                 </div>
 
                                 <!-- line -->
@@ -1190,7 +1219,7 @@
                             <div class="all_products">
                                 <div class="product_section" (click)="products = !products">
                                     <p>Quick Bites</p>
-                                    <mat-icon>expand_more</mat-icon>
+                                    <mat-icon>{{products?'expand_more':'expand_less'}}</mat-icon>
                                 </div>
 
                                 <!-- line -->

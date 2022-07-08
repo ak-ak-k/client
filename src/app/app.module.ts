@@ -198,6 +198,11 @@ import { RefrnowComponent } from './components/refrnow/refrnow.component';
 import { StoreproductpageComponent } from './shopdetails/storeproductpage/storeproductpage.component';
 import { PreloadComponent } from './components/congratulations/preload/preload.component';
 import { RefrnowinviteComponent } from './components/invitecontacts/refrnowinvite/refrnowinvite.component';
+import { CustomercodeComponent } from './roshan/customercode/customercode.component';
+import { LevelsectionComponent } from './Levels/levelsection/levelsection.component';
+import { RedeemofflineComponent } from './howtoredeem/redeemoffline/redeemoffline.component';
+import { RedeemonlineComponent } from './howtoredeem/redeemonline/redeemonline.component';
+import { ShoptermnconditionComponent } from './shopdetails/shoptermncondition/shoptermncondition.component';
 
 @NgModule({
   declarations: [
@@ -371,6 +376,11 @@ import { RefrnowinviteComponent } from './components/invitecontacts/refrnowinvit
     StoreproductpageComponent,
     PreloadComponent,
     RefrnowinviteComponent,
+    CustomercodeComponent,
+    LevelsectionComponent,
+    RedeemofflineComponent,
+    RedeemonlineComponent,
+    ShoptermnconditionComponent,
   ],
   imports: [
     BrowserModule,
