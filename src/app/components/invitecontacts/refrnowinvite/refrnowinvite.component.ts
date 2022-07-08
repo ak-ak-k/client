@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./refrnowinvite.component.scss'],
 })
 export class RefrnowinviteComponent implements OnInit {
+  contacts = false;
   constructor() {}
 
   ngOnInit(): void {}

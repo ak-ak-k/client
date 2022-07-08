@@ -4,7 +4,7 @@
 
             <div class="gap">
                 <div class="img-container" style="background-image: url('../../../assets/img/loaded/locate.svg');">
-                    <img class="imgLoaded" src="assets/img/invite/invite to refr 1@300x 1.png" alt="">
+                    <img class="imgLoaded" src="assets/img/invite/invite.webp" alt="">
                 </div>
             </div>
 
@@ -95,7 +95,25 @@
             <div class="line"></div>
 
             <div class="sync">
-                <a>Sync Your Contacts</a>
+                <a mat-button *ngIf="!contacts" (click)="contacts = !contacts">Sync Your Contacts</a>
+                <div class="xyz" mat-button *ngIf="contacts">
+
+                    <div>
+                        <p class="synced">
+                            100 contacts <span>waiting for
+                                invite</span>
+                        </p>
+
+                    </div>
+                    <span class="divide"></span>
+                    <div>
+                        <a>
+                            <mat-icon>chevron_right</mat-icon>
+                        </a>
+
+                    </div>
+                </div>
+
             </div>
 
         </div>

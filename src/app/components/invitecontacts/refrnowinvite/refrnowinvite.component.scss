@@ -110,6 +110,13 @@
   border: 1px solid #bdbdbd;
 }
 
+.xyz {
+  display: flex;
+  button {
+    display: flex;
+  }
+}
+
 .sync {
   text-align: center;
   padding: 11px 0 11px 0;
@@ -119,9 +126,25 @@
     font-weight: 400;
     font-size: 15px !important;
     line-height: 22px !important;
-
     text-transform: capitalize;
-
     color: #000000;
+    // display: flex;
+    // justify-content: center;
+  }
+  .synced {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    text-transform: capitalize;
+    color: #000000;
+    width: 100%;
+    margin: 0 !important;
+    // display: flex;
+    // justify-content: center;
+    span {
+      color: #512da8;
+    }
   }
 }
