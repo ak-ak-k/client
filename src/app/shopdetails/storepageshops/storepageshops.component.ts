@@ -19,4 +19,10 @@ export class StorepageshopsComponent implements OnInit {
   onNoClick(): void {
     this.dialogRef.close();
   }
+
+  isReadMore = true;
+
+  showText() {
+    this.isReadMore = !this.isReadMore;
+  }
 }

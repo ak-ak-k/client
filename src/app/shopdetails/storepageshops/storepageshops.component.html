@@ -42,9 +42,12 @@
 
                         </div>
                         <div class="store_address">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam est vitae incidunt
+                            <p [ngClass]="{'limitTextHeight': isReadMore}">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Totam est vitae incidunt
                                 cupiditate quam ea consequatur nemo numquam magnam nihil aut ipsa voluptatibus vero
                                 asperiores fugit, deserunt quos libero? Tempore.</p>
+                            <p class="read_more" (click)="showText()">{{
+                                isReadMore ? 'Read More': 'Read Less' }}</p>
                         </div>
                         <div class="contact_number">
 
@@ -78,9 +81,12 @@
 
                         </div>
                         <div class="store_address">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam est vitae incidunt
+                            <p [ngClass]="{'limitTextHeight': isReadMore}">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Totam est vitae incidunt
                                 cupiditate quam ea consequatur nemo numquam magnam nihil aut ipsa voluptatibus vero
                                 asperiores fugit, deserunt quos libero? Tempore.</p>
+                            <p class="read_more" (click)="showText()">{{
+                                isReadMore ? 'Read More': 'Read Less' }}</p>
                         </div>
                         <div class="contact_number">
 
@@ -114,9 +120,12 @@
 
                         </div>
                         <div class="store_address">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam est vitae incidunt
+                            <p [ngClass]="{'limitTextHeight': isReadMore}">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Totam est vitae incidunt
                                 cupiditate quam ea consequatur nemo numquam magnam nihil aut ipsa voluptatibus vero
                                 asperiores fugit, deserunt quos libero? Tempore.</p>
+                            <p class="read_more" (click)="showText()">{{
+                                isReadMore ? 'Read More': 'Read Less' }}</p>
                         </div>
                         <div class="contact_number">
 
@@ -125,9 +134,10 @@
                             </a>
                         </div>
                         <!-- <div class="store_address ">
-                                            <p class="km">0-3 kms</p>
-                                        </div> -->
+                                                <p class="km">0-3 kms</p>
+                                            </div> -->
                     </div>
+
                 </div>
 
 
