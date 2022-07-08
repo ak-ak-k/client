@@ -14,6 +14,7 @@ import { StoreproductpageComponent } from '../storeproductpage/storeproductpage.
   styleUrls: ['./shopdetails.component.scss'],
 })
 export class ShopdetailsComponent implements OnInit {
+  highlights = false;
   show = false;
   brrr = false;
   constructor(
@@ -67,6 +68,7 @@ export class ShopdetailsComponent implements OnInit {
   // }
 
   //
+
   products = false;
   deserts = false;
   desc = false;

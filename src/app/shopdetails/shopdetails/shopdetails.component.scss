@@ -137,8 +137,8 @@ header {
 }
 
 .store_name {
-  font-family: var(--primary-font-family) !important;
-  font-size: var(--primary-lg-font-size) !important;
+  font-family: "Jost";
+  font-size: 15px !important;
   line-height: 22px !important;
   font-weight: 600;
   text-transform: capitalize;
@@ -146,16 +146,17 @@ header {
 }
 
 .store_category {
-  font-family: var(--primary-font-family) !important;
-  font-size: var(--tertiary-font-size) !important;
+  font-family: "Jost";
+  font-size: 13px !important;
   line-height: 19px !important;
   font-weight: 500;
   text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .store_online_offline {
-  font-family: var(--primary-font-family) !important;
-  font-size: var(--tertiary-font-size) !important;
+  font-family: "Jost";
+  font-size: 14px !important;
 
   font-weight: 600;
   color: #8200ff;
@@ -219,7 +220,7 @@ header {
 .recommed {
   margin: 20px 0;
   p {
-    font-family: var(--primary-font-family) !important;
+    font-family: "Jost";
     font-size: var(--primary-lg-font-size) !important;
     line-height: 22px !important;
     text-transform: capitalize;
@@ -227,7 +228,7 @@ header {
     margin-bottom: 0 !important;
   }
   span {
-    font-family: var(--primary-font-family) !important;
+    font-family: "Jost";
     font-size: var(--primary-lg-font-size) !important;
     line-height: 22px !important;
     text-transform: capitalize;
@@ -258,7 +259,7 @@ header {
 
 .view_loc {
   display: flex;
-  align-items: center;
+  // align-items: center;
   padding-bottom: 2px;
 }
 
@@ -273,7 +274,7 @@ header {
   text-align: center;
 
   color: #6615ff;
-  padding-bottom: 5px;
+  // padding-bottom: 5px;
 }
 
 .svg_time {
@@ -281,16 +282,16 @@ header {
   gap: 5px;
   align-items: center;
   p {
-    font-family: var(--primary-font-family) !important;
+    font-family: "Jost";
     font-size: var(--tertiary-font-size) !important;
     line-height: 30px !important;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0 0 0px 5px !important;
   }
 }
 
 .refr_count {
-  font-family: var(--primary-font-family) !important;
+  font-family: "Jost";
   font-size: var(--tertiary-font-size) !important;
   font-weight: 500;
   line-height: 30px !important;
@@ -298,7 +299,7 @@ header {
 }
 
 .city_schedule {
-  font-family: var(--primary-font-family) !important;
+  font-family: "Jost";
   font-size: var(--tertiary-font-size) !important;
   font-weight: 600;
   line-height: 30px;
@@ -330,7 +331,7 @@ hr {
 //
 
 .refer_to_app {
-  margin: -8px 0px 0 6px;
+  margin: 5px 0px 10px 6px;
   display: flex;
   gap: 0px;
   svg {
@@ -509,18 +510,21 @@ hr {
   text-align: center;
   width: 500px;
   // max-width: 250px;
-  max-width: 215px;
-  height: 45px;
+  max-width: 220px;
+  height: 40px;
   display: flex;
   justify-content: center;
   margin: 16px auto;
   border-radius: 24px;
-  background-color: #e6e6e6;
+  box-shadow: 0px 2px 4px #ccc;
+  // background-color: #e6e6e6;
   button {
     border-radius: 24px;
     display: flex;
     align-items: center;
-    background-color: #e6e6e6;
+    margin: 2px;
+    transition: all 0.1s ease-in-out;
+    // background-color: #e6e6e6;
     img {
       width: 12px;
     }
@@ -553,7 +557,7 @@ hr {
   margin-bottom: 18px;
 }
 .vist_and_redeem {
-  font-family: var(--primary-font-family) !important;
+  font-family: "Jost";
   font-style: normal;
   font-size: 18px !important;
   font-weight: 600;
@@ -657,7 +661,7 @@ hr {
 
 .mt-1 {
   .about_store {
-    font-family: var(--primary-font-family) !important;
+    font-family: "Jost";
     font-style: normal;
     font-size: var(--tertiary-font-size) !important;
     font-weight: 600;
@@ -672,7 +676,7 @@ hr {
 }
 
 .desc_aboutstore {
-  font-family: var(--primary-font-family) !important;
+  font-family: "Jost";
   font-size: var(--tertiary-font-size) !important;
   font-style: normal;
   font-weight: 400;
@@ -683,7 +687,7 @@ hr {
 }
 
 .desc_store {
-  font-family: var(--primary-font-family) !important;
+  font-family: "Jost";
   font-size: var(--tertiary-font-size) !important;
   font-style: normal;
   font-weight: 600;
@@ -763,7 +767,7 @@ hr {
   background: #ffff;
 
   input {
-    font-family: var(--primary-font-family) !important;
+    font-family: "Jost";
     font-size: var(--tertiary-font-size) !important;
     font-style: normal;
     font-weight: 400;
@@ -813,7 +817,7 @@ hr {
   width: 98%;
   // border-bottom: 1px solid #b6b6b6;
   p {
-    font-family: var(--primary-font-family) !important;
+    font-family: "Jost";
     font-size: 16px !important;
     font-weight: 600;
     font-style: normal;
@@ -832,7 +836,7 @@ hr {
 
   .products_summary {
     .product_name {
-      font-family: var(--primary-font-family) !important;
+      font-family: "Jost";
       font-size: var(--primary-lg-font-size) !important;
       line-height: 23px !important;
       font-weight: 600;
@@ -847,7 +851,7 @@ hr {
       -webkit-box-orient: vertical;
     }
     .product_desc {
-      font-family: var(--primary-font-family) !important;
+      font-family: "Jost";
       font-size: var(--tertiary-font-size) !important;
       font-weight: 500;
       line-height: 18px !important;
@@ -862,7 +866,7 @@ hr {
   display: flex;
   margin-top: 10px;
   .dis_price {
-    font-family: var(--primary-font-family) !important;
+    font-family: "Jost";
     font-size: var(--tertiary-font-size) !important;
     font-weight: 500;
     line-height: 18px !important;
@@ -871,14 +875,14 @@ hr {
     margin-right: 0 !important;
   }
   .final_price {
-    font-family: var(--primary-font-family) !important;
+    font-family: "Jost";
     font-size: var(--tertiary-font-size) !important;
     font-weight: 600;
     line-height: 18px !important;
     margin-right: 0 !important;
   }
   .off {
-    font-family: var(--primary-font-family) !important;
+    font-family: "Jost";
     font-size: var(--tertiary-font-size) !important;
     font-weight: 500;
     line-height: 18px !important;
@@ -934,7 +938,7 @@ hr {
   button {
     background: #874bf9;
     border-radius: 1px;
-    font-family: var(--primary-font-family) !important;
+    font-family: "Jost";
     font-size: var(--tertiary-font-size) !important;
     font-weight: 500;
     color: #ffffff;
@@ -1157,7 +1161,7 @@ hr {
   // bottom: 60px;
 
   z-index: 1001;
-  bottom: 54px;
+  bottom: 85px;
   border-radius: 8px;
   width: -webkit-fill-available;
   max-width: 370px;
@@ -1178,6 +1182,7 @@ hr {
   padding: 10px 6px;
   position: relative;
   margin: 0px 0 -90px 3px;
+  border-radius: 12px 12px 0 0;
 }
 
 .redeem_btn {
@@ -1187,7 +1192,7 @@ hr {
     padding: 8px 16px;
     font-family: var(--primary-font-family);
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-transform: capitalize;
@@ -1361,4 +1366,29 @@ hr {
   margin: 4px 12px;
   background: transparent;
   margin: 0 0px 10px 13px !important;
+}
+
+//
+
+.visit_store {
+  text-align: center;
+  background: #e2d2ff;
+  border-radius: 12px 12px 0px 0px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 -11px 0;
+  p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px !important;
+    line-height: 19px !important;
+    color: #874bf9;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: -10px 0 0 0 !important;
+  }
 }
