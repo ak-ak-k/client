@@ -911,7 +911,7 @@ hr {
     border-radius: 3px;
     width: 120px;
     object-fit: cover;
-    display: none;
+    // display: none;
   }
 }
 
@@ -939,7 +939,7 @@ hr {
   position: absolute;
   bottom: 4px;
   line-height: 24px;
-  left: 21%;
+  left: 26%;
   z-index: 10;
   margin-top: -6px;
   button {
@@ -1157,6 +1157,13 @@ hr {
   input[type="checkbox"]:checked {
     // color: red;
     background-color: green;
+  }
+  p {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    color: black;
   }
 }
 
@@ -1388,7 +1395,7 @@ hr {
     font-family: "Jost";
     font-style: normal;
     font-weight: 600;
-    font-size: 13px !important;
+    font-size: 15px !important;
     line-height: 19px !important;
     color: #874bf9;
     display: flex;
