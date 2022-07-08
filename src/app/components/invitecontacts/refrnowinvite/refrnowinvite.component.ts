@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-refrnowinvite',
   templateUrl: './refrnowinvite.component.html',
-  styleUrls: ['./refrnowinvite.component.scss']
+  styleUrls: ['./refrnowinvite.component.scss'],
 })
 export class RefrnowinviteComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
