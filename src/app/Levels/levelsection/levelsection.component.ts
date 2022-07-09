@@ -15,21 +15,24 @@ export class LevelsectionComponent implements OnInit {
         imgurl: 'assets/aditya/badges/B20.webp',
         level: '2/10',
         levelstep: 1,
-        className: 'card',
+        cardClass: 'card1',
+        className: '',
       },
       {
         title: 'Refr cash earned',
         imgurl: 'assets/aditya/badges/B19.webp',
         level: '1400',
         levelstep: 2,
-        className: 'card',
+        cardClass: 'card2',
+        className: 'p1',
       },
       {
         title: 'Stores shared',
         imgurl: 'assets/aditya/badges/B13.webp',
         level: '5/10',
         levelstep: 3,
-        className: 'card',
+        cardClass: 'card3',
+        className: 'p2',
       }
     );
   }

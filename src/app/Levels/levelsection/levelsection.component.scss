@@ -930,6 +930,15 @@
   .cards_level {
     display: flex;
     gap: 4%;
+    .card3 {
+      border: 1px solid #a8f7f8;
+    }
+    .card2 {
+      border: 1px solid #f7bbbd;
+    }
+    .card1 {
+      border: 1px solid #007ec0;
+    }
     .card {
       background: #ffffff;
       box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.37);
@@ -944,7 +953,7 @@
       align-items: center;
       justify-content: center;
       padding: 5px 0;
-      border-radius: 7px 7px 0 0;
+      border-radius: 6px 6px 0 0;
       img {
       }
       p {
@@ -956,7 +965,8 @@
         text-align: center;
         color: #ffffff;
         margin: 0 !important;
-        padding: 5px 0px 0px 6px !important;
+        // padding: 5px 0px 0px 6px !important;
+        padding-left: 3px !important;
       }
     }
     .img-container {
@@ -978,13 +988,15 @@
       }
     }
     .sub_level {
-      font-family: "Jost";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px !important;
-      line-height: 12px !important;
-      text-align: center;
-      color: #000000;
+      p {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px !important;
+        line-height: 12px !important;
+        text-align: center;
+        color: #000000;
+      }
     }
     .level_bar {
       background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.52) 100%);
@@ -1009,4 +1021,12 @@
       }
     }
   }
+}
+
+.p1 {
+  background: linear-gradient(90deg, #ff9196 0%, #f56c71 85%) !important;
+}
+
+.p2 {
+  background: linear-gradient(90deg, #c8fbff 0%, #00b2b5 100%) !important;
 }
