@@ -12,7 +12,7 @@ export class LevelsectionComponent implements OnInit {
     this.levels.push(
       {
         title: 'Stores shared',
-        imgurl: 'assets/aditya/badges/B20.webp',
+        imgurl: 'assets/aditya/badges/B24.webp',
         level: '2/10',
         levelstep: 1,
         cardClass: 'card1',
@@ -20,7 +20,7 @@ export class LevelsectionComponent implements OnInit {
       },
       {
         title: 'Refr cash earned',
-        imgurl: 'assets/aditya/badges/B19.webp',
+        imgurl: 'assets/aditya/badges/B22.webp',
         level: '1400',
         levelstep: 2,
         cardClass: 'card2',
@@ -28,7 +28,7 @@ export class LevelsectionComponent implements OnInit {
       },
       {
         title: 'Stores shared',
-        imgurl: 'assets/aditya/badges/B13.webp',
+        imgurl: 'assets/aditya/badges/B23.webp',
         level: '5/10',
         levelstep: 3,
         cardClass: 'card3',
