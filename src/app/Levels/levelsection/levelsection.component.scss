@@ -185,7 +185,7 @@
   }
 
   .main-content {
-    padding: 10px;
+    padding: 40px 10px 10px 10px;
   }
 
   .text-primary {
@@ -203,9 +203,12 @@
   }
 
   .thin-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
+    p {
+      font-weight: 400;
+      font-size: 16px !important;
+      line-height: 25px !important;
+      margin: 8px 0 !important;
+    }
   }
 
   b {
@@ -970,6 +973,7 @@
       }
     }
     .img-container {
+      background: white;
       background-position: center;
       background-repeat: no-repeat;
       object-fit: contain;
@@ -980,7 +984,10 @@
       text-align: center;
       img {
         width: 80%;
-        margin: 0 0 0 8px;
+        position: absolute;
+        width: 80%;
+        left: 10px;
+        top: -2px;
         // height: 60px;
       }
       .imgLoaded {
