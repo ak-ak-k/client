@@ -27,7 +27,7 @@ export class LevelsectionComponent implements OnInit {
         className: 'p1',
       },
       {
-        title: 'Stores shared',
+        title: 'Recommandations used',
         imgurl: 'assets/aditya/badges/B23.webp',
         level: '5/10',
         levelstep: 3,
