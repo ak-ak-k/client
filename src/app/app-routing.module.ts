@@ -119,6 +119,7 @@ import { EditsectionComponent } from './merchant/editsection/editsection.compone
 import { MerchantDashComponent } from './merchant/merchant-dash/merchant-dash.component';
 import { ProfileviewComponent } from './merchant/profileview/profileview.component';
 import { ViewdetailsComponent } from './merchant/viewdetails/viewdetails.component';
+import { MerchantwalletComponent } from './merchantwallet/merchantwallet/merchantwallet.component';
 import { OfflineStoreComponent } from './online-offlinestores/offline-store/offline-store.component';
 import { OnlineOfflineComponent } from './online-offlinestores/online-offline/online-offline.component';
 import { OnlineStoreComponent } from './online-offlinestores/online-store/online-store.component';
@@ -190,6 +191,10 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'congrats', component: CongratulationsComponent },
+
+  // merchant wallet
+
+  { path: 'merchantwallet', component: MerchantwalletComponent },
 
   // burn-----------------------------
   { path: 'burn', component: BurnComponent },

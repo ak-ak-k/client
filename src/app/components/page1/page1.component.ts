@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { NewgatewaycardComponent } from 'src/app/gatewaycard/newgatewaycard/newgatewaycard.component';
 import { AcceptdelivereyComponent } from '../acceptdeliverey/acceptdeliverey.component';
 import { AdvocaseyComponent } from '../advocasey/advocasey.component';
 import { DelivereyComponent } from '../deliverey/deliverey.component';
@@ -269,6 +270,21 @@ export class Page1Component implements OnInit {
       hasBackdrop: true,
       disableClose: false,
       panelClass: 'dialogLayout', //, autoFocus:false
+    });
+    profile.afterClosed().subscribe(() => {});
+  }
+
+  newgatewaycard() {
+    let isPhone = this.getWidth < 768;
+    let w = isPhone ? this.getWidth + 'px' : '480px';
+    const profile = this.dialog.open(NewgatewaycardComponent, {
+      width: w,
+      minWidth: '350px',
+      maxWidth: '320px',
+      // height: h,
+      hasBackdrop: true,
+      disableClose: false,
+      panelClass: 'newgatewaycard', //, autoFocus:false
     });
     profile.afterClosed().subscribe(() => {});
   }

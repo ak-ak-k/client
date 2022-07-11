@@ -203,6 +203,8 @@ import { LevelsectionComponent } from './Levels/levelsection/levelsection.compon
 import { RedeemofflineComponent } from './howtoredeem/redeemoffline/redeemoffline.component';
 import { RedeemonlineComponent } from './howtoredeem/redeemonline/redeemonline.component';
 import { ShoptermnconditionComponent } from './shopdetails/shoptermncondition/shoptermncondition.component';
+import { MerchantwalletComponent } from './merchantwallet/merchantwallet/merchantwallet.component';
+import { NewgatewaycardComponent } from './gatewaycard/newgatewaycard/newgatewaycard.component';
 
 @NgModule({
   declarations: [
@@ -381,6 +383,8 @@ import { ShoptermnconditionComponent } from './shopdetails/shoptermncondition/sh
     RedeemofflineComponent,
     RedeemonlineComponent,
     ShoptermnconditionComponent,
+    MerchantwalletComponent,
+    NewgatewaycardComponent,
   ],
   imports: [
     BrowserModule,

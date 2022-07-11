@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  background-image: linear-gradient(to right, #efc4b3, #e0c8f4);
+  padding: 5px 40px;
+}
+
+.header ul {
+  display: flex;
+  align-items: baseline;
+  //   justify-content: space-between;
+  //   gap: 5%;
+  list-style-type: none;
+  padding: 0 !important;
+}
+
+.x {
+  font-weight: 500;
+  font-size: 22px !important;
+  line-height: 20px !important;
+  color: #512da8;
+  margin-right: 20px !important;
+}
+
+.store_name {
+  font-weight: 600;
+  font-size: 24px !important;
+  line-height: 20px !important;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+//
+
+.svg_icon {
+  transform: translate(-14px, -25px);
+  svg {
+    // margin: -27px 0 36px -14px;
+  }
+}
+
+//
+
+.shop_now {
+  .shop_now_later {
+    font-weight: 700;
+    font-size: 20px !important;
+    line-height: 20px !important;
+    margin: -35px 0 0 0 !important;
+    text-align: center;
+  }
+}
+
+.get_assured {
+  font-weight: 400;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  text-align: center;
+  margin: 15px 0 !important;
+  svg {
+    margin: -2px 0px;
+  }
+}
+
+//
+
+.enter_store {
+  text-align: center;
+  margin: 30px auto;
+  button {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    padding: 10px 20px;
+    box-shadow: 4px 6px 1px white;
+    border-radius: 0;
+  }
+}
