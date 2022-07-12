@@ -208,6 +208,7 @@ import { NewgatewaycardComponent } from './gatewaycard/newgatewaycard/newgateway
 import { ContactsyncComponent } from './contactssync/contactsync/contactsync.component';
 import { ContactbottomsheetComponent } from './contactssync/contactbottomsheet/contactbottomsheet.component';
 import { KycdocumentsComponent } from './kycdocuments/kycdocuments/kycdocuments.component';
+import { SharingscreenComponent } from './sharingscreen/sharingscreen/sharingscreen.component';
 
 @NgModule({
   declarations: [
@@ -391,6 +392,7 @@ import { KycdocumentsComponent } from './kycdocuments/kycdocuments/kycdocuments.
     ContactsyncComponent,
     ContactbottomsheetComponent,
     KycdocumentsComponent,
+    SharingscreenComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { SharingscreenComponent } from 'src/app/sharingscreen/sharingscreen/sharingscreen.component';
 
 import { HowitworkbottompopupComponent } from '../howitworkbottompopup/howitworkbottompopup.component';
 import { InvitecontactsComponent } from '../invitecontacts/invitecontacts.component';
@@ -23,6 +24,12 @@ export class BottomsupComponent implements OnInit {
 
   refrnow() {
     this._bottomSheet.open(RefrnowinviteComponent, {
+      panelClass: 'custom_width',
+    });
+  }
+
+  share() {
+    this._bottomSheet.open(SharingscreenComponent, {
       panelClass: 'custom_width',
     });
   }
