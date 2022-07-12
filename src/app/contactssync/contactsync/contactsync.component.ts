@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { ContactbottomsheetComponent } from '../contactbottomsheet/contactbottomsheet.component';
 
 @Component({
   selector: 'app-contactsync',
@@ -12,7 +14,7 @@ export class ContactsyncComponent implements OnInit {
   changeViewTyp(segmentValue: string) {
     this.viewTyp = segmentValue;
   }
-  constructor() {}
+  constructor(private _bottomSheet: MatBottomSheet) {}
 
   ngOnInit(): void {
     this.storeTyp = 'Refrcust';
@@ -26,5 +28,11 @@ export class ContactsyncComponent implements OnInit {
     if (this.storeTyp == 'Both') {
       this.viewTyp = 'Refrcustomer';
     }
+  }
+
+  addcontact() {
+    this._bottomSheet.open(ContactbottomsheetComponent, {
+      panelClass: 'aaaaaaaaaaaaaaaaaaaaaa',
+    });
   }
 }

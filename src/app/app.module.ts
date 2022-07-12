@@ -17,7 +17,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatInputModule } from '@angular/material/input';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatMenuModule } from '@angular/material/menu';
@@ -206,6 +206,7 @@ import { ShoptermnconditionComponent } from './shopdetails/shoptermncondition/sh
 import { MerchantwalletComponent } from './merchantwallet/merchantwallet/merchantwallet.component';
 import { NewgatewaycardComponent } from './gatewaycard/newgatewaycard/newgatewaycard.component';
 import { ContactsyncComponent } from './contactssync/contactsync/contactsync.component';
+import { ContactbottomsheetComponent } from './contactssync/contactbottomsheet/contactbottomsheet.component';
 
 @NgModule({
   declarations: [
@@ -387,6 +388,7 @@ import { ContactsyncComponent } from './contactssync/contactsync/contactsync.com
     MerchantwalletComponent,
     NewgatewaycardComponent,
     ContactsyncComponent,
+    ContactbottomsheetComponent,
   ],
   imports: [
     BrowserModule,
@@ -398,7 +400,6 @@ import { ContactsyncComponent } from './contactssync/contactsync/contactsync.com
     MatToolbarModule,
     MatButtonModule,
     MatFormFieldModule,
-
     MatIconModule,
     MatTooltipModule,
     MatInputModule,
