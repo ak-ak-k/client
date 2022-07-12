@@ -15,25 +15,26 @@
 
     <div>
         <div class="form">
-            <form action="">
+            <form [formGroup]="form" (ngSubmit)="submit()">
 
                 <mat-form-field class="fields" appearance="legacy">
-                    <mat-label>Name *</mat-label>
-                    <input matInput>
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="name">
 
                 </mat-form-field>
                 <mat-form-field class="fields" appearance="legacy">
-                    <mat-label>Moblie Number *</mat-label>
-                    <input matInput>
-
+                    <mat-label>Moblie Number </mat-label>
+                    <input matInput type="number" minlength="10" maxlength="10" formControlName="number">
+                    <span matPrefix>+91&nbsp;</span>
                 </mat-form-field>
+
 
                 <div class="sync_contact">
                     <a>Sync&nbsp;your&nbsp;contacts</a>
                 </div>
 
                 <div class="add_contact">
-                    <button mat-button>Add contact</button>
+                    <button mat-button type="submit" [disabled]="!form.valid">Add contact</button>
                 </div>
 
             </form>
