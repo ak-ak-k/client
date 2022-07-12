@@ -6,7 +6,7 @@
 
 .card {
   background-image: linear-gradient(to right, #efc4b3, #e0c8f4);
-  padding: 5px 40px;
+  padding: 5px 7%;
 }
 
 .header ul {
@@ -73,13 +73,13 @@
   text-align: center;
   margin: 30px auto;
   button {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     font-weight: 500;
     font-size: 16px !important;
     line-height: 20px !important;
     padding: 10px 20px;
-    box-shadow: 4px 6px 1px white;
+    box-shadow: 4px 6px 1px #8111e8;
     border-radius: 0;
   }
 }
