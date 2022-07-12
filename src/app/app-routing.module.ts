@@ -84,6 +84,7 @@ import { OnlineofflineconditionsComponent } from './components/termsnconditions/
 import { OnlinestoreconditionsComponent } from './components/termsnconditions/onlinestoreconditions/onlinestoreconditions.component';
 import { ThankyouscreenComponent } from './components/thankyouscreen/thankyouscreen.component';
 import { WalletscreenComponent } from './components/walletscreen/walletscreen.component';
+import { ContactsyncComponent } from './contactssync/contactsync/contactsync.component';
 import { MaindashboardComponent } from './dashboard/maindashboard/maindashboard.component';
 import { CpComponent } from './delete/cp/cp.component';
 import { PqrComponent } from './delete/pqr/pqr.component';
@@ -337,6 +338,10 @@ const routes: Routes = [
         (mod) => mod.HowitworksModule
       ),
   },
+
+  // refr customer contacts
+
+  { path: 'contactsync', component: ContactsyncComponent },
 
   // dipesh work starts ===============================================
   { path: 'storeoverview', component: StoreoverviewComponent },

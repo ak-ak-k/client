@@ -205,6 +205,7 @@ import { RedeemonlineComponent } from './howtoredeem/redeemonline/redeemonline.c
 import { ShoptermnconditionComponent } from './shopdetails/shoptermncondition/shoptermncondition.component';
 import { MerchantwalletComponent } from './merchantwallet/merchantwallet/merchantwallet.component';
 import { NewgatewaycardComponent } from './gatewaycard/newgatewaycard/newgatewaycard.component';
+import { ContactsyncComponent } from './contactssync/contactsync/contactsync.component';
 
 @NgModule({
   declarations: [
@@ -385,6 +386,7 @@ import { NewgatewaycardComponent } from './gatewaycard/newgatewaycard/newgateway
     ShoptermnconditionComponent,
     MerchantwalletComponent,
     NewgatewaycardComponent,
+    ContactsyncComponent,
   ],
   imports: [
     BrowserModule,
