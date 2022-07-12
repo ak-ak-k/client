@@ -207,6 +207,7 @@ import { MerchantwalletComponent } from './merchantwallet/merchantwallet/merchan
 import { NewgatewaycardComponent } from './gatewaycard/newgatewaycard/newgatewaycard.component';
 import { ContactsyncComponent } from './contactssync/contactsync/contactsync.component';
 import { ContactbottomsheetComponent } from './contactssync/contactbottomsheet/contactbottomsheet.component';
+import { KycdocumentsComponent } from './kycdocuments/kycdocuments/kycdocuments.component';
 
 @NgModule({
   declarations: [
@@ -389,6 +390,7 @@ import { ContactbottomsheetComponent } from './contactssync/contactbottomsheet/c
     NewgatewaycardComponent,
     ContactsyncComponent,
     ContactbottomsheetComponent,
+    KycdocumentsComponent,
   ],
   imports: [
     BrowserModule,

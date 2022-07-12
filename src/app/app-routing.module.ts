@@ -109,6 +109,7 @@ import { ThreeeasystepsComponent } from './howitworkssection/threeeasysteps/thre
 import { VocallocalComponent } from './howitworkssection/vocallocal/vocallocal.component';
 import { RedeemofflineComponent } from './howtoredeem/redeemoffline/redeemoffline.component';
 import { RedeemonlineComponent } from './howtoredeem/redeemonline/redeemonline.component';
+import { KycdocumentsComponent } from './kycdocuments/kycdocuments/kycdocuments.component';
 import { LevelsectionComponent } from './Levels/levelsection/levelsection.component';
 import { MerchantTransactionComponent } from './merchant-transaction/merchant-transaction/merchant-transaction.component';
 import { AdminPanelComponent } from './merchant/admin-panel/admin-panel.component';
@@ -342,6 +343,7 @@ const routes: Routes = [
   // refr customer contacts
 
   { path: 'contactsync', component: ContactsyncComponent },
+  { path: 'kycdocs', component: KycdocumentsComponent },
 
   // dipesh work starts ===============================================
   { path: 'storeoverview', component: StoreoverviewComponent },
