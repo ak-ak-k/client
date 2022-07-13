@@ -30,7 +30,7 @@ export class BottomsupComponent implements OnInit {
 
   share() {
     this._bottomSheet.open(SharingscreenComponent, {
-      panelClass: 'custom_width',
+      panelClass: 'sharescreen',
     });
   }
 
