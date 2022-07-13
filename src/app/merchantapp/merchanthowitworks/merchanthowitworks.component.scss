@@ -1,7 +1,7 @@
 header {
-  background: #8000ff;
   text-align: center;
   padding: 20px 0 10px 0;
+  background: linear-gradient(90deg, #8000ff 0%, #af5fff 100%);
   .head {
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@ header {
     p {
       font-family: "Roboto";
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 22px !important;
       line-height: 26px !important;
       color: #ffffff;
