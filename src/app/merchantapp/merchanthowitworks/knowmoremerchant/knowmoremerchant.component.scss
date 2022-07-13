@@ -1,5 +1,5 @@
 header {
-  background: #8000ff;
+  background: linear-gradient(90deg, #8000ff 0%, #af5fff 100%);
   text-align: center;
   padding: 20px 0 10px 0;
   .head {
@@ -29,6 +29,10 @@ header {
   background-color: #f9f3ff;
   height: 100vh;
   padding: 0 20px;
+}
+
+.main {
+  margin: 2% 0 5% 0;
 }
 
 .box {
