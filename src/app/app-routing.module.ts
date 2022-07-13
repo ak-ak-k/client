@@ -121,6 +121,8 @@ import { EditsectionComponent } from './merchant/editsection/editsection.compone
 import { MerchantDashComponent } from './merchant/merchant-dash/merchant-dash.component';
 import { ProfileviewComponent } from './merchant/profileview/profileview.component';
 import { ViewdetailsComponent } from './merchant/viewdetails/viewdetails.component';
+import { KnowmoremerchantComponent } from './merchantapp/merchanthowitworks/knowmoremerchant/knowmoremerchant.component';
+import { MerchanthowitworksComponent } from './merchantapp/merchanthowitworks/merchanthowitworks.component';
 import { MerchantwalletComponent } from './merchantwallet/merchantwallet/merchantwallet.component';
 import { OfflineStoreComponent } from './online-offlinestores/offline-store/offline-store.component';
 import { OnlineOfflineComponent } from './online-offlinestores/online-offline/online-offline.component';
@@ -194,9 +196,9 @@ const routes: Routes = [
   { path: 'settings', component: SettingsComponent },
   { path: 'congrats', component: CongratulationsComponent },
 
-  // merchant wallet
-
-  { path: 'merchantwallet', component: MerchantwalletComponent },
+  // merchant how it works
+  { path: 'merchanthowitworks', component: MerchanthowitworksComponent },
+  { path: 'knowmore/:id', component: KnowmoremerchantComponent },
 
   // burn-----------------------------
   { path: 'burn', component: BurnComponent },
@@ -268,7 +270,8 @@ const routes: Routes = [
 
   // order confirmations screens ends-----------
 
-  // ==============merchant
+  // ==============merchant admin
+
   { path: 'merchantdash', component: MerchantDashComponent },
   { path: 'createprofile', component: CreateProfileComponent },
   { path: 'editprofile', component: EditProfileComponent },

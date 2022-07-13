@@ -209,6 +209,8 @@ import { ContactsyncComponent } from './contactssync/contactsync/contactsync.com
 import { ContactbottomsheetComponent } from './contactssync/contactbottomsheet/contactbottomsheet.component';
 import { KycdocumentsComponent } from './kycdocuments/kycdocuments/kycdocuments.component';
 import { SharingscreenComponent } from './sharingscreen/sharingscreen/sharingscreen.component';
+import { MerchanthowitworksComponent } from './merchantapp/merchanthowitworks/merchanthowitworks.component';
+import { KnowmoremerchantComponent } from './merchantapp/merchanthowitworks/knowmoremerchant/knowmoremerchant.component';
 
 @NgModule({
   declarations: [
@@ -393,6 +395,8 @@ import { SharingscreenComponent } from './sharingscreen/sharingscreen/sharingscr
     ContactbottomsheetComponent,
     KycdocumentsComponent,
     SharingscreenComponent,
+    MerchanthowitworksComponent,
+    KnowmoremerchantComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,54 @@
+<div class="col col-100">
+    <header>
+        <div class="head">
+            <div>
+                <button mat-icon-button>
+                    <mat-icon>
+                        arrow_back
+                    </mat-icon>
+                </button>
+            </div>
+
+            <div class='logo_svg'>
+                <p>How It Works</p>
+            </div>
+
+        </div>
+    </header>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="bg_gray">
+
+            <div class="col col-100">
+                <div class="main" *ngFor="let x of howitoworks;let i=index">
+                    <div routerLink="/knowmore/{{i}}" class="box">
+                        <div class="dialog">
+                            <div class="svg_icon">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M11.3625 11.2497C11.6564 10.4143 12.2365 9.70987 13 9.26115C13.7635 8.81243 14.6612 8.64841 15.534 8.79813C16.4069 8.94784 17.1986 9.40164 17.7689 10.0791C18.3392 10.7566 18.6514 11.6141 18.65 12.4997C18.65 14.9997 14.9 16.2497 14.9 16.2497"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M15 21.25H15.0117" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="refr_ques">
+                                <p>
+                                    {{x.title}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
