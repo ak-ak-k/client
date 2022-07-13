@@ -37,149 +37,155 @@
     </header>
 </div>
 
-<div class="col col-60 col-sm-100 col-card">
-    <div class="main">
-        <div class="kyc_heading">
-            <p>Complete Your KYC</p>
+<div class="container">
+    <div class="row">
+        <div class="col col-25 col-sm-none"></div>
+        <div class="col col-50 col-sm-100 col-card">
+            <div class="main">
+                <div class="kyc_heading">
+                    <p>Complete Your KYC</p>
+                </div>
+
+                <div class="details">
+                    <form>
+                        <div class=" aadhar_details">
+                            <p>Aadhar Details</p>
+                            <div class="enter_doc_details">
+                                <p>Enter Aadhar card no</p>
+                                <div>
+                                    <mat-form-field appearance="outline">
+                                        <!-- <mat-label>Legacy form field</mat-label> -->
+                                        <input type="number" matInput placeholder="Eg. 1234 5678 1234 5678">
+                                    </mat-form-field>
+                                </div>
+                                <p>Upload Aadhar card photo</p>
+                                <div>
+                                    <div class="imageUploader">
+                                        <div class="svgHold c_persist"><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="lightgray">
+                                                <path
+                                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z" />
+                                            </svg></div>
+                                        <div class="gallery b_accent">
+                                            <img class="squareImage" />
+                                        </div>
+                                        <a mat-button color="primary">
+                                            <mat-icon>photo_camera</mat-icon> Camera
+                                        </a>
+                                        <a mat-button color="primary">
+                                            <mat-icon>image</mat-icon> Gallery
+                                        </a>
+                                        <!--input type="file" #getFine style="display: block;" (change)="uploadFile(getFine.value)" -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" aadhar_details">
+                            <p>PAN Details</p>
+                            <div class="enter_doc_details">
+                                <p>Enter PAN card no</p>
+                                <div>
+                                    <mat-form-field appearance="outline">
+                                        <!-- <mat-label>Legacy form field</mat-label> -->
+                                        <input type="number" matInput placeholder="Eg. 1234 5678 1234 5678">
+                                    </mat-form-field>
+                                </div>
+                                <p>Upload PAN card photo</p>
+                                <div>
+                                    <div class="imageUploader">
+                                        <div class="svgHold c_persist"><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="lightgray">
+                                                <path
+                                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z" />
+                                            </svg></div>
+                                        <div class="gallery b_accent">
+                                            <img class="squareImage" />
+                                        </div>
+                                        <a mat-button color="primary">
+                                            <mat-icon>photo_camera</mat-icon> Camera
+                                        </a>
+                                        <a mat-button color="primary">
+                                            <mat-icon>image</mat-icon> Gallery
+                                        </a>
+                                        <!--input type="file" #getFine style="display: block;" (change)="uploadFile(getFine.value)" -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" aadhar_details">
+                            <p>Address proof</p>
+                            <div class="enter_doc_details">
+                                <!-- <p>Enter PAN card no</p>
+                                <div>
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Legacy form field</mat-label>
+                                        <input type="number" matInput placeholder="Eg. 1234 5678 1234 5678">
+                                    </mat-form-field>
+                                </div> -->
+                                <p>Upload Address proof photo</p>
+                                <div>
+                                    <div class="imageUploader">
+                                        <div class="svgHold c_persist"><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="lightgray">
+                                                <path
+                                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z" />
+                                            </svg></div>
+                                        <div class="gallery b_accent">
+                                            <img class="squareImage" />
+                                        </div>
+                                        <a mat-button color="primary">
+                                            <mat-icon>photo_camera</mat-icon> Camera
+                                        </a>
+                                        <a mat-button color="primary">
+                                            <mat-icon>image</mat-icon> Gallery
+                                        </a>
+                                        <!--input type="file" #getFine style="display: block;" (change)="uploadFile(getFine.value)" -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" aadhar_details">
+                            <p>GST No.</p>
+                            <div class="enter_doc_details">
+                                <p>Enter GST No.</p>
+                                <div>
+                                    <mat-form-field appearance="outline">
+                                        <!-- <mat-label>Legacy form field</mat-label> -->
+                                        <input type="number" matInput placeholder="Eg. 1234 5678 1234 5678">
+                                    </mat-form-field>
+                                </div>
+                                <!-- <p>Upload Address proof photo</p> -->
+                                <!-- <div>
+                                    <div class="imageUploader">
+                                        <div class="svgHold c_persist"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="lightgray">
+                                                <path
+                                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z" />
+                                            </svg></div>
+                                        <div class="gallery b_accent">
+                                            <img class="squareImage" />
+                                        </div>
+                                        <a mat-button color="primary">
+                                            <mat-icon>photo_camera</mat-icon> Camera
+                                        </a>
+                                        <a mat-button color="primary">
+                                            <mat-icon>image</mat-icon> Gallery
+                                        </a>
+                                        input type="file" #getFine style="display: block;" (change)="uploadFile(getFine.value)"
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="sub_details">
+                            <button>submit details</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
         </div>
-
-        <div class="details">
-            <form>
-                <div class=" aadhar_details">
-                    <p>Aadhar Details</p>
-                    <div class="enter_doc_details">
-                        <p>Enter Aadhar card no</p>
-                        <div>
-                            <mat-form-field appearance="outline">
-                                <!-- <mat-label>Legacy form field</mat-label> -->
-                                <input type="number" matInput placeholder="Eg. 1234 5678 1234 5678">
-                            </mat-form-field>
-                        </div>
-                        <p>Upload Aadhar card photo</p>
-                        <div>
-                            <div class="imageUploader">
-                                <div class="svgHold c_persist"><svg xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24" fill="lightgray">
-                                        <path
-                                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z" />
-                                    </svg></div>
-                                <div class="gallery b_accent">
-                                    <img class="squareImage" />
-                                </div>
-                                <a mat-button color="primary">
-                                    <mat-icon>photo_camera</mat-icon> Camera
-                                </a>
-                                <a mat-button color="primary">
-                                    <mat-icon>image</mat-icon> Gallery
-                                </a>
-                                <!--input type="file" #getFine style="display: block;" (change)="uploadFile(getFine.value)" -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" aadhar_details">
-                    <p>PAN Details</p>
-                    <div class="enter_doc_details">
-                        <p>Enter PAN card no</p>
-                        <div>
-                            <mat-form-field appearance="outline">
-                                <!-- <mat-label>Legacy form field</mat-label> -->
-                                <input type="number" matInput placeholder="Eg. 1234 5678 1234 5678">
-                            </mat-form-field>
-                        </div>
-                        <p>Upload PAN card photo</p>
-                        <div>
-                            <div class="imageUploader">
-                                <div class="svgHold c_persist"><svg xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24" fill="lightgray">
-                                        <path
-                                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z" />
-                                    </svg></div>
-                                <div class="gallery b_accent">
-                                    <img class="squareImage" />
-                                </div>
-                                <a mat-button color="primary">
-                                    <mat-icon>photo_camera</mat-icon> Camera
-                                </a>
-                                <a mat-button color="primary">
-                                    <mat-icon>image</mat-icon> Gallery
-                                </a>
-                                <!--input type="file" #getFine style="display: block;" (change)="uploadFile(getFine.value)" -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" aadhar_details">
-                    <p>Address proof</p>
-                    <div class="enter_doc_details">
-                        <!-- <p>Enter PAN card no</p>
-                        <div>
-                            <mat-form-field appearance="outline">
-                                <mat-label>Legacy form field</mat-label>
-                                <input type="number" matInput placeholder="Eg. 1234 5678 1234 5678">
-                            </mat-form-field>
-                        </div> -->
-                        <p>Upload Address proof photo</p>
-                        <div>
-                            <div class="imageUploader">
-                                <div class="svgHold c_persist"><svg xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24" fill="lightgray">
-                                        <path
-                                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z" />
-                                    </svg></div>
-                                <div class="gallery b_accent">
-                                    <img class="squareImage" />
-                                </div>
-                                <a mat-button color="primary">
-                                    <mat-icon>photo_camera</mat-icon> Camera
-                                </a>
-                                <a mat-button color="primary">
-                                    <mat-icon>image</mat-icon> Gallery
-                                </a>
-                                <!--input type="file" #getFine style="display: block;" (change)="uploadFile(getFine.value)" -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" aadhar_details">
-                    <p>GST No.</p>
-                    <div class="enter_doc_details">
-                        <p>Enter GST No.</p>
-                        <div>
-                            <mat-form-field appearance="outline">
-                                <!-- <mat-label>Legacy form field</mat-label> -->
-                                <input type="number" matInput placeholder="Eg. 1234 5678 1234 5678">
-                            </mat-form-field>
-                        </div>
-                        <!-- <p>Upload Address proof photo</p> -->
-                        <!-- <div>
-                            <div class="imageUploader">
-                                <div class="svgHold c_persist"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                        fill="lightgray">
-                                        <path
-                                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z" />
-                                    </svg></div>
-                                <div class="gallery b_accent">
-                                    <img class="squareImage" />
-                                </div>
-                                <a mat-button color="primary">
-                                    <mat-icon>photo_camera</mat-icon> Camera
-                                </a>
-                                <a mat-button color="primary">
-                                    <mat-icon>image</mat-icon> Gallery
-                                </a>
-                                input type="file" #getFine style="display: block;" (change)="uploadFile(getFine.value)"
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-
-                <div class="sub_details">
-                    <button>submit details</button>
-                </div>
-
-            </form>
-        </div>
-
+        <div class="col col-25 col-sm-none"></div>
     </div>
 </div>
