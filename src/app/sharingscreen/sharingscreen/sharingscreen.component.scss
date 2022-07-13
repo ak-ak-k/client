@@ -7,7 +7,7 @@
 //
 
 .platform_share {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   p {
     font-family: "Inter";
     font-style: normal;
@@ -37,12 +37,10 @@
     gap: 10%;
     align-items: center;
     height: 100%;
-    a {
-      .mat-icon-button {
-        width: 46px;
-        height: 46px;
-      }
-    }
+  }
+  .mat-icon-button {
+    width: 46px;
+    height: 46px;
   }
   .social::-webkit-scrollbar {
     display: none;
