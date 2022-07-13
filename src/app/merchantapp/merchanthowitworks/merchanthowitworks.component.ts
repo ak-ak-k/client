@@ -29,6 +29,9 @@ export class MerchanthowitworksComponent implements OnInit {
         title: 'Redeem requests and Recent orders',
       },
       {
+        title: 'Recent Orders ',
+      },
+      {
         title: 'Product cataloguing ',
       },
       {
