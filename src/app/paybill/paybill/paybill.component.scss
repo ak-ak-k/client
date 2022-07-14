@@ -1,7 +1,13 @@
 .color {
-  background: linear-gradient(169.09deg, #7932ff 2.87%, #d2a2ff 71.75%);
+  background: linear-gradient(
+    256.86deg,
+    rgba(255, 188, 187, 0.56) 4.62%,
+    rgba(255, 188, 187, 0.26) 39.82%,
+    rgba(255, 188, 187, 0.12) 97.19%
+  );
+
   height: 100vh;
-  color: #ffffff;
+  color: #333;
 }
 
 //
@@ -37,6 +43,8 @@
 .storename {
   margin: 50px 0 0 0;
   text-align: center;
+  font-weight: 600;
+
   p {
     font-style: normal;
     font-weight: 500;
@@ -55,9 +63,11 @@
     line-height: 100%;
     color: #ffffff;
     text-align: center;
+    margin-top: 10px;
   }
   .input::placeholder {
-    color: #ffffff;
+    color: #999292;
+    font-weight: 600;
     background-color: transparent;
     border: none;
     outline: none;
@@ -77,6 +87,13 @@
   //   height: 200px;
   border-radius: 20px 20px 0 0;
   padding: 20px 15px;
+  .xyz {
+    display: flex;
+    align-items: center;
+  }
+  .abc {
+    display: flex;
+  }
 }
 
 .coins {
@@ -102,14 +119,15 @@
 
 .big_main {
   display: flex;
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
+  align-items: end;
   .checkbox_refrcash {
     display: flex;
   }
 }
 
 .refr_cash {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px !important;
   line-height: 18px !important;
   color: #000000;
@@ -123,6 +141,7 @@
   line-height: 18px !important;
   color: #9b9b9b;
   display: flex;
+  width: 70%;
 }
 
 .input_amnt {
