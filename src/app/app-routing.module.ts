@@ -128,6 +128,7 @@ import { OfflineStoreComponent } from './online-offlinestores/offline-store/offl
 import { OnlineOfflineComponent } from './online-offlinestores/online-offline/online-offline.component';
 import { OnlineStoreComponent } from './online-offlinestores/online-store/online-store.component';
 import { OrdersectionComponent } from './orders-section/ordersection/ordersection.component';
+import { PaybillComponent } from './paybill/paybill/paybill.component';
 import { RefrtransactionComponent } from './refr-transaction/refrtransaction/refrtransaction.component';
 import { CustomercodeComponent } from './roshan/customercode/customercode.component';
 import { ShopdetailsDemoComponent } from './shopdetails-demo/shopdetails-demo/shopdetails-demo.component';
@@ -195,6 +196,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'congrats', component: CongratulationsComponent },
+  { path: 'paybill', component: PaybillComponent },
 
   // merchant how it works
   { path: 'merchanthowitworks', component: MerchanthowitworksComponent },

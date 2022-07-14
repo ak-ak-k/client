@@ -211,6 +211,7 @@ import { KycdocumentsComponent } from './kycdocuments/kycdocuments/kycdocuments.
 import { SharingscreenComponent } from './sharingscreen/sharingscreen/sharingscreen.component';
 import { MerchanthowitworksComponent } from './merchantapp/merchanthowitworks/merchanthowitworks.component';
 import { KnowmoremerchantComponent } from './merchantapp/merchanthowitworks/knowmoremerchant/knowmoremerchant.component';
+import { PaybillComponent } from './paybill/paybill/paybill.component';
 
 @NgModule({
   declarations: [
@@ -397,6 +398,7 @@ import { KnowmoremerchantComponent } from './merchantapp/merchanthowitworks/know
     SharingscreenComponent,
     MerchanthowitworksComponent,
     KnowmoremerchantComponent,
+    PaybillComponent,
   ],
   imports: [
     BrowserModule,

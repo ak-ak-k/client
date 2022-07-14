@@ -1,0 +1,139 @@
+.color {
+  background: linear-gradient(169.09deg, #7932ff 2.87%, #d2a2ff 71.75%);
+  height: 100vh;
+  color: #ffffff;
+}
+
+//
+
+.header {
+  display: flex;
+  align-items: center;
+  //   width: 80%;
+  padding: 30px 10px;
+}
+
+.pay {
+  span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: capitalize;
+  }
+}
+
+.how_works {
+  a {
+    span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+.storename {
+  margin: 50px 0 0 0;
+  text-align: center;
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
+    margin: 15px 0 !important;
+  }
+  input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #ffffff;
+    text-align: center;
+  }
+  .input::placeholder {
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  mat-form-field {
+    border: none;
+  }
+}
+
+//
+
+.bottompart {
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: -webkit-fill-available;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+  padding: 20px 15px;
+}
+
+.coins {
+  display: flex;
+  justify-content: end;
+  button {
+    height: 26px;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(255, 61, 101, 0.6), #ff7250);
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 6px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px !important;
+    font-size: 15px;
+    line-height: 22px !important;
+  }
+}
+
+.big_main {
+  display: flex;
+  margin: 40px 0 0 0;
+  .checkbox_refrcash {
+    display: flex;
+  }
+}
+
+.refr_cash {
+  font-weight: 600;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  color: #000000;
+  //   margin-bottom: 0 !important;
+}
+
+.youcan {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #9b9b9b;
+  display: flex;
+}
+
+.input_amnt {
+  input {
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+  }
+}
+
+//
