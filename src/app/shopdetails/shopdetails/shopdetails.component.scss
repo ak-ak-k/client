@@ -128,12 +128,12 @@ header {
 
 .store_details {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 90%;
   max-width: 1180px;
   padding: 0 0;
   margin: 0px auto;
-  height: 60px;
+  // height: 60px;
 }
 
 .name_details {
@@ -148,6 +148,10 @@ header {
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 0 !important;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .store_category {
@@ -167,6 +171,7 @@ header {
   color: #8200ff;
   // text-transform: capitalize;
   margin-right: 0 !important;
+  min-width: 80px;
 }
 
 // store banners
@@ -255,11 +260,11 @@ header {
 }
 
 .prq {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  display: -webkit-inline-box;
+  align-items: baseline;
   padding-bottom: 2px;
   text-decoration: none;
+  max-width: 90%;
 }
 
 .view_loc {
@@ -290,10 +295,24 @@ header {
   p {
     font-family: "Jost";
     font-size: var(--tertiary-font-size) !important;
-    line-height: 30px !important;
+    line-height: 25px !important;
     font-weight: 500;
-    margin: 0 0 0px 5px !important;
+    margin: 0 0 0px 10px !important;
   }
+}
+
+#read_more {
+  border: none;
+  outline: transparent;
+  font-family: "Jost" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 19px !important;
+  color: #874bf9 !important;
+  margin: 4px 12px;
+  background: transparent;
+  margin: 0 0px 10px 28px !important;
 }
 
 .refr_count {
@@ -1363,7 +1382,7 @@ hr {
 }
 
 .limitTextHeight {
-  height: 38px;
+  height: 50px;
   overflow: hidden;
 }
 

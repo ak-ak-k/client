@@ -139,7 +139,8 @@
                         </div>
                         <div class="name_details" style="display: flex;width: 100%;">
                             <div>
-                                <p class="store_name">belan</p>
+                                <p class="store_name">Akkad Bakkad Bombay Boom Akkad Bakkad Bombay Boom Akkad Bakkad
+                                    Bombay Boom</p>
                                 <p class="store_category">foods & beverages</p>
                             </div>
                             <span class="divide"></span>
@@ -198,7 +199,14 @@
                                                     stroke="black" stroke-opacity="0.6" stroke-linecap="round"
                                                     stroke-linejoin="round" />
                                             </svg>
-                                            <p class="city_schedule">Andheri South Street</p>
+                                            <p class="city_schedule" [ngClass]="{'limitTextHeight': isReadMore}">Lorem
+                                                ipsum dolor sit, amet consectetur adipisicing
+                                                elit. Velit veritatis, id voluptates optio provident, ullam tempora
+                                                eligendi quo saepe iure inventore voluptatum! Vitae distinctio incidunt
+                                                provident quasi libero illum vel?</p>
+
+                                            <span class="divide"></span>
+
                                             <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#clip0_1235_13211)">
@@ -214,6 +222,8 @@
                                                 </defs>
                                             </svg>
                                         </a>
+                                        <p id="read_more" (click)="showText()">{{
+                                            isReadMore ? 'Read More': 'Read Less' }}</p>
                                         <a (click)="storeLoc()" class="view_loc">
                                             <span class="view_all">View all locations of this store
                                             </span>
