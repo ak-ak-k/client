@@ -35,6 +35,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HowitworkbottompopupComponent } from './components/howitworkbottompopup/howitworkbottompopup.component';
 import { HowitworksComponent } from './components/howitworks/howitworks.component';
 import { InvitecontactsComponent } from './components/invitecontacts/invitecontacts.component';
+import { InvitetorefrComponent } from './components/invitetorefr/invitetorefr.component';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 import { LoginpageComponent } from './components/loginpage/loginpage.component';
 import { Mk1Component } from './components/mk1/mk1.component';
@@ -151,6 +152,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/page1', pathMatch: 'full' },
   { path: 'page1', component: Page1Component },
   { path: 'myprofile', component: Page2Component },
+  { path: 'inviterefr', component: InvitetorefrComponent },
   { path: 'profiledetails', component: Page3Component },
   { path: 'manageaddress', component: Page4Component },
   { path: 'manageadd', component: Page5Component },
