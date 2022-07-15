@@ -76,23 +76,24 @@
     width: 100px;
     font-family: var(--primary-font-family);
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px !important;
+    font-weight: 600;
+    font-size: 12px !important;
     line-height: 17px !important;
     color: white;
     text-transform: capitalize;
     z-index: 2;
     opacity: 1;
-    height: 40px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0 0 14px 14px;
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.45) 100%
+      rgba(15, 15, 15, 0.8) 77.55%
     );
-    border-radius: 0 0 14px 14px;
+    letter-spacing: 0.7px;
   }
 }
 
