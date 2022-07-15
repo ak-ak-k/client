@@ -68,11 +68,12 @@
   border-radius: 4px;
   margin: 0 0 0 10px;
   padding: 0;
+  overflow: hidden;
   .title_prod {
     position: absolute;
-    bottom: 8px;
+    bottom: 0;
     text-align: center;
-    width: -webkit-fill-available;
+    width: 100px;
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
@@ -82,6 +83,16 @@
     text-transform: capitalize;
     z-index: 2;
     opacity: 1;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.45) 100%
+    );
+    border-radius: 0 0 14px 14px;
   }
 }
 
