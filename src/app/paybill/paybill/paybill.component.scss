@@ -8,6 +8,7 @@
 
   height: 100vh;
   color: #333;
+  overflow: hidden;
 }
 
 //
@@ -56,12 +57,12 @@
   input {
     border: none;
     outline: none;
-    background-color: transparent;
+    background-color: transparent !important;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 100%;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     margin-top: 10px;
   }
