@@ -212,6 +212,9 @@ import { SharingscreenComponent } from './sharingscreen/sharingscreen/sharingscr
 import { MerchanthowitworksComponent } from './merchantapp/merchanthowitworks/merchanthowitworks.component';
 import { KnowmoremerchantComponent } from './merchantapp/merchanthowitworks/knowmoremerchant/knowmoremerchant.component';
 import { PaybillComponent } from './paybill/paybill/paybill.component';
+import { OfflinestorehowitworksComponent } from './shopdetails/offlinestorehowitworks/offlinestorehowitworks.component';
+import { OnlinestorehowitworksComponent } from './shopdetails/onlinestorehowitworks/onlinestorehowitworks.component';
+import { OnoffstorehowitworksComponent } from './shopdetails/onoffstorehowitworks/onoffstorehowitworks.component';
 
 @NgModule({
   declarations: [
@@ -399,6 +402,9 @@ import { PaybillComponent } from './paybill/paybill/paybill.component';
     MerchanthowitworksComponent,
     KnowmoremerchantComponent,
     PaybillComponent,
+    OfflinestorehowitworksComponent,
+    OnlinestorehowitworksComponent,
+    OnoffstorehowitworksComponent,
   ],
   imports: [
     BrowserModule,

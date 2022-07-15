@@ -697,4 +697,17 @@ mat-bottom-sheet-container.sharescreen {
   padding: 10px 20px;
 }
 
+// storepage
+
+mat-bottom-sheet-container.storepage {
+  border-radius: 15px 15px 0 0 !important;
+  padding: 0;
+}
+
+.storepagehowitworks {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+// .cdk-overlay-dark-backdrop.storepage
+
 // aditya code end

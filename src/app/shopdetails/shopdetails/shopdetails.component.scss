@@ -139,6 +139,7 @@ header {
 .name_details {
   display: flex;
   width: 100%;
+  align-items: end;
 }
 
 .store_name {
@@ -148,10 +149,11 @@ header {
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 0 !important;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  width: 100%;
+  // overflow: hidden;
+  // display: -webkit-box;
+  // -webkit-line-clamp: 1;
+  // -webkit-box-orient: vertical;
 }
 
 .store_category {
@@ -333,6 +335,14 @@ header {
   font-weight: 600;
   line-height: 30px;
   color: #000000;
+}
+
+.map_icon {
+  margin: 0 -10px;
+  .mat-icon-button {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .nonbold {
@@ -586,6 +596,57 @@ hr {
 .mt-8 {
   margin-bottom: 18px;
 }
+
+.visit_store_shoutout {
+  margin: auto;
+  background: #e7daff;
+  border-radius: 12px;
+  width: 90%;
+  // height: 63px;
+  .main_type {
+    display: flex;
+    gap: 1%;
+    align-items: center;
+    padding: 10px;
+
+    .give_shoutout {
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px !important;
+        line-height: 14px !important;
+        margin: 0 !important;
+        padding-bottom: 5px !important;
+      }
+    }
+    .earn_cash {
+      p {
+        font-weight: 500;
+        font-size: 10px !important;
+        line-height: 12px !important;
+        color: #945cff;
+        margin: 0 !important;
+      }
+    }
+    .knwmore_btn {
+      button {
+        background: #874bf9;
+        box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        color: #ffffff;
+        // padding: 8px 14px;
+        width: 78px;
+        height: 27px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
 .vist_and_redeem {
   font-family: "Jost";
   font-style: normal;

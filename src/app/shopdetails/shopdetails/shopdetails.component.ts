@@ -6,6 +6,8 @@ import {
 import { MatDialog } from '@angular/material/dialog';
 import { OnlinestoreconditionsComponent } from 'src/app/components/termsnconditions/onlinestoreconditions/onlinestoreconditions.component';
 import { RedeemonlineComponent } from 'src/app/howtoredeem/redeemonline/redeemonline.component';
+import { OfflinestorehowitworksComponent } from '../offlinestorehowitworks/offlinestorehowitworks.component';
+import { OnoffstorehowitworksComponent } from '../onoffstorehowitworks/onoffstorehowitworks.component';
 import { ShoptermnconditionComponent } from '../shoptermncondition/shoptermncondition.component';
 import { StorepageshopsComponent } from '../storepageshops/storepageshops.component';
 import { StoreproductpageComponent } from '../storeproductpage/storeproductpage.component';
@@ -107,7 +109,7 @@ export class ShopdetailsComponent implements OnInit {
       this.viewTyp = 'Offline';
     }
     if (this.storeTyp == 'Both') {
-      this.viewTyp = 'Offline';
+      this.viewTyp = 'Hybrid';
     }
   }
 
@@ -124,5 +126,12 @@ export class ShopdetailsComponent implements OnInit {
 
   showAndHideAddToCard() {
     this.showAddToCard = true;
+  }
+
+  visitstore() {
+    this._bottomSheet.open(OnoffstorehowitworksComponent, {
+      panelClass: 'storepage',
+      backdropClass: 'storepagehowitworks',
+    });
   }
 }
