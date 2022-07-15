@@ -215,6 +215,7 @@ import { PaybillComponent } from './paybill/paybill/paybill.component';
 import { OfflinestorehowitworksComponent } from './shopdetails/offlinestorehowitworks/offlinestorehowitworks.component';
 import { OnlinestorehowitworksComponent } from './shopdetails/onlinestorehowitworks/onlinestorehowitworks.component';
 import { OnoffstorehowitworksComponent } from './shopdetails/onoffstorehowitworks/onoffstorehowitworks.component';
+import { PaybillDirective } from './paybill/paybill.directive';
 
 @NgModule({
   declarations: [
@@ -405,6 +406,7 @@ import { OnoffstorehowitworksComponent } from './shopdetails/onoffstorehowitwork
     OfflinestorehowitworksComponent,
     OnlinestorehowitworksComponent,
     OnoffstorehowitworksComponent,
+    PaybillDirective,
   ],
   imports: [
     BrowserModule,

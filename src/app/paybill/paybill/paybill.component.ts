@@ -1,16 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-paybill',
   templateUrl: './paybill.component.html',
   styleUrls: ['./paybill.component.scss'],
 })
-export class PaybillComponent implements OnInit {
+export class PaybillComponent implements AfterViewInit {
   iMinStore = false;
   makeChanges = false;
   show = false;
 
-  constructor() {}
+  // @ViewChild("input") private _inputs: ElementRef;
 
-  ngOnInit(): void {}
+  constructor(private elementRef: ElementRef) {}
+
+  ngAfterViewInit(): void {
+    this.elementRef.nativeElement.focus();
+  }
 }
