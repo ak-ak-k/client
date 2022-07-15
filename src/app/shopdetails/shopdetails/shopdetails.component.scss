@@ -114,10 +114,9 @@ header {
     border: 1px solid gray;
     display: none;
   }
-}
-
-.imgLoaded {
-  display: inline-block;
+  .imgLoaded {
+    display: inline-block;
+  }
 }
 
 // .img_container {
@@ -211,6 +210,9 @@ header {
       width: 332px;
       height: 172px;
       display: none;
+    }
+    .imgLoaded {
+      display: inline-block;
     }
   }
 
@@ -995,7 +997,10 @@ hr {
     border-radius: 3px;
     width: 120px;
     object-fit: cover;
-    // display: none;
+    display: none;
+  }
+  .imgLoaded {
+    display: inline-block;
   }
 }
 
