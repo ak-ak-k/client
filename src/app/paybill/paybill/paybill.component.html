@@ -53,9 +53,11 @@
                 </svg>
                 <span> Paying Dent Heal</span>
                 <div class="input_container">
-                    <input class="input" matInput type="tel" inputmode="numeric" #amnt="ngModel" ngModel
-                        autofocus="true" name="" id="" placeholder="Enter bill amount" maxlength="6" required>
+                    <input class="input" matInput type="tel" inputmode="numeric" #aditya name="" id=""
+                        placeholder="Enter bill amount" maxlength="6" required>
                     <!-- <mat-icon matPrefix>₹</mat-icon> -->
+
+                    <button mat-button (click)="aditya.focus()">focus</button>
 
                 </div>
 

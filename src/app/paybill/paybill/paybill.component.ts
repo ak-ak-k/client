@@ -1,4 +1,11 @@
-import { AfterViewInit, Component, ElementRef } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  ViewChild,
+} from '@angular/core';
+import { MatInput } from '@angular/material/input';
 
 @Component({
   selector: 'app-paybill',
@@ -10,11 +17,21 @@ export class PaybillComponent implements AfterViewInit {
   makeChanges = false;
   show = false;
 
-  // @ViewChild("input") private _inputs: ElementRef;
+  @ViewChild('aditya') aditya!: ElementRef;
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(private changedet: ChangeDetectorRef) {}
 
   ngAfterViewInit(): void {
-    this.elementRef.nativeElement.focus();
+    setTimeout(() => {
+      console.log(this.aditya.nativeElement);
+
+      this.aditya.nativeElement.focus();
+      // alert('asd');
+      console.log(this.aditya.nativeElement);
+
+      this.changedet.detectChanges();
+
+      // this.elementRef.nativeElement
+    }, 3000);
   }
 }
