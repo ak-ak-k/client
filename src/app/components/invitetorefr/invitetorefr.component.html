@@ -465,7 +465,21 @@
                     </div>
 
                     <div class="contact_lists">
-                        <div class="contact_container">
+                        <div class="abc">
+
+                            <div class="contact_container" *ngFor="let x of contacts">
+                                <div class="img_logo">
+                                    <p>{{x.img}}</p>
+                                </div>
+                                <div class="contact_name">
+                                    <p>{{x.name}}</p>
+                                </div>
+                                <div class="contact_number">
+                                    <p>{{x.number}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="contact_container">
                             <div class="img_logo">
                                 <p>AK</p>
                             </div>
@@ -519,18 +533,7 @@
                             <div class="contact_number">
                                 <p>+91 9918922391</p>
                             </div>
-                        </div>
-                        <div class="contact_container">
-                            <div class="img_logo">
-                                <p>AK</p>
-                            </div>
-                            <div class="contact_name">
-                                <p>aditya kirtane</p>
-                            </div>
-                            <div class="contact_number">
-                                <p>+91 9918922391</p>
-                            </div>
-                        </div>
+                        </div> -->
 
                         <div class="btn_view">
                             <button mat-button (click)=" invite()">View All</button>

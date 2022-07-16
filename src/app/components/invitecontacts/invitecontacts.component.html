@@ -14,12 +14,47 @@
             </div>
 
             <div class="invite_section">
+                <div class="section" *ngFor="let x of invitecontact">
+                    <div class="main">
+                        <div class="mix">
+                            <div class="img-container">
+                                <p>{{x.img}}</p>
+                            </div>
+                        </div>
+                        <div class="names_number">
+                            <div class="name">{{x.name}}</div>
+                            <div class="number">{{x.number}}</div>
+                        </div>
+
+                    </div>
+                    <span class="divide"></span>
+                    <div class="invite">
+                        <button mat-button>Invite</button>
+                    </div>
+                </div>
+                <!-- <div class="section">
+                    <div class="main">
+                        <div class="mix">
+                            <div class="img-container">
+                                <p>a</p>
+                            </div>
+                        </div>
+                        <div class="names_number">
+                            <div class="name">Aditya</div>
+                            <div class="number">123456789</div>
+                        </div>
+
+                    </div>
+                    <span class="divide"></span>
+                    <div class="invite">
+                        <button mat-button>Invite</button>
+                    </div>
+                </div>
                 <div class="section">
                     <div class="main">
                         <div class="mix">
-                            <div class="img-container"
-                                style="background-image: url('../../../assets/img/loaded/locate.svg');">
-                                <img class="imgLoaded" src="https://japanpowered.com/media/images//goku.png" alt="">
+                            <div class="img-container">
+                                <p>a</p>
                             </div>
                         </div>
                         <div class="names_number">
@@ -89,45 +124,7 @@
                     <div class="invite">
                         <button mat-button>Invite</button>
                     </div>
-                </div>
-                <div class="section">
-                    <div class="main">
-                        <div class="mix">
-                            <div class="img-container"
-                                style="background-image: url('../../../assets/img/loaded/locate.svg');">
-                                <img class="imgLoaded" src="https://japanpowered.com/media/images//goku.png" alt="">
-                            </div>
-                        </div>
-                        <div class="names_number">
-                            <div class="name">Aditya</div>
-                            <div class="number">123456789</div>
-                        </div>
-
-                    </div>
-                    <span class="divide"></span>
-                    <div class="invite">
-                        <button mat-button>Invite</button>
-                    </div>
-                </div>
-                <div class="section">
-                    <div class="main">
-                        <div class="mix">
-                            <div class="img-container"
-                                style="background-image: url('../../../assets/img/loaded/locate.svg');">
-                                <img class="imgLoaded" src="https://japanpowered.com/media/images//goku.png" alt="">
-                            </div>
-                        </div>
-                        <div class="names_number">
-                            <div class="name">Aditya</div>
-                            <div class="number">123456789</div>
-                        </div>
-
-                    </div>
-                    <span class="divide"></span>
-                    <div class="invite">
-                        <button mat-button>Invite</button>
-                    </div>
-                </div>
+                </div> -->
 
             </div>
         </div>

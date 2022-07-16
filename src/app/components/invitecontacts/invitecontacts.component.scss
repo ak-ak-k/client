@@ -58,7 +58,7 @@
 
 .invite_section {
   .section {
-    margin: 11px;
+    margin: 11px 11px 15px 11px;
     display: flex;
     /* flex-direction: column; */
     align-items: center;
@@ -140,6 +140,15 @@
   border: 1px solid;
   max-width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  p {
+    font-size: 20px !important;
+    font-weight: 500;
+    margin: 0 !important;
+  }
   img {
     border-radius: 14px;
     width: 50px;
