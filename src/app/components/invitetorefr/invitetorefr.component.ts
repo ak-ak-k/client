@@ -9,7 +9,12 @@ import { RefrnowinviteComponent } from '../invitecontacts/refrnowinvite/refrnowi
   styleUrls: ['./invitetorefr.component.scss'],
 })
 export class InvitetorefrComponent implements OnInit {
-  constructor(private _bottomSheet: MatBottomSheet) {}
+  name: string = 'aditya';
+
+  constructor(private _bottomSheet: MatBottomSheet) {
+    this.name = this.name.charAt(0).toUpperCase() + this.name.slice(1);
+    console.log(this.name);
+  }
 
   ngOnInit(): void {}
 
