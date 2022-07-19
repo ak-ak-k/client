@@ -217,6 +217,8 @@ import { OnlinestorehowitworksComponent } from './shopdetails/onlinestorehowitwo
 import { OnoffstorehowitworksComponent } from './shopdetails/onoffstorehowitworks/onoffstorehowitworks.component';
 import { PaybillDirective } from './paybill/paybill.directive';
 import { InvitetorefrComponent } from './components/invitetorefr/invitetorefr.component';
+import { SkeletonpageComponent } from './skeletonpage/skeletonpage/skeletonpage.component';
+import { WalletComponent } from './wallet/wallet/wallet.component';
 
 @NgModule({
   declarations: [
@@ -409,6 +411,8 @@ import { InvitetorefrComponent } from './components/invitetorefr/invitetorefr.co
     OnoffstorehowitworksComponent,
     PaybillDirective,
     InvitetorefrComponent,
+    SkeletonpageComponent,
+    WalletComponent,
   ],
   imports: [
     BrowserModule,

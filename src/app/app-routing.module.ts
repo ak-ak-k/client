@@ -144,6 +144,7 @@ import { TransactionusersComponent } from './user-transaction/transactionusers/t
 import { UserViewallComponent } from './users/user-viewall/user-viewall.component';
 import { UserdashComponent } from './users/userdash/userdash.component';
 import { UserprofileviewComponent } from './users/userprofileview/userprofileview.component';
+import { WalletComponent } from './wallet/wallet/wallet.component';
 import { WithdrawrequestComponent } from './withdraw/withdrawrequest/withdrawrequest.component';
 import { WithdrawupdateComponent } from './withdraw/withdrawupdate/withdrawupdate/withdrawupdate.component';
 import { WithdrawviewComponent } from './withdraw/withdrawview/withdrawview/withdrawview.component';
@@ -193,6 +194,7 @@ const routes: Routes = [
   { path: 'exchangeorder', component: ExchangeOrderComponent },
   { path: 'gatewaypopup', component: GatewaycardpopupComponent },
   { path: 'wallet', component: WalletscreenComponent },
+  { path: 'wallet1', component: WalletComponent },
   // { path: 'gateway', component: GatewaycardComponent },
   { path: 'howitworks', component: HowitworksComponent },
   { path: 'home', component: HomeComponent },
