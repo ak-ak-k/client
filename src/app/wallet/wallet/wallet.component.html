@@ -132,6 +132,7 @@
             </div>
         </div> -->
         <br>
+        <br>
 
         <div class="container card-panel-list">
             <div class="bold fs-18 textL">Refr cash transactions
@@ -140,7 +141,7 @@
 
             <ng-container>
                 <!-- <p class="textL">You have no transactions</p> -->
-                <button class="transaction-card b_white c_black" *ngFor="let x of [1,2,3,4,5]">
+                <button class="transaction-card b_white c_black" *ngFor="let x of [1,2,3,4,5,6,7,8,9]">
                     <div class="row">
                         <div class="col-100">
 
@@ -149,10 +150,12 @@
 
                                     <div class="d_flex">
                                         <div class="trans_title">
-                                            <p><span *ngIf=" x==2 || x==1">Purchased at </span><span
-                                                    *ngIf=" x==3 || x==4">Ordered from </span>
-                                                <span *ngIf=" x==5">Your recommendation used at</span>
+                                            <p><span *ngIf=" x==2 || x==1 || x==3 ||  x==4">Purchased at </span><span
+                                                    *ngIf="x==5 || x==6 ||x==7 || x==8">Ordered from </span>
+                                                <span *ngIf="x==9">Your recommendation used at</span>
                                                 Dent Heal
+                                                <span *ngIf="x==8">via <b
+                                                        style="font-weight: 600;color:#000000">Burn</b></span>
                                             </p>
                                         </div>
                                         <span class="divide"></span>
@@ -161,13 +164,17 @@
                                         </div>
                                     </div>
 
-                                    <div class="d_flex" *ngIf="x==3 || x==4">
+                                    <div class="d_flex">
                                         <div class="recommend_use">
-                                            <p>using <span color="primary">Aditya's</span> Recommendation</p>
+                                            <p *ngIf="x==3 || x==4 ||x==7">using <span color="primary">Aditya's</span>
+                                                Recommendation</p>
+                                            <p *ngIf="x==9">by <span color="primary">Aditya's</span></p>
                                         </div>
 
                                     </div>
-                                    <div class="d_flex" *ngIf=" x==2 || x==4">
+
+
+                                    <div class="d_flex" *ngIf=" x==2 || x==4 ||  x==6 || x==7 || x==8">
                                         <div class="refr_used">
                                             <p>Refr cash used</p>
                                         </div>
