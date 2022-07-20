@@ -226,16 +226,13 @@ mat-toolbar {
   .trans_title {
     width: 90%;
     p {
-      color: #000000;
-      font-weight: 600;
-      font-size: 14px !important;
-      line-height: 20px !important;
+      margin-bottom: 0 !important;
       span {
         font-style: normal;
         font-weight: 600;
         font-size: 14px !important;
         line-height: 20px !important;
-        color: #484848;
+        color: #000000;
         margin-bottom: 2px !important;
       }
     }
@@ -243,6 +240,26 @@ mat-toolbar {
   .d_flex {
     display: flex;
     align-items: baseline;
+  }
+  .purchase_types {
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px !important;
+      line-height: 17px !important;
+      color: #000000;
+      margin-bottom: 2px !important;
+    }
+  }
+  .recommend_given {
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px !important;
+      line-height: 17px !important;
+      color: #696969;
+      margin-bottom: 2px !important;
+    }
   }
   .recommend_use {
     p {
@@ -252,6 +269,7 @@ mat-toolbar {
       font-size: 13px !important;
       line-height: 19px !important;
       color: #696969;
+      margin-bottom: 2px !important;
       span {
         color: #8200ff;
         font-weight: 600;
@@ -267,6 +285,7 @@ mat-toolbar {
       line-height: 20px !important;
       color: #484848;
       width: 100%;
+      // margin-bottom: 0 !important;
     }
   }
   .refr_used {

@@ -141,40 +141,56 @@
 
             <ng-container>
                 <!-- <p class="textL">You have no transactions</p> -->
-                <button class="transaction-card b_white c_black" *ngFor="let x of [1,2,3,4,5,6,7,8,9]">
+                <button class="transaction-card b_white c_black" *ngFor="let x of [1,2,3,4,5,6,7,8,9,10]">
                     <div class="row">
                         <div class="col-100">
 
                             <ng-container>
                                 <div class="transactions_detail">
 
-                                    <div class="d_flex">
+                                    <div class="d_flex"
+                                        *ngIf="x==1 || x==2 || x==3 || x==4 || x==5 || x==6 || x==7 || x==8 || x==9 || x==10">
                                         <div class="trans_title">
-                                            <p><span *ngIf=" x==2 || x==1 || x==3 ||  x==4">Purchased at </span><span
-                                                    *ngIf="x==5 || x==6 ||x==7 || x==8">Ordered from </span>
-                                                <span *ngIf="x==9">Your recommendation used at</span>
-                                                Dent Heal
-                                                <span *ngIf="x==8">via <b
-                                                        style="font-weight: 600;color:#000000">Burn</b></span>
+                                            <p><span>Store Name </span>
+                                                <!-- <span>Ordered from </span>
+                                                <span>Your recommendation used at</span> -->
+
+                                                <!-- <span>via <b style="font-weight: 600;color:#000000">Burn</b></span> -->
                                             </p>
                                         </div>
                                         <span class="divide"></span>
-                                        <div class="inc_tr">
+                                        <div class="inc_tr" *ngIf="x !=10">
                                             <p>+ 200</p>
                                         </div>
                                     </div>
 
-                                    <div class="d_flex">
-                                        <div class="recommend_use">
-                                            <p *ngIf="x==3 || x==4 ||x==7">using <span color="primary">Aditya's</span>
-                                                Recommendation</p>
-                                            <p *ngIf="x==9">by <span color="primary">Aditya's</span></p>
+                                    <div class="purchase_types">
+                                        <p *ngIf="x ==1 || x==2 || x==3 || x==4">In-store purchase</p>
+                                        <p *ngIf="x==5 || x==6 || x==7 || x==8 || x==10">Online purchase</p>
+                                    </div>
+
+                                    <div class="refr_used">
+
+
+                                        <div class="recommend_given" *ngIf="x ==1 || x==2 || x==5 || x==6">
+                                            <p>Recommedation given</p>
+                                        </div>
+
+                                        <div class="d_flex">
+                                            <div class="recommend_use">
+                                                <p *ngIf="x==10">
+                                                    via Burn
+                                                </p>
+                                                <p *ngIf="x==3 || x==4 || x==7 || x==8 || x==9">using <span
+                                                        color="primary">Aditya's</span>
+                                                    Recommendation</p>
+                                            </div>
                                         </div>
 
                                     </div>
 
 
-                                    <div class="d_flex" *ngIf=" x==2 || x==4 ||  x==6 || x==7 || x==8">
+                                    <div class="d_flex" *ngIf='x==2 || x==4 || x==6 || x==8 || x==10'>
                                         <div class="refr_used">
                                             <p>Refr cash used</p>
                                         </div>
