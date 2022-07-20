@@ -196,3 +196,27 @@
 }
 
 //
+
+.or {
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px !important;
+    line-height: 18px !important;
+    color: #000000;
+    text-align: center;
+    margin: 12px !important;
+  }
+}
+
+.pay_direct {
+  text-align: center;
+  a {
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px !important;
+    line-height: 18px !important;
+    text-decoration-line: underline;
+  }
+}
