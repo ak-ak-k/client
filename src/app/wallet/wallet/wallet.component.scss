@@ -285,7 +285,7 @@ mat-toolbar {
       line-height: 20px !important;
       color: #484848;
       width: 100%;
-      // margin-bottom: 0 !important;
+      margin-bottom: 0 !important;
     }
   }
   .refr_used {
@@ -323,8 +323,9 @@ mat-toolbar {
       font-weight: 400;
       font-size: 10px !important;
       line-height: 17px !important;
-
       color: #767676;
+      margin-top: 5px !important;
+      margin-bottom: 0 !important;
     }
   }
 }
