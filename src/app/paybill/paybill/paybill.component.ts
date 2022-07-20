@@ -5,6 +5,7 @@ import {
   ElementRef,
   ViewChild,
 } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatInput } from '@angular/material/input';
 
 @Component({
@@ -13,13 +14,23 @@ import { MatInput } from '@angular/material/input';
   styleUrls: ['./paybill.component.scss'],
 })
 export class PaybillComponent implements AfterViewInit {
+  // pay?: number;
+
   iMinStore = false;
   makeChanges = false;
   show = false;
 
   @ViewChild('aditya') aditya!: ElementRef;
 
-  constructor(private changedet: ChangeDetectorRef) {}
+  form: FormGroup = new FormGroup({});
+
+  constructor(private changedet: ChangeDetectorRef, private fb: FormBuilder) {
+    console.log(this.form.value.amount);
+
+    this.form = this.fb.group({
+      amount: this.fb.control('', [Validators.minLength(1)]),
+    });
+  }
 
   ngAfterViewInit(): void {
     setTimeout(() => {
@@ -33,5 +44,9 @@ export class PaybillComponent implements AfterViewInit {
 
       // this.elementRef.nativeElement
     }, 3000);
+  }
+
+  payed() {
+    console.log(this.form.value.amount);
   }
 }

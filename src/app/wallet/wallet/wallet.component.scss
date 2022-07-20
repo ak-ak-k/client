@@ -295,8 +295,13 @@ mat-toolbar {
       font-weight: 500;
       font-size: 13px !important;
       line-height: 19px !important;
-      color: #696969;
+      color: #000000;
       margin-bottom: 2px !important;
+    }
+  }
+  .pqr {
+    p {
+      color: #696969 !important;
     }
   }
   .dec {
@@ -316,7 +321,7 @@ mat-toolbar {
       font-family: "Jost";
       font-style: normal;
       font-weight: 400;
-      font-size: 12px !important;
+      font-size: 10px !important;
       line-height: 17px !important;
 
       color: #767676;
