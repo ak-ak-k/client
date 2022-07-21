@@ -30,7 +30,7 @@ export class LevelsectionComponent implements OnInit {
         title: 'Recommendations used',
         imgurl: 'assets/aditya/badges/B23.webp',
         level: '5/10',
-        levelstep: 3,
+        levelstep: 1,
         cardClass: 'card3',
         className: 'p2',
       }
