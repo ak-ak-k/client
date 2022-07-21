@@ -185,7 +185,7 @@
   }
 
   .main-content {
-    padding: 40px 15px 10px 10px;
+    padding: 40px 10px 10px 10px;
   }
 
   .text-primary {
@@ -950,6 +950,7 @@
       width: 33%;
       min-width: 30%;
       // height: 121px;
+      overflow: hidden;
     }
     .header_img {
       background: #000000;
@@ -981,7 +982,7 @@
       background-position: center;
       background-repeat: no-repeat;
       object-fit: contain;
-      height: 60px;
+      height: 75px;
       position: relative;
       width: 100%;
       margin: 10px auto;
