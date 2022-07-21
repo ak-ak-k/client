@@ -219,6 +219,7 @@ import { PaybillDirective } from './paybill/paybill.directive';
 import { InvitetorefrComponent } from './components/invitetorefr/invitetorefr.component';
 import { SkeletonpageComponent } from './skeletonpage/skeletonpage/skeletonpage.component';
 import { WalletComponent } from './wallet/wallet/wallet.component';
+import { CustomerhowitworksComponent } from './wallet/customerhowitworks/customerhowitworks.component';
 
 @NgModule({
   declarations: [
@@ -413,6 +414,7 @@ import { WalletComponent } from './wallet/wallet/wallet.component';
     InvitetorefrComponent,
     SkeletonpageComponent,
     WalletComponent,
+    CustomerhowitworksComponent,
   ],
   imports: [
     BrowserModule,

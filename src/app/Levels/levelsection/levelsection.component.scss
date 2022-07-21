@@ -224,7 +224,7 @@
   }
 
   .align-items-center {
-    align-items: baseline;
+    align-items: center;
   }
 
   .justify-content-center {
@@ -928,6 +928,11 @@
 
 //  aditya code
 
+.thin_svg {
+  display: flex;
+  align-items: center;
+}
+
 .levels_section {
   // margin: 0 15px;
   .cards_level {
@@ -1050,4 +1055,14 @@
 
 .p2 {
   background: linear-gradient(90deg, #c8fbff 0%, #00b2b5 100%) !important;
+}
+
+.progressbar7 {
+  width: 70%;
+}
+.progressbar4 {
+  width: 40%;
+}
+.progressbar1 {
+  width: 15%;
 }

@@ -144,6 +144,7 @@ import { TransactionusersComponent } from './user-transaction/transactionusers/t
 import { UserViewallComponent } from './users/user-viewall/user-viewall.component';
 import { UserdashComponent } from './users/userdash/userdash.component';
 import { UserprofileviewComponent } from './users/userprofileview/userprofileview.component';
+import { CustomerhowitworksComponent } from './wallet/customerhowitworks/customerhowitworks.component';
 import { WalletComponent } from './wallet/wallet/wallet.component';
 import { WithdrawrequestComponent } from './withdraw/withdrawrequest/withdrawrequest.component';
 import { WithdrawupdateComponent } from './withdraw/withdrawupdate/withdrawupdate/withdrawupdate.component';
@@ -238,6 +239,7 @@ const routes: Routes = [
   { path: 'thankyou', component: ThankyouscreenComponent },
   { path: 'stores', component: StoresComponent },
   { path: 'levels', component: LevelsectionComponent },
+  { path: 'customerhow', component: CustomerhowitworksComponent },
 
   // how to redeem
   { path: 'redeemoffline', component: RedeemofflineComponent },
