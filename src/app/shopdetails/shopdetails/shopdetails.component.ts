@@ -18,6 +18,8 @@ import { StoreproductpageComponent } from '../storeproductpage/storeproductpage.
   styleUrls: ['./shopdetails.component.scss'],
 })
 export class ShopdetailsComponent implements OnInit {
+  para: any = 'This is some text. This is some text. This is some text.';
+
   highlights = false;
   show = false;
   brrr = false;
@@ -27,6 +29,10 @@ export class ShopdetailsComponent implements OnInit {
   ) {}
 
   //
+
+  abc() {
+    console.log(this.para);
+  }
 
   isReadMore = true;
 
