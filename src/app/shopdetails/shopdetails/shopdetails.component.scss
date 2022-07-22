@@ -596,57 +596,78 @@ hr {
 // visit store
 
 .mt-8 {
-  margin-bottom: 18px;
+  // margin-bottom: 18px;
 }
 
 .visit_store_shoutout {
   margin: auto;
-  background: #e7daff;
-  border-radius: 12px;
-  width: 90%;
+  // background: #e7daff;
+  // border-radius: 12px;
+  // width: 90%;
   // height: 63px;
   .main_type {
-    display: flex;
-    gap: 1%;
-    align-items: center;
-    padding: 10px;
+    // display: flex;
+    // gap: 4%;
+    // align-items: flex-start;
 
-    .give_shoutout {
-      p {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px !important;
-        line-height: 14px !important;
-        margin: 0 !important;
-        padding-bottom: 5px !important;
+    padding: 12px 20px;
+
+    .dflex_aligncenter {
+      display: flex;
+      align-items: center;
+      gap: 2%;
+      .earn_cash {
+        p {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px !important;
+          line-height: 16px !important;
+          margin: 0 !important;
+          color: #2b2b2b;
+          display: flex;
+          align-items: center;
+        }
       }
     }
-    .earn_cash {
-      p {
-        font-weight: 500;
-        font-size: 10px !important;
-        line-height: 12px !important;
-        color: #945cff;
-        margin: 0 !important;
+
+    .dflex_align {
+      display: flex;
+      align-items: center;
+      .give_shoutout {
+        p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px !important;
+          line-height: 14px !important;
+          margin: 5px 0 !important;
+          // padding-bottom: 5px !important;
+        }
       }
-    }
-    .knwmore_btn {
-      button {
-        background: #874bf9;
-        box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
-        border-radius: 6px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
-        color: #ffffff;
-        // padding: 8px 14px;
-        width: 78px;
-        height: 27px;
-        display: flex;
-        align-items: center;
+      .knwmore_btn {
+        button {
+          background: #ffffff;
+          border: 1px solid #945cff;
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+          border-radius: 6px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 10px;
+          color: #945cff;
+          // padding: 8px 14px;
+          width: 78px;
+          height: 27px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
   }
+}
+
+.broad_line {
+  background: #f7f7f7;
+  height: 8px;
 }
 
 .vist_and_redeem {
@@ -666,11 +687,11 @@ hr {
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   height: 10vh;
-  margin: 15px;
+  margin: -5px 15px 20px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 10px 10px 10px;
+  padding: 16px 15px 5px 12px;
 }
 
 .inp_btn input {
@@ -691,7 +712,7 @@ hr {
 .inp_btn input::placeholder {
   font-family: "Jost";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px !important;
   line-height: 117% !important;
   color: #959595;
@@ -704,7 +725,7 @@ hr {
   text-transform: capitalize;
   font-family: "Jost";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px !important;
   line-height: 117% !important;
   text-align: center;
@@ -716,7 +737,7 @@ hr {
 .pay_via {
   display: flex;
   align-items: center;
-  padding: 15px 0 0 5px;
+  padding: 2% 0 0 0px;
   p {
     font-family: "Jost";
     font-style: normal;
@@ -729,7 +750,7 @@ hr {
     display: flex;
     gap: 5px;
     align-items: center;
-    margin-left: 0 !important;
+    margin: 0 !important;
     .balance {
       display: inline-flex;
       align-items: center;
@@ -756,9 +777,11 @@ hr {
   .about_store {
     font-family: "Jost";
     font-style: normal;
-    font-size: var(--tertiary-font-size) !important;
+    font-size: 14px !important;
     font-weight: 600;
-    line-height: 23px;
+    line-height: 23px !important;
+    margin-bottom: 0 !important;
+    color: black;
   }
 }
 
@@ -766,6 +789,7 @@ hr {
   display: flex;
   justify-content: space-between;
   width: 98%;
+  margin: 10px 0 5px 0;
 }
 
 .desc_aboutstore {
