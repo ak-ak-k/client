@@ -61,19 +61,33 @@
       margin: auto;
     }
   }
-  .according {
-    display: flex;
-    padding: 6% 0;
-    .ques_line {
+  .accordin {
+    padding: 6% 0 0 0;
+    .dflex {
+      display: flex;
+      .ques_line {
+        p {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px !important;
+          line-height: 18px !important;
+          letter-spacing: 0.01em;
+          color: #000000;
+          margin: 0 !important;
+        }
+      }
+    }
+    .ans {
+      overflow: hidden;
+      -webkit-transition: height 400ms ease;
+      transition: height 400ms ease;
       p {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px !important;
-        line-height: 18px !important;
-        letter-spacing: 0.01em;
-        color: #000000;
         margin: 0 !important;
       }
+    }
+    .ans:target {
+      height: 150px;
+      overflow-y: scroll;
     }
   }
 }
