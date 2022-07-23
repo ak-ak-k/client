@@ -1,0 +1,123 @@
+<ng-container *ngIf="type === 1">
+    <mat-toolbar>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+        <img src="../../../assets/svg/location.svg" alt="">
+        <div>
+            <p class="c_gradient primary-font-size title">Address</p>
+            <p class="primary-font-size">C31 area north street</p>
+        </div>
+    </mat-toolbar>
+</ng-container>
+
+<ng-container *ngIf="type === 2">
+    <mat-toolbar class="type2 mat-elevation-z2">
+        <img src="../../../assets/svg/location.svg" class="" alt="">
+        <div>
+            <p class="c_gradient primary-font-size title">Address</p>
+            <p class="primary-font-size">C31 area north street</p>
+        </div>
+        <div class="right">
+            <img src="../../../assets/svg/question-mark.svg" alt="">
+            <img src="../../../assets/svg/bell.svg" alt="">
+            <img src="../../../assets/svg/user.svg" alt="">
+        </div>
+    </mat-toolbar>
+</ng-container>
+
+<ng-container *ngIf="type === 3">
+    <mat-toolbar class="type3 mat-elevation-z2">
+        <div class="normal-container">
+            <div class="row">
+                <div class="col-1 my-auto d-flex">
+                    <img src="../../../assets/images/logo.png" width="100%" alt="">
+                </div>
+                <div class="col-2 my-auto">
+                    <div class="d-flex">
+                        <img src="../../../assets/svg/location.svg" class="" alt="">
+                        <div>
+                            <p class="c_gradient primary-font-size title">Address</p>
+                            <p class="primary-font-size">C31 area north street</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 my-auto">
+                    <app-appsearch [type]="2"></app-appsearch>
+                </div>
+                <div class="col-2 ml-auto my-auto">
+                    <div class="row my-auto">
+                        <div class="col-4 textC my-auto">
+                            <img src="../../../assets/svg/question-mark.svg" alt="">
+                        </div>
+                        <div class="col-4 textC my-auto">
+                            <img src="../../../assets/svg/bell.svg" alt="">
+
+                        </div>
+                        <div class="col-4 textC my-auto">
+                            <img src="../../../assets/svg/user.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-toolbar>
+</ng-container>
+
+<!-- Desktop -->
+<ng-container *ngIf="type === 5">
+    <mat-toolbar class="type3 mat-elevation-z2">
+        <div class="normal-container">
+            <div class="row">
+                <div class="col-1 my-auto d-flex">
+                    <img src="../../../assets/images/logo.png" width="100%" alt="">
+                </div>
+                <div class="col-2 my-auto">
+                    <div class="d-flex">
+                        <img src="../../../assets/svg/location.svg" class="" alt="">
+                        <div>
+                            <p class="c_gradient tertiary-font-size title">Address</p>
+                            <p class="secondary-font-size">C31 area north street</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 my-auto">
+                    <app-appsearch [type]="4"></app-appsearch>
+                </div>
+                <div class="col-2 ml-auto my-auto">
+                    <div class="row my-auto">
+                        <div class="col-4 textC my-auto">
+                            <img src="../../../assets/svg/question-mark.svg" alt="">
+                        </div>
+                        <div class="col-4 textC my-auto">
+                            <img src="../../../assets/svg/bell.svg" alt="">
+
+                        </div>
+                        <div class="col-4 textC my-auto">
+                            <img src="../../../assets/svg/user.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-toolbar>
+</ng-container>
+
+
+<ng-container *ngIf="type === 4">
+    <mat-toolbar class="type2 mat-elevation-z2">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+        <img src="../../../assets/svg/location.svg" class="" alt="">
+        <div>
+            <p class="c_gradient primary-font-size title">Address</p>
+            <p class="primary-font-size">C31 area north street</p>
+        </div>
+        <!-- <div class="right">
+            <button mat-flat-button class="btn-primary ml-auto">
+                <img src="../../../assets/svg/coin.svg" alt=""> 1000
+            </button>
+        </div> -->
+    </mat-toolbar>
+</ng-container>

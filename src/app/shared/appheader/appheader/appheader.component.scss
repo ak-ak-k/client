@@ -1,0 +1,42 @@
+mat-toolbar {
+  background: transparent !important;
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom: 1px solid #f6f6f6;
+  p {
+    margin-bottom: 0 !important;
+    line-height: 14px !important;
+  }
+  .title {
+    font-weight: 600;
+  }
+}
+.d-flex {
+  display: flex;
+}
+.type2 {
+  .right {
+    display: flex;
+    position: absolute;
+    right: 18px;
+    img {
+      margin: auto 4px;
+    }
+  }
+}
+
+.type3 {
+  box-shadow: none;
+  border: none;
+}
+
+.btn-primary {
+  border-radius: 8px;
+  background-image: linear-gradient(rgba(255, 61, 101, 0.6), #ff7250);
+  border: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 4px;
+  height: 28px;
+  font-size: 14px;
+}

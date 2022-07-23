@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Observable, of, take } from 'rxjs';
+import { WallethowitworkComponent } from '../wallethowitwork/wallethowitwork.component';
 
 @Component({
   selector: 'app-wallet',
@@ -9,7 +11,13 @@ import { Observable, of, take } from 'rxjs';
 export class WalletComponent implements OnInit {
   payments$: Observable<any> = of();
 
-  constructor() {}
+  constructor(private _bottomSheet: MatBottomSheet) {}
+
+  howitwork() {
+    this._bottomSheet.open(WallethowitworkComponent, {
+      panelClass: 'wallethowitworks',
+    });
+  }
 
   ngOnInit(): void {}
 }

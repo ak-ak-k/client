@@ -139,6 +139,7 @@ import { StoreoverviewComponent } from './storeoverview/storeoverview/storeoverv
 import { StoresComponent } from './stores/stores/stores.component';
 import { SubcategoryComponent } from './subcategory/subcategory/subcategory.component';
 import { TableComponent } from './table/table.component';
+import { HomescreenComponent } from './tabs/home/homescreen/homescreen.component';
 import { NewtransactionComponent } from './user-transaction/newtransaction/newtransaction.component';
 import { TransactionusersComponent } from './user-transaction/transactionusers/transactionusers.component';
 import { UserViewallComponent } from './users/user-viewall/user-viewall.component';
@@ -198,7 +199,6 @@ const routes: Routes = [
   { path: 'wallet1', component: WalletComponent },
   // { path: 'gateway', component: GatewaycardComponent },
   { path: 'howitworks', component: HowitworksComponent },
-  { path: 'home', component: HomeComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'congrats', component: CongratulationsComponent },
   { path: 'paybill', component: PaybillComponent },
@@ -240,6 +240,10 @@ const routes: Routes = [
   { path: 'stores', component: StoresComponent },
   { path: 'levels', component: LevelsectionComponent },
   { path: 'customerhow', component: CustomerhowitworksComponent },
+
+  // tabs ------------------
+
+  { path: 'home', component: HomescreenComponent },
 
   // how to redeem
   { path: 'redeemoffline', component: RedeemofflineComponent },

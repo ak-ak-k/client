@@ -220,6 +220,11 @@ import { InvitetorefrComponent } from './components/invitetorefr/invitetorefr.co
 import { SkeletonpageComponent } from './skeletonpage/skeletonpage/skeletonpage.component';
 import { WalletComponent } from './wallet/wallet/wallet.component';
 import { CustomerhowitworksComponent } from './wallet/customerhowitworks/customerhowitworks.component';
+import { HomescreenComponent } from './tabs/home/homescreen/homescreen.component';
+import { AppheaderComponent } from './shared/appheader/appheader/appheader.component';
+import { AppsearchComponent } from './shared/appsearch/appsearch/appsearch.component';
+import { TabsComponent } from './shared/tabs/tabs/tabs.component';
+import { WallethowitworkComponent } from './wallet/wallethowitwork/wallethowitwork.component';
 
 @NgModule({
   declarations: [
@@ -415,6 +420,11 @@ import { CustomerhowitworksComponent } from './wallet/customerhowitworks/custome
     SkeletonpageComponent,
     WalletComponent,
     CustomerhowitworksComponent,
+    HomescreenComponent,
+    AppheaderComponent,
+    AppsearchComponent,
+    TabsComponent,
+    WallethowitworkComponent,
   ],
   imports: [
     BrowserModule,
